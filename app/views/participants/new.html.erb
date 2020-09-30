@@ -1,0 +1,12 @@
+<div class="container">
+  <%= simple_form_for [@event, @participant] do |f| %>
+    <%= f.input :email, placeholder: 'user@domain.com' %>
+    <%= f.input :company, label: 'Entreprise', error: 'Company is mandatory, please specify one' %>
+    <%= f.input :first_name, label: 'Prénom(s)', error: 'First name is mandatory, please specify one' %>
+    <%= f.input :last_name, label: 'Nom(s) de famille', error: 'Last name is mandatory, please specify one' %>
+    <%= f.input :address, label: 'Adresse', error: 'Address is mandatory, please specify one' %>
+    <%= f.input :zipcode, label: 'Code postal', error: 'Zipcode is mandatory, please specify one' %>
+    <%= f.input :city, label: 'Ville', error: 'City is mandatory, please specify one' %>
+    <%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>
+  <% end %>
+</div>
