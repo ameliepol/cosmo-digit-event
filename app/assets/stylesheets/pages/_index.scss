@@ -1,2 +1,11 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "company_admin_dashboard";
+
+body {
+  background-color: beige;
+}
+
+.container {
+  padding: 20px;
+}
