@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_01_160153) do
+ActiveRecord::Schema.define(version: 2020_10_06_092723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,9 +29,20 @@ ActiveRecord::Schema.define(version: 2020_10_01_160153) do
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource_type_and_resource_id"
   end
 
+  create_table "bookings", force: :cascade do |t|
+    t.integer "status", default: 0
+    t.bigint "participant_id", null: false
+    t.bigint "workshop_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["participant_id"], name: "index_bookings_on_participant_id"
+    t.index ["workshop_id"], name: "index_bookings_on_workshop_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.datetime "start_at"
     t.datetime "end_at"
+    t.string "name"
     t.text "place"
     t.integer "emailing_status"
     t.text "description"
@@ -49,11 +60,8 @@ ActiveRecord::Schema.define(version: 2020_10_01_160153) do
     t.string "zipcode"
     t.string "city"
     t.string "company"
-    t.bigint "event_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "workshop"
-    t.index ["event_id"], name: "index_participants_on_event_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -64,7 +72,7 @@ ActiveRecord::Schema.define(version: 2020_10_01_160153) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "admin", default: false
+    t.boolean "admin", default: false, null: false
     t.string "first_name"
     t.string "last_name"
     t.string "company"
@@ -72,6 +80,21 @@ ActiveRecord::Schema.define(version: 2020_10_01_160153) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  create_table "workshops", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "start_at"
+    t.datetime "end_at"
+    t.text "speaker"
+    t.boolean "visible", default: true
+    t.bigint "event_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["event_id"], name: "index_workshops_on_event_id"
+  end
+
+  add_foreign_key "bookings", "participants"
+  add_foreign_key "bookings", "workshops"
   add_foreign_key "events", "users"
-  add_foreign_key "participants", "events"
+  add_foreign_key "workshops", "events"
 end

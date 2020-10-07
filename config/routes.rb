@@ -7,9 +7,17 @@ Rails.application.routes.draw do
   get "erasmus", to: "pages#erasmus"
   get "questions", to: "pages#questions"
   get "contact", to: "pages#contact"
+  get "legal", to: "pages#legal"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :events do
     resources :participants, only: [ :show, :new, :create, :edit, :update, :destroy ]
   end
+
+  # resources :participants, only: [ :show, :new, :create, :edit, :update, :destroy ]
+
+  namespace :company_admin do
+    get 'dashboard', to: "dashboard#show", as: :dashboard
+  end
+
 end

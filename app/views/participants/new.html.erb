@@ -1,5 +1,5 @@
 <div class="container">
-  <%= simple_form_for [@event, @participant] do |f| %>
+  <%= simple_form_for [@event, @participant, @workshops] do |f| %>
     <%= f.input :email, placeholder: 'user@domain.com' %>
     <%= f.input :company, label: 'Entreprise', error: 'Ce champ est obligatoire' %>
     <%= f.input :first_name, label: 'Prénom(s)', error: 'Ce champ est obligatoire' %>
@@ -7,6 +7,7 @@
     <%= f.input :address, label: 'Adresse', error: 'Ce champ est obligatoire' %>
     <%= f.input :zipcode, label: 'Code postal', error: 'Ce champ est obligatoire' %>
     <%= f.input :city, label: 'Ville', error: 'Ce champ est obligatoire' %>
+    <%= f.association :visibles, label: 'Ateliers', as: :check_boxes, collection: Workshop.where(visible: true), input_html: { multiple: true } %>
     <%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>
   <% end %>
 </div>

@@ -3,6 +3,11 @@ def authenticate_admin!
 end
 
 ActiveAdmin.setup do |config|
+  ActiveAdmin::ResourceController.class_eval do
+    def find_resource
+      scoped_collection.find(params[:id])
+    end
+  end
   # == Site Title
   #
   # Set the title that is displayed on the main layout
@@ -58,7 +63,7 @@ ActiveAdmin.setup do |config|
   #
   # This setting changes the method which Active Admin calls
   # within the application controller.
-  config.authentication_method = :authenticate_user!
+  config.authentication_method = :authenticate_admin!
 
   # == User Authorization
   #
@@ -223,7 +228,7 @@ ActiveAdmin.setup do |config|
   # == CSV options
   #
   # Set the CSV builder separator
-  # config.csv_options = { col_sep: ';' }
+  config.csv_options = { col_sep: ';' }
   #
   # Force the use of quotes
   # config.csv_options = { force_quotes: true }
@@ -295,7 +300,7 @@ ActiveAdmin.setup do |config|
   # You can enabled or disable the inclusion
   # of those filters by default here.
   #
-  # config.include_default_association_filters = true
+  config.include_default_association_filters = true
 
   # config.maximum_association_filter_arity = 256 # default value of :unlimited will change to 256 in a future version
   # config.filter_columns_for_large_association = [

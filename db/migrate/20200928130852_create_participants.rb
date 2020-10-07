@@ -8,7 +8,6 @@ class CreateParticipants < ActiveRecord::Migration[6.0]
       t.string :zipcode
       t.string :city
       t.string :company
-      t.references :event, null: false, foreign_key: true
 
       t.timestamps
     end
