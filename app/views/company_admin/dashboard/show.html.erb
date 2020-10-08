@@ -37,19 +37,17 @@
       <table class="table table-bordered table-hover">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Ateliers</th>
+            <th scope="col">Participants</th>
           </tr>
         </thead>
         <tbody>
+          <% @workshops.each do |workshop| %>
           <tr>
-            <th scope="row">1</th>
-            <td>Bob</td>
-            <td>Dylan</td>
-            <td>@bdy</td>
+            <td><%= workshop.name %></td>
+            <td><%= 1 %></td>
           </tr>
+          <% end %>
         </tbody>
       </table>
     </div>

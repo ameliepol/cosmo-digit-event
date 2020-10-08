@@ -1,5 +1,6 @@
 class Participant < ApplicationRecord
   has_many :bookings
+  after_create :send_confirmation_email
 
   validates :company, presence: true
   validates :email, presence: true
@@ -9,4 +10,10 @@ class Participant < ApplicationRecord
   validates :address, presence: true
   validates :zipcode, presence: true
   validates :city, presence: true
+
+  private
+
+  def send_welcome_email
+    ParticipantMailer.with(participant: self).confirmation.deliver_now
+  end
 end

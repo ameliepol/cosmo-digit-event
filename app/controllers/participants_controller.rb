@@ -9,12 +9,13 @@ class ParticipantsController < ApplicationController
   def new
     @event = Event.find(params[:event_id])
     @participant = Participant.new
-    @workshops = @event.workshops.visibles
+    @workshops = event.workshops.visibles
   end
 
   def create
     @event = Event.find(params[:event_id])
     @participant = Participant.new(participant_params)
+    @workshops = event.workshops.visibles
     # @participant.event = @event
     if @participant.save
       redirect_to event_participant_path(@event, @participant)

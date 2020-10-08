@@ -7,7 +7,7 @@
     <%= f.input :address, label: 'Adresse', error: 'Ce champ est obligatoire' %>
     <%= f.input :zipcode, label: 'Code postal', error: 'Ce champ est obligatoire' %>
     <%= f.input :city, label: 'Ville', error: 'Ce champ est obligatoire' %>
-    <%= f.association :visibles, label: 'Ateliers', as: :check_boxes, collection: Workshop.where(visible: true), input_html: { multiple: true } %>
+    <%= f.association :visibles, label: 'Ateliers', as: :check_boxes, collection: Workshop.visibles, input_html: { multiple: true } %>
     <%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>
   <% end %>
 </div>

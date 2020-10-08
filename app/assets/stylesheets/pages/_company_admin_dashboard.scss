@@ -17,9 +17,6 @@ body {
   color: white;
   background-color: $erasmus_blue;
 }
-.nav-pills>li {
-  border-color: orange;
-}
 
 .nav-pills>li>a {
   border-radius: 4px;
@@ -33,17 +30,12 @@ body {
   padding: 10px 15px;
 }
 
-.table-bordered {
-    border: 1px solid #dee2e6;
-}
-
 .table .thead-dark th {
     color: #fff;
     font-weight: normal;
     background-color: $erasmus_blue;
     border-color: $erasmus_blue;
 }
-
 
 
 

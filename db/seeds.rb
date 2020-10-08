@@ -36,8 +36,8 @@ workshop3 = Workshop.create!(start_at: DateTime.new(2020,12,1,14), end_at: DateT
 puts "Workshops created..."
 
 puts "Creating participants..."
-participant1 = Participant.create!(email: "test1@gmail.com", company: "Erasmus +", first_name: "Jean", last_name: "Paul", address: "test1", zipcode: "00000", city: "Test1")
-participant2 = Participant.create!(email: "test2@gmail.com", company: "Erasmus +", first_name: "Bob", last_name: "Dylan", address: "test2", zipcode: "00000", city: "Test2")
+participant1 = Participant.create!(email: "pol.amelie@gmail.com", company: "Erasmus +", first_name: "Jean", last_name: "Paul", address: "test1", zipcode: "00000", city: "Test1")
+participant2 = Participant.create!(email: "amelie@agencecosmo.com", company: "Erasmus +", first_name: "Bob", last_name: "Dylan", address: "test2", zipcode: "00000", city: "Test2")
 puts "Participants created..."
 
 puts "Creating bookings"
