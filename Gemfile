@@ -35,6 +35,8 @@ gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin_addons'
 gem 'letter_opener', group: :development
+gem 'postmark-rails'
+gem 'cookies_eu'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

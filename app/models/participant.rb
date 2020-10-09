@@ -13,7 +13,7 @@ class Participant < ApplicationRecord
 
   private
 
-  def send_welcome_email
-    ParticipantMailer.with(participant: self).confirmation.deliver_now
+  def send_confirmation_email
+    ParticipantMailer.confirmation(self).deliver_now
   end
 end

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%#= stylesheet_link_tag "application-mailer", media: "all" %>
+    <style type="text/css" media="screen">
+      .btn {
+        text-decoration: none;
+        padding: 15px 30px;
+        background: #88C3C8;
+        color: black;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-yellow padding-30px font-family-roboto m-auto color-white">
+      <div class="max-width-600px padding-0-30px m-auto">
+        <%= image_tag attachments['papillon-blanc.png'].url, style: 'height:60px;', alt: 'AuPair Butrfly' %>
+      </div>
+      <div class="background-white max-width-600px font-family-roboto border-radius-50px color-grey">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>
