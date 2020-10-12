@@ -1,5 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }
+  config.action_mailer.default_url_options = { host: "http://conference-erasmus.eu" }
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.action_mailer.delivery_method = :smtp
@@ -7,11 +7,12 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'http://localhost:3000',
+    :domain => 'conference-erasmus.eu',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
-    :enable_starttls_auto => true
+    :enable_starttls_auto => true,
+    :openssl_verify_mode => 'none'
   }
 
   # Code is not reloaded between requests.
@@ -72,11 +73,6 @@ Rails.application.configure do
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "cosmo_digit_event_production"
-
-  config.action_mailer.perform_caching = false
-  config.action_mailer.delivery_method     = :postmark
-  config.action_mailer.postmark_settings   = { api_token: ENV['POSTMARK_API_TOKEN'] }
-  config.action_mailer.default_url_options = { host: "yourapp.herokuapp.com" }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
