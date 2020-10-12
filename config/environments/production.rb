@@ -1,5 +1,5 @@
 Rails.application.configure do
-  config.action_mailer.default_url_options = { host: "http://agencecosmo.com" }
+  config.action_mailer.default_url_options = { host: "https://cosmo-digit-event.herokuapp.com/" }
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.action_mailer.delivery_method = :smtp
@@ -7,7 +7,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'agencecosmo.com',
+    :domain => 'cosmo-digit-event.herokuapp.com/',
     :address => 'smtp.sendgrid.net',
     :port => 587,
     :authentication => :plain,
