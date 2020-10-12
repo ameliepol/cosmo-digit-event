@@ -35,6 +35,7 @@ gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin_addons'
 gem 'letter_opener', group: :development
+gem 'sendgrid-ruby'
 # gem 'postmark-rails'
 gem 'cookies_eu'
 
