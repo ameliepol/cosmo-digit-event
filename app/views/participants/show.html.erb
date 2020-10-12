@@ -1,14 +1,18 @@
 <div class="container">
   <h1>Confirmation</h1>
-<%= @participant.first_name %>
-<%= @participant.last_name %>
-<%= @participant.company %>
-<%= @participant.address %>
-<%= @participant.zipcode %>
-<%= @participant.city %>
+  <%= @participant.first_name %>
+  <%= @participant.last_name %>
+  <%= @participant.company %>
+  <%= @participant.address %>
+  <%= @participant.zipcode %>
+  <%= @participant.city %>
 
-<div class="card-button">
-  <p><%= link_to "Retour",  root_path, class: "btn-erasmus" %></p>
-</div>
+<% @participant.bookings.each do |booking| %>
+  <%= booking.workshop %>
+<% end %>
+
+  <div class="card-button">
+    <p><%= link_to "Retour",  root_path, class: "btn-erasmus" %></p>
+  </div>
 
 </div>

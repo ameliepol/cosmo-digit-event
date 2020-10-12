@@ -31,4 +31,23 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+
+
+  var checkBoxes = document.querySelectorAll(".my-check-box");
+  if (checkBoxes) {
+    checkBoxes.forEach((cb) => {
+      cb.addEventListener("click", (e) => {
+        var input = cb.parentElement.querySelector("input");
+        console.dir(input);
+        if (input.value) {
+          input.value = "";
+        } else {
+          input.value = cb.dataset.workshopId;
+        }
+        console.dir(input);
+        cb.classList.toggle("bg-red");
+      });
+    });
+  }
+
 });
