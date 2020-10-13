@@ -1,27 +1,23 @@
 <div class="container">
   <%= simple_form_for [@event, @participant] do |f| %>
-    <%= f.input :email, placeholder: 'user@domain.com' %>
+    <%= f.input :email, placeholder: 'user@domain.com', error: 'Ce champ est obligatoire' %>
     <%= f.input :company, label: 'Entreprise', error: 'Ce champ est obligatoire' %>
     <%= f.input :first_name, label: 'Prénom(s)', error: 'Ce champ est obligatoire' %>
     <%= f.input :last_name, label: 'Nom(s) de famille', error: 'Ce champ est obligatoire' %>
     <%= f.input :address, label: 'Adresse', error: 'Ce champ est obligatoire' %>
     <%= f.input :zipcode, label: 'Code postal', error: 'Ce champ est obligatoire' %>
     <%= f.input :city, label: 'Ville', error: 'Ce champ est obligatoire' %>
-    <%#= f.association :visibles, label: 'Ateliers', as: :check_boxes, collection: Workshop.visibles, input_html: { multiple: true } %>
 
-    <% @workshops.each_with_index do |workshop, index| %>
-      <%= f.simple_fields_for :bookings, Booking.new do |b| %>
-        <div>
-          <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-            <%= workshop %>
-          </div>
-          <%= b.input :workshop_id, as: :hidden %>
-        </div>
-
+    <p>  <%= 'Sélectionnez vos ateliers :' %></p>
+      <% @workshops.each_with_index do |workshop, index| %>
+        <%= f.simple_fields_for :bookings, Booking.new do |b| %>
+            <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
+              <%= workshop %>
+            </div>
+            <%= b.input :workshop_id, as: :hidden %>
+        <% end %>
       <% end %>
-
-    <% end %>
-
     <%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>
   <% end %>
 </div>
+

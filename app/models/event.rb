@@ -2,6 +2,7 @@ class Event < ApplicationRecord
   belongs_to :user
   has_many :workshops
   has_many :bookings
+  has_many :questions
 
   validates :start_at, presence: true
   validates :end_at, presence: true

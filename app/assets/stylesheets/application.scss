@@ -14,7 +14,12 @@
 @import "pages/index";
 
 .bg-red {
-  background: red;
+  background: grey;
 }
 
-
+.my-check-box {
+  border: 1px solid;
+  border-color: $erasmus_yellow;
+  padding: 10px;
+  margin: 5px;
+}

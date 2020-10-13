@@ -5,6 +5,7 @@ class Workshop < ApplicationRecord
   scope :visibles, -> { where(visible: true) }
 
   def to_s
-    "#{self.name} : #{self.start_at} -> #{self.end_at}"
+    "#{self.start_at.strftime("%H:%M")} -> #{self.end_at.strftime("%H:%M")} : #{self.name} - #{self.speaker} "
   end
+
 end
