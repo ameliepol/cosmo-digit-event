@@ -15,6 +15,17 @@ class Participant < ApplicationRecord
   validates :zipcode, presence: true
   validates :city, presence: true
 
+  def self.to_csv
+    attributes = %w{last_name first_name company email workshops}
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+
+      all.each do |participant|
+        csv << participant.attributes.values_at(*attributes)
+      end
+    end
+  end
+
   private
 
   def send_confirmation_email

@@ -10,14 +10,17 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :events do
-    resources :participants, only: [ :show, :new, :create ]
-    resources :questions
-  end
+    resources :participants, only: [ :show, :new, :create ] do
+      post :import
+    end
 
+    resources :questions do
+      post :import
+    end
+  end
   # resources :participants, only: [ :show, :new, :create, :edit, :update, :destroy ]
 
   namespace :company_admin do
     get 'dashboard', to: "dashboard#show", as: :dashboard
   end
-
 end
