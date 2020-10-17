@@ -1,0 +1,27 @@
+.footer {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+}
+
+.contact {
+  display: flex;
+  width: 33%;
+}
+
+.legal {
+  display: flex;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  width: 33%;
+}
+
+.logos-officiels {
+  display: flex;
+  width: 34%;
+}

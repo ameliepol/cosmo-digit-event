@@ -1,6 +1,6 @@
 <div class="container"><h1>Récapitulatif des inscriptions </h1>
+<%= link_to "Export to CSV", company_admin_dashboard_path(@participants, @workshops, format: :csv), class: 'btn-erasmus' %>
 </div>
-
 <div id="Tab" class="container">
   <ul  class="nav nav-pills">
     <li class="active">
@@ -9,6 +9,9 @@
     <li>
       <a href="#ateliers" data-toggle="tab">Ateliers</a>
     </li>
+    <li>
+      <a href="#questions" data-toggle="tab">Questions</a>
+    </li>
   </ul>
   <div class="tab-content clearfix">
     <div class="tab-pane active" id="participants">
@@ -16,8 +19,8 @@
         <thead class="thead-dark">
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Nom</th>
-            <th scope="col">Prénom</th>
+            <th scope="col">Nom(s)</th>
+            <th scope="col">Prénom(s)</th>
             <th scope="col">Email</th>
             <th scope="col">Ateliers sélectionnés</th>
           </tr>
@@ -29,7 +32,7 @@
             <td><%= participant.last_name.upcase %></td>
             <td><%= participant.first_name.upcase %></td>
             <td><%= participant.email %></td>
-            <td><%= bookings %></td>
+            <td><%= 1 %></td>
           </tr>
           <% end %>
         </tbody>
@@ -40,7 +43,7 @@
         <thead class="thead-dark">
           <tr>
             <th scope="col">Ateliers</th>
-            <th scope="col">Participants</th>
+            <th scope="col">Inscriptions</th>
           </tr>
         </thead>
         <tbody>
@@ -53,6 +56,29 @@
         </tbody>
       </table>
     </div>
+        <div class="tab-pane" id="questions">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nom(s)</th>
+            <th scope="col">Prénom(s)</th>
+            <th scope="col">Email</th>
+            <th scope="col">Organisme</th>
+            <th scope="col">Questions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @questions.each do |question| %>
+          <tr>
+            <td><%= question.last_name %></td>
+            <td><%= question.first_name %></td>
+            <td><%= question.email %></td>
+            <td><%= question.organization %></td>
+            <td><%= question.content %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <%= link_to "Export to CSV", company_admin_dashboard_path(@participants, @workshops, format: :csv), class: 'btn-erasmus' %>
 </div>

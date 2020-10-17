@@ -3,8 +3,10 @@ class Participant < ApplicationRecord
   accepts_nested_attributes_for :bookings,
                                 reject_if: proc { |attributes| attributes[:workshop_id].blank? },
                                 allow_destroy: true
-
   after_create :send_confirmation_email
+
+  ORGANIZATION = ["Enseignement scolaire", "Enseignement & formations professionnels",
+  "Enseignement supérieur", "Education des adultes"]
 
   validates :company, presence: true
   validates :email, presence: true
