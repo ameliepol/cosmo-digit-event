@@ -5,12 +5,13 @@ class ParticipantsController < ApplicationController
   def show
     @event = Event.find(params[:event_id])
     @participant = Participant.find(params[:id])
+    @bookings = @participant.bookings
   end
 
   def new
     @event = Event.find(params[:event_id])
     @participant = Participant.new
-    @workshops = @event.workshops.visibles
+    @booking = @event.workshops.visibles
   end
 
   def create

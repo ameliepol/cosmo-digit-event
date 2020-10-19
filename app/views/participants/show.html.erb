@@ -7,8 +7,8 @@
   <%= @participant.zipcode %>
   <%= @participant.city %>
 
-<% @participant.bookings.each do |booking| %>
-  <%= booking.workshop %>
+<% bookings.each do |booking| %>
+  <%= booking.workshop.name %>
 <% end %>
 
   <div class="card-button">
