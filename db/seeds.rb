@@ -18,7 +18,7 @@ puts "DB destroyed!"
 
 puts "Creating users..."
 user1 = User.create!(email: "amelie@agencecosmo.com", password: "password", company: "Agence Cosmo", admin: true, first_name: "Amélie", last_name: "Pol")
-user2 = User.create!(email: "chloe@agencecosmo.com", password: "password", company: "Erasmus +", admin: false, first_name: "Chloé", last_name: "Bonnet")
+user2 = User.create!(email: "chloe@agencecosmo.com", password: "password", company: "Agence Cosmo", admin: false, first_name: "Chloé", last_name: "Bonnet")
 puts "Users created..."
 
 puts "Creating dates..."
@@ -43,7 +43,7 @@ workshop3 = Workshop.create!(start_at: DateTime.new(2021,01,14,11), end_at: Date
 LEL > point contact MICV?)
 > coordination intermèdes MICV", event: event1)
 workshop4 = Workshop.create!(start_at: DateTime.new(2021,01,14,11.5), end_at: DateTime.new(2021,01,14,12.5), name: "Session transversale", description: "Comment débuter avec Erasmus+ ? Voies d’accès au programme.", event: event1)
-workshop5 = Workshop.create!(start_at: DateTime.new(2021,01,14,12.5), end_at: DateTime.new(2021,01,14,13.5), name: "Interruption déjeuner", description: "", event: event1)
+workshop5 = Workshop.create!(start_at: DateTime.new(2021,01,14,12.5), end_at: DateTime.new(2021,01,14,13.5), name: "Interruption déjeuner", description: "", visible: false, event: event1)
 workshop6 = Workshop.create!(start_at: DateTime.new(2021,01,14,13.5), end_at: DateTime.new(2021,01,14,14.25), name: "", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement scolaire ?", speaker: "DP : Agnès, Laura", event: event1)
 workshop7 = Workshop.create!(start_at: DateTime.new(2021,01,14,14.25), end_at: DateTime.new(2021,01,14,14.5), name: "Intermède 2", description: "contenu à définir (eTwinning ?)", speaker: "", event: event1)
 workshop8 = Workshop.create!(start_at: DateTime.new(2021,01,14,14.5), end_at: DateTime.new(2021,01,14,15.25), name: "", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement professionnel ?", speaker: "DP : Gabriel, Sylvain", event: event1)
