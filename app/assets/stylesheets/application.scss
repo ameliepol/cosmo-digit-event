@@ -11,6 +11,12 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import 'cookies_eu';
+
+.container {
+min-height: 530px;
+max-width: 1000px;
+}
 
 .bg-red {
   background: grey;
@@ -22,4 +28,4 @@
   padding: 10px;
   margin: 5px;
 }
-@import 'cookies_eu';
+

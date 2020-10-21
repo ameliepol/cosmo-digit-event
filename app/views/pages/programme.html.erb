@@ -6,7 +6,9 @@
   <% @workshops_1.each do |workshop| %>
     <div class="card">
       <div class="card-body">
-        <%= workshop.name %>
+        <p> <%= workshop.start_at.strftime("%H:%M")%> - <%= workshop.end_at.strftime("%H:%M") %></p>
+        <p> <%= workshop.name %> - <%= workshop.speaker %> </p>
+        <p> <%= workshop.description %> </p>
       </div>
     </div>
   <% end %>
@@ -16,7 +18,9 @@
   <% @workshops_2.each do |workshop| %>
     <div class="card">
         <div class="card-body">
-          <%= workshop.name %>
+          <p> <%= workshop.start_at.strftime("%H:%M")%> - <%= workshop.end_at.strftime("%H:%M") %></p>
+          <p> <%= workshop.name %> - <%= workshop.speaker %> </p>
+          <p> <%= workshop.description %> </p>
         </div>
       </div>
   <% end %>
