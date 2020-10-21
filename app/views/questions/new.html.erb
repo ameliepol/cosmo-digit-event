@@ -1,5 +1,5 @@
 <div class="container">
-  <%= simple_form_for @question do |f| %>
+  <%= simple_form_for [@event, @question] do |f| %>
     <%= f.input :first_name, label: 'Prénom(s)', error: 'Ce champ est obligatoire' %>
     <%= f.input :last_name, label: 'Nom(s) de famille', error: 'Ce champ est obligatoire' %>
     <%= f.input :email, placeholder: 'user@domain.com', error: 'Ce champ est obligatoire' %>

@@ -15,6 +15,7 @@ class QuestionsController < ApplicationController
   def create
     @event = Event.find(params[:event_id])
     @question = Question.new(question_params)
+    @question.event = @event
     if @question.save
       redirect_to event_question_path(@event, @question)
     else

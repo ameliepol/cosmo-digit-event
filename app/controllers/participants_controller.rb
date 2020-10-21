@@ -29,7 +29,7 @@ class ParticipantsController < ApplicationController
   private
 
   def participant_params
-    params.require(:participant).permit(
+    parameters = params.require(:participant).permit(
       :email,
       :first_name,
       :last_name,
@@ -37,7 +37,9 @@ class ParticipantsController < ApplicationController
       :address,
       :zipcode,
       :city,
-      bookings_attributes: [:id, :workshop_id]
+      bookings_attributes: [:id, :workshop_id, :status]
       )
+    parameters["bookings_attributes"].reject! { |_, v| v["status"] != "confirmed" }
+    parameters
   end
 end

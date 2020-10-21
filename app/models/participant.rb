@@ -1,5 +1,6 @@
 class Participant < ApplicationRecord
   has_many :bookings, inverse_of: :participant
+  has_many :workshops, through: :bookings
   accepts_nested_attributes_for :bookings,
                                 reject_if: proc { |attributes| attributes[:workshop_id].blank? },
                                 allow_destroy: true

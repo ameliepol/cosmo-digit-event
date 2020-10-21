@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'amelie@agencecosmo.com'
+  default from: 'conference@agence-erasmus.fr'
   layout 'mailer'
 end

@@ -1,5 +1,5 @@
 <div class="container"><h1>Récapitulatif des inscriptions </h1>
-<%= link_to "Export to CSV", company_admin_dashboard_path(@participants, @workshops, format: :csv), class: 'btn-erasmus' %>
+<%= link_to "Export to CSV", company_admin_participants_path(format: :csv), class: 'btn-erasmus' %>
 </div>
 <div id="Tab" class="container">
   <ul  class="nav nav-pills">
@@ -32,7 +32,7 @@
             <td><%= participant.last_name.upcase %></td>
             <td><%= participant.first_name.upcase %></td>
             <td><%= participant.email %></td>
-            <td><%= 1 %></td>
+            <td><%= participant.workshops.size %></td>
           </tr>
           <% end %>
         </tbody>

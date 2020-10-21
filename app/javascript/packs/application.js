@@ -37,12 +37,16 @@ document.addEventListener('turbolinks:load', () => {
   if (checkBoxes) {
     checkBoxes.forEach((cb) => {
       cb.addEventListener("click", (e) => {
-        var input = cb.parentElement.querySelector("input");
+        var workshop = cb.dataset.workshopId
+        console.log(workshop)
+        var input = cb.parentElement.querySelector("input.statusInput" + workshop);
         console.dir(input);
+
         if (input.value) {
           input.value = "";
         } else {
-          input.value = cb.dataset.workshopId;
+          input.value = "confirmed";
+
         }
         console.dir(input);
         cb.classList.toggle("bg-red");

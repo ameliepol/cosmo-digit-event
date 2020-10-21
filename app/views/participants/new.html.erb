@@ -11,10 +11,11 @@
     <p>  <%= 'Sélectionnez vos ateliers :' %></p>
       <% @workshops.each_with_index do |workshop, index| %>
         <%= f.simple_fields_for :bookings, Booking.new do |b| %>
+          <%= b.hidden_field :workshop_id, value: workshop.id %>
             <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
               <%= workshop %>
             </div>
-            <%= b.input :workshop_id, as: :hidden %>
+            <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
         <% end %>
       <% end %>
     <%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>

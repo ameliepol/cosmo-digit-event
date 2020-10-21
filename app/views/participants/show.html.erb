@@ -7,7 +7,7 @@
   <%= @participant.zipcode %>
   <%= @participant.city %>
 
-<% bookings.each do |booking| %>
+<% @bookings.each do |booking| %>
   <%= booking.workshop.name %>
 <% end %>
 
