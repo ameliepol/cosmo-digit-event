@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   namespace :company_admin do
     get 'dashboard', to: "dashboard#show", as: :dashboard
     get 'participants', to: "participants#index"
-    #workshop
-    #questions
+    get 'workshops', to: "workshops#index"
+    get 'questions', to: "questions#index"
   end
 end

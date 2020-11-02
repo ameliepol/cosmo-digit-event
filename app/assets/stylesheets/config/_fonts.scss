@@ -1,9 +1,25 @@
-// Import Google fonts
+//Import Google fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRnd-Bold.otf');
+  src: font-url('GothamRnd-BoldIta.otf');
+  src: font-url('GothamRnd-BookIta.otf');
+  src: font-url('GothamRnd-LightIta.otf');
+  src: font-url('GothamRnd-MedIta.otf');
+  src: font-url('GothamRounded-Book.otf');
+  src: font-url('GothamRounded-Light.otf');
+  src: font-url('GothamRounded-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+$my-font: "Gotham";
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

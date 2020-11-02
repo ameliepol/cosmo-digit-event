@@ -1,9 +1,4 @@
-body {
-  padding : 0px ;
-  line-height: 1;
-}
-
-#Tab .nav-pills > li > a {
+.nav-tabs .nav-item > li > a {
   border-radius: 4px 4px 0 0;
 }
 
@@ -19,26 +14,36 @@ body {
 }
 
 .nav-pills>li>a {
+  text-decoration: none;
   border-radius: 4px;
   color: grey;
   border: 1px solid #dee2e6;
 }
 
 .nav>li>a {
+  text-decoration: none;
   position: relative;
   display: block;
   padding: 10px 15px;
 }
 
 .table .thead-dark th {
+  text-decoration: none;
     color: #fff;
     font-weight: normal;
     background-color: $erasmus_blue;
     border-color: $erasmus_blue;
 }
 
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: white;
+  background-color: $erasmus_blue;
+  border-color: #dee2e6 #dee2e6 #F4F4F4;
+}
 
-
+a {
+  color: $erasmus_blue;
+}
 
 
 
