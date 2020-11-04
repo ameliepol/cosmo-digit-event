@@ -35,3 +35,5 @@ class Participant < ApplicationRecord
     ParticipantMailer.confirmation(self).deliver_now
   end
 end
+
+

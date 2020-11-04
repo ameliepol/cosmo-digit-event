@@ -1,5 +1,5 @@
 .footer {
-  background: white;
+  background: #F0F4FC;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -17,10 +17,14 @@
 
 .legal {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  border-left: solid 1px;
-  border-right: solid 1px;
+  border-left: solid 1px darkgrey;
+  border-right: solid 1px darkgrey;
   width: 33%;
+  font-color: black;
+  padding-left: 30px;
+  text-decoration: underline;
 }
 
 .logos-officiels {

@@ -1,1 +1,59 @@
 // Specific CSS for your home-page
+#home-banner {
+  background-image: url("illustration_accueil.svg");
+  background-size: cover;
+  max-height: 500px;
+}
+
+.conference-presentation {
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.conference-presentation h1 {
+  color: $erasmus-blue;
+}
+
+.conference-details {
+  display: flex;
+  justify-content: space-between;
+  border: solid $erasmus-yellow;
+  padding: 10px;
+}
+
+.webinar-image {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  width: 100px;
+}
+
+.conference-text-presentation {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0px;
+  padding-left: 30px;
+  padding-right: 0px;
+}
+
+
+.conference-text-presentation h1 {
+  display: flex;
+  color: $erasmus-blue;
+  text-align: left;
+  padding: 10px;
+  padding-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.conference-text-presentation p {
+  display: flex;
+  color: $erasmus-blue;
+  text-align: left;
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 16px;
+}

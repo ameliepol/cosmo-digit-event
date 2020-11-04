@@ -1,17 +1,14 @@
 <div class="footer">
   <div class="contact">
     <p></p>
-    <p>Contact</p>
+    <p>CONTACT</p>
     <p></p>
   </div>
   <div class="legal">
-    <p></p>
     <%= link_to "Mentions légales", legal_path, class: "nav-link" %>
-    <p></p>
+    <%= link_to "Politque de confidentialité", confidential_path, class: "nav-link" %>
   </div>
   <div class="logos-officiels">
-    <p></p>
-    <p>logos</p>
-    <p></p>
+    <%= image_tag "logo_footer.svg", alt: "Logo Agence Erasmus Plus", height: 100 %>
   </div>
 </div>

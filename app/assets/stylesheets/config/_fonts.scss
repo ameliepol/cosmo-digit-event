@@ -20,6 +20,14 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 }
 $my-font: "Gotham";
 
+@font-face {
+  font-family: "SirinStencil-Regular";
+  src: font-url('SirinStencil-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {

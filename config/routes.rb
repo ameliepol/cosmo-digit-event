@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "erasmusplus", to: "pages#erasmusplus"
   get "questions", to: "pages#questions"
   get "legal", to: "pages#legal"
+  get "confidential", to: "pages#confidential"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :events do
