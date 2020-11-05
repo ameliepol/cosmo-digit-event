@@ -1,13 +1,24 @@
-<div class="container">
-  <%= simple_form_for [@event, @participant] do |f| %>
-    <%= f.input :email, placeholder: 'user@domain.com', error: 'Ce champ est obligatoire' %>
-    <%= f.input :company, collection: Participant::ORGANIZATION, label: 'Organisme', error: 'Ce champ est obligatoire' %>
-    <%= f.input :first_name, label: 'Prénom(s)', error: 'Ce champ est obligatoire' %>
-    <%= f.input :last_name, label: 'Nom(s) de famille', error: 'Ce champ est obligatoire' %>
-    <%= f.input :address, label: 'Adresse', error: 'Ce champ est obligatoire' %>
-    <%= f.input :zipcode, label: 'Code postal', error: 'Ce champ est obligatoire' %>
-    <%= f.input :city, label: 'Ville', error: 'Ce champ est obligatoire' %>
+<div class="banner-container">
+  <div class="banner-registration" style="background-image: url('<%= image_path 'registration-banner.svg' %>');">
+  </div>
+</div>
 
+<div class="container">
+  <div class="participant-infos">
+    <div class="registration-image">
+      <%= image_tag "registration-picto.svg", alt: "Registration", height: 100 %>
+    </div>
+    <div class="new-participant-form">
+      <%= simple_form_for [@event, @participant] do |f| %>
+      <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :address, placeholder: 'Adresse*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :zipcode, placeholder: 'Code postal*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
+    </div>
+  </div>
     <p>  <%= 'Sélectionnez vos ateliers :' %></p>
       <% @workshops.each_with_index do |workshop, index| %>
         <%= f.simple_fields_for :bookings, Booking.new do |b| %>
