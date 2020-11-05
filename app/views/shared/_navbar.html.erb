@@ -1,16 +1,15 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to "/", class: "navbar-brand" do %>
     <%= image_tag "logo_site_erasmus.svg" %>
-    <% end %>
+  <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item strong">
+      <li class="nav-item active">
         <%= link_to "ACCUEIL", "/", class: "nav-link" %>
       </li>
       <li class="nav-item">
@@ -22,8 +21,10 @@
       <li class="nav-item">
         <%= link_to "VOS QUESTIONS", new_event_question_path(Event.first), class: "nav-link" %>
       </li>
-      <a href="https://fr.linkedin.com/company/agence-europe-education-formation-france"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/ErasmusplusFR"><i class="fab fa-twitter-square"></i></a>
-    </ul>
+      <div class="social-network">
+        <a href="https://fr.linkedin.com/company/agence-europe-education-formation-france"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/ErasmusplusFR"><i class="fab fa-twitter-square"></i></a>
+      </div>
+  </ul>
   </div>
 </div>

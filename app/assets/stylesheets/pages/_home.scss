@@ -1,18 +1,57 @@
-// Specific CSS for your home-page
-#home-banner {
-  background-image: url("illustration_accueil.svg");
+.banner {
+  padding-top: 50px;
   background-size: cover;
-  max-height: 500px;
+  background-position: center;
+  height: 680px;
+}
+
+.accueil-banner-bulle {
+  position: absolute;
+  height: 190px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 440px;
+}
+
+.button-program {
+  display: flex;
+  height: 60px;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+
+.button-registration {
+  display: flex;
+  height: 60px;
+  margin-top : 120px;
+  margin-left: 30px;
+}
+
+.button-questions {
+  display: flex;
+  height: 60px;
+  margin-top : -60px;
+  margin-left: 950px;
+}
+
+.fleche-scroll {
+  display: flex;
+  height: 60px;
+  margin-top : 200px;
+  margin-left: 700px;
 }
 
 .conference-presentation {
   background-color: white;
   text-align: center;
-  padding: 5px;
+  padding: 30px;
+  box-shadow: 0px -5px 5px #4E6185;
 }
 
 .conference-presentation h1 {
   color: $erasmus-blue;
+  font-size: 32px;
+  padding: 30px;
 }
 
 .conference-details {
@@ -20,6 +59,9 @@
   justify-content: space-between;
   border: solid $erasmus-yellow;
   padding: 10px;
+  margin-top: 30px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .webinar-image {
@@ -45,7 +87,7 @@
   text-align: left;
   padding: 10px;
   padding-bottom: 0px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -55,5 +97,5 @@
   text-align: left;
   padding: 10px;
   padding-top: 0px;
-  font-size: 16px;
+  font-size: 20px;
 }

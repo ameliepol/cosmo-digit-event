@@ -1,16 +1,34 @@
-<div id="home-banner">
+<div class="banner-container">
+  <div class="banner" style="background-image: url('<%= image_path 'accueil-banner.svg' %>');">
+    <div class="accueil-banner-bulle">
+      <%= image_tag "accueil-banner-bulle.svg" %>
+    </div>
+    <%= link_to programme_path, class: "button-program" do %>
+      <%= image_tag "button-program.svg" %>
+    <% end %>
+    <%= link_to new_event_participant_path(Event.first), class: "button-registration" do %>
+      <%= image_tag "button-registration.svg" %>
+    <% end %>
+    <%= link_to new_event_question_path(Event.first), class: "button-questions" do %>
+      <%= image_tag "button-questions.svg" %>
+    <% end %>
+    <div class="fleche-scroll">
+      <%= image_tag "fleche-scroll.svg" %>
+    </div>
+  </div>
 </div>
-<div class="container">
-  <div class="conference-presentation">
-    <h1>La conference</h1>
-    <div class="conference-details">
-      <div class="webinar-image">
-        <%= image_tag "online-class.svg", alt: "Webinar", height: 100 %>
-      </div>
-      <div class="conference-text-presentation">
-       <h1> Mincienist et enitio. Id maximus sunt ium quo dolorep eritaspit qui te. </h1>
-       <p> Temporepe volupta tiorrum videbist et voluptat event. Savope quo de savoluptatus, conem doloreh endipid modit, ut facepro cullit volorio dolum quo berum dem. Mincienist et enitio. Id maximus sunt ium quo dolorep </p>
-      </div>
+
+<div class="conference-presentation">
+  <div class="conference-title">
+    <%= image_tag "conference.svg", alt: "LA CONFERENCE", height: 50 %>
+  </div>
+  <div class="conference-details">
+    <div class="webinar-image">
+      <%= image_tag "online-class.svg", alt: "Webinar", height: 100 %>
+    </div>
+    <div class="conference-text-presentation">
+     <h1> Mincienist et enitio. Id maximus sunt ium quo dolorep eritaspit qui te. </h1>
+     <p> Temporepe volupta tiorrum videbist et voluptat event. Savope quo de savoluptatus, conem doloreh endipid modit, ut facepro cullit volorio dolum quo berum dem. Mincienist et enitio. Id maximus sunt ium quo dolorep </p>
     </div>
   </div>
 </div>

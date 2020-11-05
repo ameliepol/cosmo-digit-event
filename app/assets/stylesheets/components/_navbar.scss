@@ -1,16 +1,46 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-  box-shadow: 0 4px 8px 0 #D7E2F4, 0 6px 20px 0 #D7E2F4;
-  height: 90px;
-  color: $erasmus-blue;
+  box-shadow: 0 4px 12px 0 #4E6185;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
+.navbar-light .navbar-toggler {
+  color: $erasmus-blue;
+  border-color: $erasmus-blue;
+}
+
 .navbar-lewagon .navbar-brand img {
-  width: 300px;
-  padding-left: 40px;
+  width: 320px;
+  padding-left: 20px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: $erasmus-yellow;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $erasmus-blue;
+  font-size: 20px;
+}
+
+.navbar-expand-sm .navbar-nav {
+    flex-direction: row;
+    width: 875px;
+    justify-content: space-around;
+}
+
+.fa-linkedin {
+  margin-top: 14px;
+  color: #009EE2;
+  font-size: 20px;
+}
+
+.fa-twitter-square {
+  margin-top: 14px;
+  color: #009EE2;
+  font-size: 20px;
 }
