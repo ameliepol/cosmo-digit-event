@@ -117,14 +117,14 @@
 }
 
 .bg-red {
-  background: grey;
+  background: $erasmus_yellow;
 }
 
 .my-check-box {
   border: solid $erasmus-blue;
   padding: 10px;
   margin: 5px;
-  background-color: white;
+  // background-color: white;
 }
 
 .button-valid-registration {
