@@ -3,33 +3,52 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="participant-infos">
-    <div class="registration-image">
-      <%= image_tag "registration-picto.svg", alt: "Registration", height: 100 %>
-    </div>
-    <div class="new-participant-form">
-      <%= simple_form_for [@event, @participant] do |f| %>
-      <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :address, placeholder: 'Adresse*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :zipcode, placeholder: 'Code postal*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
-    </div>
+<div class="participant-infos">
+  <div class="registration-image">
+    <%= image_tag "registration-picto.svg", alt: "Registration", height: 150 %>
   </div>
-    <p>  <%= 'Sélectionnez vos ateliers :' %></p>
-      <% @workshops.each_with_index do |workshop, index| %>
-        <%= f.simple_fields_for :bookings, Booking.new do |b| %>
-          <%= b.hidden_field :workshop_id, value: workshop.id %>
-            <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-              <%= workshop %>
-            </div>
-            <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-        <% end %>
-      <% end %>
-    <%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>
+  <div class="new-participant-form">
+    <%= simple_form_for [@event, @participant] do |f| %>
+    <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
+    <div><%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %> <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+    </div>
+    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 1.75 %>
+    </div>
+    <%= f.input :address, placeholder: 'Adresse*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :zipcode, placeholder: 'Code postal*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
+  </div>
+</div>
+<div class="fleche-scroll-registration">
+  <%= image_tag "fleche-scroll.svg", height: 50 %>
+</div>
+<div class="workshop-choices">
+  <p>  <%= 'Sélectionnez vos ateliers :' %></p>
+  <h2>14 JANVIER 2021</h2>
+    <% @workshops_1.each_with_index do |workshop, index| %>
+      <%= f.simple_fields_for :bookings, Booking.new do |b| %>
+      <%= b.hidden_field :workshop_id, value: workshop.id %>
+    <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
+      <%= workshop %>
+    </div>
+    <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
+    <% end %>
+  <% end %>
+  <h2>18 JANVIER 2021</h2>
+    <% @workshops_2.each_with_index do |workshop, index| %>
+      <%= f.simple_fields_for :bookings, Booking.new do |b| %>
+      <%= b.hidden_field :workshop_id, value: workshop.id %>
+    <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
+      <%= workshop %>
+    </div>
+      <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
+    <% end %>
   <% end %>
 </div>
+<div class="button-valid-registration">
+<%= f.button :submit, "Je m'inscris", class: 'btn-erasmus' %>
+</div>
+<% end %>
+
 

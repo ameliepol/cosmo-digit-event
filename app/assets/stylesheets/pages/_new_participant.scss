@@ -2,15 +2,19 @@
   padding-top: 50px;
   background-size: cover;
   background-position: center;
-  height: 440px;
+  height: 300px;
 }
 
 .participant-infos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border: solid $erasmus-blue;
-  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 60px;
+  margin-bottom: 20px;
   padding : 20px;
+  width: 1200px;
 }
 
 .registration-image {
@@ -18,17 +22,111 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
-  width: 100px;
 }
 
 .new-participant-form {
   display: flex;
-  min-width: 750px;
+  min-width: 100%;
   justify-content: center;
+  color: grey;
 }
 
 #participant_email {
-  width: 700px;
-  border: solid white;
-  box-shadow: 0 4px 8px 0 #CBD9F1;
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#participant_company {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#participant_first_name {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#participant_last_name {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#participant_address {
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#participant_zipcode {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#participant_city {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+.fleche-scroll-registration {
+  height: 70px;
+  display: block;
+  margin-left: 700px;
+}
+
+.workshop-choices {
+  background-color: #F4F7FD;
+  box-shadow: 0 4px 8px 0 #5F81B7;
+  padding-left : 100px;
+  padding-right : 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.workshop-choices p {
+  color: #009EE2;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.workshop-choices h2 {
+  color: $erasmus-blue;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  box-shadow: 12px 12px 2px 1px $erasmus_yellow;
+}
+
+.bg-red {
+  background: grey;
+}
+
+.my-check-box {
+  border: solid $erasmus-blue;
+  padding: 10px;
+  margin: 5px;
+  background-color: white;
+}
+
+.button-valid-registration {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: auto;
 }

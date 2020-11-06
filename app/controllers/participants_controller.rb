@@ -11,7 +11,10 @@ class ParticipantsController < ApplicationController
   def new
     @event = Event.find(params[:event_id])
     @participant = Participant.new
-    @workshops = @event.workshops.visibles
+    # @workshops = @event.workshops.visibles
+    workshops_grouped = Workshop.visibles.order(start_at: :asc).group_by{|w| w.start_at.to_date}.values
+    @workshops_1 = workshops_grouped[0]
+    @workshops_2 = workshops_grouped[1]
   end
 
   def create
