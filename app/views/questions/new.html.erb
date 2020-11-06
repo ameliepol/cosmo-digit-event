@@ -1,10 +1,35 @@
-<div class="container">
-  <%= simple_form_for [@event, @question] do |f| %>
-    <%= f.input :first_name, label: 'Prénom(s)', error: 'Ce champ est obligatoire' %>
-    <%= f.input :last_name, label: 'Nom(s) de famille', error: 'Ce champ est obligatoire' %>
-    <%= f.input :email, placeholder: 'user@domain.com', error: 'Ce champ est obligatoire' %>
-    <%= f.input :organization, collection: Question::ORGANIZATION, label: 'Organisme', error: 'Ce champ est obligatoire' %>
-    <%= f.input :content, label: 'Posez vos questions', error: 'Ce champ est obligatoire' %>
-    <%= f.button :submit, "J'envoie mes questions", class: 'btn-erasmus' %>
-  <% end %>
+<div class="banner-container">
+  <div class="banner-questions" style="background-image: url('<%= image_path 'questions-banner.svg' %>');">
+  </div>
 </div>
+
+<div class="dispositif-questions">
+  <h1>Dispositif de questions, réponses du 18 Janvier 2021.</h1>
+  <p>Temporepe volupta tiorrum videbist et voluptat event. Savope quo de savoluptatus, conem doloreh endipid modit, ut facepro cullit volorio dolum quo berum dem. Mincienist et enitio. Id maximus sunt ium quo dolorepTemporepe volupta tiorrum videbist et voluptat event. Savope quo de savoluptatus, conem doloreh endipid modit, ut facepro cullit volorio dolum quo berum dem. Mincienist et enitio. Id </p>
+</div>
+
+<div class="participant-questions">
+  <div class="question-image">
+    <%= image_tag "picto-question.svg", alt: "Question", height: 150 %>
+  </div>
+  <div class="new-question-form">
+    <h1> Posez vos questions : </h1>
+    <%= simple_form_for [@event, @question] do |f| %>
+    <%= f.input :organization, collection: Question::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
+    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 1.75 %>
+    </div>
+    <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :content, placeholder: 'Vos questions', label: false, error: 'Ce champ est obligatoire' %>
+  </div>
+</div>
+<div>
+<input type="checkbox" id="cookies-erasmus" name="cookies-erasmus">
+<label for="cookies-erasmus"> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*
+*pour en savoir plus sur la protection de vos données personnelles, consulter les mentions légales. </label>
+</div>
+    <div class="button-valid-question">
+      <%= f.button :submit, "ENVOYER", class: 'btn-erasmus' %>
+    </div>
+  <% end %>

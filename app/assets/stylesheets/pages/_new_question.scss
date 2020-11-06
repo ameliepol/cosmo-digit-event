@@ -1,0 +1,123 @@
+.banner-questions {
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+}
+
+.dispositif-questions {
+  background-color: #F4F7FD;
+  padding-top: 50px;
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.dispositif-questions h1 {
+  color: $erasmus-blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dispositif-questions p {
+  padding-top: 10px;
+  color: $erasmus-blue;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.participant-questions {
+  display: flex;
+  flex-direction: row;
+  border: solid $erasmus-blue;
+  margin-left: 120px;
+  margin-right: 100px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  padding : 20px;
+  width: 1200px;
+}
+
+.question-image {
+  width: 18%;
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.new-question-form {
+  width: 82%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  max-width: 950px;
+  justify-content: center;
+  color: grey;
+  padding-right: 20px;
+}
+
+.new-question-form h1 {
+  color: #009EE2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#question_organization {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#question_first_name {
+  margin-top: 10px;
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#question_last_name {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#question_email {
+  width: 100%;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#question_content {
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  background-color: white;
+}
+
+#cookies-erasmus {
+  color: black;
+  margin-left: 120px;
+  margin-right: 100px;
+}
+
+label {
+  display: inline-block;
+  color: black;
+  margin-left: 120px;
+  margin-right: 100px;
+}
+
+.button-valid-question {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: auto;
+}
