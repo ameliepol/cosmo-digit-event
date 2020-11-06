@@ -4,3 +4,91 @@
   background-position: center;
   height: 300px;
 }
+
+.program {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-program-date1 {
+  display: flex;
+  background-color: $erasmus-blue;
+}
+
+.date1 {
+  width: 20%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.date1 img {
+  margin-top: 30px;
+}
+
+.contenu-date1 {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-program-date2 {
+  display: flex;
+}
+
+.contenu-date2 {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.date2 {
+  width: 20%;
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: $erasmus-blue;
+}
+
+.date2 img {
+  margin-top: 30px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-body {
+  padding-top: 30px;
+  padding-left: 50px;
+  width: 100%;
+}
+
+.card-body h1 {
+  margin: 0px;
+  color: #009EE2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-body h2 {
+  color: $erasmus-blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-body h3 {
+  margin: 0px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-body p {
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
