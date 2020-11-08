@@ -2,10 +2,10 @@ class CompanyAdmin::DashboardController < ApplicationController
 
   def show
     # @user = current_user
-    # @event = Event.last
     # @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
-    @participants = Participant.all
-    @workshops = Workshop.all
+    @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
+    @event = Event.last
+    @workshops = @event.workshops.visibles
     @questions = Question.all
 
     respond_to do |format|

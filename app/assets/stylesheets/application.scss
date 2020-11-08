@@ -11,9 +11,18 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "devise/index";
 @import 'cookies_eu';
 
 .container {
 min-height: 530px;
-max-width: 1000px;
+max-width: 1200px;
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 50px;
+}
+
+body {
+  background-color: white;
 }

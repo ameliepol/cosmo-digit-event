@@ -3,20 +3,27 @@
   </div>
 </div>
 
-<div class="container">
-  <h1>Confirmation</h1>
-  <%= @participant.first_name %>
-  <%= @participant.last_name %>
-  <%= @participant.company %>
-  <%= @participant.address %>
-  <%= @participant.zipcode %>
-  <%= @participant.city %>
 
-<% @bookings.each do |booking| %>
-  <%= booking.workshop.name %>
-<% end %>
-
-  <div class="card-button">
-    <p><%= link_to "Retour",  root_path, class: "btn-erasmus" %></p>
+<div class="new_participant-show">
+  <div class="registration-image">
+    <%= image_tag "registration-picto.svg", alt: "Registration", height: 150 %>
+  </div>
+  <div class="participant-infos-show">
+    <h1> Merci <%= @participant.first_name %> <%= @participant.last_name %> pour votre inscription !</h1>
+    <h2> Récapitulatif de votre inscription : </h2>
+    <p> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
+    <p> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
+    <p> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @participant.email %></p>
+    <p> <span style="color: #009EE2; font-weight: bold"> Organisme : </span> <%= @participant.company %></p>
+    <p> <span style="color: #009EE2; font-weight: bold"> Adresse : </span> <%= @participant.address %></p>
+    <p> <span style="color: #009EE2; font-weight: bold"> Code Postal : </span> <%= @participant.zipcode %>    <span style="color: #009EE2; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
+    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2.3 %>
+    </div>
+    <h2> Vos ateliers : </h2>
+    <div class="worshop-details">
+      <% @bookings.each do |booking| %>
+      <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%H:%M")%> - <%= booking.workshop.end_at.strftime("%H:%M") %> : </span><%= booking.workshop.name %> </h4>
+      <% end %>
+    </div>
   </div>
 </div>

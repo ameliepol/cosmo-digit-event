@@ -2,7 +2,8 @@ class ParticipantMailer < ApplicationMailer
 
   def confirmation(participant)
     @participant = participant
-    # attachments.inline['papillon-blanc.png'] = File.read('app/assets/images/papillon-blanc.png')
+    @bookings = @participant.bookings
+    # attachments.inline['illustration.png'] = File.read('app/assets/images/illustration.png')
     mail(to: @participant.email, subject: "Erasmus+ - Confirmation d'inscription") do |format|
       format.html { render(layout: 'mailer') }
     end

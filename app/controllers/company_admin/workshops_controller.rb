@@ -1,7 +1,8 @@
 class CompanyAdmin::WorkshopsController < ApplicationController
 
   def index
-    # @workshops = Workshop.all
+    @event = Event.last
+    @workshops = @event.workshops.visibles
 
     respond_to do |format|
       format.html

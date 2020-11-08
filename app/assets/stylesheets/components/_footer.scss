@@ -11,9 +11,23 @@
 }
 
 .contact {
+  padding-left: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 36%;
+  text-decoration: none;
+  color: black;
+}
+
+.email_contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.email_contact img {
+margin-right: 10px;
 }
 
 .legal {

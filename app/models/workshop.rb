@@ -4,11 +4,20 @@ class Workshop < ApplicationRecord
 
   scope :visibles, -> { where(visible: true) }
 
-  # scope :dayone, -> { where(start_at: DateTime.new(2021, 01, 14)) }
-  # scope :daytwo, -> { where(start_at: DateTime.new(2021, 01, 18)) }
-
   def to_s
-    "#{self.start_at.strftime("%H:%M")} -> #{self.end_at.strftime("%H:%M")} : #{self.name} - #{self.speaker} "
+    "#{self.start_at.strftime("%H:%M")} - #{self.end_at.strftime("%H:%M")} : #{self.name}
+    #{self.speaker}
+    #{self.description}"
   end
 
+  def self.to_csv
+    attributes = %w{workshop bookings}
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+
+      all.each do |worshops|
+        csv << workshop.attributes.values_at(*attributes)
+      end
+    end
+  end
 end

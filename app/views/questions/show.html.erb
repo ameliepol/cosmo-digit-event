@@ -3,10 +3,12 @@
   </div>
 </div>
 
-<div class="container">
-  <p>Merci!</p>
-</div>
-
-<div class="card-button">
-  <p><%= link_to "Retour",  root_path, class: "btn-erasmus" %></p>
+<div class="new-question-show">
+  <div class="question-image">
+    <%= image_tag "picto-question.svg", alt: "Question", height: 150 %>
+  </div>
+  <div class="participant-question-show">
+    <h1>Merci <%= @question.first_name %> <%= @question.last_name %> pour votre participation !</h1>
+    <h2>Questions : <%= @question.content %> </h2>
+  </div>
 </div>

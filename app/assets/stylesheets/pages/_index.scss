@@ -4,11 +4,6 @@
 @import "new_participant";
 @import "program";
 @import "new_question";
+@import "question_show";
+@import "participant_show";
 
-body {
-  background-color: white;
-}
-
-.container {
-  padding: 20px;
-}

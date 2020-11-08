@@ -1,4 +1,5 @@
-<div class="container"><h1>Récapitulatif des inscriptions </h1>
+<div class="container">
+  <h1>Récapitulatif des inscriptions</h1>
   <%= link_to "Export to CSV", company_admin_participants_path(format: :csv), class: 'btn-erasmus' %>
 <br>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -49,7 +50,7 @@
           <% @workshops.each do |workshop| %>
           <tr>
             <td><%= workshop.name %></td>
-            <td><%= 1 %></td>
+            <td><%= workshop.bookings.size %></td>
           </tr>
           <% end %>
         </tbody>

@@ -1,8 +1,30 @@
-<p>Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,</p>
+<h2><span style="color: #004F99" ></span> Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,
+</h2>
 
-<p>Merci pour votre inscription!
+<p>Nous vous remercions pour votre inscription à la Conférence Erasmus + Bilan et Perspectives qui se déroulera les 14 et 18 janvier 2021, sous format webinaire.
+</p>
+<p>Nous vous enverrons prochainement un email avec un lien de connection au webinaire.
 </p>
 
-<p>A bientôt!</p>
+<h2> Récapitulatif de votre inscription : </h2>
+<p> <strong> Prénom : </strong> <%= @participant.first_name %></p>
+<p> <strong> Nom : </strong> <%= @participant.last_name %></p>
+<p> <strong> Email : </strong> <%= @participant.email %></p>
+<p> <strong> Organisme : </strong> <%= @participant.company %></p>
+<p> <strong> Adresse : </strong> <%= @participant.address %></p>
+<p> <strong> Code Postal : </strong> <%= @participant.zipcode %> - <strong> Ville : </strong> <%= @participant.city %></p>
+
+<h2> Vos ateliers : </h2>
+<div class="worshop-details">
+  <% @bookings.each do |booking| %>
+  <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%H:%M")%> - <%= booking.workshop.end_at.strftime("%H:%M") %> : </span><%= booking.workshop.name %> </h4>
+  <% end %>
+</div>
+
+<p>Nous vous invitons d'ici le début de la Conférence à poser vos questions sur la plateforme dédiée. Vos questions seront traitées le lundi 18 janvier 2021.
+</p>
+<button class="email-button" type="button" style="background-color:#FFED34; color: #004F99; font-weight: bold; border: solid #FFED34; width: 250px;" href="#">Posez vos questions</button>
+
+ <p>A bientôt!</p>
 
 

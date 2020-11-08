@@ -1,7 +1,7 @@
 class CompanyAdmin::ParticipantsController < ApplicationController
 
   def index
-    # @participants = Participant.all
+    @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
 
     respond_to do |format|
       format.html
