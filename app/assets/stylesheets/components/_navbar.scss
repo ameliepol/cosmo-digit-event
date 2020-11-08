@@ -1,10 +1,11 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
   box-shadow: 0 4px 12px 0 #CBD9F1;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
+  justify-content: space-between;
   flex-grow: 0;
 }
 
@@ -13,7 +14,7 @@
   border-color: $erasmus-blue;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar .navbar-brand img {
   width: 320px;
   padding-left: 20px;
 }
@@ -29,8 +30,6 @@
 
 .navbar-expand-sm .navbar-nav {
     flex-direction: row;
-    width: 875px;
-    justify-content: space-around;
 }
 
 .fa-linkedin {
