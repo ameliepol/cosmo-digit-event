@@ -5,32 +5,50 @@
   height: 680px;
 }
 
+.banner-button-margin {
+  @media (min-width: 1200px) {
+    margin-left: 30px;
+    justify-content: flex-start;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
 .button-program {
   display: flex;
   height: 60px;
-  margin-top: 45px;
-  margin-left: 30px;
+  @media (min-width: 1200px) {
+    margin-top: 45px;
+  }
+  margin-top: 220px;
 }
 
 .button-registration {
   display: flex;
   height: 60px;
-  margin-top : 120px;
-  margin-left: 30px;
+  @media (min-width: 1200px) {
+    margin-top: 120px;
+  }
+  margin-top : 20px;
 }
 
 .button-questions {
   display: flex;
-  height: 60px;
-  margin-top : -60px;
-  margin-left: 950px;
+  height: 68px;
+  @media (min-width: 1200px) {
+    margin-top: 120px;
+  }
+  margin-top : 20px;
 }
 
 .fleche-scroll {
   display: flex;
+  position: absolute;
   height: 60px;
-  margin-top : 200px;
-  margin-left: 700px;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .conference-presentation {
@@ -47,7 +65,9 @@
 }
 
 .conference-details {
-  display: flex;
+  @media (min-width: 768px) {
+    display: flex;
+  }
   justify-content: space-between;
   border: solid $erasmus-yellow;
   padding: 10px;
@@ -58,8 +78,8 @@
 
 .webinar-image {
   display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
+  justify-content: center;
+  padding-left: 20px;
   padding-top: 10px;
   width: 100px;
 }
@@ -70,6 +90,7 @@
   padding-top: 0px;
   padding-left: 30px;
   padding-right: 0px;
+  font: $my-font;
 }
 
 
@@ -81,6 +102,7 @@
   padding-bottom: 0px;
   font-size: 24px;
   font-weight: bold;
+  font: $my-font;
 }
 
 .conference-text-presentation p {
@@ -90,4 +112,5 @@
   padding: 10px;
   padding-top: 0px;
   font-size: 20px;
+  font: $my-font;
 }

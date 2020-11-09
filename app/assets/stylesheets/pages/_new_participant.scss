@@ -5,7 +5,9 @@
 }
 
 .participant-infos {
-  display: flex;
+  @media (min-width: 768px) {
+    display: flex;
+  }
   flex-direction: row;
   border: solid $erasmus-blue;
   margin-left: 120px;
@@ -25,8 +27,8 @@
 }
 
 .new-participant-form {
-  width: 82%;
   display: flex;
+  width: 82%;
   justify-content: flex-start;
   flex-direction: column;
   max-width: 950px;
@@ -36,6 +38,7 @@
 }
 
 #participant_email {
+  display: flex;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
@@ -43,6 +46,7 @@
 }
 
 #participant_company {
+  display: flex;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
@@ -50,6 +54,7 @@
 }
 
 #participant_first_name {
+  display: flex;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
@@ -57,6 +62,7 @@
 }
 
 #participant_last_name {
+  display: flex;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
@@ -64,6 +70,7 @@
 }
 
 #participant_address {
+  display: flex;
   margin-top: 10px;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
@@ -72,6 +79,7 @@
 }
 
 #participant_zipcode {
+  display: flex;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
@@ -79,6 +87,7 @@
 }
 
 #participant_city {
+  display: flex;
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
@@ -108,12 +117,12 @@
 
 .workshop-choices h2 {
   color: $erasmus-blue;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: transparent;
-  box-shadow: 12px 12px 2px 1px $erasmus_yellow;
+  box-shadow: 0px 12px 2px 1px $erasmus_yellow;
 }
 
 .bg-red {

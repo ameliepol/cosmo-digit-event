@@ -15,7 +15,7 @@ class Question < ApplicationRecord
     CSV.generate(headers: true) do |csv|
       csv << attributes
 
-      all.each do |questions|
+      all.each do |question|
         csv << question.attributes.values_at(*attributes)
       end
     end

@@ -1,11 +1,6 @@
 .footer {
   background: #F0F4FC;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   bottom: 0;
-  width: 100%;
-  height: 150px;
   z-index: 0;
   // box-shadow: 0px -4px 12px #F0F4FC;
 }
@@ -15,8 +10,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 36%;
   text-decoration: none;
+  margin-top: 20px;
   color: black;
 }
 
@@ -24,30 +19,37 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
+  font: $my-font;
 }
 
 .email_contact img {
-margin-right: 10px;
+  margin-right: 10px;
 }
 
 .legal {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: solid 1px darkgrey;
-  border-right: solid 1px darkgrey;
-  width: 28%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media (min-width: 992px) {
+    border-left: solid 1px darkgrey;
+    border-right: solid 1px darkgrey;
+  }
   font-size: 12px;
   padding-left: 70px;
+  font: $my-font;
 }
 
 .legal > .nav-link {
   font-color: black;
   text-decoration: underline;
+  font: $my-font;
 }
 
 .logos-officiels {
   display: flex;
   justify-content: center;
-  width: 36%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

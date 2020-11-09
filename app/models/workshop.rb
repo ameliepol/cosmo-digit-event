@@ -15,7 +15,7 @@ class Workshop < ApplicationRecord
     CSV.generate(headers: true) do |csv|
       csv << attributes
 
-      all.each do |worshops|
+      all.each do |workshop|
         csv << workshop.attributes.values_at(*attributes)
       end
     end

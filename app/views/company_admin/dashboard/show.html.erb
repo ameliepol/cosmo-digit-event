@@ -1,6 +1,8 @@
 <div class="container">
   <h1>Récapitulatif des inscriptions</h1>
   <%= link_to "Export to CSV", company_admin_participants_path(format: :csv), class: 'btn-erasmus' %>
+  <%= link_to "Export to CSV", company_admin_workshops_path(format: :csv), class: 'btn-erasmus' %>
+  <%= link_to "Export to CSV", company_admin_questions_path(format: :csv), class: 'btn-erasmus' %>
 <br>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">

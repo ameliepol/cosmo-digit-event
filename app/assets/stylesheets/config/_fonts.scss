@@ -7,17 +7,60 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 
 @font-face {
   font-family: "Gotham";
-  src: font-url('GothamRnd-Bold.otf');
-  src: font-url('GothamRnd-BoldIta.otf');
-  src: font-url('GothamRnd-BookIta.otf');
-  src: font-url('GothamRnd-LightIta.otf');
-  src: font-url('GothamRnd-MedIta.otf');
-  src: font-url('GothamRounded-Book.otf');
-  src: font-url('GothamRounded-Light.otf');
   src: font-url('GothamRounded-Medium.otf');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRnd-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRnd-BookIta.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRnd-BoldIta.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRnd-LightIta.otf');
+  font-weight: light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRnd-MedIta.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// @font-face {
+//   font-family: "Gotham";
+//   src: font-url('GothamRounded-Book.otf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "Gotham";
+  src: font-url('GothamRounded-Light.otf');
+  font-weight: light;
+  font-style: normal;
+}
+
 $my-font: "Gotham";
 
 @font-face {

@@ -27,7 +27,9 @@
 }
 
 .participant-questions {
-  display: flex;
+  @media (min-width: 768px) {
+    display: flex;
+  }
   flex-direction: row;
   border: solid $erasmus-blue;
   margin-left: 120px;
@@ -48,7 +50,9 @@
 
 .new-question-form {
   width: 82%;
-  display: flex;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
   justify-content: flex-start;
   flex-direction: column;
   max-width: 950px;

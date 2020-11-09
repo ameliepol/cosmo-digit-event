@@ -4,7 +4,7 @@
 </div>
 
 <div class="participant-infos">
-  <div class="registration-image">
+  <div class="registration-image mx-auto">
     <%= image_tag "registration-picto.svg", alt: "Registration", height: 150 %>
   </div>
   <div class="new-participant-form">
@@ -13,7 +13,7 @@
     <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
     <div><%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %> <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
     </div>
-    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2.3 %>
+    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2 %>
     </div>
     <%= f.input :address, placeholder: 'Adresse*', label: false, error: 'Ce champ est obligatoire' %>
     <%= f.input :zipcode, placeholder: 'Code postal*', label: false, error: 'Ce champ est obligatoire' %>
@@ -25,7 +25,9 @@
 </div>
 <div class="workshop-choices">
   <p>  <%= 'Sélectionnez vos ateliers :' %></p>
+  <div class="text-center">
   <h2>14 JANVIER 2021</h2>
+  </div>
     <% @workshops_1.each_with_index do |workshop, index| %>
       <%= f.simple_fields_for :bookings, Booking.new do |b| %>
       <%= b.hidden_field :workshop_id, value: workshop.id %>
