@@ -6,6 +6,7 @@
 
 .dispositif-questions {
   background-color: #F4F7FD;
+  position: relative;
   padding-top: 50px;
   padding-left: 170px;
   padding-right: 170px;
@@ -13,10 +14,10 @@
   text-align: center;
 }
 
-.dispositif-questions h1 {
+.dispositif-questions h5 {
   color: $erasmus-blue;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .dispositif-questions p {

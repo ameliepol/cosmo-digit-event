@@ -3,6 +3,7 @@
   background-color: $erasmus_yellow;
   color: $erasmus_blue;
   font-weight: bold;
+  font: $my-font;
 }
 
 .nav-tabs .nav-item > li > a {
@@ -12,12 +13,14 @@
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
   background-color: $erasmus_blue;
+  font: $my-font;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
   background-color: $erasmus_blue;
+  font: $my-font;
 }
 
 .nav-pills>li>a {
@@ -32,14 +35,16 @@
   position: relative;
   display: block;
   padding: 10px 15px;
+  font: $my-font;
 }
 
 .table .thead-dark th {
   text-decoration: none;
-    color: #fff;
-    font-weight: normal;
-    background-color: $erasmus_blue;
-    border-color: $erasmus_blue;
+  color: #fff;
+  font-weight: normal;
+  background-color: $erasmus_blue;
+  border-color: $erasmus_blue;
+  font: $my-font;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
@@ -50,6 +55,7 @@
 
 a {
   color: $erasmus_blue;
+  font: $my-font;
 }
 
 

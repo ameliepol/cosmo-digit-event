@@ -42,6 +42,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -50,6 +51,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -58,6 +60,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -66,6 +69,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -75,6 +79,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -83,6 +88,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -91,6 +97,7 @@
   width: 100%;
   box-shadow: 0 4px 4px 0 #CBD9F1;
   color: grey;
+  font: $my-font;
   background-color: white;
 }
 
@@ -101,7 +108,9 @@
 }
 
 .workshop-choices {
-  background-color: #F4F7FD;
+  // background-color: #F4F7FD;
+  background-color: pink;
+  position: relative;
   box-shadow: 0 4px 8px 0 #5F81B7;
   padding-left : 100px;
   padding-right : 100px;
@@ -109,20 +118,41 @@
   padding-bottom: 40px;
 }
 
-.workshop-choices p {
-  color: #009EE2;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.workshop-choices h2 {
+.date-highlighted-yellow {
   color: $erasmus-blue;
+  font: $my-font;
+  font-weight: 600;
   display: inline-block;
-  justify-content: center;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: transparent;
-  box-shadow: 0px 12px 2px 1px $erasmus_yellow;
+}
+
+h6 {
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+}
+
+h6:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-1;
+  background-color: white;
+}
+
+.workshop-choices p {
+  color: #009EE2;
+  font-size: 28px;
+  font: $my-font;
+  font-weight: 600;
 }
 
 .bg-red {
@@ -139,6 +169,7 @@
 .button-valid-registration {
   display: flex;
   justify-content: center;
+  font: $my-font;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: auto;

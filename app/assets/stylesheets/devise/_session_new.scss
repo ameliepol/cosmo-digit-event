@@ -2,11 +2,13 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  font: $my-font;
 }
 
 h5 {
   color: #009EE2;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  font: $my-font;
 }

@@ -2,6 +2,7 @@
   background: #F0F4FC;
   bottom: 0;
   z-index: 0;
+  position: relative;
   // box-shadow: 0px -4px 12px #F0F4FC;
 }
 
@@ -12,7 +13,31 @@
   justify-content: center;
   text-decoration: none;
   margin-top: 20px;
+}
+
+.contact-highlighted-white {
   color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: $my-font;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+span:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-1;
+  background-color: white;
 }
 
 .email_contact {
