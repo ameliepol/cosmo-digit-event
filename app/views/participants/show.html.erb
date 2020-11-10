@@ -5,7 +5,7 @@
 
 
 <div class="new_participant-show">
-  <div class="registration-image">
+  <div class="registration-image-show mx-auto">
     <%= image_tag "registration-picto.svg", alt: "Registration", height: 150 %>
   </div>
   <div class="participant-infos-show">
@@ -16,9 +16,9 @@
     <p> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @participant.email %></p>
     <p> <span style="color: #009EE2; font-weight: bold"> Organisme : </span> <%= @participant.company %></p>
     <p> <span style="color: #009EE2; font-weight: bold"> Adresse : </span> <%= @participant.address %></p>
-    <p> <span style="color: #009EE2; font-weight: bold"> Code Postal : </span> <%= @participant.zipcode %>    <span style="color: #009EE2; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
-    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2.3 %>
-    </div>
+    <p> <span style="color: #009EE2; font-weight: bold"> Code Postal : </span> <%= @participant.zipcode %></p>
+    <p> <span style="color: #009EE2; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
+
     <h2> Vos ateliers : </h2>
     <div class="worshop-details">
       <% @bookings.each do |booking| %>

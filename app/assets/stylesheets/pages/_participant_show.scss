@@ -5,38 +5,33 @@
 }
 
 .new_participant-show {
-  display: flex;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
   flex-direction: row;
   border: solid $erasmus-blue;
-  margin-left: 120px;
+  margin-left: 100px;
   margin-right: 100px;
   margin-top: 60px;
-  margin-bottom: 20px;
-  padding : 20px;
-  width: 1200px;
+  margin-bottom: 60px;
+  padding : 30px;
 }
 
-.registration-image {
-  width: 18%;
+.registration-image-show {
   display: flex;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .participant-infos-show {
-  width: 82%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  max-width: 950px;
-  justify-content: center;
-  color: grey;
-  padding-right: 20px;
 }
 
 .participant-infos-show h1 {
   color: #009EE2;
+  font: $my-font;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
@@ -45,6 +40,7 @@
 
 .participant-infos-show h2 {
   color: $erasmus-blue;
+  font: $my-font;
   font-size: 24px;
   font-weight: normal;
   margin-bottom: 20px;
@@ -53,6 +49,7 @@
 
 .participant-infos-show p {
   color: black;
+  font: $my-font;
   font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
@@ -60,6 +57,7 @@
 
 .worshop-details h4 {
   color: black;
+  font: $my-font;
   font-size: 20px;
   font-weight: normal;
 }
