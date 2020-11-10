@@ -13,8 +13,7 @@
     <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
     <div><%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %> <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
     </div>
-    <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2 %>
-    </div>
+    <!-- <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2.24 %> </div> -->
     <%= f.input :address, placeholder: 'Adresse*', label: false, error: 'Ce champ est obligatoire' %>
     <%= f.input :zipcode, placeholder: 'Code postal*', label: false, error: 'Ce champ est obligatoire' %>
     <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
@@ -23,28 +22,33 @@
 <div class="fleche-scroll-registration">
   <%= image_tag "fleche-scroll.svg", height: 50 %>
 </div>
+
 <div class="workshop-choices">
-  <p>  <%= 'Sélectionnez vos ateliers :' %></p>
-  <div class="date-highlighted-yellow">
-    <h6>14 JANVIER 2021</h6>
-  </div>
+  <h1>  <%= 'Sélectionnez vos ateliers :' %></h1>
+    <div class="date-highlighted-yellow">
+      <h3>14 JANVIER 2021</h3>
+    </div>
     <% @workshops_1.each_with_index do |workshop, index| %>
-      <%= f.simple_fields_for :bookings, Booking.new do |b| %>
-      <%= b.hidden_field :workshop_id, value: workshop.id %>
+    <%= f.simple_fields_for :bookings, Booking.new do |b| %>
+    <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <%= workshop %>
+      <h1> <%= workshop.start_at.strftime("%H:%M")%> - <%= workshop.end_at.strftime("%H:%M") %> - <%= workshop.name %> - </h1>
+      <!--  <h3> Intervenant : <%= workshop.speaker %></h3> -->
+      <p> <%= workshop.description %></p>
     </div>
     <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
   <% end %>
   <div class="date-highlighted-yellow">
-  <h6>18 JANVIER 2021</h6>
-</div>
+    <h3>18 JANVIER 2021</h3>
+  </div>
     <% @workshops_2.each_with_index do |workshop, index| %>
       <%= f.simple_fields_for :bookings, Booking.new do |b| %>
       <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <%= workshop %>
+      <h1> <%= workshop.start_at.strftime("%H:%M")%> - <%= workshop.end_at.strftime("%H:%M") %> - <%= workshop.name %> - </h1>
+      <!--  <h3> Intervenant : <%= workshop.speaker %></h3> -->
+      <p> <%= workshop.description %></p>
     </div>
       <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>

@@ -6,7 +6,6 @@ class Workshop < ApplicationRecord
 
   def to_s
     "#{self.start_at.strftime("%H:%M")} - #{self.end_at.strftime("%H:%M")} : #{self.name}
-    #{self.speaker}
     #{self.description}"
   end
 

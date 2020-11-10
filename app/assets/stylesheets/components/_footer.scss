@@ -22,13 +22,13 @@
   font-family: $my-font;
 }
 
-span {
+.contact-highlighted-white span {
   font-size: 20px;
   font-weight: 600;
   position: relative;
 }
 
-span:after {
+.contact-highlighted-white span:after {
   content: '';
   height: 50%;
   width: 100%;
