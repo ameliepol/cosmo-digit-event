@@ -1,9 +1,45 @@
-.navbar {
+.bg-light {
+  background-color: white !important;
   justify-content: space-between;
-  background: white;
   box-shadow: 0 4px 12px 0 #CBD9F1;
   font: $my-font;
-  font-weight: normal;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item .active {
+  color: $erasmus-blue;
+  font-family: $my-font;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item .active span {
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-item .active span:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-1;
+  background-color: $erasmus-yellow;
+}
+
+.navbar .navbar-nav {
+  justify-content: space-between;
+  width: 820px;
+  padding-left: 20px;
+}
+
+.navbar .navbar-brand img {
+  width: 320px;
+  padding-left: 20px;
 }
 
 .navbar .navbar-collapse {
@@ -16,14 +52,11 @@
   border-color: $erasmus-blue;
 }
 
-.navbar .navbar-brand img {
-  width: 320px;
-  padding-left: 20px;
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: $erasmus-blue;
+  position: relative;
 }
 
-.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-    color: $erasmus-yellow;
-}
 
 .navbar-light .navbar-nav .nav-link {
   color: $erasmus-blue;

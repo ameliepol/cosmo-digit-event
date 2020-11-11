@@ -90,12 +90,20 @@
   background-color: white;
 }
 
-.fleche-scroll-registration {
+// .fleche-scroll-registration {
+//   display: flex;
+//   position: absolute;
+//   margin-top: 20px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }
+
+.fleche-scroll-registration img {
   display: flex;
-  position: relative;
+  position: absolute;
+  margin-top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  position: relative;
 }
 
 .workshop-choices {

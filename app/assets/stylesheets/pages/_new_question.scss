@@ -5,19 +5,39 @@
 }
 
 .dispositif-questions {
-  background-color: #F4F7FD;
+  // background-color: #F4F7FD;
   position: relative;
   padding-top: 50px;
   padding-left: 170px;
   padding-right: 170px;
   padding-bottom: 50px;
   text-align: center;
+  box-shadow: 0 4px 12px 0 #CBD9F1;
 }
 
 .dispositif-questions h5 {
   color: $erasmus-blue;
   font-size: 20px;
   font-weight: 600;
+  position: relative;
+}
+
+.dispositif-questions span {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.dispositif-questions span:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-1;
+  background-color: $erasmus-yellow;
 }
 
 .dispositif-questions p {
@@ -97,18 +117,12 @@
   background-color: white;
 }
 
-#cookies-erasmus {
+#cookies-erasmus p {
+  display: inline-block;
   color: black;
-  margin-left: 120px;
-  margin-right: 100px;
+  margin-left: 100px;
+  // margin-right: 20px;
 }
-
-// label {
-//   display: inline-block;
-//   color: black;
-//   margin-left: 120px;
-//   margin-right: 100px;
-// }
 
 .button-valid-question {
   display: flex;

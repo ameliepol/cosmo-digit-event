@@ -1,3 +1,19 @@
+.container-dashboard {
+margin-top: 50px;
+margin-left: 100px;
+margin-right: 100px;
+margin-bottom: 50px;
+}
+
+.container-dashboard h1 {
+  color: #009EE2;
+  font: $my-font;
+  text-align: left;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .btn-erasmus {
   width: 250px;
   background-color: $erasmus_yellow;
@@ -57,66 +73,3 @@ a {
   color: $erasmus_blue;
   font: $my-font;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #Tab .tab-content {
-//   color : white;
-//   background-color: grey;
-//   padding : 5px 15px;
-// }
-
-// .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-//     color: #fff;
-//     background-color: #428bca;
-// }
-
-// a {
-//     color: #428bca;
-//     text-decoration: none;
-// }
-
-// .nav>li>a {
-//     position: relative;
-//     display: block;
-//     padding: 10px 15px;
-// }
-
-// #Tab .nav-pills > li {
-//   // padding-top: 10px;
-//   // padding-left: 5px;
-//   height: 40px;
-//   width: 200px;
-//   border-radius: 4px 4px 0 0 ;
-//   background-color: $erasmus_yellow;
-// }
-
-// // #Tab .nav-pills > li > a {
-// //   // height: 40px;
-// //   // width: 100px;
-// //   // border-radius: 4px 4px 0 0 ;
-// //   // background-color: $erasmus_yellow;
-// // }
-
-// #Tab .tab-content {
-//   color : white;
-//   background-color: $erasmus_yellow;
-//   padding : 5px 15px;
-// }
-
