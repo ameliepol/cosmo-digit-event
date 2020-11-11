@@ -92,15 +92,16 @@
 
 .fleche-scroll-registration {
   display: flex;
-  // position: absolute;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
+  position: relative;
 }
 
 .workshop-choices {
   // background-color: #F4F7FD;
-  // position: relative;
-  box-shadow: 0 4px 8px 0 #5F81B7;
+  // background-position: relative;
+  box-shadow: 0 4px 12px 0 #CBD9F1;
   padding-left : 100px;
   padding-right : 100px;
   padding-top: 40px;

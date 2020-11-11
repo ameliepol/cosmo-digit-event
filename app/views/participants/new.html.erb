@@ -10,7 +10,7 @@
   <div class="new-participant-form">
     <%= simple_form_for [@event, @participant] do |f| %>
     <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
-    <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :company, collection: Participant::ORGANIZATION, prompt: 'Secteur*', label: false, error: 'Ce champ est obligatoire' %>
     <div><%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %> <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
     </div>
     <!-- <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2.24 %> </div> -->

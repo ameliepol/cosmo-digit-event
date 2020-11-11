@@ -51,30 +51,39 @@
   margin-right: 10px;
 }
 
+.email_contact a {
+  color: black;
+  text-decoration: underline;
+  font: $my-font;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .legal {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   @media (min-width: 992px) {
     border-left: solid 1px darkgrey;
     border-right: solid 1px darkgrey;
   }
-  font-size: 12px;
   padding-left: 70px;
-  font: $my-font;
 }
 
-.legal > .nav-link {
-  font-color: black;
+.legal a {
+  color: black;
   text-decoration: underline;
   font: $my-font;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px;
 }
 
 .logos-officiels {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

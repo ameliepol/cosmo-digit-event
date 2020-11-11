@@ -17,7 +17,7 @@
   <div class="new-question-form">
     <h1> Posez vos questions : </h1>
     <%= simple_form_for [@event, @question] do |f| %>
-    <%= f.input :organization, collection: Question::ORGANIZATION, prompt: 'Organisme*', label: false, error: 'Ce champ est obligatoire' %>
+    <%= f.input :organization, collection: Question::ORGANIZATION, prompt: 'Secteur*', label: false, error: 'Ce champ est obligatoire' %>
     <!-- <div class="line-yellow"><%= image_tag "line-yellow.svg", height: 2.3 %>
     </div> -->
     <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
