@@ -1,5 +1,5 @@
 ActionMailer::Base.smtp_settings = {
-  domain: 'erasmusplus.fr',
+  domain: 'conference.erasmusplus.fr',
   address:        "smtp.sendgrid.net",
   port:            587,
   authentication: :plain,
