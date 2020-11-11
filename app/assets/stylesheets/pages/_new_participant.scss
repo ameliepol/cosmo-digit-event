@@ -92,14 +92,14 @@
 
 .fleche-scroll-registration {
   display: flex;
-  position: absolute;
+  // position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .workshop-choices {
-  background-color: #F4F7FD;
-  position: relative;
+  // background-color: #F4F7FD;
+  // position: relative;
   box-shadow: 0 4px 8px 0 #5F81B7;
   padding-left : 100px;
   padding-right : 100px;
@@ -107,22 +107,23 @@
   padding-bottom: 40px;
 }
 
-.date-highlighted-yellow h3 {
+.date-highlighted-yellow span {
   color: $erasmus-blue;
   font: $my-font;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 24px;
   position: relative;
 }
 
-.date-highlighted-yellow h3:after {
+.date-highlighted-yellow span:after {
   content: '';
   height: 50%;
   width: 100%;
   position: absolute;
+  text-align: center;
   right: 0;
   left:0;
   bottom: 0;

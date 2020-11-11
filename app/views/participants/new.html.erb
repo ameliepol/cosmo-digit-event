@@ -25,9 +25,11 @@
 
 <div class="workshop-choices">
   <h1>  <%= 'Sélectionnez vos ateliers :' %></h1>
+  <div class="text-center">
     <div class="date-highlighted-yellow">
-      <h3>14 JANVIER 2021</h3>
+      <span>14 JANVIER 2021</span>
     </div>
+  </div>
     <% @workshops_1.each_with_index do |workshop, index| %>
     <%= f.simple_fields_for :bookings, Booking.new do |b| %>
     <%= b.hidden_field :workshop_id, value: workshop.id %>
@@ -39,8 +41,10 @@
     <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
   <% end %>
-  <div class="date-highlighted-yellow">
-    <h3>18 JANVIER 2021</h3>
+  <div class="text-center">
+    <div class="date-highlighted-yellow">
+      <span>18 JANVIER 2021</span>
+    </div>
   </div>
     <% @workshops_2.each_with_index do |workshop, index| %>
       <%= f.simple_fields_for :bookings, Booking.new do |b| %>
