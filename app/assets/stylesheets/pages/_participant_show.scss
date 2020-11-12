@@ -14,19 +14,24 @@
   margin-right: 100px;
   margin-top: 60px;
   margin-bottom: 60px;
-  padding : 30px;
 }
 
 .registration-image-show {
   display: flex;
+  margin-top: 30px;
   margin-bottom: 20px;
   justify-content: center;
 }
 
 .participant-infos-show {
+  @media (min-width: 1200px) {
+  width: 82%;
+  }
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  padding: 30px;
 }
 
 .participant-infos-show h1 {
@@ -47,12 +52,27 @@
   margin-top: 20px;
 }
 
+.participant-infos-show h3 {
+  color: $erasmus-blue;
+  font: $my-font;
+  font-size: 20px;
+  font-style: italic;
+}
+
 .participant-infos-show p {
   color: black;
   font: $my-font;
   font-size: 20px;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.worshop-details p {
+  color: $erasmus-blue;
+  font: $my-font;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .worshop-details h4 {

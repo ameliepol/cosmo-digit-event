@@ -34,7 +34,7 @@
     <%= f.simple_fields_for :bookings, Booking.new do |b| %>
     <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <h1> <%= workshop.start_at.strftime("%H:%M")%> - <%= workshop.end_at.strftime("%H:%M") %> <span style="color: #004F99"> - <%= workshop.name %> - </span></h1>
+      <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #004F99"> - <%= workshop.name %> - </span></h1>
       <!--  <h3> Intervenant : <%= workshop.speaker %></h3> -->
       <p> <%= workshop.description %></p>
     </div>
@@ -50,7 +50,7 @@
       <%= f.simple_fields_for :bookings, Booking.new do |b| %>
       <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <h1> <%= workshop.start_at.strftime("%H:%M")%> - <%= workshop.end_at.strftime("%H:%M") %> - <%= workshop.name %> - </h1>
+      <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> - <%= workshop.name %> - </h1>
       <!--  <h3> Intervenant : <%= workshop.speaker %></h3> -->
       <p> <%= workshop.description %></p>
     </div>

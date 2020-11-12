@@ -14,18 +14,24 @@
   margin-right: 100px;
   margin-top: 60px;
   margin-bottom: 60px;
-  padding: 30px;
 }
 
 .question-image-show {
-  margin: 20px;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
 .participant-question-show {
+  @media (min-width: 1200px) {
   width: 82%;
+  }
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  padding: 30px;
 }
 
 .participant-question-show h1 {
@@ -46,9 +52,8 @@
 }
 
 .participant-question-show p {
-  color: black;
+  color: $erasmus-blue;
   font: $my-font;
   font-size: 20px;
-  font-weight: normal;
-  margin-bottom: 20px;
+  font-style: italic;
 }

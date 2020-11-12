@@ -17,7 +17,7 @@
 <h2> Vos ateliers : </h2>
 <div class="worshop-details">
   <% @bookings.each do |booking| %>
-  <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%H:%M")%> - <%= booking.workshop.end_at.strftime("%H:%M") %> : </span><%= booking.workshop.name %> </h4>
+  <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
   <% end %>
 </div>
 

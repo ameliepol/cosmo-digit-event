@@ -14,7 +14,6 @@
   margin-right: 100px;
   margin-top: 60px;
   margin-bottom: 60px;
-  padding-right: 30px;
 }
 
 .registration-image {
@@ -25,7 +24,10 @@
 }
 
 .new-participant-form {
+  @media (min-width: 1200px) {
   width: 82%;
+  }
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -170,6 +172,13 @@
   border: solid $erasmus-blue;
   padding: 10px;
   margin: 5px;
+}
+
+.cookies-erasmus-participant {
+  display: inline-block;
+  color: #2b2a2a;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .button-valid-registration {

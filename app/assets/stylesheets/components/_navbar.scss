@@ -32,12 +32,13 @@
 
 .nav-item .active:after {
   content: '';
-  height: 35%;
+  height: 30%;
   width: 100%;
   position: absolute;
   right: 0;
   left:0;
-  bottom: 1;
+  margin-top: 15px;
+  bottom: 2;
   z-index:-1;
   background-color: $erasmus-yellow;
 }

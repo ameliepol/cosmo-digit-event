@@ -22,15 +22,17 @@
     <h2> Vos ateliers : </h2>
     <div class="worshop-details">
       <% @bookings_by_date.each do |date, bookings| %>
-        <p><%= date %> </p>
+        <p><%= date.strftime("%e/%m/%Y") %> </p>
         <% bookings.each do |booking| %>
-          <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%H:%M")%> - <%= booking.workshop.end_at.strftime("%H:%M") %> : </span><%= booking.workshop.name %> </h4>
+          <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
         <% end %>
       <% end %>
     </div>
     <p></p>
-    <h2>Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</h2>
-    <h2>Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS :</h2>
+    <p></p>
+    <h3>Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</h3>
+    <h3>Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS :</h3>
+    <p></p>
     <div class="text-center">
       <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "btn btn-erasmus", style: "justify-content: center" %>
     </div>
