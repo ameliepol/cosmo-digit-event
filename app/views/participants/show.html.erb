@@ -20,7 +20,7 @@
     <p> <span style="color: #009EE2; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
 
     <h2> Vos ateliers : </h2>
-    <div class="worshop-details">
+    <div class="workshop-details">
       <% @bookings_by_date.each do |date, bookings| %>
         <p><%= date.strftime("%e/%m/%Y") %> </p>
         <% bookings.each do |booking| %>

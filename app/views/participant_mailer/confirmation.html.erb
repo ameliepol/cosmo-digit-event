@@ -15,7 +15,7 @@
 <p> <strong> Code Postal : </strong> <%= @participant.zipcode %> - <strong> Ville : </strong> <%= @participant.city %></p>
 
 <h2> Vos ateliers : </h2>
-<div class="worshop-details">
+<div class="workshop-details">
   <% @bookings.each do |booking| %>
   <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
   <% end %>

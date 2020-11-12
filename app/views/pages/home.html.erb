@@ -2,19 +2,20 @@
   <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner.svg' %>');">
     <div class="d-flex flex-wrap">
       <div class="col-12">
-        <%= link_to programme_path, class: "button-program banner-button-margin" do %>
-          <%= image_tag "button-program.svg" %>
-        <% end %>
+        <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
+          <%#= image_tag "button-program.png" %>
+        <%# end %>
       </div>
       <div class="col-12 col-xl-8">
-        <%= link_to new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" do %>
-          <%= image_tag "button-registration.svg" %>
-        <% end %>
+        <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
+          <%#= image_tag "button-registration.png" %>
+        <%# end %>
       </div>
       <div class="col-12 col-xl-4">
-        <%= link_to new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin" do %>
-          <%= image_tag "button-questions.svg" %>
-        <% end %>
+        <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin"%>
+        <%#= link_to new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin" do %>
+          <%#= image_tag "button-questions.png" %>
+        <%# end %>
       </div>
     </div>
     <div class="fleche-scroll">
@@ -23,7 +24,7 @@
   </div>
   <div class="conference-presentation">
     <div class="conference-title">
-      <%= image_tag "conference.svg", alt: "LA CONFERENCE", height: 50 %>
+      <%= image_tag "conference.png", alt: "LA CONFERENCE", height: 50 %>
     </div>
     <div class="conference-details">
       <div class="webinar-image mx-auto">
