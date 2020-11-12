@@ -19,8 +19,10 @@ Event.destroy_all
 puts "DB destroyed!"
 
 puts "Creating users..."
-user1 = User.create!(email: "amelie@agencecosmo.com", password: "password", company: "Agence Cosmo", admin: true, first_name: "Amélie", last_name: "Pol")
-user2 = User.create!(email: "chloe@agencecosmo.com", password: "password", company: "Agence Cosmo", admin: false, first_name: "Chloé", last_name: "Bonnet")
+user1 = User.create!(email: "amelie@agencecosmo.com", password: "ConfErasmus2021", company: "Agence Cosmo", admin: true, first_name: "Amélie", last_name: "Pol")
+user2 = User.create!(email: "chloe@agencecosmo.com", password: "ConfErasmus2021", company: "Agence Cosmo", admin: false, first_name: "Chloé", last_name: "Bonnet")
+user3 = User.create!(email: "Cyril.Dejean@agence-erasmus.fr", password: "ConfErasmus2021", company: "Erasmus+", admin: false, first_name: "Cyril", last_name: "Dejean")
+user4 = User.create!(email: "Irina.Dufaud@agence-erasmus.fr", password: "ConfErasmus2021", company: "Erasmus+", admin: false, first_name: "Irina", last_name: "Dufaud")
 puts "Users created..."
 
 puts "Creating dates..."
@@ -60,8 +62,8 @@ workshop16 = Workshop.create!(start_at: DateTime.new(2021,01,18,16.5), end_at: D
 puts "Workshops created..."
 
 puts "Creating participants..."
-participant1 = Participant.create!(email: "pol.amelie@gmail.com", company: "Erasmus +", first_name: "Jean", last_name: "Paul", address: "test1", zipcode: "00000", city: "Test1")
-participant2 = Participant.create!(email: "amelie@agencecosmo.com", company: "Erasmus +", first_name: "Bob", last_name: "Dylan", address: "test2", zipcode: "00000", city: "Test2")
+participant1 = Participant.create!(email: "pol.amelie@gmail.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", address: "17 rue Caillou", zipcode: "33200", city: "Bordeaux", accepted_conditions: true)
+participant2 = Participant.create!(email: "amelie@agencecosmo.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", address: "17 rue Caillou", zipcode: "33200", city: "Bordeaux", accepted_conditions: true)
 puts "Participants created..."
 
 puts "Creating bookings"
@@ -69,6 +71,6 @@ booking1 = Booking.create!(participant: participant1, workshop: workshop1)
 puts "Bookings created"
 
 puts "Creating questions..."
-question1 = Question.create!(event: event1, email: "pol.amelie@gmail.com", organization: "Enseignement scolaire", first_name: "Jean", last_name: "Paul", content: "Test1")
-question2 = Question.create!(event: event1, email: "amelie@agencecosmo.com", organization: "Enseignement scolaire", first_name: "Bob", last_name: "Dylan", content: "Test2")
+question1 = Question.create!(event: event1, email: "pol.amelie@gmail.com", organization: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", content: "Test1", accepted_conditions: true)
+question2 = Question.create!(event: event1, email: "amelie@agencecosmo.com", organization: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", content: "Test2", accepted_conditions: true)
 puts "Questions created..."
