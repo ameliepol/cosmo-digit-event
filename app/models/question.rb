@@ -9,6 +9,7 @@ class Question < ApplicationRecord
   validates :last_name, presence: true
   validates :organization, presence: true
   validates :content, presence: true
+  validates :accepted_conditions, inclusion: { in: [true] }
 
   def self.to_csv
     attributes = %w{last_name first_name email organization questions}

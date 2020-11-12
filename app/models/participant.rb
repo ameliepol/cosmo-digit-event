@@ -17,6 +17,7 @@ class Participant < ApplicationRecord
   validates :address, presence: true
   validates :zipcode, presence: true
   validates :city, presence: true
+  validates :accepted_conditions, inclusion: { in: [true] }
 
   def self.to_csv
     attributes = %w{last_name first_name company email workshops}

@@ -32,6 +32,11 @@ class QuestionsController < ApplicationController
       :last_name,
       :email,
       :organization,
-      :content)
+      :content,
+      :accepted_conditions)
+  end
+
+  def active_navbar_link
+    set_active_navbar_link(4)
   end
 end

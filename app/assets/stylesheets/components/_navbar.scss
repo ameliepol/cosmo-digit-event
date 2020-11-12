@@ -1,10 +1,26 @@
+.navbar {
+  z-index: 1;
+}
+
+.navbar .navbar-nav {
+  justify-content: space-between;
+  width: 920px;
+  padding-left: 20px;
+}
+
+.navbar .navbar-brand img {
+  width: 320px;
+  padding-left: 20px;
+}
+
 .bg-light {
   background-color: white !important;
   justify-content: space-between;
-  box-shadow: 0 4px 12px 0 #CBD9F1;
+  box-shadow: 0 4px 12px 0 #CBD9F1 !important;
   font: $my-font;
   font-weight: 600;
   position: relative;
+  padding-right: 30px;
 }
 
 .nav-item .active {
@@ -14,32 +30,16 @@
   position: relative;
 }
 
-.nav-item .active span {
-  font-weight: 600;
-  position: relative;
-}
-
-.nav-item .active span:after {
+.nav-item .active:after {
   content: '';
-  height: 50%;
+  height: 35%;
   width: 100%;
   position: absolute;
   right: 0;
   left:0;
-  bottom: 0;
+  bottom: 1;
   z-index:-1;
   background-color: $erasmus-yellow;
-}
-
-.navbar .navbar-nav {
-  justify-content: space-between;
-  width: 820px;
-  padding-left: 20px;
-}
-
-.navbar .navbar-brand img {
-  width: 320px;
-  padding-left: 20px;
 }
 
 .navbar .navbar-collapse {
@@ -68,13 +68,13 @@
 }
 
 .fa-linkedin {
-  margin-top: 14px;
+  margin-top: 13px;
   color: #009EE2;
   font-size: 20px;
 }
 
 .fa-twitter-square {
-  margin-top: 14px;
+  margin-top: 13px;
   color: #009EE2;
   font-size: 20px;
 }

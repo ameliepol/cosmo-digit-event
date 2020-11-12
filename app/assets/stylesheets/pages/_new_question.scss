@@ -67,8 +67,11 @@
 }
 
 .new-question-form {
+  @media (min-width: 1200px) {
   width: 82%;
-    display: flex;
+  }
+  width: 100%;
+  display: flex;
   flex-direction: column;
   color: grey;
 }
@@ -117,11 +120,11 @@
   background-color: white;
 }
 
-#cookies-erasmus p {
+.cookies-erasmus-participant {
   display: inline-block;
   color: black;
-  margin-left: 100px;
-  // margin-right: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .button-valid-question {

@@ -7,12 +7,12 @@
         <% end %>
       </div>
       <div class="col-12 col-xl-8">
-        <%= link_to new_event_participant_path(Event.first), class: "button-registration banner-button-margin" do %>
+        <%= link_to new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" do %>
           <%= image_tag "button-registration.svg" %>
         <% end %>
       </div>
       <div class="col-12 col-xl-4">
-        <%= link_to new_event_question_path(Event.first), class: "button-questions banner-button-margin" do %>
+        <%= link_to new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin" do %>
           <%= image_tag "button-questions.svg" %>
         <% end %>
       </div>

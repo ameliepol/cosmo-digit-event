@@ -57,6 +57,10 @@
       <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
   <% end %>
+  <div class="cookies-erasmus-participant">
+    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
+  <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consulter les mentions légales.</span>".html_safe %>
+  </div>
 </div>
 <div class="button-valid-registration">
 <%= f.button :submit, "JE M'INSCRIS", class: 'btn-erasmus' %>

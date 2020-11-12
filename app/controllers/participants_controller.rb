@@ -6,6 +6,7 @@ class ParticipantsController < ApplicationController
     @event = Event.find(params[:event_id])
     @participant = Participant.find(params[:id])
     @bookings = @participant.bookings
+    @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
   end
 
   def new
@@ -23,6 +24,9 @@ class ParticipantsController < ApplicationController
     if @participant.save
       redirect_to event_participant_path(@event, @participant)
     else
+      workshops_grouped = Workshop.visibles.order(start_at: :asc).group_by{|w| w.start_at.to_date}.values
+      @workshops_1 = workshops_grouped[0]
+      @workshops_2 = workshops_grouped[1]
       flash[:alert] = @participant.errors.full_messages.join("; ")
       @workshops = @event.workshops.visibles
       render :new
@@ -40,9 +44,14 @@ class ParticipantsController < ApplicationController
       :address,
       :zipcode,
       :city,
-      bookings_attributes: [:id, :workshop_id, :status]
-      )
+      :accepted_conditions,
+      bookings_attributes: [:id, :workshop_id, :status])
     parameters["bookings_attributes"].reject! { |_, v| v["status"] != "confirmed" }
     parameters
   end
+
+  def active_navbar_link
+    set_active_navbar_link(2)
+  end
+
 end
