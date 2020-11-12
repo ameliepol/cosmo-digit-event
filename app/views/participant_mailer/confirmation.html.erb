@@ -3,7 +3,7 @@
 
 <p>Nous vous remercions pour votre inscription à la <span style="color: #004F99"> Conférence Erasmus + Bilan et Perspectives </span> qui se déroulera les 14 et 18 janvier 2021, sous format webinaire.
 </p>
-<p>Nous vous enverrons prochainement par email <u>un lien de connection</u> au webinaire.
+<p>Nous vous enverrons prochainement par email <span style="color: #004F99"> un lien de connection</span> au webinaire.
 </p>
 
 <h2> Récapitulatif de votre inscription : </h2>
@@ -16,16 +16,18 @@
 
 <h2> Vos ateliers : </h2>
 <div class="workshop-details">
-  <% @bookings.each do |booking| %>
+<% @bookings_by_date.each do |date, bookings| %>
+<p><strong><%= date.strftime("%e/%m/%Y:") %></strong></p>
+  <% bookings.each do |booking| %>
   <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
   <% end %>
+<% end %>
 </div>
 
-<p>Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</p>
-<p>Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS :
-</p>
-<button class="email-button" type="button" style="background-color:#FFED34; color: #004F99; font-weight: bold; border: solid #FFED34; width: 250px;" href="#">Posez vos questions</button>
 
- <p>A bientôt!</p>
+<p style="color: #004F99">Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</p>
+<p style="color: #004F99">Pour cela, il vous suffit simplement de vous rendre sur la page <span style="background-color:#FFED34;font-weight:bold;"><a href="https://conference.erasmusplus.fr/events/9/questions/new">VOS QUESTIONS</a>.</span>
+</p>
+<p style="color: #004F99">A bientôt!</p>
 
 
