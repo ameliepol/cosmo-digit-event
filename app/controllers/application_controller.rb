@@ -15,4 +15,8 @@ class ApplicationController < ActionController::Base
     set_active_navbar_link(1)
   end
 
+  def default_url_options
+  { host: ENV["DOMAIN"] || "localhost:3000" }
+  end
+
 end
