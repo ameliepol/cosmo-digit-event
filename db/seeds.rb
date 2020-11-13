@@ -47,7 +47,7 @@ workshop3 = Workshop.create!(start_at: DateTime.new(2021,01,14,11), end_at: Date
 LEL > point contact MICV?)
 > coordination intermèdes MICV", event: event1)
 workshop4 = Workshop.create!(start_at: DateTime.new(2021,01,14,11.5), end_at: DateTime.new(2021,01,14,12.5), name: "Session transversale", description: "Comment débuter avec Erasmus+ ? Voies d’accès au programme.", event: event1)
-workshop5 = Workshop.create!(start_at: DateTime.new(2021,01,14,12.5), end_at: DateTime.new(2021,01,14,13.5), name: "Interruption déjeuner", description: "Contenu à définir", visible: false, event: event1)
+workshop5 = Workshop.create!(start_at: DateTime.new(2021,01,14,12.5), end_at: DateTime.new(2021,01,14,13.5), name: "Interruption déjeuner", description: "", visible: false, event: event1)
 workshop6 = Workshop.create!(start_at: DateTime.new(2021,01,14,13.5), end_at: DateTime.new(2021,01,14,14.25), name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement scolaire ?", speaker: "DP : Agnès, Laura", event: event1)
 workshop7 = Workshop.create!(start_at: DateTime.new(2021,01,14,14.25), end_at: DateTime.new(2021,01,14,14.5), name: "Intermède 2", description: "Contenu à définir (eTwinning ?)", speaker: "", event: event1)
 workshop8 = Workshop.create!(start_at: DateTime.new(2021,01,14,14.5), end_at: DateTime.new(2021,01,14,15.25), name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement professionnel ?", speaker: "DP : Gabriel, Sylvain", event: event1)
@@ -55,15 +55,14 @@ workshop9 = Workshop.create!(start_at: DateTime.new(2021,01,14,15.25), end_at: D
 workshop10 = Workshop.create!(start_at: DateTime.new(2021,01,14,15.5), end_at: DateTime.new(2021,01,14,16.25), name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement supérieur ? (proposition d’intégrer une actualisation sur la dimension numérique ens. Sup ou lors de l’intermède)", speaker: "Mathilde", event: event1)
 workshop11 = Workshop.create!(start_at: DateTime.new(2021,01,14,16.25), end_at: DateTime.new(2021,01,14,16.5), name: "Intermède 4", description: "Contenu à définir", speaker: "", event: event1)
 workshop12 = Workshop.create!(start_at: DateTime.new(2021,01,14,16.5), end_at: DateTime.new(2021,01,14,17.25), name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’éducation des adultes ?", speaker: "", event: event1)
-workshop13 = Workshop.create!(start_at: DateTime.new(2021,01,18,13.5), end_at: DateTime.new(2021,01,18,14.25), name: "Enseignement scolaire :", description: "Vos questions, nos réponses", speaker: "", event: event1)
-workshop14 = Workshop.create!(start_at: DateTime.new(2021,01,18,14.5), end_at: DateTime.new(2021,01,18,15.25), name: "Enseignement & formations professionnels :", description: "Vos questions, nos réponses", speaker: "", event: event1)
-workshop15 = Workshop.create!(start_at: DateTime.new(2021,01,18,15.5), end_at: DateTime.new(2021,01,18,16.25), name: "Enseignement supérieur :", description: "Vos questions, nos réponses", speaker: "", event: event1)
-workshop16 = Workshop.create!(start_at: DateTime.new(2021,01,18,16.5), end_at: DateTime.new(2021,01,18,17.25), name: "Education des adultes :", description: "Vos questions, nos réponses", speaker: "", event: event1)
+workshop13 = Workshop.create!(start_at: DateTime.new(2021,01,18,13.5), end_at: DateTime.new(2021,01,18,14.25), name: "Enseignement scolaire", description: "Vos questions, nos réponses", speaker: "", event: event1)
+workshop14 = Workshop.create!(start_at: DateTime.new(2021,01,18,14.5), end_at: DateTime.new(2021,01,18,15.25), name: "Enseignement & formations professionnels", description: "Vos questions, nos réponses", speaker: "", event: event1)
+workshop15 = Workshop.create!(start_at: DateTime.new(2021,01,18,15.5), end_at: DateTime.new(2021,01,18,16.25), name: "Enseignement supérieur", description: "Vos questions, nos réponses", speaker: "", event: event1)
+workshop16 = Workshop.create!(start_at: DateTime.new(2021,01,18,16.5), end_at: DateTime.new(2021,01,18,17.25), name: "Education des adultes", description: "Vos questions, nos réponses", speaker: "", event: event1)
 puts "Workshops created..."
 
 puts "Creating participants..."
-participant1 = Participant.create!(email: "pol.amelie@gmail.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", address: "17 rue Caillou", zipcode: "33200", city: "Bordeaux", accepted_conditions: true)
-participant2 = Participant.create!(email: "amelie@agencecosmo.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", address: "17 rue Caillou", zipcode: "33200", city: "Bordeaux", accepted_conditions: true)
+participant1 = Participant.create!(email: "amelie@agencecosmo.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", address: "17 rue Caillou", zipcode: "33200", city: "Bordeaux", accepted_conditions: true)
 puts "Participants created..."
 
 puts "Creating bookings"
@@ -71,6 +70,5 @@ booking1 = Booking.create!(participant: participant1, workshop: workshop1)
 puts "Bookings created"
 
 puts "Creating questions..."
-question1 = Question.create!(event: event1, email: "pol.amelie@gmail.com", organization: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", content: "Test1", accepted_conditions: true)
-question2 = Question.create!(event: event1, email: "amelie@agencecosmo.com", organization: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", content: "Test2", accepted_conditions: true)
+question1 = Question.create!(event: event1, email: "amelie@agencecosmo.com", organization: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", content: "Test1", accepted_conditions: true)
 puts "Questions created..."
