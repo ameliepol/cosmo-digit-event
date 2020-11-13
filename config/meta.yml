@@ -1,5 +1,5 @@
 meta_product_name: "Conférence Erasmus+ 2021"
 meta_title: "Conférence Erasmus+ 2021 - Bilan & perspectives"
 meta_description: "L’Agence nationale Erasmus+ organise une conférence nationale en ligne pour présenter le nouvel Erasmus+ 2021-2027. Cet évènement permettra aussi de faire le point sur les réalisations du programme en cours et des défis qui restent à relever."
-meta_image: "illustration.png" # should exist in `app/assets/images/`
+meta_image: "accueil-banner.png" # should exist in `app/assets/images/`
 twitter_account: "@ErasmusplusFR"   # required for Twitter Cards
