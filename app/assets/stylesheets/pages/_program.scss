@@ -14,16 +14,32 @@
   background-color: $erasmus-blue;
 }
 
-.date1 {
-  width: 20%;
-  padding-top: 30px;
+// .date1 {
+//   width: 20%;
+//   padding-top: 30px;
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-direction: column;
+// }
+
+.date1-text img {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  height: 120px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.date1 img {
+.date1-picto img {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 160px;
   margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .contenu-date1 {
@@ -34,25 +50,36 @@
 
 .container-program-date2 {
   display: flex;
+  background-color: $erasmus-blue;
+  justify-content: flex-end;
 }
 
 .contenu-date2 {
   width: 80%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: right;
 }
 
-.date2 {
-  width: 20%;
-  padding-top: 30px;
+// .date2 {
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-direction: column;
+// }
+
+.date2-text img {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-direction: column;
-  background-color: $erasmus-blue;
+  height: 120px;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
-.date2 img {
+.date2-picto img {
+  height: 180px;
   margin-top: 30px;
+  margin-left: 65px;
 }
 
 .card {
