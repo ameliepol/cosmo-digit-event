@@ -5,19 +5,15 @@ class ParticipantMailer < ApplicationMailer
     @bookings = @participant.bookings
     @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
     attachments.inline['logo_site_erasmus.png'] = File.read('app/assets/images/logo_site_erasmus.png')
-    mail(to: @participant.email, subject: "Erasmus+ - Confirmation d'inscription") do |format|
+    mail(to: @participant.email, subject: "Conférence Erasmus + Bilan et Perspectives - Confirmation d'inscription") do |format|
       format.html { render(layout: 'mailer') }
     end
   end
 
-  def question(participant)
-    @event = Event.find(params[:event_id])
+  def participant_question(question)
     @question = Question.find(params[:id])
-    @participant = participant
-    @bookings = @participant.bookings
-    @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
     attachments.inline['logo_site_erasmus.png'] = File.read('app/assets/images/logo_site_erasmus.png')
-    mail(to: @participant.email, subject: "Erasmus+ - Confirmation d'inscription") do |format|
+    mail(to: @question.email, subject: "Conférence Erasmus + Bilan et Perspectives - Vos questions") do |format|
       format.html { render(layout: 'mailer') }
     end
   end

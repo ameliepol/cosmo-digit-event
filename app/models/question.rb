@@ -1,5 +1,6 @@
 class Question < ApplicationRecord
   belongs_to :event
+  # after_create :send_participant_question_email
 
   SECTOR = ["Enseignement scolaire", "Enseignement & formations professionnels",
   "Enseignement supérieur", "Education des adultes"]
@@ -23,4 +24,12 @@ class Question < ApplicationRecord
       end
     end
   end
+
+  private
+
+  def send_participant_question_email
+    ParticipantMailer.participant_question(self).deliver_now
+  end
+
+
 end

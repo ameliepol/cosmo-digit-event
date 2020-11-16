@@ -11,7 +11,6 @@ class Participant < ApplicationRecord
 
   validates :company, presence: true
   validates :email, presence: true
-  # validates :email, uniqueness: true
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :position, presence: true
@@ -59,4 +58,5 @@ class Participant < ApplicationRecord
   def send_confirmation_email
     ParticipantMailer.confirmation(self).deliver_now
   end
+
 end

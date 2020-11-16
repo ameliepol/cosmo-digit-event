@@ -1,7 +1,13 @@
 <h2><span style="color: #004F99" > Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,</span>
 </h2>
+<p>Nous vous remercions pour votre participation !</p>
 
-<h1>Nous vous remercions pour votre participation !</h1>
-<h3><span style="color: #009EE2; font-weight: bold">Questions : </span><%= @question.content %> </h3>
+<h2> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @question.email %></h2>
+<h2> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%= @question.first_name %></h2>
+<h2> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%= @question.last_name %></h2>
+<h2> <span style="color: #009EE2; font-weight: bold"> Organisation : </span> <%= @question.organization %></h2>
+<h2> <span style="color: #009EE2; font-weight: bold"> Secteur : </span> <%= @question.company %></h2>
+<h2> <span style="color: #009EE2; font-weight: bold"> Fonction : </span> <%= @question.position %></h2>
+<h2> <span style="color: #009EE2; font-weight: bold">Questions : </span><%= @question.content %> </h2>
 <p>Les réponses à vos questions vous seront apportées au cours des sessions, organisées par secteur, le 18 janvier 2021.</p>
 <p style="color: #004F99">A bientôt!</p>
