@@ -51,6 +51,22 @@
   background-color: white;
 }
 
+#participant_position {
+  display: flex;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  font: $my-font;
+  background-color: white;
+}
+
+#participant_organization {
+  display: flex;
+  box-shadow: 0 4px 4px 0 #CBD9F1;
+  color: grey;
+  font: $my-font;
+  background-color: white;
+}
+
 #participant_first_name {
   display: flex;
   box-shadow: 0 4px 4px 0 #CBD9F1;
@@ -67,30 +83,30 @@
   background-color: white;
 }
 
-#participant_address {
-  display: flex;
-  margin-top: 10px;
-  box-shadow: 0 4px 4px 0 #CBD9F1;
-  color: grey;
-  font: $my-font;
-  background-color: white;
-}
+// #participant_address {
+//   display: flex;
+//   margin-top: 10px;
+//   box-shadow: 0 4px 4px 0 #CBD9F1;
+//   color: grey;
+//   font: $my-font;
+//   background-color: white;
+// }
 
-#participant_zipcode {
-  display: flex;
-  box-shadow: 0 4px 4px 0 #CBD9F1;
-  color: grey;
-  font: $my-font;
-  background-color: white;
-}
+// #participant_zipcode {
+//   display: flex;
+//   box-shadow: 0 4px 4px 0 #CBD9F1;
+//   color: grey;
+//   font: $my-font;
+//   background-color: white;
+// }
 
-#participant_city {
-  display: flex;
-  box-shadow: 0 4px 4px 0 #CBD9F1;
-  color: grey;
-  font: $my-font;
-  background-color: white;
-}
+// #participant_city {
+//   display: flex;
+//   box-shadow: 0 4px 4px 0 #CBD9F1;
+//   color: grey;
+//   font: $my-font;
+//   background-color: white;
+// }
 
 .fleche-scroll-registration img {
   display: flex;

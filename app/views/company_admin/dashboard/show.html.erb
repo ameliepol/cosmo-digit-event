@@ -62,7 +62,7 @@
         <tbody>
           <% @workshops.each do |workshop| %>
           <tr>
-            <td><%= workshop.name %></td>
+            <td><strong><%= workshop.name %></strong></td>
             <td><%= workshop.bookings.size %></td>
           </tr>
           <% end %>
@@ -83,8 +83,8 @@
         <tbody>
           <% @questions.each do |question| %>
           <tr>
-            <td><%= question.last_name %></td>
-            <td><%= question.first_name %></td>
+            <td><strong><%= question.last_name.upcase %></strong></td>
+            <td><strong><%= question.first_name.upcase %></strong></td>
             <td><%= question.email %></td>
             <td><%= question.organization %></td>
             <td><%= question.content %></td>

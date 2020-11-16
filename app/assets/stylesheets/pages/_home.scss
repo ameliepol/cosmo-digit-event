@@ -147,3 +147,22 @@ a:hover {
   font-size: 20px;
   font: $my-font;
 }
+
+.button-questions-bottom {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  width: 320px;
+  height: 55px;
+  background-color: $erasmus_blue;
+  color: $erasmus_yellow;
+  font-weight: bold;
+  font: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  // @media (min-width: 1200px) {
+  //   margin-top: 120px;
+  // }
+  // margin-top : 20px;
+}

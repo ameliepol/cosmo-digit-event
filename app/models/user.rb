@@ -7,7 +7,7 @@
 
     validates :company, presence: true
     validates :email, presence: true
-    validates :email, uniqueness: true
+    #validates :email, uniqueness: true
     # validates :admin, presence: true
     validates :first_name, presence: true
     validates :last_name, presence: true

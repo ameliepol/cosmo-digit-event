@@ -31,11 +31,12 @@
         <%= image_tag "online-class.svg", alt: "Webinar", height: 100 %>
       </div>
       <div class="conference-text-presentation">
-        <h1> L’Agence nationale Erasmus+ organise une conférence nationale en ligne pour présenter le nouvel Erasmus+ 2021-2027. Cet évènement permettra aussi de faire le point sur les réalisations du programme en cours et des défis qui restent à relever. </h1>
+        <h1> L’agence Erasmus+ France / Education Formation organise une conférence nationale en ligne pour présenter le nouvel Erasmus+ 2021-2027. Cet évènement permettra aussi de faire le point sur les réalisations du programme pour la période 2014-2020 et des défis qui restent à relever. </h1>
         <p> </p>
         <p> Toutes les organisations de formation, établissements, associations, collectivités territoriales pourront découvrir la palette des opportunités offertes pour l’enseignement scolaire, la formation professionnelle, l’éducation des adultes et l’enseignement supérieur.
         Un grand nombre de participants, connaisseurs ou néophytes du programme Erasmus+ sont invités à participer à cet évènement qui se déroulera sous format virtuel. </p>
         <p>Vous avez aussi la possibilité de poser vos questions sur le nouveau programme dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p>
+        <p><%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions-bottom"%></p>
       </div>
     </div>
   </div>

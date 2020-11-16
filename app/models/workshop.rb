@@ -9,13 +9,25 @@ class Workshop < ApplicationRecord
     #{self.description}"
   end
 
+  # def self.to_csv
+  #   attributes = %w{name bookings}
+  #   CSV.generate(headers: true) do |csv|
+  #     csv << attributes
+
+  #     all.each do |workshop|
+  #       csv << workshop.attributes.values_at(*attributes)
+  #     end
+  #   end
+  # end
+
   def self.to_csv
-    attributes = %w{workshop bookings}
     CSV.generate(headers: true) do |csv|
-      csv << attributes
+      csv << attributes = %w{name bookings}
 
       all.each do |workshop|
-        csv << workshop.attributes.values_at(*attributes)
+        workshop.bookings.each do |booking|
+          csv << workshop.attributes.merge(booking.attributes).values_at(*attributes)
+        end
       end
     end
   end

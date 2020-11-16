@@ -9,7 +9,13 @@
   </div>
   <div class="participant-question-show">
     <h1>Nous vous remercions <%= @question.first_name %> <%= @question.last_name %> pour votre participation !</h1>
-    <h2><span style="color: #009EE2; font-weight: bold">Questions : </span><%= @question.content %> </h2>
+    <h2> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @question.email %></h2>
+    <h2> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%= @question.first_name %></h2>
+    <h2> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%= @question.last_name %></h2>
+    <h2> <span style="color: #009EE2; font-weight: bold"> Organisation : </span> <%= @question.organization %></h2>
+    <h2> <span style="color: #009EE2; font-weight: bold"> Secteur : </span> <%= @question.company %></h2>
+    <h2> <span style="color: #009EE2; font-weight: bold"> Fonction : </span> <%= @question.position %></h2>
+    <h2> <span style="color: #009EE2; font-weight: bold">Questions : </span><%= @question.content %> </h2>
     <p>Les réponses à vos questions vous seront apportées au cours des sessions, organisées par secteur, le 18 janvier 2021.</p>
   </div>
 </div>

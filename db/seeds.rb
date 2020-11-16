@@ -13,7 +13,6 @@ puts "Cleaning DB..."
 Question.destroy_all
 Booking.destroy_all
 Workshop.destroy_all
-Participant.destroy_all
 User.destroy_all
 Event.destroy_all
 puts "DB destroyed!"
@@ -62,7 +61,7 @@ workshop16 = Workshop.create!(start_at: DateTime.new(2021,01,18,16.5), end_at: D
 puts "Workshops created..."
 
 puts "Creating participants..."
-participant1 = Participant.create!(email: "amelie@agencecosmo.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", address: "17 rue Caillou", zipcode: "33200", city: "Bordeaux", accepted_conditions: true)
+participant1 = Participant.create!(email: "amelie@agencecosmo.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", position: "Directrice", organization: "Agence Cosmo", accepted_conditions: true)
 puts "Participants created..."
 
 puts "Creating bookings"
@@ -70,5 +69,5 @@ booking1 = Booking.create!(participant: participant1, workshop: workshop1)
 puts "Bookings created"
 
 puts "Creating questions..."
-question1 = Question.create!(event: event1, email: "amelie@agencecosmo.com", organization: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", content: "Test1", accepted_conditions: true)
+question1 = Question.create!(event: event1, email: "amelie@agencecosmo.com", company: "Enseignement supérieur", first_name: "Amélie", last_name: "Pol", position: "Directrice", organization: "Agence Cosmo", content: "Test", accepted_conditions: true)
 puts "Questions created..."

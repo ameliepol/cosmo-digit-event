@@ -32,6 +32,8 @@ class QuestionsController < ApplicationController
       :last_name,
       :email,
       :organization,
+      :position,
+      :company,
       :content,
       :accepted_conditions)
   end
