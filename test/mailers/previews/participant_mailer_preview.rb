@@ -7,4 +7,9 @@ class ParticipantMailerPreview < ActionMailer::Preview
     ParticipantMailer.confirmation(participant)
   end
 
+    def participant_question
+    question = Question.first
+    ParticipantMailer.participant_question(question)
+  end
+
 end

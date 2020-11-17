@@ -21,7 +21,7 @@ class ParticipantsController < ApplicationController
   def create
     @event = Event.find(params[:event_id])
     @participant = Participant.new(participant_params)
-    if @participant.save
+    if verify_recaptcha(model: @participant) && @participant.save
       redirect_to event_participant_path(@event, @participant)
     else
       workshops_grouped = Workshop.visibles.order(start_at: :asc).group_by{|w| w.start_at.to_date}.values

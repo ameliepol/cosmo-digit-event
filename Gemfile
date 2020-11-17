@@ -36,8 +36,8 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin_addons'
 gem 'letter_opener', group: :development
 gem 'sendgrid-ruby'
-# gem 'postmark-rails'
 gem 'cookies_eu'
+gem "recaptcha", github: "ambethia/recaptcha"
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

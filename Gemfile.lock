@@ -24,6 +24,13 @@ GIT
       railties (>= 5.2, < 6.1)
       responders (>= 2, < 4)
 
+GIT
+  remote: https://github.com/ambethia/recaptcha.git
+  revision: 0609c5c3270be87eb37ebf7a833a38d7968de936
+  specs:
+    recaptcha (5.6.0)
+      json
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -150,6 +157,7 @@ GEM
       thor (>= 0.14, < 2.0)
     js_cookie_rails (2.2.0)
       railties (>= 3.1)
+    json (2.3.1)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.1)
@@ -340,6 +348,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
+  recaptcha!
   redis (~> 4.0)
   sass-rails (>= 6)
   selenium-webdriver

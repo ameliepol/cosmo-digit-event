@@ -5,8 +5,7 @@
 
 <div class="dispositif-questions">
   <h5>Posez vos questions, nous y répondrons au cours des sessions organisées le <span>mardi 18 janvier 2021.</span> </h5>
-<!--   <h5>Dispositif de questions, réponses du <span>18 Janvier 2021.</span></h5>
- -->  <p>Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</p>
+  <p>Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</p>
   <p>Pour cela, il vous suffit simplement de compléter le formulaire ci-dessous.</p>
   <p>Les réponses à vos questions vous seront apportées au cours des sessions, organisées par secteur, le 18 janvier 2021.</p>
 </div>
@@ -30,6 +29,8 @@
 <div class="cookies-erasmus-question">
   <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
 <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consulter les mentions légales.</span>".html_safe %>
+</div>
+<div class="g-recaptcha" id="g-recaptcha-question" data-sitekey="6Lcc9OMZAAAAAGc-X0I8gga0Q42Bra7H6HurNgZW">
 </div>
     <div class="button-valid-question">
       <%= f.button :submit, "ENVOYER", class: 'btn-erasmus' %>

@@ -11,7 +11,7 @@ class ParticipantMailer < ApplicationMailer
   end
 
   def participant_question(question)
-    @question = Question.find(params[:id])
+    @question = question
     attachments.inline['logo_site_erasmus.png'] = File.read('app/assets/images/logo_site_erasmus.png')
     mail(to: @question.email, subject: "Conférence Erasmus + Bilan et Perspectives - Vos questions") do |format|
       format.html { render(layout: 'mailer') }
@@ -22,7 +22,7 @@ class ParticipantMailer < ApplicationMailer
     @participant = participant
     @time = time
     # attachments.inline['papillon-blanc.png'] = File.read('app/assets/images/papillon-blanc.png')
-    mail(to: @participant.email, subject: "La Conférence annuelle Erasmus + a lieu dans #{@time}") do |format|
+    mail(to: @participant.email, subject: "La Conférence Erasmus + Bilan et Perspectives a lieu dans #{@time}") do |format|
       format.html { render(layout: 'mailer') }
     end
   end
