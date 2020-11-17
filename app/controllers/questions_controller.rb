@@ -16,7 +16,7 @@ class QuestionsController < ApplicationController
     @event = Event.find(params[:event_id])
     @question = Question.new(question_params)
     @question.event = @event
-    if @question.save
+    if verify_recaptcha(model: @question) && @question.save
       redirect_to event_question_path(@event, @question)
     else
       flash[:alert] = @question.errors.full_messages.join("; ")
