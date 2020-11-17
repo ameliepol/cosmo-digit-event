@@ -35,7 +35,7 @@
 
 a:hover {
     text-decoration: none;
-    color: orange;
+    color: #009EE2;
 }
 
 .button-registration {
@@ -149,10 +149,13 @@ a:hover {
 }
 
 .conference-text-presentation a {
-  // display: flex;
   color: $erasmus-blue;
   font-size: 20px;
   font-weight: 600;
   text-decoration: underline;
   font: $my-font;
+}
+
+.conference-text-presentation a:hover {
+  color: #009EE2;
 }

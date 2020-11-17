@@ -64,6 +64,11 @@
   font-size: 20px;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: none;
+  color: #009EE2;
+}
+
 .navbar-expand-sm .navbar-nav {
     flex-direction: row;
 }
