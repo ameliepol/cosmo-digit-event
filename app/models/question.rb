@@ -1,6 +1,6 @@
 class Question < ApplicationRecord
   belongs_to :event
-  # after_create :send_participant_question_email
+  after_create :send_participant_question_email
 
   SECTOR = ["Enseignement scolaire", "Enseignement & formations professionnels",
   "Enseignement supérieur", "Education des adultes"]
