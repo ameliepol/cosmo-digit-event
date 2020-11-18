@@ -35,6 +35,7 @@
             <th scope="col">Secteur</th>
             <th scope="col">Fonction</th>
             <th scope="col">Ateliers sélectionnés</th>
+<!--             <th scope="col">X</th> -->
           </tr>
         </thead>
         <tbody>
@@ -51,8 +52,12 @@
               <div><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : <%= booking.workshop.name %>
               </div>
               <% end %>
-            <% end %>
             </td>
+            <!-- <td><%= link_to company_admin_participants_path(@participant), method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <i class="far fa-trash-alt"></i>
+              <% end %>
+            </td> -->
+            <% end %>
           </tr>
         </tbody>
       </table>

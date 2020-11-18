@@ -43,7 +43,7 @@ class Participant < ApplicationRecord
     @workshops = @event.workshops.visibles
 
     CSV.generate(headers: true) do |csv|
-      csv << attributes = %w{last_name first_name company email name}
+      csv << attributes = %w{last_name first_name email company organization position name}
 
       @participants.each do |participant|
         participant.bookings.each do |booking|

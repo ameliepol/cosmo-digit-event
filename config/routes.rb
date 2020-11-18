@@ -23,7 +23,9 @@ Rails.application.routes.draw do
   namespace :company_admin do
     get 'dashboard', to: "dashboard#show", as: :dashboard
     get 'participants', to: "participants#index"
+    delete 'participants', to: "participants#destroy"
     get 'workshops', to: "workshops#index"
     get 'questions', to: "questions#index"
+    delete 'questions', to: "questions#destroy"
   end
 end

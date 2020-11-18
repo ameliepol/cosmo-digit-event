@@ -1,5 +1,5 @@
 class ParticipantsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:new, :show, :create]
+  skip_before_action :authenticate_user!, only: [:new, :show, :create, :destroy]
   skip_before_action :verify_authenticity_token
 
   def show
@@ -32,6 +32,7 @@ class ParticipantsController < ApplicationController
       @workshops = @event.workshops.visibles
       render :new
     end
+
   end
 
   private

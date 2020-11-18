@@ -15,7 +15,7 @@ class Question < ApplicationRecord
   validates :accepted_conditions, inclusion: { in: [true] }
 
   def self.to_csv
-    attributes = %w{last_name first_name email organization content}
+    attributes = %w{last_name first_name email company organization position content}
     CSV.generate(headers: true) do |csv|
       csv << attributes
 
