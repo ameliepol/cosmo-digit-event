@@ -14,13 +14,20 @@ class Question < ApplicationRecord
   validates :content, presence: true
   validates :accepted_conditions, inclusion: { in: [true] }
 
+  CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Questions]
   def self.to_csv
-    attributes = %w{last_name first_name email company organization position content}
-    CSV.generate(headers: true) do |csv|
-      csv << attributes
-
+    CSV.generate do |csv|
+      csv << CSV_HEADER
       all.each do |question|
-        csv << question.attributes.values_at(*attributes)
+        csv << [
+          question.last_name,
+          question.first_name,
+          question.email,
+          question.organization,
+          question.company,
+          question.position,
+          question.content
+        ]
       end
     end
   end
@@ -30,6 +37,5 @@ class Question < ApplicationRecord
   def send_participant_question_email
     ParticipantMailer.participant_question(self).deliver_now
   end
-
 
 end

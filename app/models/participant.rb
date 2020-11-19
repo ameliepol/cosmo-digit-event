@@ -36,18 +36,43 @@ class Participant < ApplicationRecord
   # end
 
 
+  # def self.to_csv
+  #   @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
+  #   @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
+  #   @event = Event.last
+  #   @workshops = @event.workshops.visibles
+
+  #   CSV.generate(headers: true) do |csv|
+  #     csv << attributes = %w{last_name first_name email company organization position name}
+
+  #     @participants.each do |participant|
+  #       participant.bookings.each do |booking|
+  #         csv << participant.attributes.merge(booking.workshop.attributes).values_at(*attributes)
+  #       end
+  #     end
+  #   end
+  # end
+
+  CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Ateliers_sélectionnés]
   def self.to_csv
     @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
     @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @event = Event.last
     @workshops = @event.workshops.visibles
 
-    CSV.generate(headers: true) do |csv|
-      csv << attributes = %w{last_name first_name email company organization position name}
-
+    CSV.generate do |csv|
+      csv << CSV_HEADER
       @participants.each do |participant|
         participant.bookings.each do |booking|
-          csv << participant.attributes.merge(booking.workshop.attributes).values_at(*attributes)
+          csv << [
+            participant.last_name,
+            participant.first_name,
+            participant.email,
+            participant.organization,
+            participant.company,
+            participant.position,
+            booking.workshop.name
+          ]
         end
       end
     end
