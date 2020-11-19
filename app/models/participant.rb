@@ -17,42 +17,6 @@ class Participant < ApplicationRecord
   validates :organization, presence: true
   validates :accepted_conditions, inclusion: { in: [true] }
 
-  # def self.to_csv
-  #   @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
-  #   @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
-  #   @event = Event.last
-  #   @workshops = @event.workshops.visibles
-
-  #   CSV.generate(headers: true) do |csv|
-  #     csv << attributes = %w{last_name first_name company email name}
-  #     @participants.each do |participant|
-  #       participant.bookings.each do |booking|
-  #         booking.workshops.each do |workshop|
-  #           csv << participant.attributes.merge(booking.workshop.name.join(', ').attributes).values_at(*attributes)
-  #         end
-  #       end
-  #     end
-  #   end
-  # end
-
-
-  # def self.to_csv
-  #   @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
-  #   @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
-  #   @event = Event.last
-  #   @workshops = @event.workshops.visibles
-
-  #   CSV.generate(headers: true) do |csv|
-  #     csv << attributes = %w{last_name first_name email company organization position name}
-
-  #     @participants.each do |participant|
-  #       participant.bookings.each do |booking|
-  #         csv << participant.attributes.merge(booking.workshop.attributes).values_at(*attributes)
-  #       end
-  #     end
-  #   end
-  # end
-
   CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Ateliers_sélectionnés]
   def self.to_csv
     @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
