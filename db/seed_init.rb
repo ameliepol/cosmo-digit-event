@@ -20,8 +20,8 @@ puts "DB destroyed!"
 puts "Creating users..."
 user1 = User.create!(email: "amelie@agencecosmo.com", password: "ConfErasmus2021", company: "Agence Cosmo", admin: true, first_name: "Amélie", last_name: "Pol")
 user2 = User.create!(email: "chloe@agencecosmo.com", password: "ConfErasmus2021", company: "Agence Cosmo", admin: false, first_name: "Chloé", last_name: "Bonnet")
-user3 = User.create!(email: "Cyril.Dejean@agence-erasmus.fr", password: "ConfErasmus2021", company: "Erasmus+", admin: false, first_name: "Cyril", last_name: "Dejean")
-user4 = User.create!(email: "Irina.Dufaud@agence-erasmus.fr", password: "ConfErasmus2021", company: "Erasmus+", admin: false, first_name: "Irina", last_name: "Dufaud")
+user3 = User.create!(email: "cyril.dejean@agence-erasmus.fr", password: "ConfErasmus2021", company: "Erasmus+", admin: false, first_name: "Cyril", last_name: "Dejean")
+user4 = User.create!(email: "irina.dufaud@agence-erasmus.fr", password: "ConfErasmus2021", company: "Erasmus+", admin: false, first_name: "Irina", last_name: "Dufaud")
 puts "Users created..."
 
 puts "Creating dates..."
