@@ -35,7 +35,7 @@ class Participant < ApplicationRecord
             participant.organization,
             participant.company,
             participant.position,
-            booking.workshop.start_at.strftime("%Hh%M")
+            booking.workshop.name
           ]
         end
       end

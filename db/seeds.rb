@@ -36,24 +36,24 @@ puts "Events created..."
 puts "Creating workshops"
 workshop1 = Workshop.create!(start_at: DateTime.new(2021,01,14,9), end_at: DateTime.new(2021,01,14,10),
 name: "Conférence de cadrage « Bilan du programme actuel et nouvelles perspectives et défis pour Erasmus+ 2021-2027 »",
-description: " <p> Madame Laure Coudret-Laut, directrice de l’Agence Erasmus + France Education/Formation </p>
-<p> Monsieur Mathieu Roumegous, directeur de l'Agence Erasmus + France Jeunesse et Sport (confirmé) </p>
-<p> Monsieur Jean-Michel Blanquer, ministre de l’Education nationale, de la Jeunesse et des Sports </p>
-<p> Madame Laurence Farreng, eurodéputée française, membre de la commission Culture et Education (confirmée) </p>
-<p> Madame Thémis Christophidou, directrice générale éducation, culture, jeunesse et sports, Commission européenne (confirmée) </p>
-<p> Monsieur Bernard Beignier, recteur de la région académique Provence-Alpes-Côte-D’azur, recteur de l’académie d’Aix-Marseille (confirmé) </p>".html_safe, event: event1)
+description: "Madame Laure Coudret-Laut, directrice de l’Agence Erasmus + France Education-Formation, \n
+Monsieur Mathieu Roumegous, directeur de l'Agence Erasmus + France Jeunesse et Sport, \n
+Monsieur Jean-Michel Blanquer, ministre de l’Education nationale, de la Jeunesse et des Sports, \n
+Madame Laurence Farreng, eurodéputée française, membre de la commission Culture et Education, \n
+Madame Thémis Christophidou, directrice générale éducation, culture, jeunesse et sports, Commission européenne, \n
+Monsieur Bernard Beignier, recteur de la région académique Provence-Alpes-Côte-D’azur, recteur de l’académie d’Aix-Marseille", event: event1)
 workshop2 = Workshop.create!(start_at: DateTime.new(2021,01,14,10), end_at: DateTime.new(2021,01,14,11), name: "Session transversale Education & Formation et Jeunesse: Erasmus 2021-2027 : architecture, budget, opportunités",
 description: "Cet atelier s’adresse à tous les participants quel que soit leur secteur et leur connaissance du programme Erasmus +.", event: event1)
-workshop3 = Workshop.create!(start_at: DateTime.new(2021,01,14,11.5), end_at: DateTime.new(2021,01,14,12.5), name: "Session transversale Education & Formation: S’informer pour bien débuter dans Erasmus + 2021-2027",
+workshop3 = Workshop.create!(start_at: DateTime.new(2021,01,14,11.5), end_at: DateTime.new(2021,01,14,12.5), name: "Session transversale Education & Formation : S’informer pour bien débuter dans Erasmus + 2021-2027",
 description: "Cet atelier s’adresse aux organismes qui souhaitent se lancer dans le programme Erasmus +.
 Les structures qui sont en cours d’accréditation ou d’obtention d’une charte ou intéressées par tout autre type de projet Erasmus + trouveront les conseils pour bien démarrer leur projet.", event: event1)
 workshop4 = Workshop.create!(start_at: DateTime.new(2021,01,14,12.5), end_at: DateTime.new(2021,01,14,13.5), name: "Interruption déjeuner", visible: false, event: event1)
 workshop5 = Workshop.create!(start_at: DateTime.new(2021,01,14,13.5), end_at: DateTime.new(2021,01,14,14.17), name: "Quelles opportunités offre le nouveau programme Erasmus+ à mon établissement d’enseignement scolaire ?",
-description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1(projets de mobilité) et Action Clé2 (projets de coopération) du secteur de l’enseignement scolaire.", event: event1)
+description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1 (projets de mobilité) et Action Clé2 (projets de coopération) du secteur de l’enseignement scolaire.", event: event1)
 workshop6 = Workshop.create!(start_at: DateTime.new(2021,01,14,14.42), end_at: DateTime.new(2021,01,14,15.09), name: "Quelles opportunités offre le nouveau programme Erasmus+ à mon établissement d’enseignement professionnel ?",
-description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement professionnel ?", description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1 et Action Clé2 du secteur l’Enseignement et de la Formation Professionnels.", event: event1)
-workshop7 = Workshop.create!(start_at: DateTime.new(2021,01,14,15.09), end_at: DateTime.new(2021,01,14,16), name: "Quelles opportunités offre le nouveau programme Erasmus+ à mon établissement d’enseignement supérieur ?",
-description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1 et Action Clé2 du secteur l’Enseignement supérieur.", event: event1)
+description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1 et Action Clé2 du secteur l’Enseignement et de la Formation Professionnels.", event: event1)
+workshop7 = Workshop.create!(start_at: DateTime.new(2021,01,14,15.34), end_at: DateTime.new(2021,01,14,16), name: "Quelles opportunités offre le nouveau programme Erasmus+ à mon établissement d’enseignement supérieur ?",
+description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1 et Action Clé2 du secteur l’enseignement supérieur.", event: event1)
 workshop8 = Workshop.create!(start_at: DateTime.new(2021,01,14,16.25), end_at: DateTime.new(2021,01,14,16.92), name: "Quelles opportunités offre le nouveau programme Erasmus+ à ma structure du secteur de la jeunesse ?",
 description: "Cet atelier s’adresse aux participants qui souhaitent approfondir les nouveautés des projets Action Clé1 et Action Clé2 du secteur de la jeunesse", event: event1)
 workshop9 = Workshop.create!(start_at: DateTime.new(2021,01,14,17.17), end_at: DateTime.new(2021,01,14,18), name: "Quelles opportunités offre le nouveau programme Erasmus+ à mon organisation chargée de l’éducation des adultes ?",
