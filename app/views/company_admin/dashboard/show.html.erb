@@ -35,7 +35,7 @@
             <th scope="col">Secteur</th>
             <th scope="col">Fonction</th>
             <th scope="col">Ateliers sélectionnés</th>
-            <th scope="col">X</th>
+<!--             <th scope="col">X</th> -->
           </tr>
         </thead>
         <tbody>
@@ -53,10 +53,10 @@
               </div>
               <% end %>
             </td>
-            <td><%= link_to company_admin_participants_path(@participant), method: :delete, data: { confirm: 'Voulez-vous supprimer ce participant?' } do %>
+            <!-- <td><%= link_to company_admin_participants_path(@participant), method: :delete, data: { confirm: 'Voulez-vous supprimer ce participant?' } do %>
               <i class="far fa-trash-alt"></i>
               <% end %>
-            </td>
+            </td> -->
             <% end %>
           </tr>
         </tbody>
@@ -91,7 +91,7 @@
             <th scope="col">Secteur</th>
             <th scope="col">Fonction</th>
             <th scope="col">Questions</th>
-            <th scope="col">X</th>
+            <!-- <th scope="col">X</th> -->
           </tr>
         </thead>
         <tbody>
@@ -104,10 +104,10 @@
             <td><%= question.company %></td>
             <td><%= question.position %></td>
             <td><%= question.content %></td>
-            <td><%= link_to company_admin_questions_path(@question), method: :delete, data: { confirm: 'Voulez-vous supprimer cette question?' } do %>
+            <!-- <td><%= link_to company_admin_questions_path(@question), method: :delete, data: { confirm: 'Voulez-vous supprimer cette question?' } do %>
               <i class="far fa-trash-alt"></i>
               <% end %>
-            </td>
+            </td> -->
           </tr>
           <% end %>
         </tbody>
