@@ -6,14 +6,7 @@ class CompanyAdmin::DashboardController < ApplicationController
     @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @event = Event.last
     @workshops = @event.workshops.visibles
-    # @bookings = Booking.includes(:workshop)
     @questions = Question.all
-  end
-
-  def destroy
-    @participant = Participant.find(params[:id])
-    @participant.destroy
-    redirect_to company_admin_dashboard_path
   end
 
   private

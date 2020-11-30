@@ -3,19 +3,12 @@
     <div class="d-flex flex-wrap">
       <div class="col-12">
         <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
-          <%#= image_tag "button-program.png" %>
-        <%# end %>
       </div>
       <div class="col-12 col-xl-8">
         <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
-          <%#= image_tag "button-registration.png" %>
-        <%# end %>
       </div>
       <div class="col-12 col-xl-4">
         <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin"%>
-        <%#= link_to new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin" do %>
-          <%#= image_tag "button-questions.png" %>
-        <%# end %>
       </div>
     </div>
     <div class="fleche-scroll">
@@ -35,8 +28,7 @@
         <p> </p>
         <p> Toutes les organisations de formation, établissements, associations, collectivités territoriales pourront découvrir la palette des opportunités offertes pour l’enseignement scolaire, la formation professionnelle, l’éducation des adultes et l’enseignement supérieur.
         Un grand nombre de participants, connaisseurs ou néophytes du programme Erasmus+ sont invités à participer à cet évènement qui se déroulera sous format virtuel. </p>
-<!--         <p>Vous avez aussi la possibilité de <a href="https://conference.erasmusplus.fr/events/10/questions/new">poser vos questions sur le nouveau programme</a> dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p>
- -->      <p>Vous avez aussi la possibilité de <span><%= link_to "poser vos questions sur le nouveau programme", new_event_question_path(Event.first), data:{turbolinks:false} %></span> dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p>
+        <p>Vous avez aussi la possibilité de <span><%= link_to "poser vos questions sur le nouveau programme", new_event_question_path(Event.first), data:{turbolinks:false} %></span> dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p>
       </div>
     </div>
   </div>
