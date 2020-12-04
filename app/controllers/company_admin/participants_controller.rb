@@ -15,7 +15,6 @@ class CompanyAdmin::ParticipantsController < ApplicationController
   end
 
   def destroy
-    # @event = Event.last
     @participant = Participant.find(params[:id])
     @participant.destroy
     redirect_to company_admin_dashboard_path
