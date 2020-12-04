@@ -1,5 +1,5 @@
 class Participant < ApplicationRecord
-  has_many :bookings, inverse_of: :participant
+  has_many :bookings, inverse_of: :participant, dependent: :destroy
   has_many :workshops, through: :bookings
   accepts_nested_attributes_for :bookings,
                                 reject_if: proc { |attributes| attributes[:workshop_id].blank? },
@@ -19,25 +19,23 @@ class Participant < ApplicationRecord
 
   CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Ateliers_sélectionnés]
   def self.to_csv
-    @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
+    # @event = Event.last
+    # @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
     @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
-    @event = Event.last
-    @workshops = @event.workshops.visibles
+    # @workshops = @event.workshops.visibles
 
     CSV.generate do |csv|
       csv << CSV_HEADER
       @participants.each do |participant|
-        participant.bookings.each do |booking|
-          csv << [
-            participant.last_name,
-            participant.first_name,
-            participant.email,
-            participant.organization,
-            participant.company,
-            participant.position,
-            booking.workshop.name
-          ]
-        end
+        csv << [
+          participant.last_name,
+          participant.first_name,
+          participant.email,
+          participant.organization,
+          participant.company,
+          participant.position,
+          participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
+        ]
       end
     end
   end

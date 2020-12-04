@@ -2,8 +2,6 @@ ActionMailer::Base.perform_deliveries = false
 
 require 'date'
 
-require 'date'
-
 puts "Finding users..."
 user1 = User.find_by(email: "amelie@agencecosmo.com")
 user2 = User.find_by(email: "chloe@agencecosmo.com")

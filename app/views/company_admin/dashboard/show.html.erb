@@ -35,7 +35,7 @@
             <th scope="col">Secteur</th>
             <th scope="col">Fonction</th>
             <th scope="col">Ateliers sélectionnés</th>
-<!--             <th scope="col">X</th> -->
+            <th scope="col">X</th>
           </tr>
         </thead>
         <tbody>
@@ -48,15 +48,14 @@
             <td><%= participant.organization %></td>
             <td><%= participant.company %></td>
             <td><%= participant.position %></td>
-            <td><% participant.bookings.each do |booking| %>
-              <div><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : <%= booking.workshop.name %>
+            <td><% participant.bookings.order_by_workshop_date.each do |booking| %>
+              <div><%= time_with_day(booking.workshop.start_at)%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : <%= booking.workshop.name %>
               </div>
               <% end %>
             </td>
-            <!-- <td><%= link_to company_admin_participants_path(@participant), method: :delete, data: { confirm: 'Voulez-vous supprimer ce participant?' } do %>
+            <td><%= link_to company_admin_participant_path(participant), method: :delete, data: { confirm: 'Voulez-vous supprimer ce participant?' } do %>
               <i class="far fa-trash-alt"></i>
               <% end %>
-            </td> -->
             <% end %>
           </tr>
         </tbody>
@@ -91,7 +90,7 @@
             <th scope="col">Secteur</th>
             <th scope="col">Fonction</th>
             <th scope="col">Questions</th>
-            <!-- <th scope="col">X</th> -->
+            <th scope="col">X</th>
           </tr>
         </thead>
         <tbody>
@@ -104,10 +103,10 @@
             <td><%= question.company %></td>
             <td><%= question.position %></td>
             <td><%= question.content %></td>
-            <!-- <td><%= link_to company_admin_questions_path(@question), method: :delete, data: { confirm: 'Voulez-vous supprimer cette question?' } do %>
+            <td><%= link_to company_admin_questions_path(@question), method: :delete, data: { confirm: 'Voulez-vous supprimer cette question?' } do %>
               <i class="far fa-trash-alt"></i>
               <% end %>
-            </td> -->
+            </td>
           </tr>
           <% end %>
         </tbody>
