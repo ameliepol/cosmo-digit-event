@@ -27,7 +27,6 @@
       <table class="table table-bordered table-hover">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
             <th scope="col">Nom(s)</th>
             <th scope="col">Prénom(s)</th>
             <th scope="col">Email</th>
@@ -39,9 +38,8 @@
           </tr>
         </thead>
         <tbody>
-          <% @participants.each_with_index do |participant, index| %>
+          <% @participants.each do |participant| %>
           <tr>
-            <td><%= "#{index + 1}" %></td>
             <td><strong> <%= participant.last_name.upcase %></strong></td>
             <td><strong><%= participant.first_name.upcase %></strong></td>
             <td><%= participant.email %></td>
