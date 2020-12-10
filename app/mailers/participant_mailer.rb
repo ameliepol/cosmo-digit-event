@@ -18,14 +18,14 @@ class ParticipantMailer < ApplicationMailer
     end
   end
 
-  def alert_before(participant, time)
-    @participant = participant
-    @time = time
-    # attachments.inline['papillon-blanc.png'] = File.read('app/assets/images/papillon-blanc.png')
-    mail(to: @participant.email, subject: "La Conférence Erasmus + Bilan et Perspectives a lieu dans #{@time}") do |format|
-      format.html { render(layout: 'mailer') }
-    end
-  end
+  # def alert_before(participant, time)
+  #   @participant = participant
+  #   @time = time
+  #   attachments.inline['papillon-blanc.png'] = File.read('app/assets/images/papillon-blanc.png')
+  #   mail(to: @participant.email, subject: "La Conférence Erasmus + Bilan et Perspectives a lieu dans #{@time}") do |format|
+  #     format.html { render(layout: 'mailer') }
+  #   end
+  # end
 
   # def alert_fifteen_days_before(participant)
   #   @participant = participant
