@@ -5,7 +5,7 @@
 }
 
 .participant-infos {
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     display: flex;
   }
   flex-direction: row;

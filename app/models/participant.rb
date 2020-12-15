@@ -7,7 +7,7 @@ class Participant < ApplicationRecord
   after_create :send_confirmation_email
 
   SECTOR = ["Enseignement scolaire", "Enseignement & formations professionnels",
-  "Enseignement supérieur", "Secteur jeunesse", "Education des adultes"]
+  "Enseignement supérieur", "Jeunesse & sport", "Education des adultes"]
 
   validates :company, presence: true
   validates :email, presence: true

@@ -3,7 +3,7 @@ class Question < ApplicationRecord
   after_create :send_participant_question_email
 
   SECTOR = ["Enseignement scolaire", "Enseignement & formations professionnels",
-  "Enseignement supérieur", "Secteur jeunesse", "Education des adultes"]
+  "Enseignement supérieur", "Jeunesse & sport", "Education des adultes"]
 
   validates :email, presence: true
   validates :first_name, presence: true
