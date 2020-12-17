@@ -9,11 +9,13 @@ class Workshop < ApplicationRecord
     #{self.description}"
   end
 
-  CSV_HEADER = %w[Atelier Participant]
+  CSV_HEADER = %w[Ateliers Participants]
   def self.to_csv
+    @workshops = Workshop.visibles.order(start_at: :asc)
+
     CSV.generate do |csv|
       csv << CSV_HEADER
-      all.each do |workshop|
+      @workshops.each do |workshop|
         workshop.bookings.each do |booking|
           csv << [
             workshop.name,
