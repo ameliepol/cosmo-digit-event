@@ -26,7 +26,7 @@ class Question < ApplicationRecord
           question.organization,
           question.company,
           question.position,
-          question.content
+          question.content.gsub(/\R+/, ' ')
         ]
       end
     end

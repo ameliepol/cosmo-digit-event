@@ -65,6 +65,7 @@
           <tr>
             <th scope="col">Ateliers</th>
             <th scope="col">Inscriptions</th>
+            <th scope="col">Participants</th>
           </tr>
         </thead>
         <tbody>
@@ -72,8 +73,11 @@
           <tr>
             <td><strong><%= workshop.name %></strong></td>
             <td><%= workshop.bookings.size %></td>
-          </tr>
           <% end %>
+          <% @participants.each do |participant| %>
+            <td><%= workshop.bookings.size %></td>
+          <% end %>
+          </tr>
         </tbody>
       </table>
     </div>
