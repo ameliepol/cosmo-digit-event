@@ -9,7 +9,7 @@ class Workshop < ApplicationRecord
     #{self.description}"
   end
 
-  CSV_HEADER = %w[Ateliers Inscriptions]
+  CSV_HEADER = %w[Atelier Participant]
   def self.to_csv
     CSV.generate do |csv|
       csv << CSV_HEADER
@@ -17,7 +17,8 @@ class Workshop < ApplicationRecord
         workshop.bookings.each do |booking|
           csv << [
             workshop.name,
-            workshop.bookings.size
+            booking.participant.last_name,
+            booking.participant.first_name
           ]
         end
       end

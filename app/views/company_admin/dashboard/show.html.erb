@@ -71,13 +71,16 @@
         <tbody>
           <% @workshops.each do |workshop| %>
           <tr>
-            <td><strong><%= workshop.name %></strong></td>
+            <td><strong><%= time_with_day(workshop.start_at) %></strong> <%= workshop.name %></td>
             <td><%= workshop.bookings.size %></td>
+            <td><% workshop.bookings.each do |booking| %>
+              <%= booking.participant.last_name %>
+              <%= booking.participant.first_name %>
+              <%= "/" %>
+            <% end %>
+            </td>
           <% end %>
-          <% @participants.each do |participant| %>
-            <td><%= workshop.bookings.size %></td>
-          <% end %>
-          </tr>
+        </tr>
         </tbody>
       </table>
     </div>

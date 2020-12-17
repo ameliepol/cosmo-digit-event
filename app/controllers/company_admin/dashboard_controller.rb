@@ -5,7 +5,7 @@ class CompanyAdmin::DashboardController < ApplicationController
     @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
     @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @event = Event.last
-    @workshops = @event.workshops.visibles
+    @workshops = Workshop.visibles.order(start_at: :asc)
     @questions = Question.all
   end
 
