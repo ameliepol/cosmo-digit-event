@@ -21,8 +21,8 @@ workshop1 = Workshop.find_by(name: "Bilan du programme actuel et nouvelles persp
                               # Madame Laurence Farreng, eurodéputée française, membre de la commission Culture et Education\n
                               # Madame Thémis Christophidou, directrice générale éducation, culture, jeunesse et sports, Commission européenne\n
                               # Monsieur Bernard Beignier, recteur de la région académique Provence-Alpes-Côte-D’azur, recteur de l’académie d’Aix-Marseille")
-workshop2 = Workshop.find_by(name: "Erasmus + 2021-2027 : nouvel élan, nouvelles opportunités")
-workshop2.update(name: "Erasmus + 2021-2027 : nouvel élan et nouvelles opportunités")
+workshop2 = Workshop.find_by(name: "Erasmus + 2021-2027 : nouvel élan et nouvelles opportunités")
+# workshop2.update(name: "Erasmus + 2021-2027 : nouvel élan et nouvelles opportunités")
 # workshop2.update(description: "Présentation générale de ce nouveau programme, plus ouvert, plus responsable et plus ambitieux. Cette séquence s’adresse à tous les acteurs de l’éducation, de la formation, de la jeunesse et du sport.")
 workshop3 = Workshop.find_by(name: "S’informer pour bien débuter avec Erasmus + 2021-2027")
 # workshop3.update(description: "Présentation orientée conseils et outils pour démarrer efficacement son futur projet de mobilités ou de coopération. Cette séquence s’adresse aux acteurs de l’éducation et de la formation qui veulent se lancer dans Erasmus +.")
