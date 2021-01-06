@@ -16,7 +16,6 @@ class QuestionsController < ApplicationController
     @event = Event.find(params[:event_id])
     @question = Question.new(question_params)
     @question.event = @event
-    # if verify_recaptcha(model: @question) && @question.save
     if @question.save
       redirect_to event_question_path(@event, @question)
     else

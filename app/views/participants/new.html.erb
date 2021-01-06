@@ -38,7 +38,6 @@
     <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #004F99"> - <%= workshop.name %> - </span></h1>
-      <!--  <h3> Intervenant : <%= workshop.speaker %></h3> -->
       <p> <%= simple_format(workshop.description) %></p>
     </div>
     <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
@@ -54,7 +53,6 @@
       <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #004F99"> - <%= workshop.name %> - </span></h1>
-      <!--  <h3> Intervenant : <%= workshop.speaker %></h3> -->
       <p> <%= simple_format(workshop.description) %></p>
     </div>
       <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
@@ -64,8 +62,6 @@
     <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
   <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consulter les mentions légales.</span>".html_safe %>
   </div>
-  <!-- <div class="g-recaptcha" data-sitekey="6Lcc9OMZAAAAAGc-X0I8gga0Q42Bra7H6HurNgZW">
-  </div> -->
 </div>
 <div class="button-valid-registration">
 <%= f.button :submit, "JE M'INSCRIS", class: 'btn-erasmus' %>
