@@ -1,0 +1,39 @@
+<div class="container-dashboard">
+  <h1>Récapitulatif des ateliers</h1>
+  <br>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Ateliers
+      </a>
+    </li>
+    <li class="d-flex justify-content-center align-items-center h-100"><%= link_to company_admin_workshops_path(format: :csv), class: 'fas fa-arrow-circle-down height-46px' do %>
+      <% end %></li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Ateliers</th>
+            <th scope="col">Inscriptions</th>
+            <th scope="col">Participants</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @workshops.each do |workshop| %>
+          <tr>
+            <td><strong><%= time_with_day(workshop.start_at) %></strong> <%= workshop.name %></td>
+            <td><%= workshop.bookings.size %></td>
+            <td><% workshop.bookings.each do |booking| %>
+              <%= booking.participant.last_name %>
+              <%= booking.participant.first_name %>
+              <%= "/" %>
+            <% end %>
+            </td>
+          <% end %>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

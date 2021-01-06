@@ -1,0 +1,47 @@
+<div class="container-dashboard">
+  <h1>Récapitulatif des questions</h1>
+  <br>
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Questions
+      </a>
+    </li>
+    <li class="d-flex justify-content-center align-items-center h-100"><%= link_to company_admin_questions_path(format: :csv), class: 'fas fa-arrow-circle-down height-46px' do %>
+      <% end %></li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nom(s)</th>
+            <th scope="col">Prénom(s)</th>
+            <th scope="col">Email</th>
+            <th scope="col">Organisation</th>
+            <th scope="col">Secteur</th>
+            <th scope="col">Fonction</th>
+            <th scope="col">Questions</th>
+            <th scope="col">X</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @questions.each do |question| %>
+          <tr>
+            <td><strong><%= question.last_name.upcase %></strong></td>
+            <td><strong><%= question.first_name.upcase %></strong></td>
+            <td><%= question.email %></td>
+            <td><%= question.organization %></td>
+            <td><%= question.company %></td>
+            <td><%= question.position %></td>
+            <td><%= question.content %></td>
+            <td><%= link_to company_admin_question_path(question), method: :delete, data: { confirm: 'Voulez-vous supprimer cette question?' } do %>
+              <i class="far fa-trash-alt"></i>
+              <% end %>
+            </td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
