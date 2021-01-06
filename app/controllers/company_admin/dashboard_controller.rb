@@ -3,7 +3,7 @@ class CompanyAdmin::DashboardController < ApplicationController
   def show
     # @user = current_user
     @bookings = Booking.includes(:workshop).where(workshop: {event: @event})
-    @pagy, @participants = pagy(Participant.all, items: 10)
+    @participants = Participant.all
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @event = Event.last
     @workshops = Workshop.visibles.order(start_at: :asc)

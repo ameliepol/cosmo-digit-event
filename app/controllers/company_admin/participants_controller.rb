@@ -4,14 +4,14 @@ class CompanyAdmin::ParticipantsController < ApplicationController
     @event = Event.last
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @pagy, @participants = pagy(Participant.all, items: 10)
+    @all_participants = Participant.all
     @workshops = @event.workshops.visibles
     @bookings = Booking.includes(:workshop)
     @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
 
-
     respond_to do |format|
       format.html
-      format.csv { send_data @participants.to_csv, filename: "participants-#{Date.today}.csv" }
+      format.csv { send_data @all_participants.to_csv, filename: "participants-#{Date.today}.csv" }
     end
   end
 

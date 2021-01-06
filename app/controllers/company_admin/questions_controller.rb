@@ -2,10 +2,11 @@ class CompanyAdmin::QuestionsController < ApplicationController
 
   def index
     @pagy, @questions = pagy(Question.all, items: 10)
+    @all_questions = Question.all
 
     respond_to do |format|
       format.html
-      format.csv { send_data @questions.to_csv, filename: "questions-#{Date.today}.csv" }
+      format.csv { send_data @all_questions.to_csv, filename: "questions-#{Date.today}.csv" }
     end
   end
 
