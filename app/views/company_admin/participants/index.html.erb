@@ -1,6 +1,8 @@
 <div class="container-dashboard">
-  <h1>Récapitulatif des inscriptions</h1>
-  <br>
+  <div class="title-dashboard">
+    <h1>Récapitulatif des participants</h1>
+    <%= link_to "< Dashboard", company_admin_dashboard_path, class: "btn-back-dashboard" %>
+  </div>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Participants

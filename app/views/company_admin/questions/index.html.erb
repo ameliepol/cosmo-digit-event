@@ -1,16 +1,18 @@
 <div class="container-dashboard">
-  <h1>Récapitulatif des questions</h1>
-  <br>
+  <div class="title-dashboard">
+    <h1>Récapitulatif des questions</h1>
+    <%= link_to "< Dashboard", company_admin_dashboard_path, class: "btn-back-dashboard" %>
+  </div>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Questions
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Questions
       </a>
     </li>
     <li class="d-flex justify-content-center align-items-center h-100"><%= link_to company_admin_questions_path(format: :csv), class: 'fas fa-arrow-circle-down height-46px' do %>
       <% end %></li>
   </ul>
   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <table class="table table-bordered table-hover">
         <thead class="thead-dark">
           <tr>
@@ -44,4 +46,5 @@
       </table>
     </div>
   </div>
+  <%= pagy_bootstrap_nav(@pagy).html_safe %>
 </div>

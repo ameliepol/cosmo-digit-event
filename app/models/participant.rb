@@ -20,7 +20,7 @@ class Participant < ApplicationRecord
   CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Ateliers_sélectionnés]
   def self.to_csv
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
-    @participants = Participants.all
+    @participants = Participant.all
 
     CSV.generate do |csv|
       csv << CSV_HEADER

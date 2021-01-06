@@ -1,7 +1,7 @@
 class CompanyAdmin::WorkshopsController < ApplicationController
 
   def index
-    @workshops = Workshop.visibles
+    @pagy, @workshops = pagy(Workshop.visibles, items: 10)
 
     respond_to do |format|
       format.html

@@ -16,6 +16,49 @@ margin-bottom: 50px;
   margin-bottom: 20px;
 }
 
+.title-dashboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-back-dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  background-color: $erasmus_yellow;
+  color: $erasmus_blue;
+  font-weight: bold;
+  font: $my-font;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dashboard-options {
+  display: flex;
+  min-height: 550px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn-dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: $erasmus_blue;
+  color: white;
+  font-weight: bold;
+  font: $my-font;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.btn-dashboard:hover {
+  background-color: $erasmus_yellow;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
   background-color: $erasmus_blue;

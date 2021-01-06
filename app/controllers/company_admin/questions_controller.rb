@@ -1,7 +1,7 @@
 class CompanyAdmin::QuestionsController < ApplicationController
 
   def index
-    @questions = Question.all
+    @pagy, @questions = pagy(Question.all, items: 10)
 
     respond_to do |format|
       format.html
