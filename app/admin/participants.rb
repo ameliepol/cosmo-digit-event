@@ -5,7 +5,8 @@ ActiveAdmin.register Participant do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :email, :first_name, :last_name, :address, :zipcode, :city, :company, :event_id, :workshop
+  # permit_params :email, :first_name, :last_name, :address, :zipcode, :city, :company, :event_id, :workshop
+  permit_params :email, :first_name, :last_name, :company, :organization, :position, :accepted_conditions, bookings_attributes: [:id, :workshop_id, :status]
   #
   # or
   #
