@@ -36,7 +36,7 @@ margin-bottom: 50px;
 
 .dashboard-options {
   display: flex;
-  min-height: 550px;
+  min-height: 500px;
   justify-content: space-around;
   align-items: center;
 }
@@ -51,6 +51,7 @@ margin-bottom: 50px;
   color: white;
   font-weight: bold;
   font: $my-font;
+  font-size: 24px;
   padding: 10px;
   text-decoration: none;
 }
