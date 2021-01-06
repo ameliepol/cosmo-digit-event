@@ -37,6 +37,7 @@ gem 'activeadmin_addons'
 gem 'letter_opener', group: :development
 gem 'sendgrid-ruby'
 gem 'cookies_eu'
+gem 'pagy'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

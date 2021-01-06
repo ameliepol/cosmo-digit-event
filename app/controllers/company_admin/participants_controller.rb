@@ -2,8 +2,8 @@ class CompanyAdmin::ParticipantsController < ApplicationController
 
   def index
     @event = Event.last
-    @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
-    # @participants = Participant.all
+    # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
+    @pagy, @participants = pagy(Participant.all, items: 10)
     @workshops = @event.workshops.visibles
     @bookings = Booking.includes(:workshop)
     @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
