@@ -1,7 +1,7 @@
 class CompanyAdmin::WorkshopsController < ApplicationController
 
   def index
-    @pagy, @workshops = pagy(Workshop.visibles, items: 5)
+    @pagy, @workshops = pagy(Workshop.visibles.order(start_at: :asc), items: 5)
     @all_workshops = Workshop.visibles.order(start_at: :asc)
 
     respond_to do |format|
