@@ -11,17 +11,17 @@
         <%= link_to "ACCUEIL", "/", class: "nav-link #{@navbar["link_1"]}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
+        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
+        <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
       </li>
       <!-- <li class="nav-item">
         <%= link_to "VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_4"]}" %>
       </li> -->
       <div class="social-network">
-        <a href="https://fr.linkedin.com/company/agence-europe-education-formation-france", target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/ErasmusplusFR", target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://www.facebook.com/Grdr-Sénégal-1641555949433039", target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/GRDR1", target="_blank"><i class="fab fa-twitter-square"></i></a>
       </div>
     </ul>
   </div>
