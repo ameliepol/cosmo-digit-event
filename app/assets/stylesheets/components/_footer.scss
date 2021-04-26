@@ -2,7 +2,10 @@
   // background: #F0F4FC;
   background: #f3f7e6;
   bottom: 0;
-  // z-index: -3;
+  box-shadow: 0 0 5px grey;
+  bottom: 0;
+  display: flex;
+  z-index: -2;
   // position: relative;
   // box-shadow: 0px -4px 12px #F0F4FC;
 }
@@ -14,13 +17,24 @@
   justify-content: center;
   text-decoration: none;
   margin-top: 20px;
+  @media (max-width: 991.98px) {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
 }
 
 .contact-highlighted-white {
   color: #2b2a2a;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 600;
   font-family: $my-font;
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .contact-highlighted-white span {
@@ -38,26 +52,51 @@
   left:0;
   bottom: 0;
   z-index:-1;
-  background-color: white;
+  background-color: #cfd8a9;
+}
+
+.contact-highlighted-white h1 {
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 3px;
+  @media (max-width: 991.98px) {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .email_contact {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  font: $my-font;
+  font-family: $my-font;
+  font-size: 16px;
+  font-weight: normal;
+  @media (max-width: 991.98px) {
+    justify-content: center;
+  }
 }
 
 .email_contact img {
   margin-right: 10px;
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .email_contact a {
   color: #2b2a2a;
   text-decoration: underline;
-  font: $my-font;
-  font-size: 16px;
-  font-weight: 600;
+  font-family: $my-font;
+  font-size: 14px;
+  font-weight: normal;
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .legal {
@@ -66,25 +105,38 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
+  padding-left: 70px;
   @media (min-width: 992px) {
+    justify-content: center;
     border-left: solid 1px darkgrey;
     border-right: solid 1px darkgrey;
   }
-  padding-left: 70px;
+  @media (max-width: 991.98px) {
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+  }
 }
 
 .legal a {
   color: #2b2a2a;
   text-decoration: underline;
-  font: $my-font;
-  font-weight: 600;
-  font-size: 12px;
+  font-family: $my-font;
+  font-weight: normal;
+  font-size: 14px;
   padding: 5px;
+  @media (max-width: 991.98px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .logos-officiels {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 26px;
+  @media (max-width: 991.98px) {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 }
