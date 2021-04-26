@@ -9,7 +9,7 @@
 }
 
 .navbar .navbar-brand img {
-  width: 420px;
+  width: 320px;
   padding-left: 20px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .nav-item .active {
-  color: $erasmus-blue;
+  color: $grdr_medium_green;
   font-family: $my-font;
   font-weight: 600;
   position: relative;
@@ -40,7 +40,7 @@
   margin-top: 15px;
   bottom: 2;
   z-index:-1;
-  background-color: $erasmus-yellow;
+  background-color: #f3f7e6;
 }
 
 .navbar .navbar-collapse {
@@ -49,24 +49,24 @@
 }
 
 .navbar-light .navbar-toggler {
-  color: $erasmus-blue;
-  border-color: $erasmus-blue;
+  color: $grdr_red;
+  border-color: $grdr_red;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  color: $erasmus-blue;
+  color: $grdr_red;
   position: relative;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
-  color: $erasmus-blue;
+  color: $grdr_red;
   font-size: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: none;
-  color: #009EE2;
+  color: $grdr_medium_green;
 }
 
 .navbar-expand-sm .navbar-nav {
@@ -75,12 +75,12 @@
 
 .fa-linkedin {
   margin-top: 8px;
-  color: #009EE2;
+  color: $grdr_medium_green;
   font-size: 28px;
 }
 
 .fa-twitter-square {
   margin-top: 8px;
-  color: #009EE2;
+  color: $grdr_medium_green;
   font-size: 28px;
 }

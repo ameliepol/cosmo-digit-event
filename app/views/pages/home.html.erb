@@ -1,6 +1,6 @@
 <div class="banner-container">
-  <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner.png' %>');">
-    <div class="d-flex flex-wrap">
+  <div class="banner position-relative" style="background-image: url('<%= image_path 'banniere_grdr_web.png' %>');">
+    <!-- <div class="d-flex flex-wrap">
       <div class="col-12">
         <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
       </div>
@@ -10,27 +10,35 @@
       <div class="col-12 col-xl-4">
         <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "button-questions banner-button-margin"%>
       </div>
-    </div>
+    </div> -->
     <div class="fleche-scroll">
       <%= image_tag "fleche-scroll.svg" %>
     </div>
   </div>
   <div class="conference-presentation">
     <div class="conference-title">
-      <%= image_tag "conference.png", alt: "LA CONFERENCE", height: 50 %>
+      <h1> LA CONFÉRENCE </h1>
+      <%#= image_tag "conference.png", alt: "LA CONFERENCE", height: 50 %>
     </div>
     <div class="conference-details">
       <div class="webinar-image mx-auto">
         <%= image_tag "online-class.svg", alt: "Webinar", height: 100 %>
       </div>
       <div class="conference-text-presentation">
+        <h1> Lorem ipsum dolor sit amet </h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <!-- <div class="conference-text-presentation">
         <h1> L’agence Erasmus+ France / Education Formation organise une conférence nationale en ligne pour présenter le nouvel Erasmus+ 2021-2027. Cet évènement permettra aussi de faire le point sur les réalisations du programme pour la période 2014-2020 et des défis qui restent à relever. </h1>
         <p> </p>
         <p> Toutes les organisations de formation, établissements, associations, collectivités territoriales pourront découvrir la palette des opportunités offertes pour l’enseignement scolaire, la formation professionnelle, l’éducation des adultes et l’enseignement supérieur, la jeunesse et le sport.
         Cette conférence en ligne est organisée en collaboration avec l’agence Erasmus+ France / Jeunesse & Sport.</p>
         <p> Un grand nombre de participants, connaisseurs ou néophytes du programme Erasmus+ sont invités à participer à cet évènement qui se déroulera sous format virtuel. </p>
         <p>Vous avez aussi la possibilité de <span><%= link_to "poser vos questions sur le nouveau programme", new_event_question_path(Event.first), data:{turbolinks:false} %></span> dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p>
-      </div>
+      </div> -->
+    </div>
+    <div div class="d-flex flex-wrap">
+      <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-registration" %>
     </div>
   </div>
 </div>

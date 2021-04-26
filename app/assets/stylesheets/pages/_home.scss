@@ -1,99 +1,33 @@
 .banner {
-  padding-top: 50px;
+  padding-top: 0px;
   background-size: cover;
   background-position: center;
-  height: 680px;
-}
-
-.banner-button-margin {
-  @media (min-width: 1200px) {
-    margin-left: 50px;
-    justify-content: flex-start;
-  }
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-
-.button-program {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 55px;
-  background-color: $erasmus_yellow;
-  color: $erasmus_blue;
-  font-weight: bold;
-  font: $my-font;
-  padding: 10px;
-  text-decoration: none;
-  @media (min-width: 1200px) {
-    margin-top: 45px;
-  }
-  margin-top: 220px;
+  height: 320px;
+  padding: 20px;
 }
 
 a:hover {
     text-decoration: none;
-    color: #009EE2;
-}
-
-.button-registration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 55px;
-  background-color: $erasmus_yellow;
-  color: $erasmus_blue;
-  font-weight: bold;
-  font: $my-font;
-  padding: 10px;
-  text-decoration: none;
-  @media (min-width: 1200px) {
-    margin-top: 120px;
-  }
-  margin-top : 20px;
-}
-
-.button-questions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 55px;
-  background-color: $erasmus_blue;
-  color: $erasmus_yellow;
-  font-weight: bold;
-  font: $my-font;
-  padding: 10px;
-  text-decoration: none;
-  @media (min-width: 1200px) {
-    margin-top: 120px;
-  }
-  margin-top : 20px;
-}
-
-.fleche-scroll {
-  display: flex;
-  position: absolute;
-  height: 60px;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+    color: $grdr_brown;
 }
 
 .conference-presentation {
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   padding: 30px;
   box-shadow: 0px -4px 12px #CBD9F1;
 }
 
-.conference-presentation h1 {
-  color: $erasmus-blue;
+.conference-title h1 {
+  color: $grdr_brown;
+  font: $my-font;
+  font-weight: bold;
   font-size: 32px;
-  padding: 30px;
+  padding: 20px;
 }
 
 .conference-details {
@@ -101,9 +35,9 @@ a:hover {
     display: flex;
   }
   justify-content: space-between;
-  border: solid $erasmus-yellow;
+  border: solid $grdr_medium_green;
   padding: 10px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
   margin-left: 70px;
   margin-right: 70px;
@@ -129,7 +63,7 @@ a:hover {
 
 .conference-text-presentation h1 {
   // display: flex;
-  color: $erasmus-blue;
+  color: $grdr_medium_green;
   text-align: left;
   padding: 10px;
   padding-bottom: 0px;
@@ -140,7 +74,7 @@ a:hover {
 
 .conference-text-presentation p {
   // display: flex;
-  color: $erasmus-blue;
+  color: #2b2a2a;
   text-align: left;
   padding: 10px;
   padding-top: 0px;
@@ -157,5 +91,101 @@ a:hover {
 }
 
 .conference-text-presentation a:hover {
-  color: #009EE2;
+  color: $grdr_orange;
 }
+
+.button-registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 55px;
+  background-color: $grdr_medium_green;
+  color: white;
+  font-weight: bold;
+  font: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin-top : 20px;
+  margin-bottom: 20px;
+}
+
+.button-registration a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// .banner-button-margin {
+//   @media (min-width: 1200px) {
+//     margin-left: 50px;
+//     justify-content: flex-start;
+//   }
+//   margin-left: auto;
+//   margin-right: auto;
+//   justify-content: center;
+// }
+
+// .button-program {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 320px;
+//   height: 55px;
+//   background-color: $grdr_medium_green;
+//   color: white;
+//   font-weight: bold;
+//   font: $my-font;
+//   padding: 10px;
+//   text-decoration: none;
+//   @media (min-width: 1200px) {
+//     margin-top: 45px;
+//   }
+//   margin-top: 220px;
+// }
+
+// .button-registration {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 320px;
+//   height: 55px;
+//   background-color: $grdr_medium_green;
+//   color: white;
+//   font-weight: bold;
+//   font: $my-font;
+//   padding: 10px;
+//   text-decoration: none;
+//   @media (min-width: 1200px) {
+//     margin-top: 120px;
+//   }
+//   margin-top : 20px;
+// }
+
+// .button-questions {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 320px;
+//   height: 55px;
+//   background-color: $grdr_medium_green;
+//   color: white;
+//   font-weight: bold;
+//   font: $my-font;
+//   padding: 10px;
+//   text-decoration: none;
+//   @media (min-width: 1200px) {
+//     margin-top: 120px;
+//   }
+//   margin-top : 20px;
+// }
+
+.fleche-scroll {
+  display: flex;
+  position: absolute;
+  height: 60px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
