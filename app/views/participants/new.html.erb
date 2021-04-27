@@ -49,6 +49,10 @@
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
       <p> <%= simple_format(workshop.description) %></p>
+      <div class="speakers">
+        <h1> Intervenants : </h1>
+        <p> <%= simple_format(workshop.speaker) %></p>
+      </div>
     </div>
     <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
@@ -64,6 +68,10 @@
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
       <p> <%= simple_format(workshop.description) %></p>
+      <div class="speakers">
+        <h1> Intervenants : </h1>
+        <p> <%= simple_format(workshop.speaker) %></p>
+      </div>
     </div>
       <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
@@ -79,6 +87,10 @@
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
       <p> <%= simple_format(workshop.description) %></p>
+      <div class="speakers">
+        <h1> Intervenants : </h1>
+        <p> <%= simple_format(workshop.speaker) %></p>
+      </div>
     </div>
     <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>

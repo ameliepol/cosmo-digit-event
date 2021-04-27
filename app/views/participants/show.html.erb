@@ -1,5 +1,5 @@
 <div class="banner-container">
-  <div class="banner-registration" style="background-image: url('<%= image_path 'registration-banner.png' %>');">
+  <div class="banner position-relative" style="background-image: url('<%= image_path 'banniere_grdr_web.png' %>');">
   </div>
 </div>
 
@@ -11,19 +11,18 @@
   <div class="participant-infos-show">
     <h1> Nous vous remercions <%= @participant.first_name %> <%= @participant.last_name %> pour votre inscription !</h1>
     <h2> Récapitulatif de votre inscription : </h2>
-    <p> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @participant.email %></p>
-    <p> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
-    <p> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
-    <p> <span style="color: #009EE2; font-weight: bold"> Organisation : </span> <%= @participant.organization %></p>
-    <p> <span style="color: #009EE2; font-weight: bold"> Secteur : </span> <%= @participant.company %></p>
-    <p> <span style="color: #009EE2; font-weight: bold"> Fonction : </span> <%= @participant.position %></p>
+    <p> <span style="color: #BD4B10; font-weight: bold"> Email : </span> <%= @participant.email %></p>
+    <p> <span style="color: #BD4B10; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
+    <p> <span style="color: #BD4B10; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
+    <p> <span style="color: #BD4B10; font-weight: bold"> Organisation : </span> <%= @participant.organization %></p>
+    <p> <span style="color: #BD4B10; font-weight: bold"> Fonction : </span> <%= @participant.position %></p>
 
-    <h2> Vos ateliers : </h2>
+    <h2> Les tables rondes : </h2>
     <div class="workshop-details">
       <% @bookings_by_date.each do |date, bookings| %>
         <p><%= date.strftime("%e/%m/%Y") %> </p>
         <% bookings.each do |booking| %>
-          <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
+          <h4><span style="color: #BD4B10; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
         <% end %>
       <% end %>
     </div>
@@ -33,7 +32,10 @@
     <h3>Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS :</h3>
     <p></p>
     <div class="text-center">
-      <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "btn btn-erasmus", style: "justify-content: center" %>
+      <%= link_to "DECOUVREZ LES CONFERENCES",  %>
     </div>
+    <!-- <div class="text-center">
+      <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "btn btn-erasmus", style: "justify-content: center" %>
+    </div> -->
   </div>
 </div>

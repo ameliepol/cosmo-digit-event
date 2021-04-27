@@ -9,7 +9,7 @@ class Participant < ApplicationRecord
   SECTOR = ["Enseignement scolaire", "Enseignement & formations professionnels",
   "Enseignement supérieur", "Jeunesse & sport", "Education des adultes"]
 
-  validates :company, presence: true
+  # validates :company, presence: true
   validates :email, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true

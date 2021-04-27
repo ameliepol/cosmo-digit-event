@@ -9,7 +9,7 @@
     display: flex;
   }
   flex-direction: row;
-  border: solid $erasmus-blue;
+  border: solid $grdr_medium_green;
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 60px;
@@ -35,7 +35,7 @@
 }
 
 .participant-infos-show h1 {
-  color: #009EE2;
+  color: $grdr_red;
   font: $my-font;
   text-align: center;
   font-size: 24px;
@@ -44,7 +44,7 @@
 }
 
 .participant-infos-show h2 {
-  color: $erasmus-blue;
+  color: #2b2a2a;
   font: $my-font;
   font-size: 24px;
   font-weight: normal;
@@ -60,7 +60,7 @@
 }
 
 .participant-infos-show p {
-  color: black;
+  color: #2b2a2a;
   font: $my-font;
   font-size: 20px;
   font-weight: normal;
@@ -68,7 +68,7 @@
 }
 
 .workshop-details p {
-  color: $erasmus-blue;
+  color: $grdr_medium_green;
   font: $my-font;
   font-size: 20px;
   margin-bottom: 10px;
