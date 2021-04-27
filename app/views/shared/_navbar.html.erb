@@ -11,11 +11,14 @@
         <%= link_to "ACCUEIL", "/", class: "nav-link #{@navbar["link_1"]}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
+        <%= link_to "PRESENTATION", presentation_path, class: "nav-link #{@navbar["link_5"]}" %>
       </li>
       <li class="nav-item">
         <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
       </li>
+      <!-- <li class="nav-item">
+        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
+      </li> -->
       <!-- <li class="nav-item">
         <%= link_to "VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_4"]}" %>
       </li> -->

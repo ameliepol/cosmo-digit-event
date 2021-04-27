@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   get "programme", to: "pages#programme"
+  get "presentation", to: "pages#presentation"
   get "inscription", to: "pages#inscription"
-  get "erasmusplus", to: "pages#erasmusplus"
   get "questions", to: "pages#questions"
   get "legal", to: "pages#legal"
   get "confidential", to: "pages#confidential"

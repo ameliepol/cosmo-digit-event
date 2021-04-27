@@ -5,9 +5,9 @@
     </div>
   </div>
   <!-- <div class="banner-container">
-  <div class="banner-program" style="background-image: url('<%= image_path 'program-banner.png' %>');">
-  </div>
-</div> -->
+    <div class="banner-program" style="background-image: url('<%= image_path 'program-banner.png' %>');">
+  </div> -->
+</div>
 <div class="main-speaker">
 <h5>La conférence sera animée par <span>Emmanuelle Bastide,</span> journaliste à Radio France International (RFI).</h5>
 </div>
@@ -28,7 +28,7 @@
             <%= image_tag "sm-line-yellow.svg", height: 8 %>
             <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %></h1>
             <h2> <%= workshop.name %></h2>
-<!--             <h3> Intervenant : <%= workshop.speaker %></h3> -->
+            <h3> Intervenant : <%= workshop.speaker %></h3>
             <p> <%= simple_format(workshop.description) %></p>
           <% end %>
         </div>
@@ -48,7 +48,7 @@
             <%= image_tag "sm-line-yellow.svg", height: 8 %>
             <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %></h1>
             <h2> <%= workshop.name %></h2>
-<!--             <h3> Intervenant : <%= workshop.speaker %></h3> -->
+            <h3> Intervenant : <%= workshop.speaker %></h3>
             <p> <%= simple_format(workshop.description) %></p>
           <% end %>
         </div>

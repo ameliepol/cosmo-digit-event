@@ -7,9 +7,20 @@
 }
 
 .btn-grdr {
-  width: 250px;
-  background-color: $grdr_brown;
-  color: $grdr_medium_green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 55px;
+  background-color: $grdr_medium_green;
+  color: white;
   font-weight: bold;
   font: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn-grdr a:hover {
+  color: $grdr_red;
 }

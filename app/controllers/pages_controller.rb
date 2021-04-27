@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :programme, :confidential, :inscription, :questions, :legal]
-  skip_before_action :active_navbar_link, only: [:programme]
+  skip_before_action :authenticate_user!, only: [:home, :programme, :presentation, :confidential, :inscription, :questions, :legal]
+  skip_before_action :active_navbar_link, only: [:presentation, :programme]
 
   def home
   end
@@ -11,6 +11,10 @@ class PagesController < ApplicationController
     @workshops_1 = workshops_grouped[0]
     @workshops_2 = workshops_grouped[1]
     @workshops_3 = workshops_grouped[2]
+  end
+
+  def presentation
+    set_active_navbar_link(5)
   end
 
   def inscription
