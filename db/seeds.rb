@@ -2,12 +2,9 @@ ActionMailer::Base.perform_deliveries = false
 
 require 'date'
 
-puts "Updating users..."
-user1 = User.find_by(email: "amelie@agencecosmo.com")
-user1.update(password: "CosmoEvent")
-user2 = User.find_by(email: "chloe@agencecosmo.com")
-user2.update(password: "CosmoEvent")
-puts "Users updated..."
+puts "Creating users..."
+user1 = User.create!(email: "amelie@agencecosmo.com", password: "Cocktail33", company: "Agence Cosmo", admin: true, first_name: "Amélie", last_name: "Pol")
+puts "Users created..."
 
 puts "Creating dates..."
 start_date1 = DateTime.new(2021,06,10)
