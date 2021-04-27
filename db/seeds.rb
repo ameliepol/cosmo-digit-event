@@ -87,6 +87,39 @@ puts "Bookings created"
 # Mariama KESSO SOW, Économiste, Cheffe de file « Migration et Emploi des jeunes » Initiative prospective agricole et rurale (IPAR) au Sénégal", event: event_grdr)
 # puts "Workshops found..."
 
+# puts "Updating workshops"
+# workshop1 = Workshop.find_by(name: "Conférence de cadrage")
+# workshop1.update(visible: false)
+# workshop2 = Workshop.find_by(name: "Session transversale", description: "2021 : le bilan sur les accréditations et les Chartes Erasmus+ et les nouveautés sur les partenariats (AC2)")
+# workshop2.update(visible: false)
+# workshop3 = Workshop.find_by(name: "Intermède 1")
+# workshop3.update(visible: false)
+# workshop5 = Workshop.find_by(name: "Session transversale", description: "Comment débuter avec Erasmus+ ? Voies d’accès au programme.")
+# workshop5.update(visible: false)
+# workshop6 = Workshop.find_by(name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement scolaire ?")
+# workshop6.update(visible: false)
+# workshop7 = Workshop.find_by(name: "Intermède 2")
+# workshop7.update(visible: false)
+# workshop8 = Workshop.find_by(name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement professionnel ?")
+# workshop8.update(visible: false)
+# workshop9 = Workshop.find_by(name: "Intermède 3")
+# workshop9.update(visible: false)
+# workshop10 = Workshop.find_by(name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’enseignement supérieur ? (proposition d’intégrer une actualisation sur la dimension numérique ens. Sup ou lors de l’intermède)")
+# workshop10.update(visible: false)
+# workshop11 = Workshop.find_by(name: "Intermède 4")
+# workshop11.update(visible: false)
+# workshop12 = Workshop.find_by(name: "Atelier", description: "Quelles opportunités offre le nouveau programme Erasmus + à mon établissement d’éducation des adultes ?")
+# workshop12.update(visible: false)
+# workshop13 = Workshop.find_by(name: "Enseignement scolaire")
+# workshop13.update(visible: false)
+# workshop14 = Workshop.find_by(name: "Enseignement & formations professionnels")
+# workshop14.update(visible: false)
+# workshop13 = Workshop.find_by(name: "Enseignement supérieur")
+# workshop13.update(visible: false)
+# workshop14 = Workshop.find_by(name: "Education des adultes")
+# workshop14.update(visible: false)
+# puts "Workshops updated..."
+
 # puts "Finding participants..."
 # participant_grdr1 = Participant.find_by(email: "amelie@agencecosmo.com")
 # puts "Participants found..."
