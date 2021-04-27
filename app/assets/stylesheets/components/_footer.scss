@@ -134,7 +134,8 @@
 .logos-officiels {
   display: flex;
   justify-content: center;
-  margin-top: 26px;
+  align-items: center;
+  margin-top: 18px;
   @media (max-width: 991.98px) {
     margin-top: 0px;
     margin-bottom: 20px;

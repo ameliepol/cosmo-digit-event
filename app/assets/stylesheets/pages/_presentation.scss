@@ -1,7 +1,25 @@
+.presentation-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
 .event-presentation {
   padding-top: 50px;
   padding-left: 170px;
   padding-right: 170px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   text-align: center;
+}
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+.map img {
+  justify-content: center;
+}
+
+.logos-officiels img{
+  margin: 15px;
 }
