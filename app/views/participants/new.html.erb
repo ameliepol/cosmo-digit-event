@@ -47,10 +47,10 @@
     <%= f.simple_fields_for :bookings, Booking.new do |b| %>
     <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
+      <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h2>
       <p> <%= workshop.description %></p>
       <div class="speakers">
-        <h1> Intervenants : </h1>
+        <h2> Intervenants : </h2>
         <p> <%= simple_format(workshop.speaker) %></p>
       </div>
     </div>
@@ -66,10 +66,10 @@
       <%= f.simple_fields_for :bookings, Booking.new do |b| %>
       <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
+      <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h2>
       <p> <%= workshop.description %></p>
       <div class="speakers">
-        <h1> Intervenants : </h1>
+        <h2> Intervenants : </h2>
         <p> <%= simple_format(workshop.speaker) %></p>
       </div>
     </div>
@@ -85,10 +85,10 @@
     <%= f.simple_fields_for :bookings, Booking.new do |b| %>
     <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
+      <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h2>
       <p> <%= workshop.description %></p>
       <div class="speakers">
-        <h1> Intervenants : </h1>
+        <h2> Intervenants : </h2>
         <p> <%= simple_format(workshop.speaker) %></p>
       </div>
     </div>
