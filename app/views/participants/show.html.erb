@@ -17,23 +17,26 @@
     <p> <span style="color: #BD4B10; font-weight: bold"> Organisation : </span> <%= @participant.organization %></p>
     <p> <span style="color: #BD4B10; font-weight: bold"> Fonction : </span> <%= @participant.position %></p>
 
-    <h2> Les tables rondes : </h2>
+    <h2> Les tables rondes sélectionnées : </h2>
     <div class="workshop-details">
       <% @bookings_by_date.each do |date, bookings| %>
         <p><%= date.strftime("%e/%m/%Y") %> </p>
         <% bookings.each do |booking| %>
           <h4><span style="color: #BD4B10; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
+          <h4><%= booking.workshop.description %></h4>
+          <h4><span style="color: #BD4B10; font-weight: bold"><%= "Intervenants : " %></span><%= simple_format(booking.workshop.speaker) %></h4>
         <% end %>
       <% end %>
     </div>
     <p></p>
     <p></p>
+    <div class="text-center">
+      <%= link_to "REJOIGNEZ LES CONFERENCES", "https://app.imagina.io/location/111255", target: "_blank", class: "btn btn-grdr" %>
+    </div>
+    <!-- <p></p>
     <h3>Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</h3>
     <h3>Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS :</h3>
-    <p></p>
-    <div class="text-center">
-      <%= link_to "DECOUVREZ LES CONFERENCES",  %>
-    </div>
+    <p></p> -->
     <!-- <div class="text-center">
       <%= link_to "POSEZ VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "btn btn-erasmus", style: "justify-content: center" %>
     </div> -->
