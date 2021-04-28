@@ -14,8 +14,12 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  @media (min-width: 1200px) {
-    margin-left: 75px;
+  // @media (min-width: 1200px) {
+  //   margin-left: 75px;
+  // }
+  @media (max-width: 991.98px) {
+    width: 200px;
+    margin-left: 10px;
   }
   width: 320px;
   margin-left: 25px;
