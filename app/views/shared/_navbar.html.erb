@@ -1,13 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="navbar navbar navbar-expand-lg navbar-light navbar-lewagon">
   <%= link_to "/", class: "navbar-brand" do %>
     <%= image_tag "logo_grdr_et_uasz.png" %>
   <% end %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
         <%= link_to "ACCUEIL", "/", class: "nav-link #{@navbar["link_1"]}" %>
       </li>
       <li class="nav-item">
@@ -28,4 +31,37 @@
       </div>
     </ul>
   </div>
-</nav>
+</div>
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <%= link_to "/", class: "navbar-brand" do %>
+    <%= image_tag "logo_grdr_et_uasz.png" %>
+  <% end %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <%= link_to "ACCUEIL", "/", class: "nav-link #{@navbar["link_1"]}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "PRESENTATION", presentation_path, class: "nav-link #{@navbar["link_5"]}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
+      </li> -->
+      <!-- <li class="nav-item">
+        <%= link_to "VOS QUESTIONS", new_event_question_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_4"]}" %>
+      </li>
+      <div class="social-network">
+        <a href="https://www.facebook.com/Grdr-Sénégal-1641555949433039", target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/GRDR1", target="_blank"><i class="fab fa-twitter-square"></i></a>
+      </div>
+    </ul>
+  </div>
+</nav>  -->
