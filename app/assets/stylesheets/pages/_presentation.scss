@@ -1,48 +1,128 @@
 .event-presentation {
   display: flex;
   flex-direction: column;
-  padding: 40px;
   margin-bottom: 40px;
 }
 
 .event-presentation-text {
+  position: relative;
   text-align: center;
-  @media (max-width: 575.98px) {
+  z-index:-2;
+  @media (max-width: 575.98px)  {
     font-size: 16px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 20px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 35px;
-    margin-right: 35px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left: 70px;
-    margin-right: 70px;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
   }
   @media (min-width: 1200px) {
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left: 70px;
-    margin-right: 70px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
   }
 }
+
+.event-presentation-text h5 {
+  color: #2b2a2a;
+  position: relative;
+  z-index:0;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.event-presentation-text span {
+  color: #2b2a2a;
+  font: $my-font;
+  text-align: center;
+  position: relative;
+  z-index:0;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.event-presentation-text span:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-1;
+  background-color: #cfd8a9;
+}
+
+.event-presentation-text p {
+  padding-top: 10px;
+  color: #2b2a2a;
+  font-weight: normal;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
 .event-presentation-map {
   display: flex;
   font-size: 16px;
