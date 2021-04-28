@@ -1,21 +1,22 @@
 <div class="banner-container">
   <div class="banner position-relative" style="background-image: url('<%= image_path 'banniere_grdr_web.png' %>');">
   </div>
+</div>
 <!-- <div class="banner-container">
   <div class="banner-registration" style="background-image: url('<%= image_path 'registration-banner.png' %>');">
   </div>
 </div> -->
 <div class="registration">
-  <p>L’ensemble des tables rondes seront animées par M. Daouda Diagne, Docteur en sociologie rurale, membre du comité d’orientation et de suivi du programme PAFAO et spécialiste du monde paysan ouest africain (Sénégal), et modérées par M. Doudou Gueye, enseignant chercheur au département sociologie de l’Université Assane Seck de Ziguinchor.</p>
+  <h5>L’ensemble des tables rondes seront animées par <span> M. Daouda Diagne</span>, Docteur en sociologie rurale, membre du comité d’orientation et de suivi du programme PAFAO et spécialiste du monde paysan ouest africain (Sénégal), et modérées par <span> M. Doudou Gueye</span>, enseignant chercheur au département sociologie de l’Université Assane Seck de Ziguinchor.</h5>
   <p> Vous avez la possibilité de vous inscrire à toutes les sessions ou seulement celles de votre choix : </p>
 <!-- <h5>Remplissez le formulaire ci-dessous et choisissez les ateliers des <span>14 et 18 janvier 2021</span> qui vous intéressent.</h5>
 <p>Un courriel vous sera envoyé vous permettant de vous connecter à ces sessions.</p>
 <h5>Les inscriptions à la <strong> Conférence Erasmus + Bilan et Perspectives </strong> sont à présent closes.</h5>
 <p>La <strong> conférence </strong> et le <strong> replay </strong> seront accessibles sur <span> <%= link_to "la chaîne Youtube de l’Agence Erasmus + France / Education Formation", 'https://www.youtube.com/user/Lagence2E2F/featured', target: "_blank" %>.</span></p>
 <p>Vous avez aussi la possibilité de <span><%= link_to "poser vos questions", new_event_question_path(Event.first), data:{turbolinks:false} %></span> sur le nouveau programme dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p> -->
-<!--   <div class="fleche-scroll">
+  <div class="fleche-scroll">
     <%= image_tag "fleche-scroll.svg" %>
-  </div> -->
+  </div>
 </div>
 <div class="participant">
   <h1>  <%= 'Vos informations :' %></h1>
@@ -34,12 +35,11 @@
       </div>
     </div>
   </div>
-</div>
 
 <div class="workshop-choices">
   <h1>  <%= 'Sélectionnez vos ateliers :' %></h1>
   <div class="text-center">
-    <div class="date-highlighted-yellow">
+    <div class="date-highlighted">
       <span>10 JUIN 2021</span>
     </div>
   </div>
@@ -48,7 +48,7 @@
     <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
-      <p> <%= simple_format(workshop.description) %></p>
+      <p> <%= workshop.description %></p>
       <div class="speakers">
         <h1> Intervenants : </h1>
         <p> <%= simple_format(workshop.speaker) %></p>
@@ -58,7 +58,7 @@
     <% end %>
   <% end %>
   <div class="text-center">
-    <div class="date-highlighted-yellow">
+    <div class="date-highlighted">
       <span>17 JUIN 2021</span>
     </div>
   </div>
@@ -67,7 +67,7 @@
       <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
-      <p> <%= simple_format(workshop.description) %></p>
+      <p> <%= workshop.description %></p>
       <div class="speakers">
         <h1> Intervenants : </h1>
         <p> <%= simple_format(workshop.speaker) %></p>
@@ -77,7 +77,7 @@
     <% end %>
   <% end %>
   <div class="text-center">
-    <div class="date-highlighted-yellow">
+    <div class="date-highlighted">
       <span>24 JUIN 2021</span>
     </div>
   </div>
@@ -86,7 +86,7 @@
     <%= b.hidden_field :workshop_id, value: workshop.id %>
     <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
       <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> <span style="color: #BD4B10"> - <%= workshop.name %> - </span></h1>
-      <p> <%= simple_format(workshop.description) %></p>
+      <p> <%= workshop.description %></p>
       <div class="speakers">
         <h1> Intervenants : </h1>
         <p> <%= simple_format(workshop.speaker) %></p>
