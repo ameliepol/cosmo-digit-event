@@ -1,35 +1,34 @@
-<h2><span style="color: #004F99" > Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,</span>
+<h2><span style="color: #7A8E00" > Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,</span>
 </h2>
 
-<p>Nous vous remercions pour votre inscription à la <span style="color: #004F99"> Conférence Erasmus + Bilan et Perspectives </span> qui se déroulera les 14 et 18 janvier 2021, sous format webinaire.
-</p>
-<p>Nous vous enverrons prochainement par email <span style="color: #004F99"> un lien de connection</span> au webinaire.
+<p>Nous vous remercions pour votre inscription aux tables rondes <span style="color: #7A8E00"> Les Jeudis du Littoral Ouest Africain</span>, sous format webinaire.
 </p>
 
 <h2> Récapitulatif de votre inscription : </h2>
-<p> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @participant.email %></p>
-<p> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
-<p> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
-<p> <span style="color: #009EE2; font-weight: bold"> Organisation : </span> <%= @participant.organization %></p>
-<p> <span style="color: #009EE2; font-weight: bold"> Secteur : </span> <%= @participant.company %></p>
-<p> <span style="color: #009EE2; font-weight: bold"> Fonction : </span> <%= @participant.position %></p>
+<p> <span style="color: #BD4B10; font-weight: bold"> Email : </span> <%= @participant.email %></p>
+<p> <span style="color: #BD4B10; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
+<p> <span style="color: #BD4B10; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
+<p> <span style="color: #BD4B10; font-weight: bold"> Organisation : </span> <%= @participant.organization %></p>
+<!-- <p> <span style="color: #BD4B10; font-weight: bold"> Secteur : </span> <%= @participant.company %></p> -->
+<p> <span style="color: #BD4B10; font-weight: bold"> Fonction : </span> <%= @participant.position %></p>
 
-<h2> Vos ateliers : </h2>
+<h2> Les tables rondes sélectionnées : </h2>
 <div class="workshop-details">
 <% @bookings_by_date.each do |date, bookings| %>
-<p><strong><%= date.strftime("%e/%m/%Y:") %></strong></p>
+<p><span style="color: #7A8E00; font-weight: bold"><%= date.strftime("%e/%m/%Y:") %></span></p>
   <% bookings.each do |booking| %>
-  <h4><span style="color: #009EE2; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
+  <h4><span style="color: #BD4B10; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : </span><%= booking.workshop.name %> </h4>
+  <h4><%= booking.workshop.description %></h4>
+  <h4><span style="color: #BD4B10; font-weight: bold"><%= "Intervenants : " %></span><%= simple_format(booking.workshop.speaker) %></h4>
   <% end %>
 <% end %>
 </div>
-
-
-<p style="color: #004F99">Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</p>
-<p style="color: #004F99">Pour cela, il vous suffit simplement de vous rendre sur la page <span style="background-color:#FFED34;font-weight:bold;"><a href="https://conference.erasmusplus.fr/events/12/questions/new">VOS QUESTIONS</a>.</span>
-</p>
-<!-- <p style="color: #004F99">Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS du site de la Conférence :<span style="background-color:#FFED34;font-weight:bold;">https://conference.erasmusplus.fr<a href="https://conference.erasmusplus.fr/events/16/questions/new"></a></span></p>.
+<!-- <p style="color: #7A8E00">Vous vous posez des questions et/ou souhaitez obtenir des précisions sur le nouveau programme Erasmus+ 2021-2027 : vous pouvez poser dès à présent vos questions et cela jusqu’à la fin de la 1ère journée de conférence, le 14 janvier 2021.</p>
+<p style="color: #7A8E00">Pour cela, il vous suffit simplement de vous rendre sur la page <span style="background-color:#FFED34;font-weight:bold;"><a href="https://conference.erasmusplus.fr/events/12/questions/new">VOS QUESTIONS</a>.</span>
 </p> -->
-<p style="color: #004F99">A bientôt!</p>
+<!-- <p style="color: #7A8E00">Pour cela, il vous suffit simplement de vous rendre sur la page VOS QUESTIONS du site de la Conférence :<span style="background-color:#FFED34;font-weight:bold;">https://conference.erasmusplus.fr<a href="https://conference.erasmusplus.fr/events/16/questions/new"></a></span></p>.
+</p> -->
+<p></p>
+<p style="color: #7A8E00; font-weight: bold">A bientôt!</p>
 
 

@@ -4,19 +4,19 @@ class ParticipantMailer < ApplicationMailer
     @participant = participant
     @bookings = @participant.bookings
     @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
-    attachments.inline['logo_site_erasmus.png'] = File.read('app/assets/images/logo_site_erasmus.png')
-    mail(to: @participant.email, subject: "Conférence Erasmus + Bilan et Perspectives - Confirmation d'inscription") do |format|
+    attachments.inline['logo_grdr_et_uasz.png'] = File.read('app/assets/images/logo_grdr_et_uasz.png')
+    mail(to: @participant.email, subject: "Les Jeudis du Littoral Ouest Africain - Confirmation d'inscription") do |format|
       format.html { render(layout: 'mailer') }
     end
   end
 
-  def participant_question(question)
-    @question = question
-    attachments.inline['logo_site_erasmus.png'] = File.read('app/assets/images/logo_site_erasmus.png')
-    mail(to: @question.email, subject: "Conférence Erasmus + Bilan et Perspectives - Vos questions") do |format|
-      format.html { render(layout: 'mailer') }
-    end
-  end
+  # def participant_question(question)
+  #   @question = question
+  #   attachments.inline['logo_site_erasmus.png'] = File.read('app/assets/images/logo_site_erasmus.png')
+  #   mail(to: @question.email, subject: "Conférence Erasmus + Bilan et Perspectives - Vos questions") do |format|
+  #     format.html { render(layout: 'mailer') }
+  #   end
+  # end
 
   # def alert_before(participant, time)
   #   @participant = participant
