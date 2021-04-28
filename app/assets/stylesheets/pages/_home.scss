@@ -1,22 +1,22 @@
 .banner {
   @media (max-width: 575.98px)  {
-    height: 150px;
-    background-position: center;
+    height: 110px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 150px;
-    background-position: center;
+    height: 190px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 200px;
-    background-position: center;
+    height: 250px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 200px;
-    background-position: center;
+    height: 300px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 1200px) {
@@ -26,10 +26,10 @@
   }
 }
 
-a:hover {
-    text-decoration: none;
-    color: $grdr_brown;
-}
+// a:hover {
+//     text-decoration: none;
+//     color: $grdr_brown;
+// }
 
 .conference-presentation {
   background-color: white;
@@ -38,48 +38,180 @@ a:hover {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  padding: 30px;
   box-shadow: 0px -4px 12px #CBD9F1;
+  @media (max-width: 575.98px)  {
+    padding: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding: 25px;
+  }
+  @media (min-width: 1200px) {
+    padding: 30px;
+  }
 }
 
 .conference-title h1 {
   color: $grdr_brown;
   font: $my-font;
   font-weight: bold;
-  font-size: 32px;
-  padding: 20px;
+  @media (max-width: 575.98px)  {
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 12px;
+    font-size: 26px;
+    padding: 12px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: 15px;
+    font-size: 28px;
+    padding: 15px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 17px;
+    font-size: 30px;
+    padding: 17px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 20px;
+    font-size: 32px;
+    padding: 20px;
+  }
 }
 
 .conference-details {
-  @media (min-width: 768px) {
-    display: flex;
-  }
+  display: flex;
   justify-content: space-between;
   border: solid $grdr_medium_green;
-  padding: 10px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  margin-left: 70px;
-  margin-right: 70px;
+  @media (max-width: 575.98px)  {
+    padding: 10px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding: 15px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding: 25px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media (min-width: 1200px) {
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
 }
 
 .webinar-image {
   display: flex;
   justify-content: center;
-  padding-left: 20px;
   padding-top: 10px;
-  width: 100px;
+  @media (max-width: 575.98px)  {
+    justify-content: center;
+    width: 200px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    justify-content: center;
+    width: 250px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    justify-content: center;
+    width: 300px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    justify-content: flex-start;
+    width: 350px;
+  }
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+    width: 350px;
+  }
+}
+
+.webinar-image img {
+  @media (max-width: 575.98px)  {
+    width: 200px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 250px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 300px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 350px;
+  }
+  @media (min-width: 1200px) {
+    height: 150px;
+  }
 }
 
 .conference-text-presentation {
-  // display: flex;
-  // flex-direction: column;
-  padding-top: 0px;
-  padding-left: 30px;
-  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
   font: $my-font;
+  @media (max-width: 575.98px)  {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
-
 
 .conference-text-presentation h1 {
   // display: flex;
@@ -87,9 +219,23 @@ a:hover {
   text-align: left;
   padding: 10px;
   padding-bottom: 0px;
-  font-size: 22px;
   font-weight: 600;
   font: $my-font;
+  @media (max-width: 575.98px)  {
+    font-size: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .conference-text-presentation p {
@@ -100,6 +246,21 @@ a:hover {
   padding-top: 0px;
   font-size: 20px;
   font: $my-font;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 17px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 19px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .conference-text-presentation a {
