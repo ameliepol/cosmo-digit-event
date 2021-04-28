@@ -1,19 +1,57 @@
-.banner-registration {
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-}
+// .banner-registration {
+//   background-size: cover;
+//   background-position: center;
+//   height: 320px;
+// }
 
 .new_participant-show {
-  @media (min-width: 1200px) {
-    display: flex;
-  }
-  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
   border: solid $grdr_medium_green;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  @media (max-width: 575.98px) {
+    padding: 10px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding: 15px;
+    flex-wrap: wrap;
+    font-size: 16px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding: 20px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding: 25px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media (min-width: 1200px) {
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 160px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
 
 .registration-image-show {
@@ -38,64 +76,202 @@
   color: $grdr_red;
   font: $my-font;
   text-align: center;
-  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .participant-infos-show h2 {
   color: #2b2a2a;
   font: $my-font;
-  font-size: 24px;
   font-weight: normal;
   margin-bottom: 20px;
   margin-top: 20px;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .participant-infos-show h3 {
   color: $erasmus-blue;
   font: $my-font;
-  font-size: 20px;
   font-style: italic;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .participant-infos-show p {
   color: #2b2a2a;
   font: $my-font;
-  font-size: 20px;
   font-weight: normal;
   margin-bottom: 10px;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .workshop-details p {
   color: $grdr_medium_green;
   font: $my-font;
-  font-size: 20px;
   margin-bottom: 10px;
   font-weight: 600;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .workshop-details h4 {
   color: #2b2a2a;
   font: $my-font;
-  font-size: 20px;
   font-weight: normal;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .participant-instructions h1 {
   color: #2b2a2a;
   font: $my-font;
-  font-size: 20px;
   font-weight: normal;
   text-align: left;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
 }
 
 .participant-instructions p {
   color: #2b2a2a;
   font: $my-font;
-  font-size: 20px;
   font-weight: normal;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 20px;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 22px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
+}
+
+.btn-imagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 45px;
+  background-color: $grdr_medium_green;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font: $my-font;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn-imagina a:hover {
+  text-decoration: none;
+  color: $grdr_red;
+}
+
+a {
+  color: $grdr_red;
 }
