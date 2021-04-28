@@ -1,25 +1,63 @@
-.presentation-container {
+.event-presentation {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
-.event-presentation {
-  padding-top: 50px;
-  padding-left: 170px;
-  padding-right: 170px;
-  padding-bottom: 50px;
+.event-presentation-text {
   text-align: center;
+  @media (max-width: 575.98px) {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
-.map {
+.event-presentation-map {
   display: flex;
   justify-content: center;
 }
 
-.map img {
+.event-presentation-map img {
   justify-content: center;
 }
 
-.logos-officiels img{
+.logos-officiels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.logos-officiels img {
   margin: 15px;
 }
