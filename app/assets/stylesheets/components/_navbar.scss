@@ -71,14 +71,25 @@
   color: $grdr_medium_green;
 }
 
+.social-network {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 991.98px) {
+    justify-content: flex-start;
+    margin-top : 8px;
+    margin-left: 53px;
+  }
+}
+
 .fa-facebook-square {
-  margin-top: 8px;
+  margin-left: 8px;
   color: $grdr_medium_green;
   font-size: 28px;
 }
 
 .fa-twitter-square {
-  margin-top: 8px;
+  margin-left: 8px;
   color: $grdr_medium_green;
   font-size: 28px;
 }
