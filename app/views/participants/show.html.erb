@@ -20,7 +20,10 @@
     <h2><span style="color: #7A8E00; font-weight: bold"> Les tables rondes sélectionnées : </span></h2>
     <div class="workshop-details">
       <% @bookings_by_date.each do |date, bookings| %>
-        <p><%= date.strftime("%e/%m/%Y") %> </p>
+        <div class="date-highlighted">
+          <span><%= date.strftime("%e/%m/%Y") %></span>
+        </div>
+        <!-- <p><%= date.strftime("%e/%m/%Y") %> </p> -->
         <% bookings.each do |booking| %>
           <h4><span style="color: #BD4B10; font-weight: bold"><%= booking.workshop.start_at.strftime("%Hh%M")%> - <%= booking.workshop.end_at.strftime("%Hh%M") %> : <%= booking.workshop.name %> </span></h4>
           <h4><%= booking.workshop.description %></h4>
@@ -32,7 +35,7 @@
     <h2><span style="color: #7A8E00; font-weight: bold"> Informations importantes : </span></h2>
     <div class="participant-instructions">
      <h1> Afin d'accéder à l'événement, veuillez suivre les étapes suivantes : </h1>
-     <p> 1. (<u>Facultatif</u>) Créez-vous un compte sur la plateforme Imagina en utilisant la même adresse email renseignée lors de votre inscription en cliquant ici : <%= link_to "JE CRÉE MON COMPTE", "https://app.imagina.io/account/login", target: "_blank", style: "bold" %> </p>
+     <p> 1. (<u>Facultatif</u>) Créez-vous un compte sur la plateforme Imagina en utilisant la même adresse email renseignée lors de votre inscription en cliquant ici : <%= link_to "JE CRÉE MON COMPTE", "https://app.imagina.io/account/login", target: "_blank" %> </p>
      <p> 2. Accédez à l'événement "Les Jeudis du Littoral Ouest Africain" en cliquant ici : <%= link_to "JE REJOINS LES CONFÉRENCES", "https://app.imagina.io/location/111255", target: "_blank" %> </p>
     </div>
     <!-- <p></p>
