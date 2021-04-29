@@ -1,10 +1,9 @@
 .container-dashboard {
-min-height: 530px;
+min-height: 500px;
 max-width: 1200px;
-margin-top: 50px;
-margin-left: 100px;
-margin-right: 100px;
-margin-bottom: 50px;
+padding-top: 180px;
+padding-bottom: 10px;
+margin: 0 auto;
 }
 
 .container-dashboard h1 {
@@ -13,7 +12,6 @@ margin-bottom: 50px;
   text-align: left;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
 .title-dashboard {
@@ -27,16 +25,23 @@ margin-bottom: 50px;
   align-items: center;
   height: 55px;
   background-color: $grdr_medium_green;
-  color: $erasmus_blue;
+  color: white;
   font-weight: bold;
   font: $my-font;
   padding: 10px;
   text-decoration: none;
 }
 
+.btn-back-dashboard:hover {
+  background-color: white;
+  border: solid $grdr_medium_green;
+  color: $grdr_medium_green;
+  text-decoration: none;
+}
+
 .dashboard-options {
   display: flex;
-  min-height: 500px;
+  min-height: 420px;
   justify-content: space-around;
   align-items: center;
 }
@@ -47,7 +52,7 @@ margin-bottom: 50px;
   justify-content: center;
   width: 250px;
   height: 250px;
-  background-color: $grdr-red;
+  background-color: $grdr_red;
   color: white;
   font-weight: bold;
   font: $my-font;
@@ -57,19 +62,22 @@ margin-bottom: 50px;
 }
 
 .btn-dashboard:hover {
-  background-color: $grdr_medium_green;
+  background-color: white;
+  border: solid $grdr_red;
+  color: $grdr_red;
+  text-decoration: none;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
-  background-color: $grdr-red;
+  background-color: $grdr_red;
   font: $my-font;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
-  background-color: $grdr-red;
+  background-color: $grdr_red;
   font: $my-font;
 }
 
@@ -92,17 +100,17 @@ margin-bottom: 50px;
   text-decoration: none;
   color: #fff;
   font-weight: normal;
-  background-color: $grdr-red;
+  background-color: $grdr_red;
   font: $my-font;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: white;
-  background-color: $erasmus_blue;
+  background-color: $grdr_red;
 }
 
 a {
-  color: $grdr-red;
+  color: $grdr_red;
   font: $my-font;
 }
 
@@ -112,6 +120,6 @@ a {
 }
 
 .fas .fa-trash-alt a {
-  color: $erasmus_blue;
+  color: $grdr_red;
   margin: auto;
 }
