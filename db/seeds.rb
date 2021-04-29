@@ -4,8 +4,8 @@ require 'date'
 
 puts "Updating users..."
 user1 = User.find_by(email: "amelie@agencecosmo.com")
-# user1.update(password: "CosmoEvent")
-user2 = User.find_by(email: "chloe@agencecosmo.com")
+user1.update(password: "CosmoEvent")
+# user2 = User.find_by(email: "chloe@agencecosmo.com")
 # user2.update(password: "CosmoEvent")
 puts "Users updated..."
 
