@@ -1,23 +1,65 @@
-.legal-definitions h1 {
-font-family: $my-font;
-color: #009EE2;
-font-size: 24px;
-font-weight: 600;
+.legal-container {
+  @media (max-width: 575.98px) {
+    font-size: 12px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
 
-.legal-definitions p {
-font-family: $my-font;
-color: black;
-font-size: 16px;
-font-weight: normal;
+.legal-details {
+  padding: 20px;
 }
 
-.title-highlighted-yellow span {
-font-family: $my-font;
-color: $erasmus-blue;
-font-size: 24px;
-font-weight: 600;
-position: relative;
+.legal-details span {
+  font-family: $my-font;
+  color: #2b2a2a;
+  font-weight: 600;
+  position: relative;
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 .legal-details span:after {
@@ -29,20 +71,68 @@ position: relative;
   left:0;
   bottom: 0;
   z-index:-1;
-  background-color: $erasmus-yellow;
+  background-color: #cfd8a9;
+}
+
+.title-highlighted-green {
+  margin-top: 20px;
 }
 
 .legal-details h3 {
 font-family: $my-font;
-color: $erasmus-blue;
-font-size: 20px;
-font-weight: 600;
+color: #2b2a2a;
+font-weight: normal;
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 
 .legal-details p {
 font-family: $my-font;
-color: black;
-font-size: 16px;
+color: #2b2a2a;
 font-weight: normal;
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
+
+
+// .legal-definitions h1 {
+// font-family: $my-font;
+// color: #009EE2;
+// font-size: 24px;
+// font-weight: 600;
+// }
+
+// .legal-definitions p {
+// font-family: $my-font;
+// color: #2b2a2a;
+// font-size: 16px;
+// font-weight: normal;
+// }
+

@@ -8,23 +8,3 @@
   text-align: center;
   margin: auto;
 }
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 55px;
-  background-color: $grdr_medium_green;
-  color: white;
-  font-weight: bold;
-  font: $my-font;
-  padding: 10px;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-
-.btn a:hover {
-  color: $grdr_red;
-}
