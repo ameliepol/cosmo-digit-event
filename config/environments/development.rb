@@ -29,7 +29,9 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  config.action_mailer.delivery_method = :letter_opener
+  # config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.delivery_method = :postmark
+  config.action_mailer.postmark_settings = { api_token: ENV["POSTMARK-SERVER-API-TOKEN"] }
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # config.action_mailer.delivery_method = :smtp
