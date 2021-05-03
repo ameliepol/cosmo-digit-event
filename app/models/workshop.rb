@@ -13,7 +13,7 @@ class Workshop < ApplicationRecord
   def self.to_csv
     @workshops = Workshop.visibles.order(start_at: :asc)
 
-    CSV.generate do |csv|
+    CSV.generate(col_sep: ";") do |csv|
       csv << CSV_HEADER
       @workshops.each do |workshop|
         workshop.bookings.each do |booking|

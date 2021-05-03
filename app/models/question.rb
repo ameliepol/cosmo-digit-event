@@ -16,7 +16,7 @@ class Question < ApplicationRecord
 
   CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Questions]
   def self.to_csv
-    CSV.generate do |csv|
+    CSV.generate(col_sep: ";") do |csv|
       csv << CSV_HEADER
       all.each do |question|
         csv << [

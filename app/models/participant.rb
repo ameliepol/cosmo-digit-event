@@ -22,7 +22,7 @@ class Participant < ApplicationRecord
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @participants = Participant.all
 
-    CSV.generate do |csv|
+    CSV.generate(col_sep: ";") do |csv|
       csv << CSV_HEADER
       @participants.each do |participant|
         csv << [
