@@ -9,7 +9,7 @@ class Workshop < ApplicationRecord
     #{self.description}"
   end
 
-  CSV_HEADER = %w[Atelier Nom Prénom Email Organisation Secteur Fonction]
+  CSV_HEADER = %w[Atelier Nom Prénom Email Organisation Fonction]
   def self.to_csv
     @workshops = Workshop.visibles.order(start_at: :asc)
 
@@ -23,8 +23,7 @@ class Workshop < ApplicationRecord
             booking.participant.first_name,
             booking.participant.email,
             booking.participant.organization,
-            booking.participant.company,
-            booking.participant.position,
+            booking.participant.position
           ]
         end
       end

@@ -84,7 +84,7 @@ margin: 0 auto;
 .nav-pills>li>a {
   text-decoration: none;
   border-radius: 4px;
-  color: grey;
+  color: #2b2a2a;
   border-radius: 4px 4px 0 0;
 }
 
@@ -102,6 +102,7 @@ margin: 0 auto;
   font-weight: normal;
   background-color: $grdr_red;
   font: $my-font;
+  border-color: $grdr_red;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
@@ -122,4 +123,20 @@ a {
 .fas .fa-trash-alt a {
   color: $grdr_red;
   margin: auto;
+}
+
+.fas .fa-trash-alt a:hover {
+  color: $grdr_medium_green;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: $grdr_red;
+    border-color: $grdr_red;
+}
+
+.page-item.disabled .page-link {
+    z-index: 3;
+    color: #2b2a2a
 }

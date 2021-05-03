@@ -275,28 +275,6 @@
   color: $grdr_orange;
 }
 
-.button-registration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 320px;
-  height: 55px;
-  background-color: $grdr_brown;
-  color: white;
-  font-weight: bold;
-  font: $my-font;
-  padding: 10px;
-  text-decoration: none;
-  margin-top : 20px;
-  margin-bottom: 20px;
-}
-
-.button-registration a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 // .banner-button-margin {
 //   @media (min-width: 1200px) {
 //     margin-left: 50px;

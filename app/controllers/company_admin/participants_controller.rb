@@ -18,7 +18,7 @@ class CompanyAdmin::ParticipantsController < ApplicationController
   def destroy
     @participant = Participant.find(params[:id])
     @participant.destroy
-    redirect_to company_admin_dashboard_path
+    redirect_to company_admin_participants_path
   end
 
 
@@ -29,7 +29,6 @@ private
     :email,
     :first_name,
     :last_name,
-    :company,
     :organization,
     :position,
     :accepted_conditions,

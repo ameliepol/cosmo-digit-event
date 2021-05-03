@@ -17,7 +17,6 @@ class CompanyAdmin::DashboardController < ApplicationController
     :email,
     :first_name,
     :last_name,
-    :company,
     :organization,
     :position,
     :accepted_conditions,

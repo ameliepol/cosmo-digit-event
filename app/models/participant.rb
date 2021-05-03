@@ -17,7 +17,7 @@ class Participant < ApplicationRecord
   validates :organization, presence: true
   validates :accepted_conditions, inclusion: { in: [true] }
 
-  CSV_HEADER = %w[Nom Prénom Email Organisation Secteur Fonction Ateliers_sélectionnés]
+  CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ateliers_sélectionnés]
   def self.to_csv
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @participants = Participant.all
@@ -30,7 +30,6 @@ class Participant < ApplicationRecord
           participant.first_name,
           participant.email,
           participant.organization,
-          participant.company,
           participant.position,
           participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
         ]
