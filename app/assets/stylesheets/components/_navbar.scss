@@ -29,13 +29,25 @@
   }
 }
 
-.navbar-lewagon .navbar-brand img {
+.logo_grdr_uasz {
+  display: flex;
+  flex-direction: row;
   @media (max-width: 1199.98px) {
     width: 200px;
     margin-left: 10px;
   }
   width: 320px;
   margin-left: 25px;
+}
+
+.navbar-brand-grdr {
+  margin: 10px;
+  height: 100px;
+}
+
+.navbar-brand-uasz {
+  margin: 10px;
+  height: 95px;
 }
 
 .nav-item .active {
