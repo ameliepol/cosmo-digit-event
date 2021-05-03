@@ -1,8 +1,9 @@
 ActionMailer::Base.smtp_settings = {
-  domain: 'conference.erasmusplus.fr',
-  address:        "smtp.sendgrid.net",
-  port:            587,
-  authentication: :plain,
-  user_name:      'apikey',
-  password:       ENV['SENDGRID_API_KEY']
+  :address => 'smtp.postmarkapp.com',
+  :port => 587,
+  :domain => ENV['DOMAIN'],
+  :user_name => "apikey",
+  :password => ENV['POSTMARK_PASSWORD'],
+  :authentication => :plain,
+  :enable_starttls_auto => true
 }
