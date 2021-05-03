@@ -28,8 +28,11 @@
   align-items: center;
 }
 
-.button-registration a:hover {
-  color: $grdr_medium_green;
+.button-registration:hover {
+  text-decoration: none;
+  color: $grdr_brown;
+  background-color: white;
+  border: solid $grdr_brown;
 }
 
 
@@ -49,8 +52,10 @@
   // margin: 0 auto;
 }
 
-.btn-grdr a:hover {
-  color: $grdr_red;
+.btn-grdr:hover {
+  color: $grdr_brown;
+  background-color: white;
+  border: solid $grdr_brown;
 }
 
 .btn {
@@ -69,8 +74,10 @@
 }
 
 
-.btn a:hover {
-  color: $grdr_red;
+.btn:hover {
+  color: $grdr_brown;
+  background-color: white;
+  border: solid $grdr_brown;
 }
 
 .btn-imagina {
