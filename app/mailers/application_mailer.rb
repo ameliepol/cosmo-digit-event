@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'hello@agencecosmo.com'
+  default from: 'communication@grdr.org'
   layout 'mailer'
 end
