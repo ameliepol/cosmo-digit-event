@@ -4,6 +4,7 @@
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
+$title-gotham: "Gotham";
 
 @font-face {
   font-family: "Gotham";
@@ -36,14 +37,14 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 @font-face {
   font-family: "Gotham";
   src: font-url('GothamRnd-BoldIta.otf');
-  font-weight: bold;
+  font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Gotham";
   src: font-url('GothamRnd-LightIta.otf');
-  font-weight: light;
+  font-weight: normal;
   font-style: italic;
 }
 

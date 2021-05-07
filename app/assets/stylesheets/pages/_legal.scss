@@ -41,7 +41,7 @@
 }
 
 .legal-details span {
-  font-family: $my-font;
+  font-family: $body-font;
   color: #2b2a2a;
   font-weight: 600;
   position: relative;
@@ -79,7 +79,7 @@
 }
 
 .legal-details h3 {
-font-family: $my-font;
+font-family: $body-font;
 color: #2b2a2a;
 font-weight: normal;
   @media (max-width: 575.98px) {
@@ -100,7 +100,7 @@ font-weight: normal;
 }
 
 .legal-details p {
-font-family: $my-font;
+font-family: $body-font;
 color: #2b2a2a;
 font-weight: normal;
   @media (max-width: 575.98px) {
@@ -122,14 +122,14 @@ font-weight: normal;
 
 
 // .legal-definitions h1 {
-// font-family: $my-font;
+// font-family: $body-font;
 // color: #009EE2;
 // font-size: 24px;
 // font-weight: 600;
 // }
 
 // .legal-definitions p {
-// font-family: $my-font;
+// font-family: $body-font;
 // color: #2b2a2a;
 // font-size: 16px;
 // font-weight: normal;

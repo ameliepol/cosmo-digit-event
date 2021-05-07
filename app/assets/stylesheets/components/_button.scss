@@ -3,7 +3,7 @@
   background-color: $erasmus_yellow;
   color: $erasmus_blue;
   font-weight: bold;
-  font: $my-font;
+  font: $body-font;
 }
 
 .button-registration {
@@ -15,7 +15,7 @@
   background-color: $grdr_brown;
   color: white;
   font-weight: bold;
-  font: $my-font;
+  font: $body-font;
   padding: 10px;
   text-decoration: none;
   margin-top : 20px;
@@ -45,7 +45,7 @@
   background-color: $grdr_brown;
   color: white;
   font-weight: bold;
-  font: $my-font;
+  font: $body-font;
   padding: 10px;
   margin: 20px;
   text-decoration: none;
@@ -67,7 +67,7 @@
   background-color: $grdr_brown;
   color: white;
   font-weight: bold;
-  font: $my-font;
+  font: $body-font;
   padding: 10px;
   text-decoration: none;
   margin: 0 auto;
@@ -90,7 +90,7 @@
   color: white;
   font-weight: bold;
   text-align: center;
-  font: $my-font;
+  font: $body-font;
   font-size: 16px;
   padding: 10px;
   text-decoration: none;
@@ -104,6 +104,7 @@
 }
 
 a {
+  font-family: $my-font;
   color: $grdr_red;
   font-weight: 600;
 }

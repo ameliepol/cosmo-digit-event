@@ -8,7 +8,7 @@ margin: 0 auto;
 
 .container-dashboard h1 {
   color: $grdr_medium_green;
-  font: $my-font;
+  font: $body-font;
   text-align: left;
   font-size: 24px;
   font-weight: bold;
@@ -27,7 +27,7 @@ margin: 0 auto;
   background-color: $grdr_medium_green;
   color: white;
   font-weight: bold;
-  font: $my-font;
+  font: $body-font;
   padding: 10px;
   text-decoration: none;
 }
@@ -55,7 +55,7 @@ margin: 0 auto;
   background-color: $grdr_red;
   color: white;
   font-weight: bold;
-  font: $my-font;
+  font: $body-font;
   font-size: 24px;
   padding: 10px;
   text-decoration: none;
@@ -71,14 +71,14 @@ margin: 0 auto;
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
   background-color: $grdr_red;
-  font: $my-font;
+  font: $body-font;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
   background-color: $grdr_red;
-  font: $my-font;
+  font: $body-font;
 }
 
 .nav-pills>li>a {
@@ -93,7 +93,7 @@ margin: 0 auto;
   position: relative;
   display: block;
   padding: 10px 15px;
-  font: $my-font;
+  font: $body-font;
 }
 
 .table .thead-dark th {
@@ -101,7 +101,7 @@ margin: 0 auto;
   color: #fff;
   font-weight: normal;
   background-color: $grdr_red;
-  font: $my-font;
+  font: $body-font;
   border-color: $grdr_red;
 }
 
@@ -112,7 +112,7 @@ margin: 0 auto;
 
 a {
   color: $grdr_red;
-  font: $my-font;
+  font: $body-font;
 }
 
 .fas .fa-arrow-circle-down a {
