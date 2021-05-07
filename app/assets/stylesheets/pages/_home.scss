@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  box-shadow: 0px -4px 12px #CBD9F1;
+  // box-shadow: 0px -4px 12px #CBD9F1;
   @media (max-width: 575.98px)  {
     padding: 10px;
   }
@@ -315,6 +315,17 @@
 
 .conference-text-presentation a:hover {
   color: $grdr_orange;
+}
+
+.logos-officiels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+  @media (max-width: 991.98px) {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 // .banner-button-margin {

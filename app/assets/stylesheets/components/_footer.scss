@@ -130,13 +130,20 @@
   }
 }
 
-.logos-officiels {
+.siteweb {
+  font-family: $body-font;
+  font-weight: normal;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.logos-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 25px;
   @media (max-width: 991.98px) {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 20px;
   }
 }
