@@ -215,11 +215,10 @@
 
 .conference-text-presentation h1 {
   // display: flex;
-  color: $grdr_medium_green;
+  color: #2b2a2a;
   text-align: left;
   padding: 10px;
-  padding-bottom: 0px;
-  font-weight: 600;
+  font-weight: bold;
   font: $my-font;
   @media (max-width: 575.98px)  {
     font-size: 20px;
@@ -245,6 +244,7 @@
   padding: 10px;
   padding-top: 0px;
   font-size: 20px;
+  text-decoration: none;
   font: $my-font;
   @media (max-width: 575.98px)  {
     font-size: 16px;
@@ -263,11 +263,53 @@
   }
 }
 
-.conference-text-presentation a {
-  color: $erasmus-blue;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: underline;
+.conference-text-presentation span {
+  color: #2b2a2a;
+  font: $my-font;
+  text-align: center;
+  position: relative;
+  z-index:0;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 17px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 19px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.conference-text-presentation span:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-2;
+  background-color: #cfd8a9;
+}
+
+// .conference-text-presentation a {
+//   color: $erasmus-blue;
+//   font-size: 20px;
+//   font-weight: 600;
+//   text-decoration: underline;
+//   font: $my-font;
+// }
+
+.conference-text-presentation span {
+  font-weight: normal;
+  font-style: italic;
   font: $my-font;
 }
 
