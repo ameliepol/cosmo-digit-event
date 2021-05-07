@@ -5,6 +5,7 @@ class ParticipantMailer < ApplicationMailer
     @bookings = @participant.bookings
     @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
     attachments.inline['logo_grdr_et_uasz.png'] = File.read('app/assets/images/logo_grdr_et_uasz.png')
+    attachments.inline['logos.png'] = File.read('app/assets/images/logos.png')
     attachments.inline['logo_AFD.png'] = File.read('app/assets/images/logo_AFD.png')
     attachments.inline['logo_UE.png'] = File.read('app/assets/images/logo_UE.png')
     attachments.inline['logo_FAP.png'] = File.read('app/assets/images/logo_FAP.png')
