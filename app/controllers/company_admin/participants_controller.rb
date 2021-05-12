@@ -29,8 +29,11 @@ private
     :email,
     :first_name,
     :last_name,
+    :company,
     :organization,
     :position,
+    :city,
+    :zipcode,
     :accepted_conditions,
     bookings_attributes: [:id, :workshop_id, :status])
   end

@@ -9,17 +9,18 @@ class Participant < ApplicationRecord
   SECTOR = ["Enseignement scolaire", "Enseignement & formations professionnels",
   "Enseignement supérieur", "Jeunesse & sport", "Education des adultes"]
 
-  # validates :company, presence: true
+
   validates :email, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true
-  # validates :position, presence: true
   validates :organization, presence: true
   validates :city, presence: true
   validates :zipcode, presence: true
   validates :accepted_conditions, inclusion: { in: [true] }
+  # validates :position, presence: true
+  # validates :company, presence: true
 
-  CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ateliers_sélectionnés]
+  CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ville Pays Ateliers_sélectionnés]
   def self.to_csv
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @participants = Participant.all
@@ -33,6 +34,8 @@ class Participant < ApplicationRecord
           participant.email,
           participant.organization,
           participant.position,
+          participant.city,
+          participant.zipcode,
           participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
         ]
       end
