@@ -406,21 +406,51 @@
 //   background-color: white;
 // }
 
-// #participant_zipcode {
-//   display: flex;
-//   box-shadow: 0 4px 4px 0 #cfd8a9;
-//   color: #2b2a2a;
-//   font: $body-font;
-//   background-color: white;
-// }
+#participant_zipcode {
+  display: flex;
+  box-shadow: 0 4px 4px 0 #cfd8a9;
+  color: #2b2a2a;
+  font: $body-font;
+  background-color: white;
+  @media (max-width: 575.98px)  {
+    font-size: 12px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
 
-// #participant_city {
-//   display: flex;
-//   box-shadow: 0 4px 4px 0 #cfd8a9;
-//   color: #2b2a2a;
-//   font: $body-font;
-//   background-color: white;
-// }
+#participant_city {
+  display: flex;
+  box-shadow: 0 4px 4px 0 #cfd8a9;
+  color: #2b2a2a;
+  font: $body-font;
+  background-color: white;
+  @media (max-width: 575.98px)  {
+    font-size: 12px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
 
 // .fleche-scroll-registration img {
 //   display: flex;

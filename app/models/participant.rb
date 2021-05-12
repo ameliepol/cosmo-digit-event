@@ -13,8 +13,10 @@ class Participant < ApplicationRecord
   validates :email, presence: true
   validates :first_name, presence: true
   validates :last_name, presence: true
-  validates :position, presence: true
+  # validates :position, presence: true
   validates :organization, presence: true
+  validates :city, presence: true
+  validates :zipcode, presence: true
   validates :accepted_conditions, inclusion: { in: [true] }
 
   CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ateliers_sélectionnés]

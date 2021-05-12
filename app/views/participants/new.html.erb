@@ -27,8 +27,9 @@
       <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
       <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
       <%= f.input :organization, placeholder: 'Entreprise / Organisation*', label: false, error: 'Ce champ est obligatoire' %>
-      <%#= f.input :company, collection: Participant::SECTOR, prompt: 'Secteur*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :position, placeholder: 'Fonction', label: false %>
+      <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
+      <%= f.input :zipcode, placeholder: 'Pays*', label: false, error: 'Ce champ est obligatoire' %>
     </div>
   </div>
 </div>
