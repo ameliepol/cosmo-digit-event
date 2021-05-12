@@ -19,6 +19,53 @@
     <%= image_tag "carte.jpg", alt: "carte" %>
     <%#= image_tag "logo_AFD.png", alt: "carte" %>
   </div>
+  <div class="table-ronde">
+  <div class="text-center">
+    <div class="date-highlighted">
+      <span>10 JUIN 2021</span>
+    </div>
+  </div>
+    <% @workshops_1.each_with_index do |workshop, index| %>
+      <div class="table-ronde-box" data-workshop-id="<%= workshop.id %>">
+        <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
+        <h2> <%= workshop.name %> </h2>
+        <div class="table-ronde-speakers">
+          <h2> Intervenants : </h2>
+          <p> <%= simple_format(workshop.speaker) %></p>
+        </div>
+      </div>
+    <% end %>
+  <div class="text-center">
+    <div class="date-highlighted">
+      <span>17 JUIN 2021</span>
+    </div>
+  </div>
+    <% @workshops_2.each_with_index do |workshop, index| %>
+      <div class="table-ronde-box" data-workshop-id="<%= workshop.id %>">
+        <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
+        <h2> <%= workshop.name %> </h2>
+        <div class="table-ronde-speakers">
+          <h2> Intervenants : </h2>
+          <p> <%= simple_format(workshop.speaker) %></p>
+        </div>
+      </div>
+    <% end %>
+  <div class="text-center">
+    <div class="date-highlighted">
+      <span>24 JUIN 2021</span>
+    </div>
+  </div>
+    <% @workshops_3.each_with_index do |workshop, index| %>
+      <div class="table-ronde-box" data-workshop-id="<%= workshop.id %>">
+        <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
+        <h2> <%= workshop.name %> </h2>
+        <div class="table-ronde-speakers">
+          <h2> Intervenants : </h2>
+          <p> <%= simple_format(workshop.speaker) %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
 <div class="event-presentation-text-italic">
   <p>Ce cycle de conférences est organisé dans le cadre du « Programme pour la Gouvernance Concertée du Littoral II : vers des territoires résilients aux chocs socio-climatiques (Sénégal, Guinée Bissau, Guinée) » mis en œuvre par le Grdr Migration-Citoyenneté-Développement et cofinancé par l’Agence Française de Développement (AFD), l’Union Européenne (UE), la Fondation Abbé Pierre (FAP), le Comité Français pour la Solidarité Internationale (CFSI), l’Organisation Internationale pour les Migrations (OIM) et Expertise France.
