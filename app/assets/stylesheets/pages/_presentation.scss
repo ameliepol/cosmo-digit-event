@@ -30,7 +30,7 @@
 .event-presentation-text {
   justify-content: center;
   position: relative;
-  z-index:-2;
+  z-index:0;
   @media (max-width: 575.98px) {
     // width: 90%;
     margin-left: 10px;
@@ -87,6 +87,10 @@
   @media (min-width: 1200px) {
     font-size: 18px;
   }
+}
+
+.event-presentation-text a:hover {
+  color: $grdr_medium_green;
 }
 
 .event-presentation-text span {
