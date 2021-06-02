@@ -218,6 +218,16 @@
   }
 }
 
+.fa-linkedin {
+  margin-left: 8px;
+  color: $grdr_medium_green;
+  font-size: 28px;
+  @media (max-width: 1199.98px) {
+    margin-left: 1px;
+    margin-right: 8px;
+  }
+}
+
 // .navbar {
 //   z-index: 1;
 // }
