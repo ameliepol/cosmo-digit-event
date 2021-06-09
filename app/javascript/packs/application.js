@@ -55,4 +55,8 @@ document.addEventListener('turbolinks:load', () => {
     });
   }
 
+  const closeModal = () => {
+    const buttonClose = document.querySelector("#exampleModal > .close").click();
+}
+
 });
