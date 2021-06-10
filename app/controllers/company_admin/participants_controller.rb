@@ -3,7 +3,7 @@ class CompanyAdmin::ParticipantsController < ApplicationController
   def index
     @event = Event.last
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
-    @pagy, @participants = pagy(Participant.all, items: 300)
+    @pagy, @participants = pagy(Participant.all, items: 50)
     @all_participants = Participant.all
     @workshops = @event.workshops.visibles
     @bookings = Booking.includes(:workshop)
