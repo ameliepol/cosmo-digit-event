@@ -1,0 +1,13 @@
+fr:
+  activerecord:
+    models:
+      booking:
+        one: "atelier"
+        other: "ateliers"
+
+    errors:
+      models:
+        participant:
+          attributes:
+            accepted_conditions:
+              inclusion: "Données collectées : Veuillez accepter les conditions d'utilisation pour valider votre inscription"

@@ -10,13 +10,15 @@ class Participant < ApplicationRecord
   "Enseignement supérieur", "Jeunesse & sport", "Education des adultes"]
 
 
-  validates :email, presence: true
-  validates :first_name, presence: true
-  validates :last_name, presence: true
-  validates :organization, presence: true
-  validates :city, presence: true
-  validates :zipcode, presence: true
+  validates :email, presence: { message: "Veuillez renseigner votre email" }
+  validates :first_name, presence: { message: "Veuillez renseigner votre nom de famille" }
+  validates :last_name, presence: { message: "Veuillez renseigner votre prénom" }
+  validates :organization, presence: { message: "Veuillez renseigner votre entreprise / organisation" }
+  validates :city, presence: { message: "Veuillez renseigner votre ville" }
+  validates :zipcode, presence: { message: "Veuillez renseigner votre pays" }
   validates :accepted_conditions, inclusion: { in: [true] }
+  # validates :accepted_conditions, presence: { message: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" }
+  validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
   # validates :position, presence: true
   # validates :company, presence: true
 

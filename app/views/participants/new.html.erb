@@ -37,14 +37,14 @@
 <div class="workshop-choices">
   <h1>  <%= 'Sélectionnez vos ateliers :' %></h1>
   <div class="text-center">
-    <div class="date-highlighted">
+    <div class="disabled-date-highlighted">
       <span>10 JUIN 2021</span>
     </div>
   </div>
     <% @workshops_1.each_with_index do |workshop, index| %>
     <%= f.simple_fields_for :bookings, Booking.new do |b| %>
     <%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
+    <div class="my-disabled-check-box" data-workshop-id="<%= workshop.id %>">
       <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
       <h2> <%= workshop.name %> </h2>
       <p> <%= workshop.description %></p>
@@ -98,7 +98,7 @@
   <% end %>
   <div class="cookies-erasmus-participant">
     <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Association Grdr*</span>
-  <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe %>
+  <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
   </div>
 </div>
 
