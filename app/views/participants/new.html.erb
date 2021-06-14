@@ -48,10 +48,6 @@
       <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
       <h2> <%= workshop.name %> </h2>
       <p> <%= workshop.description %></p>
-      <!-- <div class="speakers">
-        <h2> Intervenants : </h2>
-        <p> <%= simple_format(workshop.speaker) %></p>
-      </div> -->
     </div>
     <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
@@ -68,10 +64,6 @@
       <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
       <h2> <%= workshop.name %> </h2>
       <p> <%= workshop.description %></p>
-      <!-- <div class="speakers">
-        <h2> Intervenants : </h2>
-        <p> <%= simple_format(workshop.speaker) %></p>
-      </div> -->
     </div>
       <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
     <% end %>
