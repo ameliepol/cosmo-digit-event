@@ -1,7 +1,16 @@
 .modal-header {
   height: 60px;
+  background-color: #f3f7e6
+}
+
+.modal-body {
+  background-color: #f3f7e6
 }
 
 .modal-body p {
   font-size: 18px;
+}
+
+#myOpenModal {
+  margin-top: 100px;
 }
