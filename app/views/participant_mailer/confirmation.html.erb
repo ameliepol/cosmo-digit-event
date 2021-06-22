@@ -16,7 +16,7 @@
 <p> <span style="color: #BD4B10; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
 <p> <span style="color: #BD4B10; font-weight: bold"> Pays : </span> <%= @participant.zipcode %></p>
 
-<h2><span style="color: #7A8E00; font-weight: bold"> Les tables rondes sélectionnées : </span></h2>
+<h2><span style="color: #7A8E00; font-weight: bold"> Les ateliers sélectionnées : </span></h2>
 <div class="workshop-details">
 <% @bookings_by_date.each do |date, bookings| %>
 <p><span style="color: #7A8E00; font-weight: bold"><%= date.strftime("%e/%m/%Y:") %></span></p>
