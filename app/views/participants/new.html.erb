@@ -54,14 +54,14 @@
     <% end %>
   <% end %>
   <div class="text-center">
-    <div class="date-highlighted">
+    <div class="disabled-date-highlighted">
       <span>17 JUIN 2021</span>
     </div>
   </div>
     <% @workshops_2.each_with_index do |workshop, index| %>
       <%= f.simple_fields_for :bookings, Booking.new do |b| %>
       <%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
+    <div class="my-disabled-check-box" data-workshop-id="<%= workshop.id %>">
       <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
       <h2> <%= workshop.name %> </h2>
       <p> <%= workshop.description %></p>
