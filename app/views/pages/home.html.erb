@@ -1,5 +1,5 @@
 <div class="banner-container">
-  <div class="banner position-relative" style="background-image: url('<%= image_path 'banniere_grdr_web.png' %>');">
+  <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner-bulle.png' %>');">
     <!-- <div class="d-flex flex-wrap">
       <div class="col-12">
         <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
@@ -15,7 +15,7 @@
       <%= image_tag "fleche-scroll.svg" %>
     </div> -->
   </div>
-  <%= render 'modal/modal_home' %>
+  <%#= render 'modal/modal_home' %>
   <div class="conference-presentation">
     <div class="conference-title">
       <!-- <h1> LA CONFÉRENCE </h1> -->
@@ -23,7 +23,7 @@
     </div>
     <div class="conference-details">
       <div class="webinar-image mx-auto">
-        <%= image_tag "online-class.svg", alt: "Webinar", height: 100 %>
+        <%= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
       </div>
       <div class="conference-text-presentation">
         <p> Depuis plus de 50 ans, en Afrique de l’Ouest, le Grdr <i>Migration-Citoyenneté-Développement</i> accompagne des territoires frontaliers sujets à de fortes mutations démographiques, économiques, sociales et environnementales.
@@ -44,13 +44,5 @@
     <div div class="d-flex flex-wrap">
       <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-registration" %>
     </div>
-  </div>
-  <div class="logos-officiels">
-    <%= image_tag "logo_AFD.png", alt: "AFD", height: 80 %>
-    <%= image_tag "logo_UE.png", alt: "UE", height: 80 %>
-    <%= image_tag "logo_FAP.png", alt: "FAP", height: 80 %>
-    <%= image_tag "logo_CFSI.png", alt: "CFSI", height: 80 %>
-    <%= image_tag "logo_OIM.png", alt: "OIM", height: 80 %>
-    <%= image_tag "logo_Expertise_France.png", alt: "Expertise France", height: 50, margin: 20 %>
   </div>
 </div>
