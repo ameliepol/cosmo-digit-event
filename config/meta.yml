@@ -1,5 +1,5 @@
-meta_product_name: "Les Jeudis du Littoral Ouest Africain"
-meta_title: "Les Jeudis du Littoral Ouest Africain - Série de téléconférences"
-meta_description: "L’Université Assane Seck de Ziguinchor (UASZ) et le Grdr Migration-Citoyenneté-Développement ont le plaisir de vous inviter à un cycle de conférences en ligne qui se tiendront les jeudis 10, 17 et 24 juin 2021, de 9h à 10h30 GMT (11h à 12h30 heure française) !"
-meta_image: "banniere_grdr_reseaux.png" # should exist in `app/assets/images/`
-twitter_account: "@GRDR1"   # required for Twitter Cards
+meta_product_name: "Webconférence Mobilité des apprentis"
+meta_title: "Mobilités hybrides, compétences « vertes » : de nouvelles opportunités du programme Erasmus+ pour les apprentis"
+meta_description: "Le développement de la mobilité des apprentis constitue une priorité au niveau européen et national. Cette mobilité est un levier important pour enrichir les parcours professionnels et valoriser les filières d’apprentissage. L’Agence Erasmus+ France / Education Formation organise une webconférence autour de deux axes forts du nouveau programme Erasmus+ pour la période 2021-2027: mobilités hybrides; mobilités et transition écologique. Cet évènement permettra à différents acteurs français et européens de dialoguer et de témoigner de leurs expériences et projets menés en lien avec ces deux thématiques. D’une durée de 2h, il sera animé en direct par Vanessa Duval."
+meta_image: "accueil-banner-bulle.png" # should exist in `app/assets/images/`
+twitter_account: "@ErasmusplusFR"   # required for Twitter Cards
