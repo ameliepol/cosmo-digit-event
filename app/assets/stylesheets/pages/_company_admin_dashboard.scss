@@ -7,7 +7,7 @@ margin: 0 auto;
 }
 
 .container-dashboard h1 {
-  color: $grdr_medium_green;
+  color: $erasmus_blue;
   font: $body-font;
   text-align: left;
   font-size: 24px;
@@ -24,7 +24,7 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   height: 55px;
-  background-color: $grdr_medium_green;
+  background-color: $erasmus_blue;
   color: white;
   font-weight: bold;
   font: $body-font;
@@ -34,8 +34,8 @@ margin: 0 auto;
 
 .btn-back-dashboard:hover {
   background-color: white;
-  border: solid $grdr_medium_green;
-  color: $grdr_medium_green;
+  border: solid $erasmus_blue;
+  color: $erasmus_blue;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ margin: 0 auto;
   justify-content: center;
   width: 250px;
   height: 250px;
-  background-color: $grdr_red;
+  background-color: $erasmus_pink;
   color: white;
   font-weight: bold;
   font: $body-font;
@@ -63,21 +63,21 @@ margin: 0 auto;
 
 .btn-dashboard:hover {
   background-color: white;
-  border: solid $grdr_red;
-  color: $grdr_red;
+  border: solid $erasmus_pink;
+  color: $erasmus_pink;
   text-decoration: none;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
-  background-color: $grdr_red;
+  background-color: $erasmus_pink;
   font: $body-font;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
-  background-color: $grdr_red;
+  background-color: $erasmus_pink;
   font: $body-font;
 }
 
@@ -100,18 +100,18 @@ margin: 0 auto;
   text-decoration: none;
   color: #fff;
   font-weight: normal;
-  background-color: $grdr_red;
+  background-color: $erasmus_pink;
   font: $body-font;
-  border-color: $grdr_red;
+  border-color: $erasmus_pink;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: white;
-  background-color: $grdr_red;
+  background-color: $erasmus_pink;
 }
 
 a {
-  color: $grdr_red;
+  color: $erasmus_pink;
   font: $body-font;
 }
 
@@ -121,19 +121,19 @@ a {
 }
 
 .fas .fa-trash-alt a {
-  color: $grdr_red;
+  color: $erasmus_pink;
   margin: auto;
 }
 
 .fas .fa-trash-alt a:hover {
-  color: $grdr_medium_green;
+  color: $erasmus_blue;
 }
 
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: $grdr_red;
-    border-color: $grdr_red;
+    background-color: $erasmus_pink;
+    border-color: $erasmus_pink;
 }
 
 .page-item.disabled .page-link {

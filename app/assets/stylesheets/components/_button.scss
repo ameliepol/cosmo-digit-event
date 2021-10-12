@@ -3,109 +3,246 @@
   background-color: $erasmus_yellow;
   color: $erasmus_blue;
   font-weight: bold;
-  font: $body-font;
+  font-family: $my-font;
+}
+
+.button-download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $erasmus_pink;
+  color: white;
+  font-weight: bold;
+  font-family: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @media (max-width: 575.98px)  {
+    width: 270px;
+    // height: 90px;
+    font-size: 12px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 270px;
+    // height: 90px;
+    font-size: 13px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 300px;
+    height: 90px;
+    font-size: 14px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 350px;
+    height: 90px;
+    font-size: 15px;
+  }
+  @media (min-width: 1200px) {
+    width: 400px;
+    height: 90px;
+    font-size: 15px;
+  }
+}
+
+.button-download:hover {
+  text-decoration: none;
+  color: $erasmus_pink;
+  background-color: white;
+  border: solid $erasmus_pink;
+}
+
+.button-registration-into-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 250px;
+  height: 55px;
+  background-color: $erasmus_pink;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.button-registration-into-presentation:hover {
+  text-decoration: none;
+  color: $erasmus_pink;
+  background-color: white;
+  border: solid $erasmus_pink;
+}
+
+.button-home-community {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $erasmus_pink;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  @media (max-width: 575.98px)  {
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 250px;
+    height: 70px;
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 300px;
+    height: 90px;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 350px;
+    height: 90px;
+    font-size: 19px;
+    margin-bottom: 35px;
+  }
+  @media (min-width: 1200px) {
+    width: 400px;
+    height: 90px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.button-home-community:hover {
+  text-decoration: none;
+  color: $erasmus_pink;
+  background-color: white;
+  border: solid $erasmus_pink;
 }
 
 .button-registration {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  height: 55px;
-  background-color: $grdr_brown;
+  text-align: center;
+  width: 280px;
+  height: 50px;
+  background-color: $erasmus_pink;
   color: white;
+  font-size: 16px;
   font-weight: bold;
-  font: $body-font;
+  font-family: $my-font;
   padding: 10px;
   text-decoration: none;
-  margin-top : 20px;
-  margin-bottom: 20px;
+  margin-top : 10px;
+  margin-bottom: 10px;
+  @media (max-width: 575.98px)  {
+    width: 150px;
+    height: 40px;
+    margin-top : 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
 }
 
 .button-registration a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: $my-font;
 }
 
 .button-registration:hover {
   text-decoration: none;
-  color: $grdr_brown;
+  color: $erasmus_pink;
   background-color: white;
-  border: solid $grdr_brown;
+  border: solid $erasmus_pink;
 }
 
-
-.btn-grdr {
+.button-submit-registration {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 55px;
-  background-color: $grdr_brown;
-  color: white;
-  font-weight: bold;
-  font: $body-font;
-  padding: 10px;
-  margin: 20px;
-  text-decoration: none;
-  // margin: 0 auto;
-}
-
-.btn-grdr:hover {
-  color: $grdr_brown;
-  background-color: white;
-  border: solid $grdr_brown;
-}
-
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 55px;
-  background-color: $grdr_brown;
-  color: white;
-  font-weight: bold;
-  font: $body-font;
-  padding: 10px;
-  text-decoration: none;
-  margin: 0 auto;
-}
-
-
-.btn:hover {
-  color: $grdr_brown;
-  background-color: white;
-  border: solid $grdr_brown;
-}
-
-.btn-imagina {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  height: 45px;
-  background-color: $grdr_medium_green;
-  color: white;
-  font-weight: bold;
   text-align: center;
-  font: $body-font;
-  font-size: 16px;
+  width: 280px;
+  height: 50px;
+  background-color: $erasmus_pink;
+  color: white;
+  font-weight: bold;
+  font-family: $my-font;
   padding: 10px;
   text-decoration: none;
-  margin: 0 auto;
+  margin-top : 10px;
+  margin-bottom: 10px;
 }
 
-.btn-imagina a:hover {
+.button-submit-registration a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $my-font;
+}
+
+.button-submit-registration:hover {
   text-decoration: none;
-  color: $grdr_red;
-  font-weight: 600;
+  color: $erasmus_pink;
+  background-color: white;
+  border: solid $erasmus_pink;
+}
+
+.button-webinaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 280px;
+  height: 50px;
+  background-color: $erasmus_pink;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin-top : 10px;
+  margin-bottom: 10px;
+  @media (max-width: 575.98px)  {
+    width: 150px;
+    height: 40px;
+    margin-top : 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+}
+
+.button-webinaire a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $my-font;
+}
+
+.button-webinaire:hover {
+  text-decoration: none;
+  color: $erasmus_pink;
+  background-color: white;
+  border: solid $erasmus_pink;
 }
 
 a {
   font-family: $my-font;
-  color: $grdr_red;
-  font-weight: 600;
 }
+
+
 

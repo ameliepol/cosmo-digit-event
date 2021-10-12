@@ -1,93 +1,105 @@
 .banner {
   @media (max-width: 575.98px)  {
-    height: 110px;
-    background-position: right;
+    margin-top: 15px;
+    height: 180px;
+    background-position: center;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 190px;
-    background-position: right;
-    background-size: cover;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 250px;
-    background-position: right;
-    background-size: cover;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 300px;
-    background-position: right;
-    background-size: cover;
-  }
-  @media (min-width: 1200px) {
     height: 320px;
-    background-position: right;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-top: 10px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 1500px) {
+    margin-top: 10px;
+    height: 820px;
+    background-position: center;
     background-size: cover;
   }
 }
 
-.event-info {
-  z-index: 9;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 200px;
-  padding-right: 200px;
-  // background: #f3f7e6;
-  background: #cfd8a9;
-  box-shadow: 0 5 5px #cfd8a9;
+.banner-button-margin {
   @media (max-width: 575.98px)  {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-top: 20px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 0px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    padding-left: 130px;
-    padding-right: 130px;
-    margin-top: 30px;
     margin-left: 50px;
-    margin-right: 50px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding-left: 160px;
-    padding-right: 160px;
-    margin-top: 35px;
-    margin-left: 95px;
-    margin-right: 95px;
+    margin-left: 40px;
   }
-  @media (min-width: 1200px) {
-    padding-left: 180px;
-    padding-right: 180px;
-    margin-top: 40px;
-    margin-left: 100px;
-    margin-right: 100px;
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-left: 90px;
+  }
+  @media (min-width: 1500px) {
+    margin-left: 120px;
   }
 }
 
-.event-info p {
-  z-index: 10;
+.button-registration {
   @media (max-width: 575.98px)  {
-    font-size: 16px;
+    margin-top: -45px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 17px;
+    margin-top: -45px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 18px;
+    margin-top: -60px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 19px;
+    margin-top: -60px;
+    margin-left: 400px;
   }
-  @media (min-width: 1200px) {
-    font-size: 20px;
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-top: -60px;
+    margin-left: 500px;
+  }
+  @media (min-width: 1500px) {
+    margin-top: -75px;
+    margin-left: 600px;
+  }
+}
+
+.button-program {
+  @media (max-width: 575.98px)  {
+    margin-top: 130px;
+    margin-left: 170px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 230px;
+    margin-left: 250px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: 310px;
+    margin-left: 350px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 400px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-top: 490px;
+  }
+  @media (min-width: 1500px) {
+    margin-top: 650px;
   }
 }
 
@@ -98,50 +110,66 @@
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  // box-shadow: 0px -4px 12px #CBD9F1;
   @media (max-width: 575.98px)  {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 0px;
   }
   @media (min-width: 1200px) {
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 0px;
   }
 }
 
 .conference-title h1 {
-  color: $grdr_brown;
-  font: $body-font;
+  color: $erasmus-blue;
+  font-family: $title-font;
   font-weight: bold;
   @media (max-width: 575.98px)  {
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 24px;
     padding: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: 12px;
+    margin-top: 10px;
     font-size: 26px;
     padding: 12px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: 15px;
+    margin-top: 10px;
     font-size: 28px;
     padding: 15px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-top: 17px;
-    font-size: 30px;
+    margin-top: 0px;
+    font-size: 40px;
     padding: 17px;
   }
   @media (min-width: 1200px) {
-    margin-top: 20px;
-    font-size: 32px;
+    margin-top: 0px;
+    font-size: 40px;
     padding: 20px;
   }
 }
@@ -149,11 +177,10 @@
 .conference-details {
   display: flex;
   justify-content: space-between;
-  border: solid $grdr_medium_green;
+  border: solid $erasmus_yellow;
   @media (max-width: 575.98px) {
     padding: 10px;
     flex-wrap: wrap;
-    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
@@ -162,7 +189,6 @@
   @media (min-width: 576px) and (max-width: 767.98px) {
     padding: 15px;
     flex-wrap: wrap;
-    font-size: 16px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 35px;
@@ -171,7 +197,6 @@
   @media (min-width: 768px) and (max-width: 991.98px) {
     padding: 20px;
     flex-wrap: wrap;
-    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 35px;
@@ -180,7 +205,6 @@
   @media (min-width: 992px) and (max-width: 1199.98px) {
     padding: 25px;
     flex-wrap: wrap;
-    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 70px;
@@ -188,63 +212,59 @@
   }
   @media (min-width: 1200px) {
     padding: 30px;
-    font-size: 20px;
     margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 70px;
     margin-right: 70px;
   }
-
 }
 
 .webinar-image {
   display: flex;
-  justify-content: center;
   padding-top: 10px;
   @media (max-width: 575.98px)  {
-    justify-content: center;
-    width: 200px;
+    display: none;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     justify-content: center;
-    width: 250px;
+    width: 110px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     justify-content: center;
-    width: 300px;
+    width: 120px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     justify-content: flex-start;
-    width: 350px;
+    width: 180px;
   }
   @media (min-width: 1200px) {
     justify-content: flex-start;
-    width: 350px;
+    width: 180px;
   }
 }
 
 .webinar-image img {
   @media (max-width: 575.98px)  {
-    width: 200px;
+    display: none;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    width: 250px;
+    height: 90px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    width: 300px;
+    height: 100px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    width: 350px;
+    height: 120px;
   }
   @media (min-width: 1200px) {
-    height: 150px;
+    height: 120px;
   }
 }
 
 .conference-text-presentation {
   display: flex;
   flex-direction: column;
-  font: $body-font;
+  font-family: $my-font;
   @media (max-width: 575.98px)  {
     padding-top: 10px;
     padding-left: 10px;
@@ -278,7 +298,7 @@
   text-align: left;
   padding: 10px;
   font-weight: bold;
-  font: $body-font;
+  font-family: $my-font;
   @media (max-width: 575.98px)  {
     font-size: 20px;
   }
@@ -296,15 +316,88 @@
   }
 }
 
+.conference-text-presentation h2 {
+  // display: flex;
+  color: $erasmus_light_blue;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: $my-font;
+  font-weight: 600;
+
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 17px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 19px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.conference-text-presentation h3 {
+  // display: flex;
+  color: #2b2a2a;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: $my-font;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 17px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 19px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.conference-text-presentation h4 {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 17px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 19px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
 .conference-text-presentation p {
   // display: flex;
   color: #2b2a2a;
   text-align: left;
   padding: 10px;
   padding-top: 0px;
-  font-size: 20px;
   text-decoration: none;
-  font: $body-font;
+  font-family: $my-font;
   @media (max-width: 575.98px)  {
     font-size: 16px;
   }
@@ -324,7 +417,7 @@
 
 .conference-text-presentation span {
   color: #2b2a2a;
-  font: $body-font;
+  font-family: $my-font;
   text-align: center;
   position: relative;
   z-index:0;
@@ -355,101 +448,219 @@
   left:0;
   bottom: 0;
   z-index:-2;
-  background-color: #cfd8a9;
-}
-
-// .conference-text-presentation a {
-//   color: $erasmus-blue;
-//   font-size: 20px;
-//   font-weight: 600;
-//   text-decoration: underline;
-//   font: $body-font;
-// }
-
-.conference-text-presentation span {
-  font-weight: normal;
-  font-style: italic;
-  font: $body-font;
-}
-
-.conference-text-presentation a:hover {
-  color: $grdr_orange;
-}
-
-.logos-officiels {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 18px;
-  @media (max-width: 991.98px) {
-    margin-top: 0px;
-    margin-bottom: 20px;
+  @media (max-width: 575.98px)  {
+    background-color: white;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    background-color: white;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    background-color: $erasmus_yellow;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    background-color: $erasmus_yellow;
+  }
+  @media (min-width: 1200px) {
+    background-color: $erasmus_yellow;
   }
 }
 
-// .banner-button-margin {
-//   @media (min-width: 1200px) {
-//     margin-left: 50px;
-//     justify-content: flex-start;
-//   }
-//   margin-left: auto;
-//   margin-right: auto;
-//   justify-content: center;
-// }
+.conference-text-presentation span {
+  font-weight: 600;
+  font-family: $my-font;
+}
 
-// .button-program {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 320px;
-//   height: 55px;
-//   background-color: $grdr_medium_green;
-//   color: white;
-//   font-weight: bold;
-//   font: $body-font;
-//   padding: 10px;
-//   text-decoration: none;
-//   @media (min-width: 1200px) {
-//     margin-top: 45px;
-//   }
-//   margin-top: 220px;
-// }
+.conference-text-presentation a:hover {
+  color: $erasmus_pink;
+}
 
-// .button-registration {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 320px;
-//   height: 55px;
-//   background-color: $grdr_medium_green;
-//   color: white;
-//   font-weight: bold;
-//   font: $body-font;
-//   padding: 10px;
-//   text-decoration: none;
-//   @media (min-width: 1200px) {
-//     margin-top: 120px;
-//   }
-//   margin-top : 20px;
-// }
+.kit-utilisateurs-logos-home {
+  background-color: $erasmus-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    box-shadow: 0 8px 8px 0 #CBD9F3 !important;
+}
 
-// .button-questions {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 320px;
-//   height: 55px;
-//   background-color: $grdr_medium_green;
-//   color: white;
-//   font-weight: bold;
-//   font: $body-font;
-//   padding: 10px;
-//   text-decoration: none;
-//   @media (min-width: 1200px) {
-//     margin-top: 120px;
-//   }
-//   margin-top : 20px;
-// }
+.logos-erasmus-digital-home {
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logos-erasmus-digital-home img {
+  @media (max-width: 575.98px)  {
+    height: 60px;
+    margin: 5px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 60px;
+    margin: 5px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 70px;
+    margin: 5px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    height: 70px;
+    margin: 5px;
+  }
+  @media (min-width: 1200px) {
+    height: 70px;
+    margin: 5px;
+  }
+}
+
+.title-erasmus-digital-home h2 {
+  color: white;
+  text-align: center;
+  font-family: $my-font;
+  font-weight: 600;
+  @media (max-width: 575.98px)  {
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 24px;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 28px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
+.kit-utilisateurs {
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: -1;
+  background-color: white;
+  @media (max-width: 575.98px) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.kit-utilisateurs p {
+  color: $erasmus_blue;
+  position: relative;
+  z-index:0;
+  justify-content: center;
+  font-family: $my-font;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.kit-utilisateurs p span {
+  color: $erasmus_blue;
+  font-family: $my-font;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  z-index:0;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.kit-utilisateurs p span:after {
+  content: '';
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left:0;
+  bottom: 0;
+  z-index:-2;
+  @media (max-width: 575.98px)  {
+    background-color: white;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    background-color: $erasmus-yellow;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    background-color: $erasmus-yellow;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    background-color: $erasmus-yellow;
+  }
+  @media (min-width: 1200px) {
+    background-color: $erasmus-yellow;
+  }
+}
+
+.fa-check-circle {
+  color: $erasmus_pink
+}
 
 .fleche-scroll {
   display: flex;

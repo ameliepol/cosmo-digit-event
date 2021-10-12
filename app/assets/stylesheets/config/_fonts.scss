@@ -4,7 +4,8 @@
 // Define fonts for body and headers
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
-$title-gotham: "Gotham";
+$my-font: "Gotham";
+$title-font: "SirinStencil";
 
 @font-face {
   font-family: "Gotham";
@@ -16,7 +17,7 @@ $title-gotham: "Gotham";
 @font-face {
   font-family: "Gotham";
   src: font-url('GothamRnd-Bold.otf');
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -29,34 +30,6 @@ $title-gotham: "Gotham";
 
 @font-face {
   font-family: "Gotham";
-  src: font-url('GothamRnd-BookIta.otf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Gotham";
-  src: font-url('GothamRnd-BoldIta.otf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Gotham";
-  src: font-url('GothamRnd-LightIta.otf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Gotham";
-  src: font-url('GothamRnd-MedIta.otf');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Gotham";
   src: font-url('GothamRounded-Light.otf');
   font-weight: light;
   font-style: normal;
@@ -65,20 +38,10 @@ $title-gotham: "Gotham";
 $my-font: "Gotham";
 
 @font-face {
-  font-family: "SirinStencil-Regular";
+  font-family: "SirinStencil";
   src: font-url('SirinStencil-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
-
-
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+$title-font: "SirinStencil";

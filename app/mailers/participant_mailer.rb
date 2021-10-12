@@ -4,15 +4,8 @@ class ParticipantMailer < ApplicationMailer
     @participant = participant
     @bookings = @participant.bookings
     @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
-    attachments.inline['logo_grdr_et_uasz.png'] = File.read('app/assets/images/logo_grdr_et_uasz.png')
-    attachments.inline['logos.png'] = File.read('app/assets/images/logos.png')
-    attachments.inline['logo_AFD.png'] = File.read('app/assets/images/logo_AFD.png')
-    attachments.inline['logo_UE.png'] = File.read('app/assets/images/logo_UE.png')
-    attachments.inline['logo_FAP.png'] = File.read('app/assets/images/logo_FAP.png')
-    attachments.inline['logo_CFSI.png'] = File.read('app/assets/images/logo_CFSI.png')
-    attachments.inline['logo_OIM.png'] = File.read('app/assets/images/logo_OIM.png')
-    attachments.inline['logo_Expertise_France.png'] = File.read('app/assets/images/logo_Expertise_France.png')
-    mail(to: @participant.email, subject: "Les Jeudis du Littoral Ouest Africain - Confirmation d'inscription") do |format|
+    attachments.inline['logo_event.png'] = File.read('app/assets/images/logo_event.png')
+    mail(to: @participant.email, subject: "Webconférence Mobilité des Apprentis - Confirmation d'inscription") do |format|
       format.html { render(layout: 'mailer') }
     end
   end

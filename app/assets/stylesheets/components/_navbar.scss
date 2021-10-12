@@ -1,7 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background-color: white !important;
-  box-shadow: 0 4px 12px 0 #cfd8a9 !important;
+  box-shadow: 0 4px 12px 0 #CBD9F3 !important;
   font: $my-font;
   font-weight: 600;
   padding-right: 30px;
@@ -15,10 +15,11 @@
 
 .navbar .navbar-nav {
   justify-content: space-between;
-  width: 820px;
+  width: 650px;
   padding-right: 25px;
-  @media (max-width: 1199.98px) {
-    width: 620px;
+  @media (max-width: 991.98px) {
+    width: 420px;
+    padding-right: 5px;
     justify-content: space-between;
   }
 }
@@ -29,7 +30,7 @@
   }
 }
 
-.logo_grdr_uasz {
+.logos_erasmus {
   display: flex;
   flex-direction: row;
   @media (max-width: 1199.98px) {
@@ -38,15 +39,16 @@
   }
   width: 320px;
   margin-left: 25px;
+  margin-bottom: 10px;
 }
 
-.navbar-brand-grdr {
-  margin: 10px;
+.navbar-brand-erasmus {
+  margin-top: 15px;
   @media (max-width: 575.98px) {
-    height: 50px;
+    height: 30px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 50px;
+    height: 30px;
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -54,15 +56,15 @@
   }
 
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 80px;
+    height: 60px;
   }
 
   @media (min-width: 1200px) {
-    height: 100px;
+    height: 90px;
   }
 }
 
-.navbar-brand-uasz {
+.navbar-brand-agence-erasmus-plus {
   margin: 10px;
   @media (max-width: 575.98px) {
     height: 50px;
@@ -72,7 +74,7 @@
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 50px;
+    height: 60px;
   }
 
   @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -85,7 +87,7 @@
 }
 
 .nav-item .active {
-  color: $grdr_medium_green;
+  color: $erasmus_blue;
   font-family: $my-font;
   font-weight: 600;
   position: relative;
@@ -138,7 +140,7 @@
     margin-top: 15px;
     bottom: 2;
     z-index:-1;
-    background-color: #cfd8a9;
+    background-color: $erasmus_verylight_blue;
   }
   @media (min-width: 1200px) {
     content: '';
@@ -150,7 +152,7 @@
     margin-top: 15px;
     bottom: 2;
     z-index:-1;
-    background-color: #cfd8a9;
+    background-color: $erasmus_verylight_blue;
   }
 }
 
@@ -166,24 +168,28 @@
   }
 }
 
+.nav-item a {
+  text-decoration: none;
+}
+
 .navbar-light .navbar-toggler {
-  color: $grdr_red;
-  border-color: $grdr_red;
+  color: $erasmus_blue;
+  border-color: $erasmus_blue;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  color: $grdr_red;
+  color: $erasmus_blue;
   position: relative;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $grdr_red;
+  color: $erasmus_blue;
   font-size: 20px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: none;
-  color: $grdr_medium_green;
+  color: $erasmus_pink;
 }
 
 .social-network {
@@ -200,17 +206,21 @@
 
 .fa-facebook-square {
   margin-left: 8px;
-  color: $grdr_medium_green;
+  color: $erasmus_light_blue;
   font-size: 28px;
   @media (max-width: 1199.98px) {
     margin-left: 1px;
     margin-right: 8px;
   }
+}
+
+.fa-facebook-square:hover {
+  color: $erasmus_pink;
 }
 
 .fa-twitter-square {
   margin-left: 8px;
-  color: $grdr_medium_green;
+  color: $erasmus_light_blue;
   font-size: 28px;
   @media (max-width: 1199.98px) {
     margin-left: 1px;
@@ -218,14 +228,8 @@
   }
 }
 
-.fa-linkedin {
-  margin-left: 8px;
-  color: $grdr_medium_green;
-  font-size: 28px;
-  @media (max-width: 1199.98px) {
-    margin-left: 1px;
-    margin-right: 8px;
-  }
+.fa-twitter-square:hover {
+  color: $erasmus_pink;
 }
 
 // .navbar {

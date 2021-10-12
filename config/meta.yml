@@ -1,5 +1,5 @@
 meta_product_name: "Webconférence Mobilité des apprentis"
 meta_title: "Mobilités hybrides, compétences « vertes » : de nouvelles opportunités du programme Erasmus+ pour les apprentis"
 meta_description: "Le développement de la mobilité des apprentis constitue une priorité au niveau européen et national. Cette mobilité est un levier important pour enrichir les parcours professionnels et valoriser les filières d’apprentissage. L’Agence Erasmus+ France / Education Formation organise une webconférence autour de deux axes forts du nouveau programme Erasmus+ pour la période 2021-2027: mobilités hybrides; mobilités et transition écologique. Cet évènement permettra à différents acteurs français et européens de dialoguer et de témoigner de leurs expériences et projets menés en lien avec ces deux thématiques. D’une durée de 2h, il sera animé en direct par Vanessa Duval."
-meta_image: "accueil-banner-bulle.png" # should exist in `app/assets/images/`
+meta_image: "accueil-banner.png" # should exist in `app/assets/images/`
 twitter_account: "@ErasmusplusFR"   # required for Twitter Cards

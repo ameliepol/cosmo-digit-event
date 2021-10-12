@@ -7,7 +7,7 @@
 .new_participant-show {
   display: flex;
   justify-content: space-between;
-  border: solid $grdr_medium_green;
+  border: solid $erasmus-blue;
   @media (max-width: 575.98px) {
     padding: 10px;
     flex-wrap: wrap;
@@ -73,7 +73,7 @@
 }
 
 .participant-infos-show h1 {
-  color: $grdr_red;
+  color: $erasmus_pink;
   font: $body-font;
   text-align: center;
   font-weight: bold;
@@ -162,7 +162,7 @@
 }
 
 .workshop-details p {
-  color: $grdr_medium_green;
+  color: $erasmus-blue;
   font: $body-font;
   margin-bottom: 10px;
   font-weight: 600;

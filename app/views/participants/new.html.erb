@@ -1,112 +1,92 @@
 <div class="banner-container">
-  <div class="banner position-relative" style="background-image: url('<%= image_path 'banniere_grdr_web.png' %>');">
+  <div class="banner-registration" style="background-image: url('<%= image_path 'registration-banner.png' %>');">
   </div>
 </div>
-<div class="registration">
-  <h1>Les trois tables rondes seront animées par <span>M. Daouda Diagne</span>, Docteur en sociologie rurale, membre du comité d’orientation et de suivi du programme PAFAO et spécialiste du monde paysan ouest africain (Sénégal).</h1>
-  <h1>Elles seront modérées par <span>M. Doudou Gueye</span>, enseignant chercheur au département sociologie de l’Université Assane Seck de Ziguinchor.</h1>
-  <p> Vous avez la possibilité de vous inscrire aux 3 sessions ou seulement celles de votre choix : </p>
-<!-- <h5>Remplissez le formulaire ci-dessous et choisissez les ateliers des <span>14 et 18 janvier 2021</span> qui vous intéressent.</h5>
-<p>Un courriel vous sera envoyé vous permettant de vous connecter à ces sessions.</p>
-<h5>Les inscriptions à la <strong> Conférence Erasmus + Bilan et Perspectives </strong> sont à présent closes.</h5>
-<p>La <strong> conférence </strong> et le <strong> replay </strong> seront accessibles sur <span> <%= link_to "la chaîne Youtube de l’Agence Erasmus + France / Education Formation", 'https://www.youtube.com/user/Lagence2E2F/featured', target: "_blank" %>.</span></p>
-<p>Vous avez aussi la possibilité de <span><%= link_to "poser vos questions", new_event_question_path(Event.first), data:{turbolinks:false} %></span> sur le nouveau programme dès à présent sur le site : nous y répondrons au cours des quatre sessions organisées le 18 janvier 2021.</p> -->
-  <div class="fleche-scroll">
-    <%= image_tag "fleche-scroll.svg" %>
-  </div>
-</div>
-
 <div class="participant">
-  <h1>  <%= 'Vos informations :' %></h1>
   <div class="participant-infos">
     <div class="registration-image mx-auto">
-      <%= image_tag "registration-picto.svg", alt: "Registration", height: 150 %>
+      <%= image_tag "picto-registration.svg", alt: "Registration", height: 150 %>
     </div>
-    <div class="new-participant-form">
-      <%= simple_form_for [@event, @participant] do |f| %>
-      <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :organization, placeholder: 'Entreprise / Organisation*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :position, placeholder: 'Fonction', label: false %>
-      <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
-      <%= f.input :zipcode, placeholder: 'Pays*', label: false, error: 'Ce champ est obligatoire' %>
+    <div class="participant-registration">
+      <div class="new-participant-form">
+        <%= simple_form_for [@event, @participant] do |f| %>
+        <div class="participant-names">
+          <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+        <div class="participant-functions">
+          <%= f.input :organization, placeholder: 'Structure*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+        <div>
+          <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="cookies-erasmus-participant">
+    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
+  <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
+  </div>
 </div>
+<div class="button-valid">
+<%= f.button :submit, "JE M'INSCRIS", class: 'button-submit-registration' %>
+</div>
+<% end %>
 
-<div class="workshop-choices">
-  <h1>  <%= 'Sélectionnez vos ateliers :' %></h1>
+<!-- <div class="workshop-choices">
+  <h1>  <%#= 'Sélectionnez vos ateliers :' %></h1>
   <div class="text-center">
     <div class="disabled-date-highlighted">
       <span>10 JUIN 2021</span>
     </div>
   </div>
-    <% @workshops_1.each_with_index do |workshop, index| %>
-    <%= f.simple_fields_for :bookings, Booking.new do |b| %>
-    <%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-disabled-check-box" data-workshop-id="<%= workshop.id %>">
-      <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
-      <h2> <%= workshop.name %> </h2>
-      <p> <%= workshop.description %></p>
+    <%# @workshops_1.each_with_index do |workshop, index| %>
+    <%#= f.simple_fields_for :bookings, Booking.new do |b| %>
+    <#%= b.hidden_field :workshop_id, value: workshop.id %>
+    <div class="my-disabled-check-box" data-workshop-id="<#%= workshop.id %>">
+      <h2> <#%= workshop.start_at.strftime("%Hh%M")%> - <#%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
+      <h2> <#%= workshop.name %> </h2>
+      <p> <#%= workshop.description %></p>
     </div>
-    <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-    <% end %>
-  <% end %>
+    <#%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
+    <#% end %>
+  <#% end %>
   <div class="text-center">
     <div class="disabled-date-highlighted">
       <span>17 JUIN 2021</span>
     </div>
   </div>
-    <% @workshops_2.each_with_index do |workshop, index| %>
-      <%= f.simple_fields_for :bookings, Booking.new do |b| %>
-      <%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-disabled-check-box" data-workshop-id="<%= workshop.id %>">
-      <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
-      <h2> <%= workshop.name %> </h2>
-      <p> <%= workshop.description %></p>
+    <#% @workshops_2.each_with_index do |workshop, index| %>
+      <#%= f.simple_fields_for :bookings, Booking.new do |b| %>
+      <#%= b.hidden_field :workshop_id, value: workshop.id %>
+    <div class="my-disabled-check-box" data-workshop-id="<#%= workshop.id %>">
+      <h2> <#%= workshop.start_at.strftime("%Hh%M")%> - <#%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
+      <h2> <#%= workshop.name %> </h2>
+      <p> <#%= workshop.description %></p>
     </div>
-      <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-    <% end %>
-  <% end %>
+      <#%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
+    <#% end %>
+  <#% end %>
   <div class="text-center">
     <div class="date-highlighted">
       <span>24 JUIN 2021</span>
     </div>
   </div>
-    <% @workshops_3.each_with_index do |workshop, index| %>
-    <%= f.simple_fields_for :bookings, Booking.new do |b| %>
-    <%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-check-box" data-workshop-id="<%= workshop.id %>">
-      <h2> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
-      <h2> <%= workshop.name %> </h2>
-      <p> <%= workshop.description %></p>
-      <!-- <div class="speakers">
+    <#% @workshops_3.each_with_index do |workshop, index| %>
+    <#%= f.simple_fields_for :bookings, Booking.new do |b| %>
+    <#%= b.hidden_field :workshop_id, value: workshop.id %>
+    <div class="my-check-box" data-workshop-id="<#%= workshop.id %>">
+      <h2> <#%= workshop.start_at.strftime("%Hh%M")%> - <#%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
+      <h2> <#%= workshop.name %> </h2>
+      <p> <#%= workshop.description %></p>
+        <div class="speakers">
         <h2> Intervenants : </h2>
-        <p> <%= simple_format(workshop.speaker) %></p>
-      </div> -->
+        <p> <#%= simple_format(workshop.speaker) %></p>
+      </div>
     </div>
-    <%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-    <% end %>
-  <% end %>
-  <div class="cookies-erasmus-participant">
-    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Association Grdr*</span>
-  <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
-  </div>
-</div>
-
-<div class="button-valid">
-<%= f.button :submit, "JE M'INSCRIS", class: 'btn-grdr' %>
-</div>
-<% end %>
-
-<div class="logos-officiels">
-  <%= image_tag "logo_AFD.png", alt: "AFD", height: 80 %>
-  <%= image_tag "logo_UE.png", alt: "UE", height: 80 %>
-  <%= image_tag "logo_FAP.png", alt: "FAP", height: 80 %>
-  <%= image_tag "logo_CFSI.png", alt: "CFSI", height: 80 %>
-  <%= image_tag "logo_OIM.png", alt: "OIM", height: 80 %>
-  <%= image_tag "logo_Expertise_France.png", alt: "Expertise France", height: 50, margin: 20 %>
-</div>
+    <#%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
+    <#% end %>
+  <#% end %> -->
 
 
