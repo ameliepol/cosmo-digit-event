@@ -1,22 +1,22 @@
 .banner-registration {
   @media (max-width: 575.98px)  {
-  height: 190px;
+  height: 130px;
   background-position: center;
   background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 240px;
+    height: 200px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 310px;
+    height: 250px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     margin-top: 10px;
-    height: 350px;
+    height: 270px;
     background-position: center;
     background-size: cover;
   }
@@ -33,12 +33,81 @@
   }
 }
 
+.conference-registration {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  @media (max-width: 575.98px)  {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  @media (min-width: 1200px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.conference-title h1 {
+  color: $erasmus-blue;
+  font-family: $title-font;
+  font-weight: bold;
+  @media (max-width: 575.98px)  {
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 10px;
+    font-size: 26px;
+    padding: 12px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: 10px;
+    font-size: 28px;
+    padding: 15px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 0px;
+    font-size: 40px;
+    padding: 17px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 0px;
+    font-size: 40px;
+    padding: 20px;
+  }
+}
+
 .conference-title p {
   // display: flex;
   color: $erasmus-blue;
   font-weight: medium;
   text-align: center;
-  padding: 10px;
   padding-top: 0px;
   text-decoration: none;
   font-family: $my-font;
@@ -94,10 +163,10 @@
   bottom: 0;
   z-index:-2;
   @media (max-width: 575.98px)  {
-    background-color: white;
+    background-color: #CEDDA2;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    background-color: white;
+    background-color: #CEDDA2;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     background-color: #CEDDA2;
@@ -107,60 +176,21 @@
   }
   @media (min-width: 1200px) {
     background-color: #CEDDA2;
-  }
-}
-
-
-
-.conference-registration {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  // box-shadow: 0px -4px 12px #CBD9F1;
-  @media (max-width: 575.98px)  {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  @media (min-width: 1200px) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
 .participant {
   @media (max-width: 575.98px)  {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     padding-left: 25px;
@@ -181,7 +211,6 @@
     padding: 10px;
     flex-wrap: wrap;
     font-size: 16px;
-    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
@@ -190,7 +219,6 @@
     padding: 15px;
     flex-wrap: wrap;
     font-size: 16px;
-    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 35px;
     margin-right: 35px;
@@ -199,7 +227,6 @@
     padding: 20px;
     flex-wrap: wrap;
     font-size: 20px;
-    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 35px;
     margin-right: 35px;
@@ -208,7 +235,6 @@
     padding: 25px;
     flex-wrap: wrap;
     font-size: 20px;
-    margin-top: 10px;
     margin-bottom: 40px;
     margin-left: 70px;
     margin-right: 70px;
@@ -233,15 +259,15 @@
 
 .registration-image {
   display: flex;
-  margin-top: 30px;
   margin-bottom: 20px;
   justify-content: center;
   width: 20%;
   @media (max-width: 575.98px)  {
     width: 0%;
   }
-  @media (min-width: 1500px) {
+  @media (min-width: 992px) and (min-width: 1500px) {
     width: 15%;
+    margin-top: 30px;
   }
 }
 
@@ -250,10 +276,10 @@
     display: none;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 100px;
+    height: 80px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 120px;
+    height: 100px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     height: 140px;
@@ -281,19 +307,18 @@
 
 .new-participant-form {
   @media (max-width: 575.98px)  {
-    padding: 8px;
+    padding-bottom: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    padding: 13px;
+    padding-bottom: 15px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    padding: 20px;
+    padding-bottom: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding: 30px;
+    padding-bottom: 25px;
   }
   @media (min-width: 1200px) {
-    padding-top: 20px;
     padding-bottom: 30px;
   }
   display: flex;
@@ -303,9 +328,19 @@
   border-bottom: solid 1px $erasmus_light_blue;
 }
 
-.new-participant-subscription {
-  margin-top: 20px;
+.participant-names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  flex-wrap: wrap;
+}
+
+#participant_first_name {
+  display: flex;
+  box-shadow: 0 4px 4px 0 #DCEAB8;
+  color: #2b2a2a;
   font-family: $my-font;
+  background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
   }
@@ -323,12 +358,27 @@
   }
 }
 
-.new-participant-subscription p {
-  color: grey;
+#participant_last_name {
+  display: flex;
+  box-shadow: 0 4px 4px 0 #DCEAB8;
+  color: #2b2a2a;
   font-family: $my-font;
-  font-size: 16px;
-  margin-top: 0px;
-  margin-bottom: 16px;
+  background-color: white;
+  @media (max-width: 575.98px)  {
+    font-size: 12px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
 }
 
 #participant_email {
@@ -355,21 +405,25 @@
 }
 
 .other-participant-info {
+  @media (max-width: 575.98px)  {
+    padding-top: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-top: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-top: 25px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 30px;
+  }
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-start;
   flex-direction: column;
   color: #2b2a2a;
-  @media (max-width: 575.98px)  {
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-  }
-  @media (min-width: 1200px) {
-  }
 }
 
 .participant-functions {
@@ -377,22 +431,6 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   flex-wrap: wrap;
-    @media (max-width: 575.98px)  {
-    padding: 8px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    padding: 13px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    padding: 20px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding: 30px;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 30px;
-    // padding-bottom: 30px;
-  }
 }
 
 #participant_organization {
@@ -464,59 +502,6 @@
   }
 }
 
-.participant-names {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  flex-wrap: wrap;
-}
-
-#participant_first_name {
-  display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
-  color: #2b2a2a;
-  font-family: $my-font;
-  background-color: white;
-  @media (max-width: 575.98px)  {
-    font-size: 12px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 14px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 16px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 18px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 20px;
-  }
-}
-
-#participant_last_name {
-  display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
-  color: #2b2a2a;
-  font-family: $my-font;
-  background-color: white;
-  @media (max-width: 575.98px)  {
-    font-size: 12px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 14px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 16px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 18px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 20px;
-  }
-}
-
 .cookies-erasmus-participant {
   display: inline-block;
   color: #2b2a2a;
@@ -559,3 +544,31 @@
   justify-content: center;
 }
 
+
+// .new-participant-subscription {
+//   margin-top: 20px;
+//   font-family: $my-font;
+//   @media (max-width: 575.98px)  {
+//     font-size: 12px;
+//   }
+//   @media (min-width: 576px) and (max-width: 767.98px) {
+//     font-size: 14px;
+//   }
+//   @media (min-width: 768px) and (max-width: 991.98px) {
+//     font-size: 16px;
+//   }
+//   @media (min-width: 992px) and (max-width: 1199.98px) {
+//     font-size: 18px;
+//   }
+//   @media (min-width: 1200px) {
+//     font-size: 20px;
+//   }
+// }
+
+// .new-participant-subscription p {
+//   color: grey;
+//   font-family: $my-font;
+//   font-size: 16px;
+//   margin-top: 0px;
+//   margin-bottom: 16px;
+// }
