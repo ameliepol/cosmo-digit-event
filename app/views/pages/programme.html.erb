@@ -16,11 +16,11 @@
       <div class="card">
         <div class="card-body">
           <% @workshops_1.each do |workshop| %>
-            <%= image_tag "yallow_line.svg", height: 8 %>
+            <%= image_tag "yellow_line.svg", height: 8 %>
             <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %></h1>
             <h2> <%= workshop.name %></h2>
-            <h3> Intervenant : <%= workshop.speaker %></h3>
             <p> <%= simple_format(workshop.description) %></p>
+            <h3> <span>Intervenants :</span> <%= simple_format(workshop.speaker) %></h3>
           <% end %>
         </div>
       </div>
