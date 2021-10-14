@@ -2,24 +2,21 @@
   <div class="banner-program position-relative" style="background-image: url('<%= image_path 'program-banner.png' %>');">
   </div>
 </div>
-<div class="main-speaker">
-<h5>La conférence sera animée par <span>Emmanuelle Bastide,</span> journaliste à Radio France International (RFI).</h5>
-</div>
 <div class="program">
   <div class="container-program-date1">
     <div class="date1">
       <div class="date1-text">
-        <p>date</p>
+        <p>10 novembre 2021</p>
       </div>
       <div class="date1-picto">
-        <%= image_tag "picto-calendar.svg", alt: "Program", height: 140 %>
+        <%= image_tag "picto-calendar.svg", alt: "Program", height: 120 %>
       </div>
     </div>
     <div class="contenu-date1">
       <div class="card">
         <div class="card-body">
           <% @workshops_1.each do |workshop| %>
-            <%= image_tag "green_line.svg", height: 8 %>
+            <%= image_tag "yallow_line.svg", height: 8 %>
             <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %></h1>
             <h2> <%= workshop.name %></h2>
             <h3> Intervenant : <%= workshop.speaker %></h3>
