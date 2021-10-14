@@ -42,39 +42,39 @@
   margin-bottom: 15px;
 }
 
+// .navbar-brand-erasmus {
+//   margin-top: 15px;
+//   @media (max-width: 575.98px) {
+//     height: 30px;
+//   }
+//   @media (min-width: 576px) and (max-width: 767.98px) {
+//     height: 30px;
+//   }
+
+//   @media (min-width: 768px) and (max-width: 991.98px) {
+//     height: 50px;
+//   }
+
+//   @media (min-width: 992px) and (max-width: 1199.98px) {
+//     height: 60px;
+//   }
+
+//   @media (min-width: 1200px) {
+//     height: 90px;
+//   }
+// }
+
 .navbar-brand-erasmus {
-  margin-top: 15px;
-  @media (max-width: 575.98px) {
-    height: 30px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 30px;
-  }
-
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 50px;
-  }
-
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 60px;
-  }
-
-  @media (min-width: 1200px) {
-    height: 90px;
-  }
-}
-
-.navbar-brand-agence-erasmus-plus {
   margin: 10px;
   @media (max-width: 575.98px) {
     height: 50px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 50px;
+    height: 60px;
   }
 
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 60px;
+    height: 70px;
   }
 
   @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -206,7 +206,7 @@
     font-size: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 24px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     font-size: 24px;
