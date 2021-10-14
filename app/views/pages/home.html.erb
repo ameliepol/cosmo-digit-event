@@ -1,12 +1,10 @@
 <div class="banner-container">
   <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner.png' %>');">
-    <div class="d-flex flex-wrap">
-      <div class="col-12">
-        <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
-      </div>
-      <div class="col-12 col-xl-8">
-        <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
-      </div>
+    <div class="banner-button-margin">
+      <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program" %>
+      <%#= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
+      <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration" %>
+      <%#= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
     </div>
     <div class="fleche-scroll">
       <%= image_tag "fleche-scroll.svg" %>

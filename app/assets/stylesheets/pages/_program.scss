@@ -35,56 +35,272 @@
 
 .program {
   display: flex;
-  flex-direction: column;
   z-index: -4;
 }
 
 .container-program-date1 {
   display: flex;
-  background-color: $erasmus_pink;
+  @media (max-width: 575.98px)  {
+    flex-direction: column;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    flex-direction: column;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    flex-direction: row;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    flex-direction: row;
+  }
+  @media (min-width: 1500px) {
+    flex-direction: row;
+  }
 }
 
 .date1 {
-  width: 20%;
-  padding-top: 30px;
+  background-color: $erasmus_pink;
   display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
+  @media (max-width: 575.98px)  {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 20%;
+    padding-top: 30px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    width: 20%;
+    padding-top: 30px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  @media (min-width: 1500px) {
+    width: 20%;
+    padding-top: 30px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
 
 .date1-text {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
-  border-left: solid 7px $erasmus_yellow;
-  padding-left: 20px;
-  padding-top: 10px;
+  @media (max-width: 575.98px)  {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 200px;
+    flex-wrap: wrap;
+    text-align: left;
+    border-left: solid 7px $erasmus_yellow;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 250px;
+    flex-wrap: wrap;
+    text-align: left;
+    border-left: solid 7px $erasmus_yellow;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 300px;
+    flex-wrap: wrap;
+    text-align: left;
+    border-left: solid 7px $erasmus_yellow;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    border-left: solid 7px $erasmus_yellow;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    border-left: solid 7px $erasmus_yellow;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: solid 7px $erasmus_yellow;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  @media (min-width: 1800px) {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-left: solid 7px $erasmus_yellow;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
 }
 
 .date1-text p {
   font-family: $my-font;
   color: white;
-  font-size: 30px;
   font-weight: bold;
+  @media (max-width: 575.98px)  {
+    font-size: 26px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 28px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 30px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 24px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    font-size: 26px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    font-size: 28px;
+  }
+  @media (min-width: 1800px) {
+    font-size: 30px;
+  }
+}
+
+.date1-picto {
+  display: flex;
+  @media (max-width: 575.98px)  {
+    // justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    // justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    // justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1800px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 
 .date1-picto img {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  height: 160px;
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  @media (max-width: 575.98px)  {
+    height: 120px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 120px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 120px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    height: 130px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    height: 130px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    height: 160px;
+  }
+  @media (min-width: 1800px) {
+    height: 160px;
+  }
 }
 
 .contenu-date1 {
   width: 80%;
   display: flex;
   justify-content: flex-start;
+  @media (max-width: 575.98px)  {
+    width: 100%;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 100%;
+  }
 }
 
 .container-program-date2 {

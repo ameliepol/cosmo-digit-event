@@ -1,7 +1,7 @@
 .banner {
   @media (max-width: 575.98px)  {
-    margin-top: 15px;
-    height: 2200px;
+    // margin-top: 15px;
+    height: 230px;
     background-position: center;
     background-size: cover;
   }
@@ -26,7 +26,13 @@
     background-position: center;
     background-size: cover;
   }
-  @media (min-width: 1500px) {
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    margin-top: 10px;
+    height: 750px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 1800px) {
     margin-top: 10px;
     height: 850px;
     background-position: center;
@@ -35,73 +41,97 @@
 }
 
 .banner-button-margin {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   @media (max-width: 575.98px)  {
-    margin-left: 0px;
+    display: none;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-left: 30px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-left: 50px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-left: 40px;
-  }
-  @media (min-width: 1200px) and (max-width: 1499.98px) {
-    margin-left: 90px;
-  }
-  @media (min-width: 1500px) {
-    margin-left: 120px;
-  }
-}
-
-.button-registration {
-  @media (max-width: 575.98px)  {
-    margin-top: -45px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: -45px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: -60px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-top: -60px;
-    margin-left: 400px;
-  }
-  @media (min-width: 1200px) and (max-width: 1499.98px) {
-    margin-top: 20px;
-    margin-left: 1020px;
-  }
-  @media (min-width: 1500px) {
-    margin-top: -75px;
+    width: 150px;
     margin-left: 600px;
+    // margin-right: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 180px;
+    margin-left: 690px;
+    // margin-right: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 200px;
+    margin-left: 780px;
+    // margin-right: 20px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    width: 220px;
+    margin-left: 1020px;
+    // margin-right: 20px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    width: 300px;
+    margin-left: 1200px;
+    // margin-right: 40px;
+  }
+  @media (min-width: 1800px) {
+    width: 350px;
+    margin-left: 1400px;
+    // margin-right: 20px;
   }
 }
 
 .button-program {
+  display: flex;
+  align-items: center;
+  // margin-left: 0 auto;
+  // margin-right: 0 auto;
   @media (max-width: 575.98px)  {
-    margin-top: 130px;
-    margin-left: 170px;
+    display: none;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     margin-top: 230px;
-    margin-left: 250px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     margin-top: 310px;
-    margin-left: 350px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     margin-top: 400px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     margin-top: 480px;
-    margin-left: 1020px;
   }
-  @media (min-width: 1500px) {
-    margin-top: 490px;
-    margin-left: 1050px;
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    margin-top: 540px;
+  }
+  @media (min-width: 1800px) {
+    margin-top: 620px;
+  }
+}
+
+.button-registration {
+  display: flex;
+  align-items: center;
+  // margin-left: 0 auto;
+  // margin-right: 0 auto;
+  @media (max-width: 575.98px)  {
+    display: none;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 1800px) {
+    margin-top: 20px;
   }
 }
 
@@ -476,5 +506,8 @@
   bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
+  @media (max-width: 575.98px)  {
+    display: none;
+  }
 }
 
