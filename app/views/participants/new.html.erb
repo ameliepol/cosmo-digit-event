@@ -16,14 +16,15 @@
     <div class="participant-registration">
       <div class="new-participant-form">
         <%= simple_form_for [@event, @participant] do |f| %>
-          <div class="participant-names">
-            <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
-            <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
-          </div>
-          <div>
-            <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
-          </div>
+        <div class="participant-names">
+          <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
+        <div>
+          <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+      </div>
+      <div class="other-participant-info">
         <div class="participant-functions">
           <%= f.input :organization, placeholder: 'Structure*', label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
@@ -31,6 +32,7 @@
         <div>
           <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
+      </div>
     </div>
   </div>
   <div class="cookies-erasmus-participant">
