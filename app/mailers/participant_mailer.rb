@@ -2,10 +2,10 @@ class ParticipantMailer < ApplicationMailer
 
   def confirmation(participant)
     @participant = participant
-    @bookings = @participant.bookings
-    @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
+    # @bookings = @participant.bookings
+    # @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
     attachments.inline['logo_event.png'] = File.read('app/assets/images/logo_event.png')
-    mail(to: @participant.email, subject: "Webconférence Mobilité des Apprentis - Confirmation d'inscription") do |format|
+    mail(to: @participant.email, subject: "Webconférence Agence Erasmus+ - Confirmation d'inscription") do |format|
       format.html { render(layout: 'mailer') }
     end
   end

@@ -22,7 +22,11 @@
             <p> <%= simple_format(workshop.description) %></p>
             <h3> <span>Intervenants :</span> <%= simple_format(workshop.speaker) %></h3>
           <% end %>
+          <div class="d-flex flex-wrap">
+            <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

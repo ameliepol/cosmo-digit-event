@@ -16,10 +16,10 @@
         <%= link_to "ACCUEIL", "/", class: "nav-link #{@navbar["link_1"]}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
+        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
+        <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
       </li>
       <div class="social-network">
         <a href="https://www.facebook.com/ErasmusplusFR", target="_blank"><i class="fab fa-facebook-square"></i></a>
