@@ -25,6 +25,7 @@ require("channels")
 // External imports
 import "bootstrap";
 import "../components/navbar";
+import "../custom/main";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';

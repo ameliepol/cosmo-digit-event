@@ -1,5 +1,11 @@
 <div class="banner-container">
-  <div class="banner-registration" style="background-image: url('<%= image_path 'registration-banner.png' %>');">
+  <div class="banner-registration position-relative" style="background-image: url('<%= image_path 'registration-banner.png' %>');">
+  </div>
+</div>
+<div class="conference-registration">
+  <div class="conference-title">
+    <h1> LA WEBCONFÉRENCE </h1>
+    <p><span>10 novembre 2021</span></p>
   </div>
 </div>
 <div class="participant">
@@ -10,18 +16,21 @@
     <div class="participant-registration">
       <div class="new-participant-form">
         <%= simple_form_for [@event, @participant] do |f| %>
-        <div class="participant-names">
-          <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+          <div class="participant-names">
+            <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
+            <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+          </div>
+          <div>
+            <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+          </div>
         </div>
         <div class="participant-functions">
           <%= f.input :organization, placeholder: 'Structure*', label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
         <div>
-          <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
-      </div>
     </div>
   </div>
   <div class="cookies-erasmus-participant">
@@ -33,60 +42,3 @@
 <%= f.button :submit, "JE M'INSCRIS", class: 'button-submit-registration' %>
 </div>
 <% end %>
-
-<!-- <div class="workshop-choices">
-  <h1>  <%#= 'Sélectionnez vos ateliers :' %></h1>
-  <div class="text-center">
-    <div class="disabled-date-highlighted">
-      <span>10 JUIN 2021</span>
-    </div>
-  </div>
-    <%# @workshops_1.each_with_index do |workshop, index| %>
-    <%#= f.simple_fields_for :bookings, Booking.new do |b| %>
-    <#%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-disabled-check-box" data-workshop-id="<#%= workshop.id %>">
-      <h2> <#%= workshop.start_at.strftime("%Hh%M")%> - <#%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
-      <h2> <#%= workshop.name %> </h2>
-      <p> <#%= workshop.description %></p>
-    </div>
-    <#%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-    <#% end %>
-  <#% end %>
-  <div class="text-center">
-    <div class="disabled-date-highlighted">
-      <span>17 JUIN 2021</span>
-    </div>
-  </div>
-    <#% @workshops_2.each_with_index do |workshop, index| %>
-      <#%= f.simple_fields_for :bookings, Booking.new do |b| %>
-      <#%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-disabled-check-box" data-workshop-id="<#%= workshop.id %>">
-      <h2> <#%= workshop.start_at.strftime("%Hh%M")%> - <#%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
-      <h2> <#%= workshop.name %> </h2>
-      <p> <#%= workshop.description %></p>
-    </div>
-      <#%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-    <#% end %>
-  <#% end %>
-  <div class="text-center">
-    <div class="date-highlighted">
-      <span>24 JUIN 2021</span>
-    </div>
-  </div>
-    <#% @workshops_3.each_with_index do |workshop, index| %>
-    <#%= f.simple_fields_for :bookings, Booking.new do |b| %>
-    <#%= b.hidden_field :workshop_id, value: workshop.id %>
-    <div class="my-check-box" data-workshop-id="<#%= workshop.id %>">
-      <h2> <#%= workshop.start_at.strftime("%Hh%M")%> - <#%= workshop.end_at.strftime("%Hh%M") %> GMT (11h00 – 12h30 France) </h2>
-      <h2> <#%= workshop.name %> </h2>
-      <p> <#%= workshop.description %></p>
-        <div class="speakers">
-        <h2> Intervenants : </h2>
-        <p> <#%= simple_format(workshop.speaker) %></p>
-      </div>
-    </div>
-    <#%= b.input :status, as: :string, input_html: { class: "statusInput#{workshop.id} d-none", value: "" }, label_html: { class: "d-none" }, value: "", label: false %>
-    <#% end %>
-  <#% end %> -->
-
-

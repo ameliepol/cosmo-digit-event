@@ -1,0 +1,9 @@
+<div id="cookies-bar" class="cookies-bar">
+  <p>
+    Ce site web utilise des <u><%= link_to "cookies", "https://webconf-mobilite-apprentis.erasmusplus.fr/confidential", target: "_blank" %></u> 🍪 Les acceptez-vous?
+  </p>
+  <div class="cookies-buttons">
+    <%= link_to 'Oui', request.original_url, class: 'btn accept' %>
+    <%= link_to 'Non', request.original_url, class: 'btn reject' %>
+  </div>
+</div>

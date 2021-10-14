@@ -1,7 +1,36 @@
 .banner-program {
-  background-size: cover;
+  @media (max-width: 575.98px)  {
+  height: 120px;
   background-position: center;
-  height: 320px;
+  background-size: cover;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 10px;
+    height: 280px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    margin-top: 10px;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+  }
+  @media (min-width: 1500px) {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .main-speaker {

@@ -29,15 +29,18 @@ gem 'redis', '~> 4.0'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'autoprefixer-rails'
+gem 'execjs', '2.7.0'
 gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'letter_opener', group: :development
+gem 'postmark-rails'
+gem 'pagy'
+gem 'mail_interceptor', group: [:development, :staging]
+gem 'rails-i18n', '~> 6.0.0'
 gem 'activeadmin', github: 'activeadmin/activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'activeadmin_addons'
-gem 'letter_opener', group: :development
-gem 'postmark-rails'
-gem 'cookies_eu'
-gem 'pagy'
+# gem 'cookies_eu'
 
 group :development, :test do  gem 'pry-byebug'
   gem 'pry-rails'

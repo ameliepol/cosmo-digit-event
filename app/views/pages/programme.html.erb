@@ -1,5 +1,5 @@
 <div class="banner-container">
-  <div class="banner-program" style="background-image: url('<%= image_path 'program-banner.png' %>');">
+  <div class="banner-program position-relative" style="background-image: url('<%= image_path 'program-banner.png' %>');">
   </div>
 </div>
 <div class="main-speaker">
@@ -9,17 +9,17 @@
   <div class="container-program-date1">
     <div class="date1">
       <div class="date1-text">
-        <%= image_tag "date1.png", alt: "14 JANVIER 2021" %>
+        <p>date</p>
       </div>
       <div class="date1-picto">
-        <%= image_tag "calendar.svg", alt: "Program", height: 140 %>
+        <%= image_tag "picto-calendar.svg", alt: "Program", height: 140 %>
       </div>
     </div>
     <div class="contenu-date1">
       <div class="card">
         <div class="card-body">
           <% @workshops_1.each do |workshop| %>
-            <%= image_tag "sm-line-yellow.svg", height: 8 %>
+            <%= image_tag "green_line.svg", height: 8 %>
             <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %></h1>
             <h2> <%= workshop.name %></h2>
             <h3> Intervenant : <%= workshop.speaker %></h3>
@@ -29,32 +29,3 @@
       </div>
     </div>
   </div>
-
-  <div class="main-speaker">
-  <h5>Une session de réponses aux questions que vous nous avez posées lors de la conférence du <span> 14 janvier 2021 </span> est organisée par secteur éducatif le <span> 18 janvier 2021. </span></h5>
-  </div>
-
-  <div class="container-program-date2">
-    <div class="contenu-date2">
-      <div class="card">
-        <div class="card-body">
-          <% @workshops_2.each do |workshop| %>
-            <%= image_tag "sm-line-yellow.svg", height: 8 %>
-            <h1> <%= workshop.start_at.strftime("%Hh%M")%> - <%= workshop.end_at.strftime("%Hh%M") %></h1>
-            <h2> <%= workshop.name %></h2>
-            <h3> Intervenant : <%= workshop.speaker %></h3>
-            <p> <%= simple_format(workshop.description) %></p>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <div class="date2">
-      <div class="date2-text">
-      <%= image_tag "date2.png", alt: "18 JANVIER 2021" %>
-      </div>
-      <div class="date2-picto">
-      <%= image_tag "picto-program.svg", alt: "Program", height: 180 %>
-      </div>
-    </div>
-  </div>
-</div>

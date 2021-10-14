@@ -1,5 +1,61 @@
-.cookies-eu {
-  @media (max-width: 767px) {
-    position: absolute;
+.cookies-bar {
+  position: sticky;
+  bottom: 0;
+  font-family: $my-font;
+  display: flex;
+  vertical-align: middle;
+  max-width: 620px;
+
+  padding: 0px 10px 5px 10px;
+
+  border: 1px solid $erasmus_blue;
+  // border-bottom: none;
+  background-color: #F3F4F6;
+
+  .btn {
+    display: block;
+    font-family: $my-font;
+    border: 1px solid $erasmus_light_blue;
+    background-color: $erasmus_light_blue;
+    color: #FFF;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-decoration: none;
+
+    &.accept:hover {
+      background-color: #047857;
+      border: 1px solid #047857;
+    }
+    &.reject:hover {
+      background-color: #B91C1C;
+      border: 1px solid #B91C1C;
+    }
   }
+
+  @media (min-width: 768px) {
+    display: flex;
+    // max-width: 700px;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 0;
+
+    .btn {
+      font-family: $my-font;
+      padding: 10px 20px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.cookies-bar p {
+  margin-top: 15px;
+}
+
+.cookies-buttons {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  margin: 10px;
 }

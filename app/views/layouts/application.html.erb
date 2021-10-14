@@ -29,15 +29,20 @@
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= favicon_link_tag %>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 
   </head>
 
-  <body>
-    <%= render 'cookies_eu/consent_banner', link: '/confidential' %>
+   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
 
     <%= yield %>
+    <% if cookies[:allow_cookies].blank? %>
+    <%= render 'layouts/cookies_bar' %>
+    <% end %>
     <%= render 'shared/footer' %>
+
+
   </body>
 </html>

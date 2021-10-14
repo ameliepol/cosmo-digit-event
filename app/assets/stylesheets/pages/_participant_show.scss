@@ -1,53 +1,54 @@
-// .banner-registration {
-//   background-size: cover;
-//   background-position: center;
-//   height: 320px;
-// }
-
-.new_participant-show {
+.new_participant_show {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
-  border: solid $erasmus-blue;
+  border: solid $erasmus_green;
   @media (max-width: 575.98px) {
-    padding: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
     flex-wrap: wrap;
     font-size: 16px;
-    margin-top: 120px;
+    margin-top: 30px;
     margin-bottom: 40px;
     margin-left: 20px;
     margin-right: 20px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    padding: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
     flex-wrap: wrap;
     font-size: 16px;
-    margin-top: 130px;
+    margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 35px;
     margin-right: 35px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    padding: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
     flex-wrap: wrap;
     font-size: 20px;
-    margin-top: 140px;
+    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 35px;
     margin-right: 35px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding: 25px;
+    padding-left: 25px;
+    padding-top: 25px;
     flex-wrap: wrap;
     font-size: 20px;
-    margin-top: 150px;
+    margin-top: 60px;
     margin-bottom: 50px;
     margin-left: 70px;
     margin-right: 70px;
   }
   @media (min-width: 1200px) {
-    padding: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
     font-size: 20px;
-    margin-top: 160px;
+    margin-top: 60px;
     margin-bottom: 50px;
     margin-left: 70px;
     margin-right: 70px;
@@ -73,31 +74,31 @@
 }
 
 .participant-infos-show h1 {
-  color: $erasmus_pink;
-  font: $body-font;
+  color: $erasmus_green;
+  font-family: $my-font;
   text-align: center;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 20px;
   @media (max-width: 575.98px)  {
     font-size: 18px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 .participant-infos-show h2 {
   color: #2b2a2a;
-  font: $body-font;
+  font-family: $my-font;
   font-weight: normal;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -105,147 +106,87 @@
     font-size: 18px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 .participant-infos-show h3 {
-  color: $erasmus-blue;
-  font: $body-font;
-  font-style: italic;
-  @media (max-width: 575.98px)  {
-    font-size: 18px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 22px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .participant-infos-show p {
   color: #2b2a2a;
-  font: $body-font;
+  font-family: $my-font;
   font-weight: normal;
   margin-bottom: 10px;
   @media (max-width: 575.98px)  {
     font-size: 18px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 .workshop-details p {
-  color: $erasmus-blue;
-  font: $body-font;
+  color: #2b2a2a;
+  font-family: $my-font;
   margin-bottom: 10px;
-  font-weight: 600;
+  font-weight: normal;
   @media (max-width: 575.98px)  {
     font-size: 18px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 .workshop-details h4 {
   color: #2b2a2a;
-  font: $body-font;
+  font-family: $my-font;
   font-weight: normal;
   @media (max-width: 575.98px)  {
     font-size: 18px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
+    font-size: 18px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
-.participant-instructions h1 {
-  color: #2b2a2a;
-  font: $body-font;
-  font-weight: normal;
-  text-align: left;
-  @media (max-width: 575.98px)  {
-    font-size: 18px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 22px;
-  }
-}
-
-.participant-instructions p {
-  color: #2b2a2a;
-  font: $body-font;
-  font-weight: normal;
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  @media (max-width: 575.98px)  {
-    font-size: 18px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
-  }
-  @media (min-width: 1200px) {
-    font-size: 22px;
-  }
-}

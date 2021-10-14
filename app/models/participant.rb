@@ -13,13 +13,11 @@ class Participant < ApplicationRecord
   validates :email, presence: { message: "Veuillez renseigner votre email" }
   validates :first_name, presence: { message: "Veuillez renseigner votre nom de famille" }
   validates :last_name, presence: { message: "Veuillez renseigner votre prénom" }
-  validates :organization, presence: { message: "Veuillez renseigner votre entreprise / organisation" }
+  validates :organization, presence: { message: "Veuillez renseigner le nom de votre structure" }
   validates :city, presence: { message: "Veuillez renseigner votre ville" }
-  validates :zipcode, presence: { message: "Veuillez renseigner votre pays" }
   validates :accepted_conditions, inclusion: { in: [true] }
-  # validates :accepted_conditions, presence: { message: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" }
-  validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
-  # validates :position, presence: true
+  # validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
+  validates :position, presence: { message: "Veuillez renseigner votre fonction" }
   # validates :company, presence: true
 
   CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ville Pays Ateliers_sélectionnés]

@@ -1,16 +1,13 @@
 .footer {
-  // background: #F0F4FC;
-  background: #f3f7e6;
+  background: #F0F4FC;
   bottom: 0;
-  box-shadow: 0 0 5px #cfd8a9;
+  // box-shadow: 0 0 5px #81A4DE;
   display: flex;
   z-index: -4;
-  // position: relative;
-  // box-shadow: 0px -4px 12px #F0F4FC;
 }
 
 .contact {
-  padding-left: 100px;
+  padding-left: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +25,7 @@
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 600;
-  font-family: $body-font;
+  font-family: $my-font;
   @media (max-width: 991.98px) {
     display: flex;
     justify-content: center;
@@ -70,7 +67,7 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  font-family: $body-font;
+  font-family: $my-font;
   font-size: 16px;
   font-weight: normal;
   @media (max-width: 991.98px) {
@@ -89,7 +86,7 @@
 .email_contact a {
   color: #2b2a2a;
   text-decoration: underline;
-  font-family: $body-font;
+  font-family: $my-font;
   font-size: 14px;
   font-weight: normal;
   @media (max-width: 991.98px) {
@@ -120,7 +117,7 @@
 .legal a {
   color: #2b2a2a;
   text-decoration: underline;
-  font-family: $body-font;
+  font-family: $my-font;
   font-weight: normal;
   font-size: 14px;
   padding: 5px;
@@ -131,7 +128,7 @@
 }
 
 .siteweb {
-  font-family: $body-font;
+  font-family: $my-font;
   font-weight: normal;
   margin-top: 20px;
   font-size: 14px;
