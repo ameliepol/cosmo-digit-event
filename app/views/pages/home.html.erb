@@ -1,11 +1,53 @@
 <div class="banner-container">
   <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner.png' %>');">
+    <div class="d-flex flex-wrap">
+      <div class="col-12">
+        <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
+      </div>
+      <div class="col-12 col-xl-8">
+        <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
+      </div>
+    </div>
+  </div>
+</div>
+<%#= render 'modal/modal_home' %>
+<div class="conference-presentation">
+  <div class="conference-title">
+    <h1> LA WEBCONFÉRENCE </h1>
+  </div>
+  <div class="conference-details">
+    <div class="webinar-image mx-auto">
+      <%= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
+    </div>
+    <div class="conference-text-presentation">
+      <p>Le développement de la <span>mobilité des apprentis</span> constitue une priorité au niveau européen et national. Cette mobilité est un levier important pour enrichir les parcours professionnels et valoriser les filières d’apprentissage.</p>
+      <p>L’Agence Erasmus+ France / Education Formation organise <span>une webconférence</span> autour de deux axes forts du nouveau programme Erasmus+ pour la période 2021-2027: mobilités hybrides ; mobilités et transition écologique.</p>
+      <p>Cet évènement permettra à différents acteurs français et européens de dialoguer et de témoigner de leurs expériences et projets menés en lien avec ces deux thématiques. D’une durée  de 2h, il sera <span>animé en direct par Vanessa Duval</span>.</p>
+    </div>
+  </div>
+  <div div class="d-flex flex-wrap">
+    <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="banner-container">
+  <div class="banner position-relative" style="background-image: url('<%#= image_path 'accueil-banner.png' %>');">
     <div class="banner-button-margin position-relative">
-      <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program" %>
-      <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration" %>
+      <%#= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program" %>
+      <%#= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration" %>
     </div>
     <div class="fleche-scroll">
-      <%= image_tag "fleche-scroll.svg" %>
+      <%#= image_tag "fleche-scroll.svg" %>
     </div>
   </div>
   <%#= render 'modal/modal_home' %>
@@ -15,7 +57,7 @@
     </div>
     <div class="conference-details">
       <div class="webinar-image mx-auto">
-        <%= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
+        <%#= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
       </div>
       <div class="conference-text-presentation">
         <p>Le développement de la <span>mobilité des apprentis</span> constitue une priorité au niveau européen et national. Cette mobilité est un levier important pour enrichir les parcours professionnels et valoriser les filières d’apprentissage.</p>
@@ -24,7 +66,7 @@
       </div>
     </div>
     <div div class="d-flex flex-wrap">
-      <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
+      <%#= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
     </div>
   </div>
-</div>
+</div> -->
