@@ -9,6 +9,7 @@
 .contact {
   padding-left: 80px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   text-decoration: none;
@@ -30,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 0px;
   }
 }
 
@@ -92,6 +94,7 @@
   @media (max-width: 991.98px) {
     display: flex;
     justify-content: center;
+    font-size: 12px;
   }
 }
 
@@ -124,6 +127,7 @@
   @media (max-width: 991.98px) {
     display: flex;
     justify-content: center;
+    font-size: 12px;
   }
 }
 
