@@ -6,24 +6,25 @@
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: 20px;
+    margin-top: 25px;
     height: 300px;
     background-position: top;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 450px;
+    margin-top: 25px;
+    height: 380px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 550px;
+    height: 500px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     margin-top: 15px;
-    height: 650px;
+    height: 600px;
     background-position: center;
     background-size: cover;
   }
@@ -44,39 +45,43 @@
 .banner-button-margin {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   @media (max-width: 575.98px)  {
     display: none;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    width: 150px;
-    margin-left: 600px;
-    // margin-right: 20px;
+    display: none;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    width: 180px;
-    margin-left: 690px;
+    width: 250px;
+    // margin-left: 690px;
     // margin-right: 20px;
+    left: 550px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    width: 200px;
-    margin-left: 780px;
+    width: 300px;
+    // margin-left: 780px;
     // margin-right: 20px;
+    left: 750px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    width: 220px;
-    margin-left: 1020px;
+    width: 330px;
+    // margin-left: 1020px;
     // margin-right: 20px;
+    left: 950px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
-    width: 300px;
-    margin-left: 1200px;
+    width: 350px;
+    // margin-left: 1200px;
     // margin-right: 40px;
+    left: 1200px;
   }
   @media (min-width: 1800px) {
-    width: 350px;
-    margin-left: 1400px;
+    width: 400px;
+    // margin-left: 1400px;
     // margin-right: 20px;
+    left: 1500px;
   }
 }
 
@@ -92,13 +97,13 @@
     margin-top: 230px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: 310px;
+    margin-top: 260px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-top: 400px;
+    margin-top: 390px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    margin-top: 480px;
+    margin-top: 440px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
     margin-top: 540px;

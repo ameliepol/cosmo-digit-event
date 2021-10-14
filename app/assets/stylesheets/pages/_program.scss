@@ -36,6 +36,7 @@
 .program {
   display: flex;
   z-index: -4;
+  margin-bottom: 20px;
 }
 
 .container-program-date1 {
@@ -350,13 +351,13 @@
   color: #009EE2;
   font-weight: bold;
   @media (max-width: 575.98px)  {
-    font-size: 16px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 18px;
   }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 22px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 22px;
@@ -377,13 +378,13 @@
   color: $erasmus-blue;
   font-weight: bold;
   @media (max-width: 575.98px)  {
-    font-size: 16px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 18px;
   }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 22px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 22px;
@@ -405,13 +406,13 @@
   color: black;
   font-weight: thin;
   @media (max-width: 575.98px)  {
-    font-size: 16px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 18px;
   }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 22px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 22px;
@@ -432,13 +433,13 @@
   color: $erasmus-blue;
   font-weight: bold;
   @media (max-width: 575.98px)  {
-    font-size: 16px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 18px;
   }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 22px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 22px;
@@ -469,16 +470,16 @@
     font-size: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 22px;
+    font-size: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    font-size: 24px;
+    font-size: 20px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
-    font-size: 24px;
+    font-size: 20px;
   }
   @media (min-width: 1800px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
