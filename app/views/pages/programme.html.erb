@@ -15,13 +15,36 @@
     <div class="contenu-date1">
       <div class="card">
         <div class="card-body">
-          <% @workshops_1.each do |workshop| %>
-            <%= image_tag "yellow_line.svg", height: 8 %>
-            <!-- <h1> <%#= workshop.start_at.strftime("%Hh%M")%> - # workshop.end_at.strftime("%Hh%M") %></h1> -->
-            <h2> <%= workshop.name %></h2>
-            <p> <%= simple_format(workshop.description) %></p>
-            <h3> <span>Intervenants :</span> <%= simple_format(workshop.speaker) %></h3>
-          <% end %>
+          <%= image_tag "yellow_line.svg", height: 8 %>
+          <!-- <h1> 10h00 - 10h30</h1> -->
+          <h2> La mobilité des apprentis avec le programme Erasmus+</h2>
+          <!-- <p> Description </p> -->
+          <h3> <span>Sylvain Scherpereel</span>, Chargé de développement sur le secteur de l’enseignement et la formation professionnels, Agence Erasmus+ France / Education Formation</h3>
+          <p></p>
+          <p></p>
+          <%= image_tag "yellow_line.svg", height: 8 %>
+          <!-- <h1> 10h00 - 10h30</h1> -->
+          <h2> Mobilités hybrides</h2>
+          <p> → Regards croisés sur l’intérêt de développer des échanges à distance et des projets de mobilité hybride </p>
+          <h3>- <span>Lionel Clémençon</span>, Responsable du pôle Scolaire/ Formation prof./ Education adultes, Département Promotion, Agence Erasmus+ France / Education Formation</h3>
+          <h3>- <span>Pierre Touillon</span>, Conseiller en internationalisation des compétences, Comité de concertation et de coordination de l’apprentissage du bâtiment et des travaux publics (CCCA-BTP)</h3>
+          <h3>- <span>Sandra Schmidt</span>, Cheffe du Bureau Formation professionnelle, échanges universitaires et volontariat, Office franco-allemand pour la jeunesse (OFAJ)</h3>
+          <h3>- <span>Hakim Monteville</span>, Formateur mécanique, LEA-CFI (CCI Paris Ile-de- France)</h3>
+          <h3>- <span>Stéphane Bouils</span>, Directeur du CFA de la Chambre des métiers et de l’artisanat des Pyrénées-Orientales</h3>
+          <h3>- <span>Rita Festi</span>, Chargée du développement des nouveaux projets/actions, Scuola Central Formazione (IT)</h3>
+          <h3>- <span>Karine Perrier</span>, Chargé de projet Ingénierie et Numérique, Pôle de formation Pasteur</h3>
+          <p></p>
+          <p></p>
+          <%= image_tag "yellow_line.svg", height: 8 %>
+          <!-- <h1> 10h00 - 10h30</h1> -->
+          <h2> Mobilités et transition écologique</h2>
+          <p> → Regards croisés sur la prise en compte des enjeux liés à la transition écologique dans les projets de mobilité internationale </p>
+          <h3>- <span>Corinne Le Fay-Souloy</span>, Conseillère technique, Agence Erasmus+ France / Education Formation</h3>
+          <h3>- <span>Eric Bastian</span>, Formateur technique en aménagement paysager, CFPPA Savoie-Bugey</h3>
+          <h3>- <span>Freddy Ferret</span>, Délégué associé, Fédération régionale des MFR de Nouvelle-Aquitaine</h3>
+          <h3>- <span>Sébastien Baillot</span>, Responsable de l’institut des métiers du sanitaire et du génie climatique, Compagnons du Devoir et du Tour de France</h3>
+          <h3>- <span>Roxana Flavia Dam</span>, Chargée de mobilité au centre de formation professionnelle EUC-SYD (DK)</h3>
+          <p></p>
           <div class="d-flex flex-wrap">
             <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
           </div>
