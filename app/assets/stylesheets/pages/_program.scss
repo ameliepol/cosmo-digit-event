@@ -1,34 +1,44 @@
 .banner-program {
   @media (max-width: 575.98px)  {
-  height: 130px;
-  background-position: center;
-  background-size: cover;
+    margin-top: 10px;
+    height: 180px;
+    background-position: right;
+    background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 200px;
-    background-position: center;
+    margin-top: 10px;
+    height: 240px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 250px;
-    background-position: center;
+    margin-top: 10px;
+    height: 300px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     margin-top: 10px;
-    height: 270px;
-    background-position: center;
+    height: 330px;
+    background-position: right;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     margin-top: 10px;
-    height: 390px;
-    background-position: center;
+    height: 410px;
+    background-position: right;
     background-size: cover;
   }
-  @media (min-width: 1500px) {
-    height: 470px;
-    background-position: center;
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    margin-top: 10px;
+    height: 490px;
+    background-position: right;
+    background-size: cover;
+  }
+  @media (min-width: 1800px) {
+    margin-top: 10px;
+    height: 520px;
+    background-position: right;
     background-size: cover;
   }
 }
@@ -36,7 +46,6 @@
 .program {
   display: flex;
   z-index: -4;
-  margin-bottom: 20px;
 }
 
 .container-program-date1 {

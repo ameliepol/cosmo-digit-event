@@ -11,6 +11,9 @@
   width: 100%;
   z-index: 1;
   // position: relative;
+  @media (max-width: 575.98px)  {
+    box-shadow: 0;
+  }
 }
 
 .navbar .navbar-nav {
