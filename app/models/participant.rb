@@ -34,9 +34,9 @@ class Participant < ApplicationRecord
           participant.email,
           participant.organization,
           participant.position,
-          participant.city,
-          participant.zipcode,
-          participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
+          participant.city
+          # participant.zipcode,
+          # participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
         ]
       end
     end

@@ -1,14 +1,15 @@
 .container-dashboard {
-min-height: 500px;
-max-width: 1200px;
-padding-top: 180px;
+min-height: 750px;
+padding-top: 210px;
 padding-bottom: 10px;
+padding-left: 100px;
+padding-right: 100px;
 margin: 0 auto;
 }
 
 .container-dashboard h1 {
   color: $erasmus_blue;
-  font: $body-font;
+  font-family: $my-font;
   text-align: left;
   font-size: 24px;
   font-weight: bold;
@@ -27,7 +28,7 @@ margin: 0 auto;
   background-color: $erasmus_blue;
   color: white;
   font-weight: bold;
-  font: $body-font;
+  font-family: $my-font;
   padding: 10px;
   text-decoration: none;
 }
@@ -55,7 +56,7 @@ margin: 0 auto;
   background-color: $erasmus_pink;
   color: white;
   font-weight: bold;
-  font: $body-font;
+  font-family: $my-font;
   font-size: 24px;
   padding: 10px;
   text-decoration: none;
@@ -68,17 +69,48 @@ margin: 0 auto;
   text-decoration: none;
 }
 
+.button-export {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 125px;
+  height: 50px;
+  background-color: $erasmus_blue;
+  color: white;
+  font-weight: bold;
+  font-family: $my-font;
+  padding: 10px;
+  text-decoration: none;
+  margin-top : 10px;
+  margin-bottom: 10px;
+}
+
+.button-export a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $my-font;
+}
+
+.button-export:hover {
+  text-decoration: none;
+  color: $erasmus_blue;
+  background-color: white;
+  border: solid $erasmus_blue;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
   background-color: $erasmus_pink;
-  font: $body-font;
+  font-family: $my-font;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
   background-color: $erasmus_pink;
-  font: $body-font;
+  font-family: $my-font;
 }
 
 .nav-pills>li>a {
@@ -93,7 +125,7 @@ margin: 0 auto;
   position: relative;
   display: block;
   padding: 10px 15px;
-  font: $body-font;
+  font-family: $my-font;
 }
 
 .table .thead-dark th {
@@ -101,8 +133,14 @@ margin: 0 auto;
   color: #fff;
   font-weight: normal;
   background-color: $erasmus_pink;
-  font: $body-font;
+  font-family: $my-font;
   border-color: $erasmus_pink;
+}
+
+.table td {
+  color: black;
+  font-weight: normal;
+  font-family: $my-font;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
@@ -112,7 +150,7 @@ margin: 0 auto;
 
 a {
   color: $erasmus_pink;
-  font: $body-font;
+  font-family: $my-font;
 }
 
 .fas .fa-arrow-circle-down a {

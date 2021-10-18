@@ -1,15 +1,18 @@
 <div class="container-dashboard">
   <div class="title-dashboard">
     <h1>Récapitulatif des participants</h1>
-    <%= link_to "< Dashboard", company_admin_dashboard_path, class: "btn-back-dashboard" %>
+    <%= link_to "↩ Tableau de bord", company_admin_dashboard_path, class: "btn-back-dashboard" %>
   </div>
+  <p></p>
+  <div class="export">
+    <%= link_to "Export ⬇", company_admin_participants_path(format: :csv), class: "button-export" %>
+  </div>
+  <p></p>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Participants
       </a>
     </li>
-    <li class="d-flex justify-content-center align-items-center h-100"><%= link_to company_admin_participants_path(format: :csv), class: 'fas fa-arrow-circle-down height-46px' do %>
-      <% end %></li>
   </ul>
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -19,11 +22,11 @@
             <th scope="col">Nom(s)</th>
             <th scope="col">Prénom(s)</th>
             <th scope="col">Email</th>
-            <th scope="col">Organisation</th>
+            <th scope="col">Structure</th>
             <th scope="col">Fonction</th>
             <th scope="col">Ville</th>
-            <th scope="col">Pays</th>
-            <th scope="col">Ateliers sélectionnés</th>
+<!--             <th scope="col">Pays</th>
+            <th scope="col">Ateliers sélectionnés</th> -->
             <th scope="col">X</th>
           </tr>
         </thead>
@@ -36,12 +39,12 @@
             <td><%= participant.organization %></td>
             <td><%= participant.position %></td>
             <td><%= participant.city %></td>
-            <td><%= participant.zipcode %></td>
-            <td><% participant.bookings.order_by_workshop_date.each do |booking| %>
-              <div><strong><%= time_with_day(booking.workshop.start_at)%> - <%= booking.workshop.end_at.strftime("%Hh%M") %></strong> : <%= booking.workshop.name %>
+<!--             <td><%#= participant.zipcode %></td>
+            <td><#% participant.bookings.order_by_workshop_date.each do |booking| %>
+              <div><strong><%#= time_with_day(booking.workshop.start_at)%> - <%#= booking.workshop.end_at.strftime("%Hh%M") %></strong> : <%#= booking.workshop.name %>
               </div>
-              <% end %>
-            </td>
+              <#% end %>
+            </td> -->
             <td><%= link_to company_admin_participant_path(participant), method: :delete, data: { confirm: 'Voulez-vous supprimer ce participant?' } do %>
               <i class="far fa-trash-alt"></i>
               <% end %>

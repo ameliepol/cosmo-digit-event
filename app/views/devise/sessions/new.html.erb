@@ -1,5 +1,5 @@
-<div class="container">
-  <h5>Log in</h5>
+<div class="container-devise">
+  <h1>Connexion</h1>
 
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="form-inputs">
@@ -14,9 +14,7 @@
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit, "LOG IN" %>
+    <%= f.button :submit, "Connexion", class: "button-webinaire" %>
   </div>
 <% end %>
-
-<%#= render "devise/shared/links" %>
 </div>
