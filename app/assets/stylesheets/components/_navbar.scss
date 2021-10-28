@@ -264,6 +264,20 @@
   color: $erasmus_pink;
 }
 
+.fa-linkedin {
+  margin-left: 8px;
+  color: $erasmus_light_blue;
+  font-size: 28px;
+  @media (max-width: 1199.98px) {
+    margin-left: 1px;
+    margin-right: 8px;
+  }
+}
+
+.fa-linkedin:hover {
+  color: $erasmus_pink;
+}
+
 // .navbar {
 //   z-index: 1;
 // }
