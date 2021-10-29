@@ -52,6 +52,7 @@ class ParticipantsController < ApplicationController
       :organization,
       :position,
       :city,
+      :newsletter_subscription,
       :accepted_conditions)
     #   bookings_attributes: [:id, :workshop_id, :status])
     # parameters["bookings_attributes"].reject! { |_, v| v["status"] != "confirmed" }

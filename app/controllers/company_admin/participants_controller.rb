@@ -34,8 +34,9 @@ private
     :position,
     :city,
     :zipcode,
-    :accepted_conditions,
-    bookings_attributes: [:id, :workshop_id, :status])
+    :newsletter_subscription,
+    :accepted_conditions)
+    # bookings_attributes: [:id, :workshop_id, :status])
   end
 
 end

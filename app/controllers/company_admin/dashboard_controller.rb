@@ -22,6 +22,7 @@ class CompanyAdmin::DashboardController < ApplicationController
     :position,
     :city,
     :zipcode,
+    :newsletter_subscription,
     :accepted_conditions,
     bookings_attributes: [:id, :workshop_id, :status])
   end

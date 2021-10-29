@@ -9,5 +9,10 @@ fr:
       models:
         participant:
           attributes:
+            First name: "Prénom"
+            Last name: "Nom de famille"
+            Email: "Email"
             accepted_conditions:
               inclusion: "Données collectées : Veuillez accepter les conditions d'utilisation pour valider votre inscription"
+            newsletter_subscription:
+              inclusion: "Inscription à la newsletter : Veuillez cocher une réponse pour valider votre inscription"

@@ -15,12 +15,13 @@ class Participant < ApplicationRecord
   validates :last_name, presence: { message: "Veuillez renseigner votre prénom" }
   validates :organization, presence: { message: "Veuillez renseigner le nom de votre structure" }
   validates :city, presence: { message: "Veuillez renseigner votre ville" }
+  validates :newsletter_subscription, inclusion: { in: [true, false] }
   validates :accepted_conditions, inclusion: { in: [true] }
   # validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
   validates :position, presence: { message: "Veuillez renseigner votre fonction" }
   # validates :company, presence: true
 
-  CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ville]
+  CSV_HEADER = %w[Nom Prénom Email Organisation Fonction Ville Newsletter]
   def self.to_csv
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @participants = Participant.all
@@ -34,7 +35,8 @@ class Participant < ApplicationRecord
           participant.email,
           participant.organization,
           participant.position,
-          participant.city
+          participant.city,
+          participant.newsletter_subscription.to_s
           # participant.zipcode,
           # participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
         ]
