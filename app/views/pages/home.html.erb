@@ -2,10 +2,10 @@
   <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner.png' %>');">
     <div class="d-flex flex-wrap">
       <div class="col-12">
-        <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
+        <%#= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
       </div>
       <div class="col-12 col-xl-8">
-        <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
+        <%#= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
       </div>
     </div>
     <div class="fleche-scroll">
@@ -16,20 +16,28 @@
 <%#= render 'modal/modal_home' %>
 <div class="conference-presentation">
   <div class="conference-title">
-    <h1> LA WEBCONFÉRENCE </h1>
+    <h1> LA CONFÉRENCE </h1>
   </div>
   <div class="conference-details">
     <div class="webinar-image mx-auto">
       <%= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
     </div>
     <div class="conference-text-presentation">
-      <p>Le développement de la <span>mobilité des apprentis</span> constitue une priorité au niveau européen et national. Cette mobilité est un levier important pour enrichir les parcours professionnels et valoriser les filières d’apprentissage.</p>
-      <p>L’Agence Erasmus+ France / Education Formation organise <span>une webconférence</span> autour de deux axes forts du nouveau programme Erasmus+ pour la période 2021-2027: mobilités hybrides ; mobilités et transition écologique.</p>
-      <p>Cet évènement permettra à différents acteurs français et européens de dialoguer et de témoigner de leurs expériences et projets menés en lien avec ces deux thématiques. D’une durée  de 2h, il sera <span>animé en direct par Vanessa Duval</span> (Consultante en gestion de projets européens).</p>
+      <p>L’Agence Erasmus+ France / Education Formation organise les <span>5 et 6 juillet</span>, à Bordeaux et en ligne, ses journées Erasmus+ Enseignement supérieur. Elles s’adressent à l’ensemble des établissements d’enseignement supérieur français : universités, écoles, instituts, filières BTS, CFA du supérieur, ...</p>
+      <p>Ces journées aborderont les <span>4 priorités du programme Erasmus + 2021-2027</span> : <br>
+        - Inclusion et diversité,<br>
+        - Transition écologique,<br>
+        - Transition numérique,<br>
+        - Education et engagement citoyen </p>
+      <p><b>Comment les établissements se saisissent des opportunités Erasmus+ pour renforcer leurs stratégies sur ces 4 sujets ?</b></p>
+      <p>Ces journées se feront en <span>deux temps distincts</span> : <br>
+        - le <b>mardi 5 juillet après-midi</b>, plusieurs tables rondes vous sont proposées en présentiel ou en ligne pour mieux appréhender les 4 priorités et découvrir les potentialités du programme Erasmus+<br>
+        - le <b>mercredi 6 juillet matin</b>, des séances de travail vous sont proposées pour échanger vos pratiques et questionnement sur ces thématiques.</p>
     </div>
   </div>
   <div div class="d-flex flex-wrap">
-    <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
+    <%= link_to "ASSISTER AUX TABLES RONDES<br> A DISTANCE".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
+    <%= link_to "ASSISTER A L'EVENEMENT<br> A BORDEAUX".html_safe, "https://event.bienvenue.pro/webcheckin/9f943e184d5582c1ec5d407e3f7d846a", target: "_blank", class: "button-webinaire" %>
   </div>
 </div>
 

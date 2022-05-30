@@ -157,18 +157,19 @@
   align-items: center;
   text-align: center;
   width: 310px;
-  height: 50px;
-  background-color: $erasmus_pink;
+  height: 70px;
+  background-color: $erasmus_blue;
   color: white;
   font-size: 16px;
   font-weight: bold;
   font-family: $my-font;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration: none;
   margin-top : 10px;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .button-webinaire a {
@@ -180,9 +181,9 @@
 
 .button-webinaire:hover {
   text-decoration: none;
-  color: $erasmus_pink;
+  color: $erasmus_blue;
   background-color: white;
-  border: solid $erasmus_pink;
+  border: solid $erasmus_blue;
 }
 
 a {

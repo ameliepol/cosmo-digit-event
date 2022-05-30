@@ -265,7 +265,7 @@
 }
 
 .conference-title h1 {
-  color: $erasmus-blue;
+  color: $erasmus_light_blue;
   font-family: $title-font;
   font-weight: bold;
   @media (max-width: 575.98px)  {
@@ -298,7 +298,7 @@
 .conference-details {
   display: flex;
   justify-content: space-between;
-  border: solid $erasmus_green;
+  border: solid $erasmus_yellow;
   @media (max-width: 575.98px) {
     padding: 10px;
     flex-wrap: wrap;
