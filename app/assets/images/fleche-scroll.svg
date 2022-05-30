@@ -12,6 +12,6 @@
     <g transform="matrix(1, 0, 0, 1, -7.5, -2.5)" filter="url(#Tracé_14500)">
       <path id="Tracé_14500-2" data-name="Tracé 14500" d="M31.5,0A31.5,31.5,0,1,1,0,31.5,31.5,31.5,0,0,1,31.5,0Z" transform="translate(7.5 2.5)" fill="#fff"/>
     </g>
-    <path id="Tracé_14499" data-name="Tracé 14499" d="M942.469,957.5l10.6,10.6,10.6-10.6" transform="translate(-921.969 -931)" fill="none" stroke="#009EE2" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+    <path id="Tracé_14499" data-name="Tracé 14499" d="M942.469,957.5l10.6,10.6,10.6-10.6" transform="translate(-921.969 -931)" fill="none" stroke="#233862" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
   </g>
 </svg>
