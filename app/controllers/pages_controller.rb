@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :programme, :presentation, :confidential, :inscription, :questions, :legal]
-  skip_before_action :active_navbar_link, only: [:presentation, :programme]
+  skip_before_action :authenticate_user!, only: [:home, :programme, :presentation, :confidential, :inscription, :informations, :questions, :legal]
+  skip_before_action :active_navbar_link, only: [:presentation, :programme, :informations]
 
   def home
   end
@@ -22,6 +22,10 @@ class PagesController < ApplicationController
   end
 
   def inscription
+  end
+
+  def informations
+    set_active_navbar_link(6)
   end
 
   def questions

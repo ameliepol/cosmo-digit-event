@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get "programme", to: "pages#programme"
   get "presentation", to: "pages#presentation"
+  get "informations", to: "pages#informations"
   get "inscription", to: "pages#inscription"
   get "questions", to: "pages#questions"
   get "legal", to: "pages#legal"
