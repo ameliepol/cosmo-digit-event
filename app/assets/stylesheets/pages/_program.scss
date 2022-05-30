@@ -1,44 +1,32 @@
 .banner-program {
   @media (max-width: 575.98px)  {
-    margin-top: 10px;
-    height: 180px;
-    background-position: right;
+    height: 120px;
+    background-position: center;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: 10px;
-    height: 240px;
-    background-position: right;
+    height: 170px;
+    background-position: center;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: 10px;
-    height: 300px;
-    background-position: right;
+    height: 240px;
+    background-position: center;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-top: 10px;
-    height: 330px;
-    background-position: right;
+    height: 280px;
+    background-position: center;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    margin-top: 10px;
-    height: 410px;
-    background-position: right;
+    height: 320px;
+    background-position: center;
     background-size: cover;
   }
-  @media (min-width: 1500px) and (max-width: 1799.98px) {
-    margin-top: 10px;
-    height: 490px;
-    background-position: right;
-    background-size: cover;
-  }
-  @media (min-width: 1800px) {
-    margin-top: 10px;
-    height: 520px;
-    background-position: right;
+  @media (min-width: 1500px) {
+    height: 400px;
+    background-position: center;
     background-size: cover;
   }
 }
@@ -71,7 +59,7 @@
 }
 
 .date1 {
-  background-color: $erasmus_pink;
+  background-color: $erasmus_blue;
   display: flex;
   @media (max-width: 575.98px)  {
     width: 100%;
@@ -294,10 +282,74 @@
   }
 }
 
+.main-speaker {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction : column;
+  padding-top: 30px;
+  padding-left: 50px;
+  width: 100%;
+}
+
+.main-speaker p {
+  font-family: $my-font;
+  color: #009EE2;
+  font-weight: bold;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1800px) {
+    font-size: 20px;
+  }
+}
+
+.main-speaker h2 {
+  font-family: $my-font;
+  color: $erasmus-blue;
+  font-weight: bold;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1800px) {
+    font-size: 20px;
+  }
+}
+
 .contenu-date1 {
   width: 80%;
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   @media (max-width: 575.98px)  {
     width: 100%;
   }
@@ -321,11 +373,11 @@
   justify-content: right;
 }
 
-// .date2 {
-//   display: flex;
-//   justify-content: flex-start;
-//   flex-direction: column;
-// }
+.date2 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 
 .date2-text img {
   display: flex;
@@ -441,7 +493,7 @@
 
 .card-body h3 span {
   font-family: $my-font;
-  color: $erasmus_pink;
+  color: $erasmus_light_blue;
   font-weight: normal;
   margin-bottom: 15px;
   @media (max-width: 575.98px)  {
