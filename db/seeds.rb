@@ -2,14 +2,30 @@ ActionMailer::Base.perform_deliveries = false
 
 require 'date'
 
-puts "Cleaning DB..."
-Question.destroy_all
-Booking.destroy_all
-Workshop.destroy_all
-Participant.destroy_all
-User.destroy_all
-Event.destroy_all
-puts "DB destroyed!"
+# puts "Cleaning DB..."
+# Question.destroy_all
+# Booking.destroy_all
+# Workshop.destroy_all
+# Participant.destroy_all
+# User.destroy_all
+# Event.destroy_all
+# puts "DB destroyed!"
+
+puts "Creating users..."
+user1 = User.create!(email: "amelie@agencecosmo.com", password: "Erasmus+2022", company: "Agence Cosmo", admin: true, first_name: "Amélie", last_name: "Pol")
+user2 = User.create!(email: "chloe@agencecosmo.com", password: "Erasmus+2022", company: "Agence Cosmo", admin: false, first_name: "Chloé", last_name: "Bonnet")
+user3 = User.create!(email: "Mathilde.Begrand@agence-erasmus.fr", password: "Erasmus+2022", company: "Erasmus+", admin: false, first_name: "Mathilde", last_name: "Begrand")
+user4 = User.create!(email: "Elodie.Dufourg@agence-erasmus.fr", password: "Erasmus+2022", company: "Erasmus+", admin: false, first_name: "Elodie", last_name: "Dufourg")
+puts "Users created..."
+
+puts "Creating dates..."
+start_date1 = DateTime.new(2021,07,05)
+end_date1 = DateTime.new(2021,07,06)
+puts "Dates created..."
+
+puts "Creating events..."
+event1 = Event.create!(start_at: start_date1, end_at: end_date1, place: "Bordeaux", name: "Journées Erasmus+ Enseignement supérieur édition 2022", user_id: user1.id)
+puts "Events created..."
 
 # puts "Finding users..."
 # user1 = User.find_by(email: "amelie@agencecosmo.com")
