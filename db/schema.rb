@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_29_110801) do
+ActiveRecord::Schema.define(version: 2022_06_01_143821) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,6 +67,9 @@ ActiveRecord::Schema.define(version: 2021_10_29_110801) do
     t.string "position"
     t.boolean "recaptcha_tags"
     t.boolean "newsletter_subscription"
+    t.text "oid_code"
+    t.text "region"
+    t.text "service"
   end
 
   create_table "questions", force: :cascade do |t|

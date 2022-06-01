@@ -50,8 +50,11 @@ class ParticipantsController < ApplicationController
       :first_name,
       :last_name,
       :organization,
+      :oid_code,
+      :service,
       :position,
       :city,
+      :region,
       :newsletter_subscription,
       :accepted_conditions)
     #   bookings_attributes: [:id, :workshop_id, :status])

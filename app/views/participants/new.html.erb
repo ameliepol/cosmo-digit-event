@@ -28,11 +28,12 @@
         <div class="participant-functions">
           <%= f.input :organization, placeholder: 'Etablissement*', label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :oid_code, placeholder: 'Code OID de l’établissement (si vous en avez un)', label: false %>
+          <%= f.input :service, placeholder: 'Service*', label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
-
         </div>
         <div>
           <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :region, placeholder: 'Région*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
       </div>
     </div>
