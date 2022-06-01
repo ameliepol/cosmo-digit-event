@@ -173,19 +173,19 @@
   bottom: 0;
   z-index:-2;
   @media (max-width: 575.98px)  {
-    background-color: #CEDDA2;
+    background-color: $erasmus_yellow;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    background-color: #CEDDA2;
+    background-color: $erasmus_yellow;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    background-color: #CEDDA2;
+    background-color: $erasmus_yellow;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    background-color: #CEDDA2;
+    background-color: $erasmus_yellow;
   }
   @media (min-width: 1200px) {
-    background-color: #CEDDA2;
+    background-color: $erasmus_yellow;
   }
 }
 
@@ -215,7 +215,7 @@
 .participant-infos {
   display: flex;
   justify-content: space-between;
-  border: solid $erasmus_green;
+  border: solid $erasmus_yellow;
   flex-wrap: wrap;
   @media (max-width: 575.98px) {
     padding: 10px;
@@ -347,7 +347,7 @@
 
 #participant_first_name {
   display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
   font-family: $my-font;
   background-color: white;
@@ -370,7 +370,7 @@
 
 #participant_last_name {
   display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
   font-family: $my-font;
   background-color: white;
@@ -393,7 +393,7 @@
 
 #participant_email {
   display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
   font-family: $my-font;
   background-color: white;
@@ -445,7 +445,7 @@
 
 #participant_organization {
   display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
   font-family: $my-font;
   background-color: white;
@@ -468,7 +468,7 @@
 
 #participant_position {
   display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
   font-family: $my-font;
   background-color: white;
@@ -491,7 +491,7 @@
 
 #participant_city {
   display: flex;
-  box-shadow: 0 4px 4px 0 #DCEAB8;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
   font-family: $my-font;
   background-color: white;

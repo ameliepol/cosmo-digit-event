@@ -5,7 +5,7 @@
 <div class="conference-registration">
   <div class="conference-title">
     <h1> LA WEBCONFÉRENCE </h1>
-    <p><span>10 novembre 2021</span></p>
+    <p><span>5 JUILLET 2022</span></p>
   </div>
 </div>
 <div class="participant">
@@ -26,8 +26,10 @@
       </div>
       <div class="other-participant-info">
         <div class="participant-functions">
-          <%= f.input :organization, placeholder: 'Structure*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :organization, placeholder: 'Etablissement*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :oid_code, placeholder: 'Code OID de l’établissement (si vous en avez un)', label: false %>
           <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
+
         </div>
         <div>
           <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
