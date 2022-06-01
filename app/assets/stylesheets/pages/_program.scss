@@ -289,34 +289,8 @@
   flex-direction : column;
   padding-top: 30px;
   padding-left: 50px;
+  padding-right: 50px;
   width: 100%;
-}
-
-.main-speaker p {
-  font-family: $my-font;
-  color: #009EE2;
-  font-weight: bold;
-  @media (max-width: 575.98px)  {
-    font-size: 16px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 18px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 18px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 18px;
-  }
-  @media (min-width: 1200px) and (max-width: 1499.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 1500px) and (max-width: 1799.98px) {
-    font-size: 20px;
-  }
-  @media (min-width: 1800px) {
-    font-size: 20px;
-  }
 }
 
 .main-speaker h2 {
@@ -346,6 +320,39 @@
   }
 }
 
+.main-speaker p {
+  font-family: $my-font;
+  color: black;
+  font-weight: normal;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1800px) {
+    font-size: 20px;
+  }
+}
+
+.main-speaker p span {
+  font-family: $my-font;
+  color: $erasmus_light_blue;
+  font-weight: normal;
+}
+
 .contenu-date1 {
   width: 80%;
   display: flex;
@@ -365,13 +372,13 @@
 .container-program-date2 {
   display: flex;
   @media (max-width: 575.98px)  {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     flex-direction: row;
@@ -544,10 +551,84 @@
   }
 }
 
+.date2-picto {
+  display: flex;
+  @media (max-width: 575.98px)  {
+    // justify-content: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    // justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    // justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  @media (min-width: 1800px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 .date2-picto img {
-  height: 180px;
-  margin-top: 30px;
-  margin-left: 65px;
+  @media (max-width: 575.98px)  {
+    height: 50px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 120px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 120px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    height: 130px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    height: 130px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    height: 160px;
+  }
+  @media (min-width: 1800px) {
+    height: 160px;
+  }
 }
 
 .card {
