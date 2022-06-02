@@ -22,9 +22,12 @@
             <th scope="col">Nom(s)</th>
             <th scope="col">Prénom(s)</th>
             <th scope="col">Email</th>
-            <th scope="col">Structure</th>
+            <th scope="col">Etablissement</th>
+            <th scope="col">Code OID</th>
+            <th scope="col">Service</th>
             <th scope="col">Fonction</th>
             <th scope="col">Ville</th>
+            <th scope="col">Région</th>
             <th scope="col">Inscrit newsletter</th>
 <!--             <th scope="col">Pays</th>
             <th scope="col">Ateliers sélectionnés</th> -->
@@ -38,8 +41,11 @@
             <td><strong><%= participant.first_name.upcase %></strong></td>
             <td><%= participant.email %></td>
             <td><%= participant.organization %></td>
+            <td><%= participant.oid_code %></td>
+            <td><%= participant.service %></td>
             <td><%= participant.position %></td>
             <td><%= participant.city %></td>
+            <td><%= participant.region %></td>
             <td><%= participant.newsletter_subscription.to_s %></td>
 <!--             <td><%#= participant.zipcode %></td>
             <td><#% participant.bookings.order_by_workshop_date.each do |booking| %>

@@ -26,7 +26,7 @@ private
 
   def participant_params
     params.require(:participant).permit(
-    :email,
+      :email,
       :first_name,
       :last_name,
       :organization,
