@@ -1,5 +1,5 @@
 .container-dashboard {
-min-height: 820px;
+min-height: 100%;
 padding-top: 210px;
 padding-bottom: 10px;
 padding-left: 100px;
@@ -91,6 +91,7 @@ margin: 0 auto;
   justify-content: center;
   align-items: center;
   font-family: $my-font;
+  font-size: 16px;
 }
 
 .button-export:hover {
@@ -104,6 +105,7 @@ margin: 0 auto;
   color: white;
   background-color: $erasmus_orange;
   font-family: $my-font;
+  font-size: 12px;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -135,17 +137,20 @@ margin: 0 auto;
   background-color: $erasmus_orange;
   font-family: $my-font;
   border-color: $erasmus_orange;
+  font-size: 12px;
 }
 
 .table td {
   color: black;
   font-weight: normal;
   font-family: $my-font;
+  font-size: 12px;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: white;
   background-color: $erasmus_orange;
+  font-size: 12px;
 }
 
 a {
