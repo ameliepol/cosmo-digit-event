@@ -1,21 +1,24 @@
-<h2><span style="color: #91BD0F" > Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,</span>
+<h2><span style="color: #233862" > Bonjour <%= @participant.first_name %> <%= @participant.last_name %>,</span>
 </h2>
 
-<p>Nous vous remercions pour votre inscription à notre webconférence qui aura lieu <span style="color: #2752A0">le mercredi 10 novembre 2021, de 10h00 à 12h00</span>.
+<p>Nous vous remercions pour votre inscription à notre webconférence qui aura lieu <span style="color: #233862">le mercredi 10 novembre 2021, de 10h00 à 12h00</span>.
 </p>
 
-<h2><span style="color: #2752A0; font-weight: bold"> Récapitulatif de votre inscription : </span></h2>
-  <p> <span style="color: #91BD0F; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
-  <p> <span style="color: #91BD0F; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
-  <p> <span style="color: #91BD0F; font-weight: bold"> Email : </span> <%= @participant.email %></p>
-  <p> <span style="color: #91BD0F; font-weight: bold"> Établissement : </span> <%= @participant.organization %></p>
-  <p> <span style="color: #91BD0F; font-weight: bold"> Fonction / Service : </span> <%= @participant.position %></p>
-  <p> <span style="color: #91BD0F; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
-<p></p>
-<h2><span style="color: #004F99; font-weight: bold"> Information importante : </span></h2>
-<p> Le webinaire sera accessible, le 10 novembre 2021, sur la chaîne YouTube de l'Agence Erasmus+ France / Education & Formation : </h1>
+<h2><span style="color: #233862; font-weight: bold"> Récapitulatif de votre inscription : </span></h2>
+  <p> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%= @participant.email %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Établissement : </span> <%= @participant.organization %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Code OID de votre établissement : </span> <%= @participant.oid_code %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Service : </span> <%= @participant.service %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Fonction / Service : </span> <%= @participant.position %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
+  <p> <span style="color: #009EE2; font-weight: bold"> Région : </span> <%= @participant.region %></p>
+  <p></p>
+<h2><span style="color: #233862; font-weight: bold"> Information importante : </span></h2>
+<p> La webconférence sera accessible, le 5 juillet 2022, sur la chaîne YouTube de l'Agence Erasmus+ France / Education & Formation : </h1>
 
-<p><span style="display:block; color:white; font-weight:bold; border: solid 3px #91BD0F; background-color: #91BD0F; padding: 15px; text-decoration: none; margin-left: 200px; margin-right: 200px; text-align: center"><%= link_to "J'ACCÈDE AU WEBINAIRE", "https://www.youtube.com/c/AgenceErasmusFranceEducationFormation", target: "_blank" %></span></p>
+<p><span style="display:block; color:white; font-weight:bold; border: solid 3px #FF9900; background-color: #FF9900; padding: 15px; text-decoration: none; margin-left: 200px; margin-right: 200px; text-align: center"><%= link_to "J'ACCÈDE AU WEBINAIRE", "https://www.youtube.com/c/AgenceErasmusFranceEducationFormation", target: "_blank" %></span></p>
 <p></p>
 <p></p>
-<h2><span style="color: #2752A0; font-weight: bold">A bientôt! </span></h2>
+<h2><span style="color: #233862; font-weight: bold">A bientôt! </span></h2>

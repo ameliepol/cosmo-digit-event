@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  border: solid $erasmus_green;
+  border: solid $erasmus_blue;
   @media (max-width: 575.98px) {
     padding-left: 10px;
     padding-top: 10px;
@@ -74,7 +74,7 @@
 }
 
 .participant-infos-show h1 {
-  color: $erasmus_green;
+  color: $erasmus_blue;
   font-family: $my-font;
   text-align: center;
   font-weight: 600;
