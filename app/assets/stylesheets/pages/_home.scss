@@ -1,7 +1,7 @@
 .banner {
   @media (max-width: 575.98px)  {
     margin-top: 30px;
-    height: 150px;
+    height: 170px;
     background-position: right;
     background-size: cover;
   }
@@ -268,9 +268,15 @@
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media (min-width: 1500px) {
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
   }
