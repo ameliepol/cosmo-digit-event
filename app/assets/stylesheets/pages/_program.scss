@@ -1,21 +1,21 @@
 .banner-program {
   @media (max-width: 575.98px)  {
-    height: 170px;
+    height: 130px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 210px;
+    height: 190px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 290px;
+    height: 260px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 390px;
+    height: 350px;
     background-position: center;
     background-size: cover;
   }
@@ -25,6 +25,7 @@
     background-size: cover;
   }
   @media (min-width: 1500px) {
+    margin-top: 20px;
     height: 500px;
     background-position: center;
     background-size: cover;
