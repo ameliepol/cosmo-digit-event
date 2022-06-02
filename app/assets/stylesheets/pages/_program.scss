@@ -1,10 +1,12 @@
 .banner-program {
   @media (max-width: 575.98px)  {
+    margin-top: 20px;
     height: 110px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 20px;
     height: 190px;
     background-position: center;
     background-size: cover;
