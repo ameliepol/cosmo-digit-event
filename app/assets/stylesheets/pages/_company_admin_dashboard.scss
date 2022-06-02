@@ -1,5 +1,5 @@
 .container-dashboard {
-min-height: 750px;
+min-height: 820px;
 padding-top: 210px;
 padding-bottom: 10px;
 padding-left: 100px;
@@ -53,7 +53,7 @@ margin: 0 auto;
   justify-content: center;
   width: 250px;
   height: 250px;
-  background-color: $erasmus_pink;
+  background-color: $erasmus_orange;
   color: white;
   font-weight: bold;
   font-family: $my-font;
@@ -64,8 +64,8 @@ margin: 0 auto;
 
 .btn-dashboard:hover {
   background-color: white;
-  border: solid $erasmus_pink;
-  color: $erasmus_pink;
+  border: solid $erasmus_orange;
+  color: $erasmus_orange;
   text-decoration: none;
 }
 
@@ -102,14 +102,14 @@ margin: 0 auto;
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
-  background-color: $erasmus_pink;
+  background-color: $erasmus_orange;
   font-family: $my-font;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
-  background-color: $erasmus_pink;
+  background-color: $erasmus_orange;
   font-family: $my-font;
 }
 
@@ -132,9 +132,9 @@ margin: 0 auto;
   text-decoration: none;
   color: #fff;
   font-weight: normal;
-  background-color: $erasmus_pink;
+  background-color: $erasmus_orange;
   font-family: $my-font;
-  border-color: $erasmus_pink;
+  border-color: $erasmus_orange;
 }
 
 .table td {
@@ -145,7 +145,7 @@ margin: 0 auto;
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: white;
-  background-color: $erasmus_pink;
+  background-color: $erasmus_orange;
 }
 
 a {
@@ -159,7 +159,7 @@ a {
 }
 
 .fas .fa-trash-alt a {
-  color: $erasmus_pink;
+  color: $erasmus_orange;
   margin: auto;
 }
 
@@ -170,8 +170,8 @@ a {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: $erasmus_pink;
-    border-color: $erasmus_pink;
+    background-color: $erasmus_orange;
+    border-color: $erasmus_orange;
 }
 
 .page-item.disabled .page-link {

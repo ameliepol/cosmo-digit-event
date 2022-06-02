@@ -27,15 +27,16 @@ private
   def participant_params
     params.require(:participant).permit(
     :email,
-    :first_name,
-    :last_name,
-    :company,
-    :organization,
-    :position,
-    :city,
-    :zipcode,
-    :newsletter_subscription,
-    :accepted_conditions)
+      :first_name,
+      :last_name,
+      :organization,
+      :oid_code,
+      :service,
+      :position,
+      :city,
+      :region,
+      :newsletter_subscription,
+      :accepted_conditions)
     # bookings_attributes: [:id, :workshop_id, :status])
   end
 
