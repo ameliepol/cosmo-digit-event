@@ -326,6 +326,66 @@
   }
 }
 
+.main-speaker h3 {
+  font-family: $my-font;
+  color: black;
+  font-weight: normal;
+  @media (max-width: 575.98px)  {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    font-size: 20px;
+  }
+  @media (min-width: 1800px) {
+    font-size: 20px;
+  }
+}
+
+.main-speaker h3 span {
+  font-family: $my-font;
+  color: $erasmus_blue;
+  font-weight: bold;
+}
+
+// .main-speaker h3 span:after {
+//   content: '';
+//   height: 50%;
+//   width: 100%;
+//   position: absolute;
+//   text-align: center;
+//   right: 0;
+//   left:0;
+//   bottom: 0;
+//   z-index:-2000;
+//   @media (max-width: 575.98px)  {
+//     background-color: white;
+//   }
+//   @media (min-width: 576px) and (max-width: 767.98px) {
+//     background-color: white;
+//   }
+//   @media (min-width: 768px) and (max-width: 991.98px) {
+//     background-color: $erasmus_yellow;
+//   }
+//   @media (min-width: 992px) and (max-width: 1199.98px) {
+//     background-color: $erasmus_yellow;
+//   }
+//   @media (min-width: 1200px) {
+//     background-color: $erasmus_yellow;
+//   }
+// }
+
 .main-speaker p {
   font-family: $my-font;
   color: black;
