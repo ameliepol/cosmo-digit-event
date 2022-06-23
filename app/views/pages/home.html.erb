@@ -33,14 +33,12 @@
       <p>Ces journées se feront en <span>deux temps distincts</span> : <br>
         - le <b>mardi 5 juillet après-midi</b>, plusieurs tables rondes vous sont proposées <u>en présentiel ou en ligne</u> pour mieux appréhender les 4 priorités et découvrir les potentialités du programme Erasmus+.<br>
         - le <b>mercredi 6 juillet matin</b>, des séances de travail <u>en présentiel uniquement</u> vous sont proposées pour échanger vos pratiques et questionnement sur ces thématiques.</p>
-      <p> ➞ Le nombre de places en présentiel est <span>limité à 250</span>. De plus, cette participation est limitée à 1 ou 2 personnes par établissement. <br>
-        La date limite d'inscription à l'événement à Bordeaux est le <span>mercredi 22 juin 2022</span>.<br>
-        Nous nous réservons le droit de rejeter les inscriptions au delà de 2 participants d'un même établissement.</p>
+      <p> <b>➞ Les inscriptions à l'événement à Bordeaux sont maintenant closes. Pour suivre les tables rondes, nous vous invitons à vous inscrire à <span>l'événement en ligne</span></b>.</p>
       <p><b>Rejoignez déjà notre communauté grâce au hashtag ➡️ <span>#JEES2022</span> ! Partagez votre expérience du programme 🇪🇺 et vos différentes questions sur <u><%= link_to "Twitter", "https://twitter.com/ErasmusplusFR", target: "_blank" %></u> et <u><%= link_to "LinkedIn", "https://fr.linkedin.com/company/agence-europe-education-formation-france", target: "_blank" %></u>.</b></p>
     </div>
   </div>
   <div div class="d-flex flex-wrap justify-content-center">
-    <%= link_to "ASSISTER À L'ÉVÉNEMENT<br> À BORDEAUX".html_safe, "https://event.bienvenue.pro/webcheckin/3e2185bf93b7e992054ec786096c3dc7", target: "_blank", class: "button-webinaire" %>
+    <%#= link_to "ASSISTER À L'ÉVÉNEMENT<br> À BORDEAUX".html_safe, "https://event.bienvenue.pro/webcheckin/3e2185bf93b7e992054ec786096c3dc7", target: "_blank", class: "button-webinaire" %>
     <%= link_to "ASSISTER À L'ÉVÉNEMENT <br> EN LIGNE".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
   </div>
 </div>
