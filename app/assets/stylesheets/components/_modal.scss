@@ -1,14 +1,16 @@
 .modal-header {
   height: 60px;
-  background-color: #CBD9F3
+  background-color: white;
 }
 
 .modal-body {
-  background-color: #CBD9F3
+  background-color: white;
 }
 
 .modal-body p {
   font-size: 18px;
+  font-family: $my-font;
+  color: $erasmus_blue;
 }
 
 #myOpenModal {
@@ -17,5 +19,6 @@
 
 .info-modal p {
   font-size: 18px;
-  color: black;
+  color: $erasmus_blue;
+  font-family: $my-font;
 }
