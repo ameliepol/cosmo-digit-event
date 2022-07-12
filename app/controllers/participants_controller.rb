@@ -37,6 +37,7 @@ class ParticipantsController < ApplicationController
       # @workshops_3 = workshops_grouped[2]
       flash[:alert] = @participant.errors.messages.values.join("; ")
       # @workshops = @event.workshops.visibles
+      # render :new
       render :new
     end
 

@@ -1,51 +1,40 @@
 <div class="banner-container">
-  <div class="banner-registration position-relative" style="background-image: url('<%= image_path 'aquilogia_banner.png' %>');">
+  <div class="banner-registration position-relative" style="background-image: url('<%= image_path 'aquilogia_banner.svg' %>');">
   </div>
 </div>
-<div class="conference-registration">
-  <div class="conference-title">
-    <h1> LA WEBCONFÉRENCE </h1>
-    <p><span>5 JUILLET 2022</span></p>
-    <p>De <b>14h00 à 18h00</b>, plusieurs tables rondes vous sont proposées en ligne pour mieux appréhender les 4 priorités et découvrir les potentialités du programme Erasmus+ </p>
-    <p>Vous souhaitez assister aux tables rondes à distance, remplissez le forumulaire ci-dessous. Un <b>lien de connexion</b> vous sera envoyé par email à l'issue de votre inscription.</p>
+<div class="home-registration">
+  <div class="home-title">
+    <p>Nous avons le plaisir de vous convier à l'inauguration de notre nouvelle agence Aquilogia Patrimoine à Saint-Jean-de-Luz.</p>
+    <h1>AU PROGRAMME</h1>
+    <p><b>17h00 - 18h00 :</b>  Venez découvrir nos bureaux autour d'une coupe de champagne</p>
+    <p><b>18h30 : Cocktail dinatoire</b>  sur la terrasse de l'Hôtel Helianthal<br>
+    Place Maurice Ravel <br>
+    64500 SAINT-JEAN-DE-LUZ</p>
+    <p><b>Nous vous remercions de bien vouloir vous inscrire en remplissant le formulaire ci-dessous :</b></p>
   </div>
 </div>
 <div class="participant">
   <div class="participant-infos">
-    <div class="registration-image mx-auto">
-      <%= image_tag "picto-registration.svg", alt: "Registration", height: 150 %>
-    </div>
     <div class="participant-registration">
       <div class="new-participant-form">
         <%= simple_form_for [@event, @participant] do |f| %>
         <div class="participant-names">
-          <%= f.input :first_name, placeholder: 'Prénom(s)*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :last_name, placeholder: 'Nom(s) de famille*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :first_name, placeholder: "Prénom(s)*", label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :last_name, placeholder: "Nom(s) de famille*", label: false, error: 'Ce champ est obligatoire' %>
         </div>
         <div>
-          <%= f.input :email, placeholder: 'Email*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :email, placeholder: "Email*", label: false, error: 'Ce champ est obligatoire' %>
         </div>
-      </div>
-      <div class="other-participant-info">
-        <div class="participant-functions">
-          <%= f.input :organization, placeholder: 'Etablissement*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :oid_code, placeholder: 'Code OID de l’établissement (si vous en avez un)', label: false %>
-          <%= f.input :service, placeholder: 'Service*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
-        </div>
-        <div>
-          <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :region, placeholder: 'Région*', label: false, error: 'Ce champ est obligatoire' %>
+        <div class="participant-names">
+          <%= f.input :organization, placeholder: "Société", label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :oid_code, placeholder: "Nombre d'accompagnant(s)", label: false %>
         </div>
       </div>
     </div>
-  </div>
-  <div class="new-participant-subscription">
-    <%= f.input :newsletter_subscription, label: "<span class='font-weight-bold'> Souhaitez-vous vous inscrire à la newsletter de l'Agence Erasmus+ France / Education Formation ?*</span>".html_safe, as: :radio_buttons, error: "Veuillez cocher une réponse pour valider votre inscription" %>
-  </div>
   <div class="cookies-erasmus-participant">
-    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
+    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées au seul destinataire suivant : Aquilogia Patrimoine*</span>
     <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
+  </div>
   </div>
 </div>
 <div class="button-valid">
