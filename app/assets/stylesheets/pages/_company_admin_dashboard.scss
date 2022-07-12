@@ -1,6 +1,7 @@
 .container-dashboard {
 min-height: 100%;
-padding-top: 210px;
+// padding-top: 210px;
+padding-top: 30px;
 padding-bottom: 10px;
 padding-left: 100px;
 padding-right: 100px;
@@ -8,7 +9,7 @@ margin: 0 auto;
 }
 
 .container-dashboard h1 {
-  color: $erasmus_blue;
+  color: grey;
   font-family: $my-font;
   text-align: left;
   font-size: 24px;
@@ -53,7 +54,7 @@ margin: 0 auto;
   justify-content: center;
   width: 250px;
   height: 250px;
-  background-color: $erasmus_orange;
+  background-color: grey;
   color: white;
   font-weight: bold;
   font-family: $my-font;
@@ -64,8 +65,8 @@ margin: 0 auto;
 
 .btn-dashboard:hover {
   background-color: white;
-  border: solid $erasmus_orange;
-  color: $erasmus_orange;
+  border: solid grey;
+  color: grey;
   text-decoration: none;
 }
 
@@ -76,7 +77,7 @@ margin: 0 auto;
   text-align: center;
   width: 125px;
   height: 50px;
-  background-color: $erasmus_blue;
+  background-color: $aquilogia_red;
   color: white;
   font-weight: bold;
   font-family: $my-font;
@@ -96,14 +97,14 @@ margin: 0 auto;
 
 .button-export:hover {
   text-decoration: none;
-  color: $erasmus_blue;
+  color: $aquilogia_red;
   background-color: white;
-  border: solid $erasmus_blue;
+  border: solid $aquilogia_red;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
-  background-color: $erasmus_orange;
+  background-color: grey;
   font-family: $my-font;
   font-size: 12px;
 }
@@ -111,7 +112,7 @@ margin: 0 auto;
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
-  background-color: $erasmus_orange;
+  background-color: grey;
   font-family: $my-font;
 }
 
@@ -134,9 +135,9 @@ margin: 0 auto;
   text-decoration: none;
   color: #fff;
   font-weight: normal;
-  background-color: $erasmus_orange;
+  background-color: $aquilogia_red;
   font-family: $my-font;
-  border-color: $erasmus_orange;
+  border-color: $aquilogia_red;
   font-size: 12px;
 }
 
@@ -149,12 +150,12 @@ margin: 0 auto;
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: white;
-  background-color: $erasmus_orange;
+  background-color: grey;
   font-size: 12px;
 }
 
 a {
-  color: $erasmus_orange;
+  color: grey;
   font-family: $my-font;
 }
 
@@ -164,7 +165,7 @@ a {
 }
 
 .fas .fa-trash-alt a {
-  color: $erasmus_orange;
+  color: grey;
   margin: auto;
 }
 
@@ -175,8 +176,8 @@ a {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: $erasmus_orange;
-    border-color: $erasmus_orange;
+    background-color: grey;
+    border-color: grey;
 }
 
 .page-item.disabled .page-link {

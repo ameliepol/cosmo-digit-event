@@ -23,7 +23,7 @@ class Participant < ApplicationRecord
   # validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
   # validates :company, presence: true
 
-  CSV_HEADER = %w[Nom Prenom Email Etablissement Code-OID Service Fonction Ville Region Newsletter]
+  CSV_HEADER = %w[Nom Prenom Email Societe Accompagnants]
   def self.to_csv
     # @participants = Participant.includes(:bookings).where(bookings: {status: "confirmed"})
     @participants = Participant.all
