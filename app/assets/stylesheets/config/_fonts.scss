@@ -6,6 +6,8 @@ $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 $my-font: "Gotham";
 $title-font: "SirinStencil";
+$aquilogia-title: "PlayfairDisplay";
+$aquilogia-text: "Raleway";
 
 @font-face {
   font-family: "Gotham";
@@ -34,7 +36,6 @@ $title-font: "SirinStencil";
   font-weight: light;
   font-style: normal;
 }
-
 $my-font: "Gotham";
 
 @font-face {
@@ -43,5 +44,28 @@ $my-font: "Gotham";
   font-weight: normal;
   font-style: normal;
 }
-
 $title-font: "SirinStencil";
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: font-url('PlayfairDisplay-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+$title-font: "PlayfairDisplay";
+
+@font-face {
+  font-family: "Raleway";
+  src: font-url('Raleway-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: font-url('Raleway-Bold.ttf');
+  font-weight: bold;
+  font-style: bold;
+}
+
+$title-font: "Raleway";

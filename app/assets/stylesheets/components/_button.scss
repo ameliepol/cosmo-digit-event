@@ -127,10 +127,10 @@
   text-align: center;
   width: 280px;
   height: 50px;
-  background-color: $erasmus_orange;
+  background-color: $aquilogia_red;
   color: white;
   font-weight: bold;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   padding: 10px;
   text-decoration: none;
   margin-top : 10px;
@@ -146,9 +146,9 @@
 
 .button-submit-registration:hover {
   text-decoration: none;
-  color: $erasmus_orange;
+  color: $aquilogia_red;
   background-color: white;
-  border: solid $erasmus_orange;
+  border: solid $aquilogia_red;
 }
 
 .button-webinaire {

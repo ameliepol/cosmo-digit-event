@@ -3,6 +3,8 @@ class PagesController < ApplicationController
   skip_before_action :active_navbar_link, only: [:presentation, :programme, :informations]
 
   def home
+    @event = Event.last
+    @participant = Participant.new
   end
 
   def programme

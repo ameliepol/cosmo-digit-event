@@ -1,36 +1,36 @@
 .banner-registration {
     @media (max-width: 575.98px)  {
-    margin-top: 20px;
+    // margin-top: 20px;
     height: 110px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: 20px;
-    height: 160px;
+    // margin-top: 20px;
+    height: 140px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: 20px;
-    height: 220px;
+    // margin-top: 20px;
+    height: 200px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-top: 20px;
-    height: 320px;
+    // margin-top: 20px;
+    height: 300px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    margin-top: 20px;
-    height: 390px;
+    // margin-top: 20px;
+    height: 360px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 1500px) {
-    margin-top: 20px;
+    // margin-top: 20px;
     height: 500px;
     background-position: center;
     background-size: cover;
@@ -114,7 +114,7 @@
   text-align: center;
   padding-top: 0px;
   text-decoration: none;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   @media (max-width: 575.98px)  {
     font-size: 21px;
     margin-left: 10px;
@@ -137,7 +137,7 @@
 
 .conference-title p span {
   color: $erasmus-blue;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   font-weight: 600;
   text-align: center;
   position: relative;
@@ -211,8 +211,8 @@
 
 .participant-infos {
   display: flex;
-  justify-content: space-between;
-  border: solid $erasmus_blue;
+  justify-content: center;
+  // border: solid $erasmus_blue;
   flex-wrap: wrap;
   @media (max-width: 575.98px) {
     padding: 10px;
@@ -332,7 +332,7 @@
   justify-content: flex-start;
   flex-direction: column;
   color: #2b2a2a;
-  border-bottom: solid 1px $erasmus_light_blue;
+  border-bottom: solid 1px $aquilogia_red;
 }
 
 .participant-names {
@@ -344,9 +344,9 @@
 
 #participant_first_name {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -367,9 +367,9 @@
 
 #participant_last_name {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -390,9 +390,9 @@
 
 #participant_email {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -442,9 +442,9 @@
 
 #participant_organization {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -465,9 +465,9 @@
 
 #participant_oid_code {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -488,9 +488,9 @@
 
 #participant_service {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -511,9 +511,9 @@
 
 #participant_position {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -534,9 +534,9 @@
 
 #participant_city {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -557,9 +557,9 @@
 
 #participant_region {
   display: flex;
-  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -581,7 +581,7 @@
 .cookies-erasmus-participant {
   display: inline-block;
   color: #2b2a2a;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   @media (max-width: 575.98px)  {
     font-size: 12px;
     margin-left: 30px;
@@ -601,16 +601,19 @@
     font-size: 16px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-top: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     font-size: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
   }
   @media (min-width: 1500px) {
     font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
   }
 }
 
@@ -624,7 +627,7 @@
 .new-participant-subscription {
   display: inline-block;
   margin-top: 20px;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   color: #2b2a2a;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -660,7 +663,7 @@
 
 .new-participant-subscription p {
   color: grey;
-  font-family: $my-font;
+  font-family: $aquilogia-text;
   font-weight: bold;
   font-size: 16px;
   margin-top: 0px;

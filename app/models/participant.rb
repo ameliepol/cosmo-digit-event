@@ -13,12 +13,12 @@ class Participant < ApplicationRecord
   validates :email, presence: { message: "Veuillez renseigner votre email" }
   validates :first_name, presence: { message: "Veuillez renseigner votre nom de famille" }
   validates :last_name, presence: { message: "Veuillez renseigner votre prénom" }
-  validates :organization, presence: { message: "Veuillez renseigner le nom de votre établissement" }
-  validates :service, presence: { message: "Veuillez renseigner votre service" }
-  validates :position, presence: { message: "Veuillez renseigner votre fonction" }
-  validates :city, presence: { message: "Veuillez renseigner le nom de votre ville" }
-  validates :region, presence: { message: "Veuillez renseigner le nom de votre région" }
-  validates :newsletter_subscription, inclusion: { in: [true, false] }
+  # validates :organization, presence: { message: "Veuillez renseigner le nom de votre établissement" }
+  # validates :service, presence: { message: "Veuillez renseigner votre service" }
+  # validates :position, presence: { message: "Veuillez renseigner votre fonction" }
+  # validates :city, presence: { message: "Veuillez renseigner le nom de votre ville" }
+  # validates :region, presence: { message: "Veuillez renseigner le nom de votre région" }
+  # validates :newsletter_subscription, inclusion: { in: [true, false] }
   validates :accepted_conditions, inclusion: { in: [true] }
   # validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
   # validates :company, presence: true
@@ -37,11 +37,11 @@ class Participant < ApplicationRecord
           participant.email,
           participant.organization,
           participant.oid_code,
-          participant.service,
-          participant.position,
-          participant.city,
-          participant.region,
-          participant.newsletter_subscription.to_s
+          # participant.service,
+          # participant.position,
+          # participant.city,
+          # participant.region,
+          # participant.newsletter_subscription.to_s
           # participant.zipcode,
           # participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
         ]
