@@ -1,6 +1,4 @@
 <div class="banner-container">
-  <!-- <div class="banner-registration position-relative" style="background-image: url('<%#= image_path 'aquilogia_banner.png' %>');"> -->
-  <!-- <div class="banner-registration position-relative" style="background-image: url('<%#= image_path 'aquilogia_banner.jpg' %>');"> -->
   <div class="banner-registration position-relative" style="background-image: url('<%= image_path 'aquilogia_banner.svg' %>');">
   </div>
 </div>
@@ -10,9 +8,8 @@
     <h1>AU PROGRAMME</h1>
     <p><b>17h00 - 18h00 :</b>  Venez découvrir nos bureaux autour d'une coupe de champagne</p>
     <p><b>18h30 : Cocktail dinatoire</b>  sur la terrasse de l'Hôtel Helianthal<br>
-    Hôtel Helianthal <br>
     Place Maurice Ravel <br>
-    64500 Saint-Jean-de-Luz</p>
+    64500 SAINT-JEAN-DE-LUZ</p>
     <p><b>Nous vous remercions de bien vouloir vous inscrire en remplissant le formulaire ci-dessous :</b></p>
   </div>
 </div>
@@ -28,7 +25,7 @@
         <div>
           <%= f.input :email, placeholder: "Email*", label: false, error: 'Ce champ est obligatoire' %>
         </div>
-        <div>
+        <div class="participant-names">
           <%= f.input :organization, placeholder: "Société", label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :oid_code, placeholder: "Nombre d'accompagnant(s)", label: false %>
         </div>
