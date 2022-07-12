@@ -18,7 +18,7 @@ puts "Users created..."
 
 puts "Creating dates..."
 start_date1 = DateTime.new(2022,09,08)
-end_date1 = DateTime.new(2022,09,08)
+end_date1 = DateTime.new(2022,09,09)
 puts "Dates created..."
 
 puts "Creating events..."
