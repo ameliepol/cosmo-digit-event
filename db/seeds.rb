@@ -8,6 +8,7 @@ Workshop.destroy_all
 Participant.destroy_all
 User.destroy_all
 Event.destroy_all
+DateTime.destroy_all
 puts "DB destroyed!"
 
 puts "Creating users..."
