@@ -1,42 +1,24 @@
 <div class="banner-container">
-  <div class="banner-registration position-relative" style="background-image: url('<%= image_path 'aquilogia_banner.jpg' %>');">
+  <div class="banner position-relative d-flex" style="background-image: url('<%= image_path 'accueil-banner.png' %>');">
+    <%= link_to "DECOUVREZ LE PROGRAMME", programme_path, class: "button-program banner-button-margin" %>
+    <%= link_to "INSCRIVEZ-VOUS", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "button-registration banner-button-margin" %>
   </div>
 </div>
-<div class="home-registration">
-  <div class="home-text">
-    <p>Nous avons le plaisir de vous convier à l'inauguration de notre nouvelle agence Aquilogia Patrimoine à Saint-Jean-de-Luz.</p>
-    <h1>AU PROGRAMME</h1>
-    <p><b>17h00 - 18h00 :</b>  Venez découvrir nos bureaux autour d'une coupe de champagne</p>
-    <p><b>18h30 : Cocktail dinatoire</b>  sur la terrasse de l'Hôtel Helianthal<br>
-    Place Maurice Ravel <br>
-    64500 SAINT-JEAN-DE-LUZ</p>
-    <p><b>Nous vous remercions de bien vouloir vous inscrire en remplissant le formulaire ci-dessous :</b></p>
+<%#= render 'modal/modal_home' %>
+<div class="conference-presentation">
+  <div class="conference-title">
+    <h1> LA WEBCONFÉRENCE </h1>
   </div>
-</div>
-<div class="participant">
-  <div class="participant-infos">
-    <div class="participant-registration">
-      <div class="new-participant-form">
-        <%= simple_form_for [@event, @participant] do |f| %>
-        <div class="participant-names">
-          <%= f.input :first_name, placeholder: "Prénom(s)*", label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :last_name, placeholder: "Nom(s) de famille*", label: false, error: 'Ce champ est obligatoire' %>
-        </div>
-        <div>
-          <%= f.input :email, placeholder: "Email*", label: false, error: 'Ce champ est obligatoire' %>
-        </div>
-        <div class="participant-names">
-          <%= f.input :organization, placeholder: "Société", label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :oid_code, placeholder: "Nombre d'accompagnants (en plus de vous)", label: false %>
-        </div>
-      </div>
+  <div class="conference-details">
+    <div class="webinar-image mx-auto">
+      <%= image_tag "picto-webinar.png", alt: "Webinar", height: 100 %>
     </div>
-  <div class="cookies-erasmus-participant">
-    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées au seul destinataire suivant : Aquilogia Patrimoine*</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
-  </div>
+    <div class="conference-text-presentation">
+    <p><b>La reconnaissance de la mobilité des apprentis constitue un enjeu majeur au niveau européen et national.</b><br>
+    Une meilleure valorisation des compétences acquises à l’étranger permet à l’apprenant de sécuriser son parcours professionnel et de favoriser son employabilité.</p>
+    <p>L’Agence Erasmus+ France / Education Formation, et le réseau des experts Erasmus+ de l’Enseignement et la Formation Professionnels, organisent une webconférence autour de trois dispositifs au service de cette reconnaissance : l’Europass Mobilité ; l’Unité Facultative de Mobilité et la reconnaissance certificative des compétences professionnelles.</p>
+    <p>A travers des échanges riches et des témoignages d’acteurs du terrain, cet événement mettra en lumière les atouts de la mobilité européenne dans le cadre d’une formation professionnelle initiale. </p>
+    <p><span>De 14h00 à 15h30, il sera animé en direct par Vanessa Duval (consultante en gestion de projets européens).<span></p>
+    </div>
   </div>
 </div>
-<div class="button-valid">
-<%= f.button :submit, "JE M'INSCRIS", class: 'button-submit-registration' %>
-</div>
-<% end %>

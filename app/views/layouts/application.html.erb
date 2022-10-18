@@ -34,14 +34,14 @@
   </head>
 
    <body>
-    <%#= render 'shared/navbar' %>
-    <%#= render 'shared/flashes' %>
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
 
     <%= yield %>
     <% if cookies[:allow_cookies].blank? %>
-    <%#= render 'layouts/cookies_bar' %>
+    <%= render 'layouts/cookies_bar' %>
     <% end %>
-    <%#= render 'shared/footer' %>
+    <%= render 'shared/footer' %>
 
 
   </body>

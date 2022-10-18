@@ -4,12 +4,13 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  background-color: $erasmus_orange;
-  color: white;
+  background-color: $erasmus_yellow;
+  color: $erasmus_blue;
   font-weight: bold;
   font-family: $my-font;
   padding: 10px;
   text-decoration: none;
+  border-radius: 50px;
   @media (max-width: 575.98px)  {
     display: none;
   }
@@ -24,22 +25,22 @@
     font-size: 12px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    width: 250px;
+    width: 400px;
     height: 44px;
     font-size: 14px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    width: 270px;
+    width: 400px;
     height: 46px;
     font-size: 16px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
-    width: 300px;
+    width: 400px;
     height: 48px;
     font-size: 18px;
   }
   @media (min-width: 1800px) {
-    width: 350px;
+    width: 400px;
     height: 50px;
     font-size: 20px;
   }
@@ -54,9 +55,9 @@
 
 .button-registration:hover {
   text-decoration: none;
-  color: $erasmus_orange;
-  background-color: white;
-  border: solid $erasmus_orange;
+  color: $erasmus_yellow;
+  background-color: $erasmus_blue;
+  border: solid $erasmus_yellow;
 }
 
 .button-program {
@@ -65,12 +66,13 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  background-color: $erasmus_orange;
-  color: white;
+  background-color: $erasmus_yellow;
+  color: $erasmus_blue;
   font-weight: bold;
   font-family: $my-font;
   padding: 10px;
   text-decoration: none;
+  border-radius: 50px;
   @media (max-width: 575.98px)  {
     display: none;
   }
@@ -85,22 +87,22 @@
     font-size: 12px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    width: 250px;
+    width: 400px;
     height: 44px;
     font-size: 14px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    width: 270px;
+    width: 400px;
     height: 46px;
     font-size: 16px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
-    width: 300px;
+    width: 400px;
     height: 48px;
     font-size: 18px;
   }
   @media (min-width: 1800px) {
-    width: 350px;
+    width: 400px;
     height: 50px;
     font-size: 20px;
   }
@@ -115,9 +117,9 @@
 
 .button-program:hover {
   text-decoration: none;
-  color: $erasmus_orange;
-  background-color: white;
-  border: solid $erasmus_orange;
+  color: $erasmus_yellow;
+  background-color: $erasmus_blue;
+  border: solid $erasmus_yellow;
 }
 
 .button-submit-registration {
@@ -127,7 +129,7 @@
   text-align: center;
   width: 280px;
   height: 50px;
-  background-color: $aquilogia_red;
+  background-color: $erasmus_yellow;
   color: white;
   font-weight: bold;
   font-family: $aquilogia-text;

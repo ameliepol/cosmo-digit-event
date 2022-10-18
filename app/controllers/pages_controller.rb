@@ -24,10 +24,10 @@ class PagesController < ApplicationController
   end
 
   def inscription
+    set_active_navbar_link(2)
   end
 
   def informations
-    set_active_navbar_link(6)
   end
 
   def questions

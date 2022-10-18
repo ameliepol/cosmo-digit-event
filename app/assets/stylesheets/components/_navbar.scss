@@ -1,7 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
   background-color: white !important;
-  box-shadow: 0 4px 12px 0 #CBD9F3 !important;
+  // box-shadow: 0 4px 12px 0 #CBD9F3 !important;
   font: $my-font;
   font-weight: 600;
   padding-right: 30px;
@@ -37,10 +37,10 @@
   display: flex;
   flex-direction: row;
   @media (max-width: 1199.98px) {
-    width: 200px;
+    width: 150px;
     margin-left: 10px;
   }
-  width: 320px;
+  width: 200px;
   margin-left: 25px;
   margin-bottom: 15px;
 }
@@ -66,28 +66,6 @@
 //     height: 90px;
 //   }
 // }
-
-.navbar-brand-erasmus {
-  margin: 10px;
-  @media (max-width: 575.98px) {
-    height: 50px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 60px;
-  }
-
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 70px;
-  }
-
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 80px;
-  }
-
-  @media (min-width: 1200px) {
-    height: 100px;
-  }
-}
 
 .nav-item .active {
   color: $erasmus_blue;
@@ -143,7 +121,7 @@
     margin-top: 15px;
     bottom: 2;
     z-index:-1;
-    background-color: $erasmus_yellow;
+    background-color: $erasmus_verylight_blue;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     content: '';
@@ -155,7 +133,7 @@
     margin-top: 15px;
     bottom: 2;
     z-index:-1;
-    background-color: $erasmus_yellow;
+    background-color: $erasmus_verylight_blue;
   }
   @media (min-width: 1500px) {
     content: '';
@@ -167,7 +145,7 @@
     margin-top: 15px;
     bottom: 2;
     z-index:-1;
-    background-color: $erasmus_yellow;
+    background-color: $erasmus_verylight_blue;
   }
 }
 
@@ -203,25 +181,25 @@
     font-size: 16px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 20px;
+    font-size: 16px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    font-size: 20px;
+    font-size: 16px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    font-size: 20px;
+    font-size: 16px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    font-size: 24px;
+    font-size: 20px;
   }
   @media (min-width: 1500px) {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: none;
-  color: $erasmus_light_blue;
+  color: $erasmus_pink;
 }
 
 .social-network {

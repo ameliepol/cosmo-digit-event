@@ -1,4 +1,4 @@
-<!-- JEES 2022 -->
+<!-- JEES 2022
 
 <div class="banner-container">
   <div class="banner position-relative" style="background-image: url('<%= image_path 'accueil-banner.png' %>');">
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="fleche-scroll">
-      <%= image_tag "fleche-scroll.svg" %>
+      <%#= image_tag "fleche-scroll.svg" %>
     </div>
   </div>
 </div>
@@ -22,7 +22,7 @@
   </div>
   <div class="conference-details">
     <div class="webinar-image mx-auto">
-      <%= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
+      <%#= image_tag "picto-webinar.svg", alt: "Webinar", height: 100 %>
     </div>
     <div class="conference-text-presentation">
       <p>L’Agence Erasmus+ France / Education Formation organise les <span>5 et 6 juillet</span>, <u>à Bordeaux et en ligne</u>, ses journées Erasmus+ Enseignement supérieur. Elles s’adressent à l’ensemble des établissements d’enseignement supérieur français : universités, écoles, instituts, filières BTS, CFA du supérieur, ...</p>
@@ -41,6 +41,55 @@
   </div>
   <div div class="d-flex flex-wrap justify-content-center">
     <%#= link_to "ASSISTER À L'ÉVÉNEMENT<br> À BORDEAUX".html_safe, "https://event.bienvenue.pro/webcheckin/3e2185bf93b7e992054ec786096c3dc7", target: "_blank", class: "button-webinaire" %>
-    <%= link_to "ASSISTER À L'ÉVÉNEMENT <br> EN LIGNE".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
+    <%#= link_to "ASSISTER À L'ÉVÉNEMENT <br> EN LIGNE".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
   </div>
 </div>
+
+-->
+
+<!-- Aquilogia
+
+<div class="banner-container">
+  <div class="banner-registration position-relative" style="background-image: url('<%= image_path 'aquilogia_banner.jpg' %>');">
+  </div>
+</div>
+<div class="home-registration">
+  <div class="home-text">
+    <p>Nous avons le plaisir de vous convier à l'inauguration de notre nouvelle agence Aquilogia Patrimoine à Saint-Jean-de-Luz.</p>
+    <h1>AU PROGRAMME</h1>
+    <p><b>17h00 - 18h00 :</b>  Venez découvrir nos bureaux autour d'une coupe de champagne</p>
+    <p><b>18h30 : Cocktail dinatoire</b>  sur la terrasse de l'Hôtel Helianthal<br>
+    Place Maurice Ravel <br>
+    64500 SAINT-JEAN-DE-LUZ</p>
+    <p><b>Nous vous remercions de bien vouloir vous inscrire en remplissant le formulaire ci-dessous :</b></p>
+  </div>
+</div>
+<div class="participant">
+  <div class="participant-infos">
+    <div class="participant-registration">
+      <div class="new-participant-form">
+        <%= simple_form_for [@event, @participant] do |f| %>
+        <div class="participant-names">
+          <%= f.input :first_name, placeholder: "Prénom(s)*", label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :last_name, placeholder: "Nom(s) de famille*", label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+        <div>
+          <%= f.input :email, placeholder: "Email*", label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+        <div class="participant-names">
+          <%= f.input :organization, placeholder: "Société", label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :oid_code, placeholder: "Nombre d'accompagnants (en plus de vous)", label: false %>
+        </div>
+      </div>
+    </div>
+  <div class="cookies-erasmus-participant">
+    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées au seul destinataire suivant : Aquilogia Patrimoine*</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
+  </div>
+  </div>
+</div>
+<div class="button-valid">
+<%= f.button :submit, "JE M'INSCRIS", class: 'button-submit-registration' %>
+</div>
+<% end %>
+
+-->

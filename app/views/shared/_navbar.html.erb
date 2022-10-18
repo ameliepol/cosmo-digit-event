@@ -1,7 +1,7 @@
 <div class="navbar navbar navbar-expand-lg navbar-light navbar-lewagon">
   <%= link_to "/" do %>
     <div class="logos_erasmus">
-      <%= image_tag "logo_event.png", class: "navbar-brand-erasmus" %>
+      <%= image_tag "logo_erasmusplus.svg", class: "navbar-brand-erasmus" %>
     </div>
   <% end %>
 
@@ -19,7 +19,7 @@
         <%= link_to "PROGRAMME", programme_path, class: "nav-link #{@navbar["link_3"]}" %>
       </li>
       <li class="nav-item">
-        <%= link_to "INFOS PRATIQUES", informations_path, class: "nav-link #{@navbar["link_6"]}" %>
+          <%= link_to "INSCRIPTION", new_event_participant_path(Event.first), data:{turbolinks:false}, class: "nav-link #{@navbar["link_2"]}" %>
       </li>
       <div class="social-network">
         <a href="https://www.facebook.com/ErasmusplusFR", target="_blank"><i class="fab fa-facebook-square"></i></a>
