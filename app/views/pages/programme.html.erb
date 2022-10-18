@@ -6,17 +6,13 @@
   <div class="container-program-date1">
     <div class="date1">
       <div class="date1-text">
-        <p>5 JUILLET 2022</p>
+        <p>10 NOVEMBRE 2022</p>
       </div>
       <div class="date1-picto">
-        <%= image_tag "picto-calendar.svg", alt: "Program", height: 120 %>
+        <%= image_tag "picto-calendar.png", alt: "Program", height: 120 %>
       </div>
     </div>
     <div class="contenu-date1">
-      <div class="main-speaker">
-        <h2> Des tables rondes <u>en présentiel et en ligne</u> pour mieux appréhender les 4 priorités et découvrir les potentialités du programme Erasmus+.</h2>
-        <h2><u><%= link_to "Vous pouvez vous inscrire pour suivre ces tables rondes en ligne.", new_event_participant_path(Event.last), data:{turbolinks:false} %></u></h2>
-      </div>
       <div class="card">
         <div class="card-body">
           <%= image_tag "yellow_line.svg", height: 8 %>
@@ -95,63 +91,6 @@
           <h1> 18h00 - 19h00</h1>
           <h2> Cocktail </h2>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-program-date2">
-    <div class="contenu-date2">
-      <div class="main-speaker">
-        <h2>Des séances de travail <u>en présentiel</u> pour échanger entre les participants sur la mise en pratique des 4 priorités du programme Erasmus+ dans leurs établissements. </h2>
-        <h3>- <span><b>Inclusion</b></span> : Les participants seront amenés à échanger sur leurs pratiques en matière d’inclusion et diversité : actions et/ou stratégies mises en œuvre, obstacles rencontrés, etc. Cette séance de travail devrait permettre d’identifier des bonnes pratiques et recommandations en vue d’améliorer la participation au programme Erasmus+ des publics rencontrant des difficultés d’ordre socio-économiques, géographiques, psychologiques ou liées à la santé et au handicap.<h3>
-        <p> ➞ Animateurs de l’Agence Erasmus+ France / Education Formation : <span>Christelle Coët-Amette</span>, Conseillère technique, <span>Morgane Praud</span>, Département Promotion, <span>Brenda Chadelaud Houssaini</span>, Département Gestion des Projets et <span>Agathe Blanc</span>, Département Contrôle et Evaluation des Projets</p>
-        <h3>- <span><b>Transition écologique</b></span> : Les séances de travail seront l’occasion d’échanger notamment sur les sujets suivants : la sensibilisation au développement durable, la mise en œuvre des pratiques écoresponsables, le développement de nouvelles compétences, de nouveaux métiers.<h3>
-        <p>➞ Animateurs de l’Agence Erasmus+ France / Education Formation : <span>Corinne Lefay-Souloy</span>, Conseillère technique, <span>Mathieu Breton Zamarreno</span>, Département Promotion et <span>Daniela Quintero-Perez</span>, Département Contrôle et Évaluation des Projets</p>
-        <h3>- <span><b>Transition numérique</b></span> : L'occasion sera donnée aux participants d'échanger sur leurs pratiques et expériences des programmes intensifs hybrides. Nous vous proposons une mise en situation pratique. La séance de travail en présentiel du 6 juillet sera donc précédée d’une composante virtuelle obligatoire qui se tiendra le lundi 27/06/2022 de 11h à 12h. Après inscription, un lien zoom vous sera communiqué.<h3>
-        <p>➞ Animateurs de l’Agence Erasmus+ France / Education Formation : <span>Laurent Verdier</span>, Département Gestion des Projets, <span>Pauline Franjat</span>, Département Gestion des Projets et <span>Amélie Briou</span>, Département Contrôle et Évaluation des Projets</p>
-        <h3>- <span><b>Éducation et engagement citoyen</b></span> : Les séances de travail seront l’occasion d’échanger notamment sur les sujets suivants : la constitution de réseaux d’ambassadeurs alumni, la reconnaissance des activités d’engagement citoyen, les compétences interculturelles, l’éducation aux médias.<h3>
-        <p>➞ Animateurs de l’Agence Erasmus+ France / Education Formation : <span>Corinne Drougard</span>, Département Gestion des Projets, et <span>Benoît Guichard</span>, Département Contrôle et Évaluation des Projets</p>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <%= image_tag "yellow_line.svg", height: 8 %>
-          <h1> 09h00 - 09h30</h1>
-          <h2> Accueil café</h2>
-          <%= image_tag "yellow_line.svg", height: 8 %>
-          <h1> 09h30 - 10h30</h1>
-          <h2> Séances de travail</h2>
-          <p> Les sessions 1 et 2 des séances de travail sont identiques. Vous devrez choisir deux séances de travail différentes.</p>
-          <h3>- <span>Inclusion</span> – Session 1</h3>
-          <h3>- <span>Transition écologique</span> – Session 1</h3>
-          <h3>- <span>Éducation et engagement citoyen</span> – Session 1</h3>
-          <h3>- <span>Transition numérique / focus Programme intensif hybride</span> – Session 1 <br>
-          Pour une mise en situation, cette séance de travail est précédée d’une composante virtuelle obligatoire qui se tiendra le lundi 27/06/2022 de 11h à 12h. Après inscription, un lien Zoom vous sera communiqué.</h3>
-          <%= image_tag "yellow_line.svg", height: 8 %>
-          <h1> 10h30 - 11h00</h1>
-          <h2> Pause café</h2>
-          <%= image_tag "yellow_line.svg", height: 8 %>
-          <h1> 11h00 - 12h00</h1>
-          <h2> Séances de travail</h2>
-          <p> Les sessions 1 et 2 des séances de travail sont identiques. Vous devrez choisir deux séances de travail différentes.</p>
-          <h3>- <span>Inclusion</span> – Session 2</h3>
-          <h3>- <span>Transition écologique</span> – Session 2</h3>
-          <h3>- <span>Éducation et engagement citoyen</span> – Session 2</h3>
-          <h3>- <span>Transition numérique / focus Programme intensif hybride</span> – Session 2<br>
-          Pour une mise en situation, cette séance de travail est précédée d’une composante virtuelle obligatoire qui se tiendra le lundi 27/06/2022 de 11h à 12h. Après inscription, un lien Zoom vous sera communiqué.</h3>
-          <p></p>
-          <p></p>
-          <div div class="d-flex flex-wrap justify-content-center">
-            <%#= link_to "ASSISTER À L'ÉVÉNEMENT<br> À BORDEAUX".html_safe, "https://event.bienvenue.pro/webcheckin/3e2185bf93b7e992054ec786096c3dc7", target: "_blank", class: "button-webinaire" %>
-            <%= link_to "ASSISTER À L'ÉVÉNEMENT <br> EN LIGNE".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-webinaire" %>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="date2">
-      <div class="date2-text">
-        <p>6 JUILLET 2022</p>
-      </div>
-      <div class="date2-picto">
-      <%= image_tag "picto-calendar.svg", alt: "Program", height: 120 %>
       </div>
     </div>
   </div>

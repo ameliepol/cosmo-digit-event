@@ -66,7 +66,9 @@
 }
 
 .date1 {
-  background-color: $erasmus_blue;
+  background-color: white;
+  border: solid 0.3em white;
+  border-right-color: $erasmus_verylight_blue;
   display: flex;
   @media (max-width: 575.98px)  {
     width: 100%;
@@ -184,7 +186,7 @@
 
 .date1-text p {
   font-family: $my-font;
-  color: white;
+  color: $erasmus_verylight_blue;
   font-weight: bold;
   @media (max-width: 575.98px)  {
     font-size: 20px;
@@ -267,25 +269,25 @@
 
 .date1-picto img {
   @media (max-width: 575.98px)  {
-    height: 50px;
+    height: 100px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 120px;
+    height: 300px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 120px;
+    height: 300px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 130px;
+    height: 300px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    height: 130px;
+    height: 300px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
-    height: 160px;
+    height: 300px;
   }
   @media (min-width: 1800px) {
-    height: 160px;
+    height: 300px;
   }
 }
 

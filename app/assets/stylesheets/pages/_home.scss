@@ -289,37 +289,37 @@ input[type=checkbox]:checked:after {
   @media (max-width: 575.98px)  {
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 10px;
+    // padding-top: 10px;
     padding-bottom: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 15px;
+    // padding-top: 15px;
     padding-bottom: 10px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 20px;
+    // padding-top: 20px;
     padding-bottom: 10px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 25px;
+    // padding-top: 25px;
     padding-bottom: 25px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 30px;
   }
   @media (min-width: 1500px) {
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 30px;
+    // padding-top: 30px;
     padding-bottom: 30px;
   }
 }
