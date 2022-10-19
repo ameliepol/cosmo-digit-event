@@ -57,15 +57,15 @@
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     flex-direction: column;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     flex-direction: column;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     flex-direction: row;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     flex-direction: row;
@@ -129,10 +129,10 @@
   display: flex;
   flex-direction: column;
   @media (max-width: 575.98px)  {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
     padding-left: 10px;
-    padding-top: 15px;
+    // padding-top: 15px;
     flex-wrap: wrap;
     text-align: left;
     // border-left: solid 7px $erasmus_yellow;
@@ -140,10 +140,10 @@
     align-items: center;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    // margin-top: 15px;
+    // margin-bottom: 15px;
     padding-left: 10px;
-    padding-top: 15px;
+    // padding-top: 15px;
     flex-wrap: wrap;
     text-align: left;
     // border-left: solid 7px $erasmus_yellow;
@@ -151,13 +151,13 @@
     align-items: center;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: 50px;
+    // margin-top: 50px;
     margin-left: 30px;
     margin-right: 50px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    // padding-top: 20px;
+    // padding-bottom: 10px;
     width: 300px;
     flex-wrap: wrap;
     text-align: left;
@@ -289,22 +289,22 @@
     height: 100px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    height: 300px;
+    height: 100px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    height: 300px;
+    height: 100px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 300px;
+    height: 200px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    height: 300px;
+    height: 200px;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
-    height: 300px;
+    height: 250px;
   }
   @media (min-width: 1800px) {
-    height: 300px;
+    height: 250px;
   }
 }
 
@@ -722,7 +722,7 @@
 }
 
 .card-body {
-  padding-top: 30px;
+  // padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
   width: 100%;
