@@ -21,16 +21,18 @@
       <div class="other-participant-info">
         <div class="participant-functions">
           <%= f.input :organization, placeholder: 'Etablissement*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :oid_code, placeholder: 'Code OID de l’établissement (si vous en avez un)', label: false %>
           <%= f.input :service, placeholder: 'Service*', label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+        <div>
           <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
-        <div class="participant-requests">
-          <%= f.input :request, placeholder: 'Avez-vous des questions à poser aux intervenants?', label: false, error: 'Ce champ est obligatoire' %>
-        </div>
+      </div>
+      <div class="participant-requests">
+        <%= f.input :request, placeholder: 'Avez-vous des questions à poser aux intervenants?', label: false, error: 'Ce champ est obligatoire' %>
       </div>
     </div>
   </div>
+</div>
   <div class="new-participant-subscription">
     <%= f.input :newsletter_subscription, label: "<span class='font-weight-bold'> Souhaitez-vous vous inscrire à la newsletter de l'Agence Erasmus+ France / Education Formation ?*</span>".html_safe, as: :radio_buttons, error: "Veuillez cocher une réponse pour valider votre inscription" %>
   </div>
