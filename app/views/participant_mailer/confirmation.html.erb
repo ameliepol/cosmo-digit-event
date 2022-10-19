@@ -1,25 +1,20 @@
-<!-- <h2><span style="color: #233862" > Bonjour <%#= @participant.first_name %> <%#= @participant.last_name %>,</span>
-</h2>
-
-<p>Nous vous remercions pour votre inscription à notre webconférence qui aura lieu <span style="color: #233862">le mardi 5 juillet 2022, de 14h00 à 18h00</span>.
+<p><span style="color: #005198" > Bonjour<%#= @participant.first_name %> <%#= @participant.last_name %>,</span>
 </p>
 
-<h2><span style="color: #233862; font-weight: bold"> Récapitulatif de votre inscription : </span></h2>
-  <p> <span style="color: #009EE2; font-weight: bold"> Nom : </span> <%#= @participant.last_name %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Prénom : </span> <%#= @participant.first_name %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Email : </span> <%#= @participant.email %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Établissement : </span> <%#= @participant.organization %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Code OID de votre établissement : </span> <%#= @participant.oid_code %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Service : </span> <%#= @participant.service %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Fonction / Service : </span> <%#= @participant.position %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Ville : </span> <%#= @participant.city %></p>
-  <p> <span style="color: #009EE2; font-weight: bold"> Région : </span> <%#= @participant.region %></p>
-  <p></p>
-<h2><span style="color: #233862; font-weight: bold"> Information importante : </span></h2>
-<p> La webconférence sera accessible, le 5 juillet 2022, sur la chaîne YouTube de l'Agence Erasmus+ France / Education & Formation : </p>
+<p>Nous vous remercions pour votre inscription au webinaire <span style="color: #005198; font-weight: bold">Reconnaissance de la mobilité européenne en Formation professionnelle Initiale</span>, qui aura lieu le jeudi 10 novembre 2022, de 14h00 à 15h30.</p>
 
-<p><span style="display:block; color:white; font-weight:bold; border: solid 3px #009EE2; background-color: #009EE2; padding: 15px; text-decoration: none; margin-left: 200px; margin-right: 200px; text-align: center"><%#= link_to "J'ACCÈDE AU WEBINAIRE", "https://www.youtube.com/c/AgenceErasmusFranceEducationFormation", target: "_blank" %></span></p>
-<p></p>
-<p></p>
-<p><span style="color: #233862; font-weight: bold">Rejoignez déjà notre communauté grâce au hashtag ➡️ <span>#JEES2022</span> ! Partagez votre expérience du programme 🇪🇺 et vos différentes questions sur <u><%#= link_to "Twitter", "https://twitter.com/ErasmusplusFR", target: "_blank" %></u> et <u><%#= link_to "LinkedIn", "https://fr.linkedin.com/company/agence-europe-education-formation-france", target: "_blank" %></u>.</span></p>
-<h2><span style="color: #233862; font-weight: bold">A bientôt! </span></h2> -->
+<p><span style="color: #005198; font-weight: bold"> Récapitulatif de votre inscription : </span></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Nom : </span> <%= @participant.last_name %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Prénom : </span> <%= @participant.first_name %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Email : </span> <%= @participant.email %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Etablissement : </span> <%= @participant.organization %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Service : </span> <%= @participant.service %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Ville : </span> <%= @participant.city %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Région : </span> <%= @participant.region %></p>
+    <p> <span style="color: #04ACFA; font-weight: bold"> Question : </span> <%= @participant.request %></p>
+    <p></p>
+    <p></p>
+    <p><span style="color: #005198; font-weight: bold"> Information importante : </span></p>
+    <p> La webconférence sera accessible, le jeudi 10 novembre 2022, sur la chaîne YouTube de l'Agence Erasmus+ France / Education & Formation, dans la rubrique <span style="color: #005198; font-weight: bold">EN DIRECT</span> : </p>
+    <p> <%= link_to "J'ACCÈDE AU WEBINAIRE", "https://www.youtube.com/c/AgenceErasmusFranceEducationFormation", target: "_blank", class: "button-webinaire" %> </p>
+<p><span style="color: #005198; font-weight: bold">A bientôt! </span></p>
