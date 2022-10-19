@@ -68,7 +68,7 @@
 .date1 {
   background-color: white;
   border: solid 0.3em white;
-  border-right-color: $erasmus_darkblue;
+  border-right-color: $erasmus_verylight_blue;
   display: flex;
   @media (max-width: 575.98px)  {
     width: 100%;
@@ -118,7 +118,7 @@
     padding-top: 15px;
     flex-wrap: wrap;
     text-align: left;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
     justify-content: center;
     align-items: center;
   }
@@ -129,7 +129,7 @@
     padding-top: 15px;
     flex-wrap: wrap;
     text-align: left;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
     justify-content: center;
     align-items: center;
   }
@@ -144,13 +144,13 @@
     width: 300px;
     flex-wrap: wrap;
     text-align: left;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 50px;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
     justify-content: flex-start;
     padding-left: 20px;
     padding-top: 10px;
@@ -159,7 +159,7 @@
     margin-top: 30px;
     margin-left: 40px;
     margin-right: 50px;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
     justify-content: flex-start;
     padding-left: 20px;
     padding-top: 10px;
@@ -168,7 +168,7 @@
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
     justify-content: flex-start;
     padding-left: 20px;
     padding-top: 10px;
@@ -177,7 +177,7 @@
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    border-left: solid 7px $erasmus_yellow;
+    // border-left: solid 7px $erasmus_yellow;
     justify-content: flex-start;
     padding-left: 20px;
     padding-top: 10px;
@@ -303,7 +303,7 @@
 
 .main-speaker h2 {
   font-family: $my-font;
-  color: $erasmus-blue;
+  color: $erasmus_darkblue;
   font-weight: bold;
   @media (max-width: 575.98px)  {
     font-size: 16px;
@@ -741,7 +741,7 @@
 
 .card-body h2 {
   font-family: $my-font;
-  color: $erasmus-blue;
+  color: $erasmus_darkblue;
   font-weight: bold;
   margin-bottom: 15px;
   @media (max-width: 575.98px)  {
@@ -798,8 +798,9 @@
 
 .card-body h3 span {
   font-family: $my-font;
-  color: $erasmus_blue;
-  font-weight: normal;
+  color: black;
+  font-weight: 600;
+  font-style: italic;
   margin-bottom: 15px;
   @media (max-width: 575.98px)  {
     font-size: 16px;
