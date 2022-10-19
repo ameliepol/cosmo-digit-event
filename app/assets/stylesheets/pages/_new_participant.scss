@@ -434,21 +434,21 @@
 }
 
 .participant-city {
-  @media (max-width: 575.98px)  {
-    padding-bottom: 25px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    padding-bottom: 25px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    padding-bottom: 25px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding-bottom: 25px;
-  }
-  @media (min-width: 1200px) {
-    padding-bottom: 30px;
-  }
+  // @media (max-width: 575.98px)  {
+  //   padding-bottom: 25px;
+  // }
+  // @media (min-width: 576px) and (max-width: 767.98px) {
+  //   padding-bottom: 25px;
+  // }
+  // @media (min-width: 768px) and (max-width: 991.98px) {
+  //   padding-bottom: 25px;
+  // }
+  // @media (min-width: 992px) and (max-width: 1199.98px) {
+  //   padding-bottom: 25px;
+  // }
+  // @media (min-width: 1200px) {
+  // }
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -504,22 +504,21 @@
 .participant-requests {
   flex-wrap: wrap;
   border-top: solid 1px $erasmus_pink;
-  padding-top: 10px;
-  @media (max-width: 575.98px)  {
-    padding-top: 10px;
-  }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    padding-top: 15px;
-  }
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    padding-top: 20px;
-  }
-  @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding-top: 25px;
-  }
-  @media (min-width: 1200px) {
-    padding-top: 30px;
-  }
+  padding-top: 30px;
+  // @media (max-width: 575.98px)  {
+  // }
+  // @media (min-width: 576px) and (max-width: 767.98px) {
+  //   padding-top: 15px;
+  // }
+  // @media (min-width: 768px) and (max-width: 991.98px) {
+  //   padding-top: 20px;
+  // }
+  // @media (min-width: 992px) and (max-width: 1199.98px) {
+  //   padding-top: 25px;
+  // }
+  // @media (min-width: 1200px) {
+  //   padding-top: 30px;
+  // }
 }
 
 #participant_request {
@@ -530,18 +529,23 @@
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
+    height: 50px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 12px;
+    height: 70px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     font-size: 16px;
+    height: 80px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 16px;
+    height: 100px;
   }
   @media (min-width: 1200px) {
     font-size: 20px;
+    height: 100px;
   }
 }
 
@@ -605,7 +609,7 @@
     margin-right: 30px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 30px;
     margin-right: 30px;
   }
