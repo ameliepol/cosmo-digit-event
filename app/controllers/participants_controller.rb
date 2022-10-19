@@ -55,7 +55,7 @@ class ParticipantsController < ApplicationController
       # :position,
       :city,
       :request,
-      # :region,
+      :region,
       :newsletter_subscription,
       :accepted_conditions)
     #   bookings_attributes: [:id, :workshop_id, :status])

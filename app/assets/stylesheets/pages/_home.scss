@@ -134,15 +134,15 @@
 }
 
 .form-check {
-  padding-left: 0;
+  // padding-left: 0;
 }
 
 .form-check-label {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 input[type="checkbox"] {
-  margin-left: 20px;
+  // margin-left: 20px;
   cursor: pointer;
   }
 
@@ -164,7 +164,7 @@ input[type=checkbox]:checked:before {
   height: 20px;
   top: 0;
   left: 0;
-  background-color:$aquilogia_red;
+  background-color:$erasmus_blue;
 }
 input[type=checkbox]:checked:after {
   content: "";

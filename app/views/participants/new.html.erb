@@ -19,12 +19,13 @@
         </div>
       </div>
       <div class="other-participant-info">
-        <div class="participant-functions">
+        <div class="participant-names">
           <%= f.input :organization, placeholder: 'Etablissement*', label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :service, placeholder: 'Service*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
-        <div>
+        <div class="participant-city">
           <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
+          <%= f.input :region, placeholder: 'Région*', label: false, error: 'Ce champ est obligatoire' %>
         </div>
       </div>
       <div class="participant-requests">
@@ -32,16 +33,15 @@
       </div>
     </div>
   </div>
+<div class="new-participant-subscription">
+  <%= f.input :newsletter_subscription, label: "<span class='font-weight-bold'> Souhaitez-vous vous inscrire à la newsletter de l'Agence Erasmus+ France / Education Formation ?*</span>".html_safe, as: :radio_buttons, error: "Veuillez cocher une réponse pour valider votre inscription" %>
 </div>
-  <div class="new-participant-subscription">
-    <%= f.input :newsletter_subscription, label: "<span class='font-weight-bold'> Souhaitez-vous vous inscrire à la newsletter de l'Agence Erasmus+ France / Education Formation ?*</span>".html_safe, as: :radio_buttons, error: "Veuillez cocher une réponse pour valider votre inscription" %>
-  </div>
-  <div class="cookies-erasmus-participant">
-    <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
-    <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
-  </div>
+<div class="cookies-erasmus-participant">
+  <%= f.input :accepted_conditions, label: "<span class='font-weight-bold'> J’accepte que les données collectées soient communiquées aux seuls destinataires suivants : Agence Erasmus+*</span>
+  <br><span>*Pour en savoir plus sur la protection de vos données personnelles, consultez les mentions légales.</span>".html_safe, error: "Veuillez accepter les conditions d'utilisation pour valider votre inscription" %>
 </div>
 <div class="button-valid">
 <%= f.button :submit, "JE M'INSCRIS", class: 'button-submit-registration' %>
+</div>
 </div>
 <% end %>

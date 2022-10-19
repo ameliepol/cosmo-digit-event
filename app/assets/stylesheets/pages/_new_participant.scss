@@ -174,13 +174,13 @@
     height: 100px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    height: 140px;
+    height: 160px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
-    height: 150px;
+    height: 190px;
   }
   @media (min-width: 1500px) {
-    height: 160px;
+    height: 190px;
   }
 }
 
@@ -433,6 +433,28 @@
   }
 }
 
+.participant-city {
+  @media (max-width: 575.98px)  {
+    padding-bottom: 25px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-bottom: 25px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-bottom: 25px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-bottom: 25px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  flex-wrap: wrap;
+}
+
 #participant_city {
   display: flex;
   box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
@@ -481,6 +503,8 @@
 
 .participant-requests {
   flex-wrap: wrap;
+  border-top: solid 1px $erasmus_pink;
+  padding-top: 10px;
   @media (max-width: 575.98px)  {
     padding-top: 10px;
   }
@@ -527,37 +551,37 @@
   font-family: $my-font;
   @media (max-width: 575.98px)  {
     font-size: 12px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-right: 30px;
     margin-top: 20px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     font-size: 16px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-right: 50px;
     margin-top: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 80px;
     margin-right: 80px;
     margin-top: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 80px;
     margin-right: 100px;
     margin-top: 20px;
   }
   @media (min-width: 1500px) {
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 100px;
     margin-right: 150px;
     margin-top: 20px;
   }
