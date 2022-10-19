@@ -37,7 +37,6 @@ class ParticipantsController < ApplicationController
       # @workshops_3 = workshops_grouped[2]
       flash[:alert] = @participant.errors.messages.values.join("; ")
       # @workshops = @event.workshops.visibles
-      # render :new
       render :new
     end
 
@@ -52,11 +51,11 @@ class ParticipantsController < ApplicationController
       :last_name,
       :organization,
       :oid_code,
-    #  :service,
-    #  :position,
-    #  :city,
-    #  :region,
-    #  :newsletter_subscription,
+      :service,
+      :position,
+      :city,
+      :region,
+      :newsletter_subscription,
       :accepted_conditions)
     #   bookings_attributes: [:id, :workshop_id, :status])
     # parameters["bookings_attributes"].reject! { |_, v| v["status"] != "confirmed" }
