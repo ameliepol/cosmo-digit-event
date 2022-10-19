@@ -68,7 +68,7 @@
 // }
 
 .nav-item .active {
-  color: $erasmus_blue;
+  color: $erasmus_darkblue;
   font-family: $my-font;
   font-weight: 600;
   position: relative;
@@ -166,17 +166,17 @@
 }
 
 .navbar-light .navbar-toggler {
-  color: $erasmus_blue;
-  border-color: $erasmus_blue;
+  color: $erasmus_darkblue;
+  border-color: $erasmus_darkblue;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  color: $erasmus_blue;
+  color: $erasmus_darkblue;
   position: relative;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $erasmus_blue;
+  color: $erasmus_darkblue;
   @media (max-width: 575.98px)  {
     font-size: 16px;
   }
@@ -216,7 +216,7 @@
 
 .fa-facebook-square {
   margin-left: 8px;
-  color: $erasmus_light_blue;
+  color: $erasmus_blue;
   font-size: 28px;
   @media (max-width: 1199.98px) {
     margin-left: 1px;
@@ -225,12 +225,12 @@
 }
 
 .fa-facebook-square:hover {
-  color: $erasmus_blue;
+  color: $erasmus_pink;
 }
 
 .fa-twitter-square {
   margin-left: 8px;
-  color: $erasmus_light_blue;
+  color: $erasmus_blue;
   font-size: 28px;
   @media (max-width: 1199.98px) {
     margin-left: 1px;
@@ -239,12 +239,12 @@
 }
 
 .fa-twitter-square:hover {
-  color: $erasmus_blue;
+  color: $erasmus_pink;
 }
 
 .fa-linkedin {
   margin-left: 8px;
-  color: $erasmus_light_blue;
+  color: $erasmus_blue;
   font-size: 28px;
   @media (max-width: 1199.98px) {
     margin-left: 1px;
@@ -253,7 +253,7 @@
 }
 
 .fa-linkedin:hover {
-  color: $erasmus_blue;
+  color: $erasmus_pink;
 }
 
 // .navbar {

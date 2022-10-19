@@ -1,56 +1,56 @@
 .banner {
   @media (max-width: 575.98px)  {
-    margin-top: 70px;
+    margin-top: 90px;
     height: 170px;
-    background-position: right;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    margin-top: 70px;
-    height: 290px;
-    background-position: right;
+    margin-top: 90px;
+    height: 390px;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    margin-top: 80px;
-    height: 390px;
-    background-position: right;
+    margin-top: 90px;
+    height: 550px;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    margin-top: 80px;
-    height: 590px;
-    background-position: right;
+    margin-top: 90px;
+    height: 690px;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     margin-top: 90px;
-    height: 690px;
-    background-position: right;
+    height: 790px;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
     margin-top: 90px;
     height: 850px;
-    background-position: right;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 1800px) and (max-width: 2099.98px) {
     margin-top: 90px;
     height: 930px;
-    background-position: right;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 2100px) and (max-width: 2399.98px) {
     margin-top: 90px;
     height: 1100px;
-    background-position: right;
+    background-position: left;
     background-size: cover;
   }
   @media (min-width: 2400px) {
     margin-top: 90px;
     height: 1200px;
-    background-position: right;
+    background-position: left;
     background-size: cover;
   }
 }
@@ -325,9 +325,9 @@ input[type=checkbox]:checked:after {
 }
 
 .conference-title h1 {
-  color: $erasmus_verylight_blue;
+  color: $erasmus_blue;
   font-family: $my-font;
-  font-weight: bold;
+  font-weight: 600;
   @media (max-width: 575.98px)  {
     margin-top: 20px;
     font-size: 24px;
@@ -499,7 +499,7 @@ input[type=checkbox]:checked:after {
 
 .conference-text-presentation h2 {
   // display: flex;
-  color: $erasmus_light_blue;
+  color: $erasmus_blue;
   text-align: center;
   padding: 10px;
   padding-top: 0px;
@@ -573,7 +573,7 @@ input[type=checkbox]:checked:after {
 
 .conference-text-presentation p {
   // display: flex;
-  color: $erasmus-blue;
+  color: $erasmus_darkblue;
   font-weight: medium;
   text-align: center;
   padding: 10px;
