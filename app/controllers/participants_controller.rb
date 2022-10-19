@@ -52,8 +52,9 @@ class ParticipantsController < ApplicationController
       :organization,
       :oid_code,
       :service,
-      :position,
+      # :position,
       :city,
+      :request,
       # :region,
       :newsletter_subscription,
       :accepted_conditions)

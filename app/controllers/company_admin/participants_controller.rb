@@ -34,6 +34,7 @@ private
       :service,
       :position,
       :city,
+      :request,
       # :region,
       :newsletter_subscription,
       :accepted_conditions)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_06_01_212053) do
+ActiveRecord::Schema.define(version: 2022_10_19_112238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2022_06_01_212053) do
     t.string "oid_code"
     t.string "region"
     t.string "service"
+    t.text "request"
   end
 
   create_table "questions", force: :cascade do |t|

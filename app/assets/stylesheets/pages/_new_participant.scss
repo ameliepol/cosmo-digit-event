@@ -78,79 +78,74 @@
 
 .participant {
   @media (max-width: 575.98px)  {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px;
   }
   @media (min-width: 1200px) {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px;
   }
 }
 
 .participant-infos {
   display: flex;
   justify-content: center;
-  // border: solid $erasmus_blue;
+  border: solid $erasmus_blue;
   flex-wrap: wrap;
   @media (max-width: 575.98px) {
     padding: 10px;
     flex-wrap: wrap;
     font-size: 16px;
     margin-bottom: 10px;
-    // margin-left: 20px;
-    // margin-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     padding: 15px;
     flex-wrap: wrap;
     font-size: 16px;
     margin-bottom: 20px;
-    // margin-left: 35px;
-    // margin-right: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     padding: 20px;
     flex-wrap: wrap;
     font-size: 20px;
     margin-bottom: 20px;
-    // margin-left: 35px;
-    // margin-right: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     padding: 25px;
     flex-wrap: wrap;
     font-size: 20px;
     margin-bottom: 40px;
-    // margin-left: 70px;
-    // margin-right: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     padding: 30px;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 40px;
-    // margin-left: 70px;
-    // margin-right: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
     @media (min-width: 1500px) {
     padding: 40px;
     font-size: 22px;
     margin-top: 10px;
     margin-bottom: 40px;
-    // margin-left: 100px;
-    // margin-right: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 }
 
@@ -222,7 +217,7 @@
   justify-content: flex-start;
   flex-direction: column;
   color: #2b2a2a;
-  border-bottom: solid 1px $aquilogia_red;
+  border-bottom: solid 1px $erasmus_pink;
 }
 
 .participant-names {
@@ -234,9 +229,9 @@
 
 #participant_first_name {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -257,9 +252,9 @@
 
 #participant_last_name {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -280,9 +275,9 @@
 
 #participant_email {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -328,13 +323,29 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   flex-wrap: wrap;
+  @media (max-width: 575.98px)  {
+    padding-bottom: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-bottom: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-bottom: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-bottom: 25px;
+  }
+  @media (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+  border-bottom: solid 1px $erasmus_pink;
 }
 
 #participant_organization {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -355,9 +366,9 @@
 
 #participant_oid_code {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -378,9 +389,9 @@
 
 #participant_service {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -401,9 +412,9 @@
 
 #participant_position {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -424,9 +435,9 @@
 
 #participant_city {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -447,9 +458,51 @@
 
 #participant_region {
   display: flex;
-  // box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
+  background-color: white;
+  @media (max-width: 575.98px)  {
+    font-size: 12px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    font-size: 12px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.participant-requests {
+  flex-wrap: wrap;
+  @media (max-width: 575.98px)  {
+    padding-top: 10px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    padding-top: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding-top: 20px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-top: 25px;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 30px;
+  }
+}
+
+#participant_request {
+  display: flex;
+  box-shadow: 0 4px 4px 0 $erasmus_verylight_blue;
+  color: #2b2a2a;
+  font-family: $my-font;
   background-color: white;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -471,41 +524,41 @@
 .cookies-erasmus-participant {
   display: inline-block;
   color: #2b2a2a;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   @media (max-width: 575.98px)  {
     font-size: 12px;
-    // margin-left: 10px;
-    // margin-right: 30px;
-      margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-top: 20px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     font-size: 14px;
     margin-left: 10px;
-    // margin-right: 30px;
+    margin-right: 30px;
     margin-top: 20px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     font-size: 16px;
     margin-left: 10px;
-    // margin-right: 50px;
+    margin-right: 50px;
     margin-top: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     font-size: 18px;
     margin-left: 10px;
-    // margin-right: 80px;
+    margin-right: 80px;
     margin-top: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     font-size: 20px;
     margin-left: 10px;
-    // margin-right: 100px;
+    margin-right: 100px;
     margin-top: 20px;
   }
   @media (min-width: 1500px) {
     font-size: 20px;
     margin-left: 10px;
-    // margin-right: 150px;
+    margin-right: 150px;
     margin-top: 20px;
   }
 }
@@ -520,7 +573,7 @@
 .new-participant-subscription {
   display: inline-block;
   margin-top: 20px;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   color: #2b2a2a;
   @media (max-width: 575.98px)  {
     font-size: 12px;
@@ -556,7 +609,7 @@
 
 .new-participant-subscription p {
   color: grey;
-  font-family: $aquilogia-text;
+  font-family: $my-font;
   font-weight: bold;
   font-size: 16px;
   margin-top: 0px;

@@ -21,6 +21,7 @@ class CompanyAdmin::DashboardController < ApplicationController
     :organization,
     :position,
     :city,
+    :request,
     :zipcode,
     :newsletter_subscription,
     :accepted_conditions,

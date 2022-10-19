@@ -23,10 +23,10 @@
           <%= f.input :organization, placeholder: 'Etablissement*', label: false, error: 'Ce champ est obligatoire' %>
           <%= f.input :oid_code, placeholder: 'Code OID de l’établissement (si vous en avez un)', label: false %>
           <%= f.input :service, placeholder: 'Service*', label: false, error: 'Ce champ est obligatoire' %>
-          <%= f.input :position, placeholder: 'Fonction*', label: false, error: 'Ce champ est obligatoire' %>
-        </div>
-        <div>
           <%= f.input :city, placeholder: 'Ville*', label: false, error: 'Ce champ est obligatoire' %>
+        </div>
+        <div class="participant-requests">
+          <%= f.input :request, placeholder: 'Avez-vous des questions à poser aux intervenants?', label: false, error: 'Ce champ est obligatoire' %>
         </div>
       </div>
     </div>
