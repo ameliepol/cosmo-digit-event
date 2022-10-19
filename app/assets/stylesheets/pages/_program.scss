@@ -1,36 +1,42 @@
 .banner-program {
   @media (max-width: 575.98px)  {
     margin-top: 80px;
+    margin-bottom: 15px;
     height: 110px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     margin-top: 60px;
+    margin-bottom: 20px;
     height: 190px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     margin-top: 60px;
+    margin-bottom: 20px;
     height: 250px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     margin-top: 60px;
+    margin-bottom: 20px;
     height: 300px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     margin-top: 60px;
+    margin-bottom: 20px;
     height: 350px;
     background-position: center;
     background-size: cover;
   }
   @media (min-width: 1500px) {
     margin-top: 60px;
+    margin-bottom: 20px;
     height: 400px;
     background-position: center;
     background-size: cover;
@@ -47,21 +53,27 @@
   display: flex;
   @media (max-width: 575.98px)  {
     flex-direction: column;
+    margin-bottom: 15px;
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     flex-direction: row;
+    margin-bottom: 20px;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     flex-direction: row;
+    margin-bottom: 20px;
   }
   @media (min-width: 1500px) {
     flex-direction: row;
+    margin-bottom: 20px;
   }
 }
 

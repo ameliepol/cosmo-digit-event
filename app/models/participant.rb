@@ -17,7 +17,7 @@ class Participant < ApplicationRecord
   validates :service, presence: { message: "Veuillez renseigner votre service" }
   validates :position, presence: { message: "Veuillez renseigner votre fonction" }
   validates :city, presence: { message: "Veuillez renseigner le nom de votre ville" }
-  validates :region, presence: { message: "Veuillez renseigner le nom de votre région" }
+  # validates :region, presence: { message: "Veuillez renseigner le nom de votre région" }
   validates :newsletter_subscription, inclusion: { in: [true, false] }
   validates :accepted_conditions, inclusion: { in: [true] }
   validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
@@ -40,7 +40,7 @@ class Participant < ApplicationRecord
           participant.service,
           participant.position,
           participant.city,
-          participant.region,
+          # participant.region,
           participant.newsletter_subscription.to_s,
           participant.zipcode,
           participant.bookings.order_by_workshop_date.map {|booking| booking.workshop.name }.join(" , ")
