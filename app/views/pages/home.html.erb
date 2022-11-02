@@ -21,4 +21,7 @@
     <p><span>De 14h00 à 15h30, il sera animé en direct par Vanessa Duval (consultante en gestion de projets européens).<span></p>
     </div>
   </div>
+  <div class="button-valid">
+    <%= link_to "JE M'INSCRIS".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-submit-registration" %>
+  </div>
 </div>

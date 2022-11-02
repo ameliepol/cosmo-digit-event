@@ -1,7 +1,7 @@
 <div class="container-dashboard">
   <div class="title-dashboard">
     <h1>Récapitulatif des participants</h1>
-    <%#= link_to "↩ Tableau de bord", company_admin_dashboard_path, class: "btn-back-dashboard" %>
+    <%= link_to "↩ Tableau de bord", company_admin_dashboard_path, class: "btn-back-dashboard" %>
   </div>
   <p></p>
   <div class="export">
@@ -22,15 +22,10 @@
             <th scope="col">Nom(s)</th>
             <th scope="col">Prénom(s)</th>
             <th scope="col">Email</th>
-            <th scope="col">Société</th>
-            <th scope="col">Accompagnant(s)</th>
-<!--             <th scope="col">Service</th>
-            <th scope="col">Fonction</th>
+            <th scope="col">Etablissement</th>
+            <th scope="col">Service</th>
             <th scope="col">Ville</th>
-            <th scope="col">Région</th>
-            <th scope="col">Inscrit newsletter</th>
-            <th scope="col">Pays</th>
-            <th scope="col">Ateliers sélectionnés</th> -->
+            <th scope="col">Question</th>
             <th scope="col">X</th>
           </tr>
         </thead>
@@ -41,15 +36,12 @@
             <td><strong><%= participant.first_name.upcase %></strong></td>
             <td><%= participant.email %></td>
             <td><%= participant.organization %></td>
-            <td><%= participant.oid_code %></td>
-<!--             <td><%#= participant.service %></td>
-            <td><%#= participant.position %></td>
-            <td><%#= participant.city %></td>
-            <td><%#= participant.region %></td>
-            <td><%#= participant.newsletter_subscription.to_s %></td>
-          <td><%#= participant.zipcode %></td>
-            <td><#% participant.bookings.order_by_workshop_date.each do |booking| %>
-              <div><strong><%#= time_with_day(booking.workshop.start_at)%> - <%#= booking.workshop.end_at.strftime("%Hh%M") %></strong> : <%#= booking.workshop.name %>
+            <td><%= participant.service %></td>
+            <td><%= participant.city %></td>
+            <td><%= participant.request %></td>
+            <!-- <td><%#= participant.newsletter_subscription.to_s %></td>
+            <td><#%= participant.bookings.order_by_workshop_date.each do |booking| %>
+              <div><strong><#%= time_with_day(booking.workshop.start_at)%> - <%#= booking.workshop.end_at.strftime("%Hh%M") %></strong> : <%#= booking.workshop.name %>
               </div>
               <#% end %>
             </td> -->
