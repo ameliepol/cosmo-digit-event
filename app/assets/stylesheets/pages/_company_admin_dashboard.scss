@@ -1,7 +1,7 @@
 .container-dashboard {
 min-height: 100%;
 // padding-top: 210px;
-padding-top: 30px;
+padding-top: 150px;
 padding-bottom: 10px;
 padding-left: 100px;
 padding-right: 100px;
@@ -9,7 +9,7 @@ margin: 0 auto;
 }
 
 .container-dashboard h1 {
-  color: grey;
+  color: $erasmus_darkblue;
   font-family: $my-font;
   text-align: left;
   font-size: 24px;
@@ -54,7 +54,7 @@ margin: 0 auto;
   justify-content: center;
   width: 250px;
   height: 250px;
-  background-color: grey;
+  background-color: $erasmus_darkblue;
   color: white;
   font-weight: bold;
   font-family: $my-font;
@@ -65,8 +65,8 @@ margin: 0 auto;
 
 .btn-dashboard:hover {
   background-color: white;
-  border: solid grey;
-  color: grey;
+  border: solid $erasmus_darkblue;
+  color: $erasmus_darkblue;
   text-decoration: none;
 }
 
@@ -77,7 +77,7 @@ margin: 0 auto;
   text-align: center;
   width: 125px;
   height: 50px;
-  background-color: $aquilogia_red;
+  background-color: $erasmus_blue;
   color: white;
   font-weight: bold;
   font-family: $my-font;
@@ -97,14 +97,14 @@ margin: 0 auto;
 
 .button-export:hover {
   text-decoration: none;
-  color: $aquilogia_red;
+  color: $erasmus_darkblue;
   background-color: white;
-  border: solid $aquilogia_red;
+  border: solid $erasmus_darkblue;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
   color: white;
-  background-color: grey;
+  background-color: $erasmus_darkblue;
   font-family: $my-font;
   font-size: 12px;
 }
@@ -112,7 +112,7 @@ margin: 0 auto;
 .nav>li>a:hover, .nav>li>a:focus {
   text-decoration: none;
   color: white;
-  background-color: grey;
+  background-color: $erasmus_darkblue;
   font-family: $my-font;
 }
 
@@ -135,9 +135,9 @@ margin: 0 auto;
   text-decoration: none;
   color: #fff;
   font-weight: normal;
-  background-color: $aquilogia_red;
+  background-color: $erasmus_darkblue;
   font-family: $my-font;
-  border-color: $aquilogia_red;
+  border-color: $erasmus_darkblue;
   font-size: 12px;
 }
 
@@ -150,12 +150,12 @@ margin: 0 auto;
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
   color: white;
-  background-color: grey;
+  background-color: $erasmus_darkblue;
   font-size: 12px;
 }
 
 a {
-  color: grey;
+  color: $erasmus_darkblue;
   font-family: $my-font;
 }
 
@@ -165,7 +165,7 @@ a {
 }
 
 .fas .fa-trash-alt a {
-  color: grey;
+  color: $erasmus_darkblue;
   margin: auto;
 }
 
@@ -176,11 +176,13 @@ a {
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: grey;
-    border-color: grey;
+    background-color: $erasmus_blue;
+    border-color: $erasmus_blue;
+    font-size: 12px;
 }
 
 .page-item.disabled .page-link {
     z-index: 3;
-    color: #2b2a2a
+    color: #2b2a2a;
+    font-size: 12px;
 }

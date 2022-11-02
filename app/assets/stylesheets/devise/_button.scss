@@ -1,11 +1,48 @@
-.form-actions {
-  width: 250px;
-  background-color: $erasmus_orange;
-  font-color: white;
-  font: $my-font;
-  font-weight: bold;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-}
+// .form-actions {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   margin: 0 auto;
+//   background-color: $erasmus_yellow;
+//   color: $erasmus_blue;
+//   font-weight: bold;
+//   font-family: $my-font;
+//   padding: 10px;
+//   text-decoration: none;
+//   border-radius: 50px;
+//   @media (max-width: 575.98px)  {
+//     display: none;
+//   }
+//   @media (min-width: 576px) and (max-width: 767.98px) {
+//     width: 220px;
+//     height: 42px;
+//     font-size: 12px;
+//   }
+//   @media (min-width: 768px) and (max-width: 991.98px) {
+//     width: 220px;
+//     height: 42px;
+//     font-size: 12px;
+//   }
+//   @media (min-width: 992px) and (max-width: 1199.98px) {
+//     width: 400px;
+//     height: 44px;
+//     font-size: 14px;
+//   }
+//   @media (min-width: 1200px) and (max-width: 1499.98px) {
+//     width: 400px;
+//     height: 46px;
+//     font-size: 16px;
+//   }
+//   @media (min-width: 1500px) and (max-width: 1799.98px) {
+//     width: 400px;
+//     height: 48px;
+//     font-size: 18px;
+//   }
+//   @media (min-width: 1800px) {
+//     width: 400px;
+//     height: 50px;
+//     font-size: 20px;
+//   }
+// }
 
