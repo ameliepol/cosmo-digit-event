@@ -97,7 +97,7 @@
 .participant-infos {
   display: flex;
   justify-content: center;
-  border: solid $erasmus_blue;
+  border: solid $europass_blue;
   flex-wrap: wrap;
   @media (max-width: 575.98px) {
     padding: 20px;
@@ -218,7 +218,7 @@
   justify-content: flex-start;
   flex-direction: column;
   color: #2b2a2a;
-  border-bottom: solid 1px $erasmus_pink;
+  border-bottom: solid 1px $europass_green;
 }
 
 .participant-names {
@@ -339,7 +339,7 @@
   @media (min-width: 1200px) {
     padding-bottom: 30px;
   }
-  border-bottom: solid 1px $erasmus_pink;
+  border-bottom: solid 1px $europass_green;
 }
 
 #participant_organization {
@@ -504,7 +504,7 @@
 
 .participant-requests {
   flex-wrap: wrap;
-  border-top: solid 1px $erasmus_pink;
+  border-top: solid 1px $europass_green;
   padding-top: 30px;
   // @media (max-width: 575.98px)  {
   // }

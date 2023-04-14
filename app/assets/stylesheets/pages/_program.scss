@@ -100,28 +100,28 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    border-right-color: $erasmus_verylight_blue;
+    border-right-color: $europass_blue;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     width: 20%;
     padding-top: 30px;
     justify-content: flex-start;
     flex-direction: column;
-    border-right-color: $erasmus_verylight_blue;
+    border-right-color: $europass_blue;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     width: 20%;
     padding-top: 30px;
     justify-content: flex-start;
     flex-direction: column;
-    border-right-color: $erasmus_verylight_blue;
+    border-right-color: $europass_blue;
   }
   @media (min-width: 1500px) {
     width: 20%;
     padding-top: 30px;
     justify-content: flex-start;
     flex-direction: column;
-    border-right-color: $erasmus_verylight_blue;
+    border-right-color: $europass_blue;
   }
 }
 
@@ -374,7 +374,7 @@
 
 .main-speaker h3 span {
   font-family: $my-font;
-  color: $erasmus_blue;
+  color: $europass_blue;
   font-weight: bold;
 }
 
@@ -434,7 +434,7 @@
 
 .main-speaker p span {
   font-family: $my-font;
-  color: $erasmus_blue;
+  color: $europass_blue;
   font-weight: normal;
 }
 
@@ -493,7 +493,7 @@
 }
 
 .date2 {
-  background-color: $erasmus_blue;
+  background-color: $europass_blue;
   display: flex;
   @media (max-width: 575.98px)  {
     width: 100%;
