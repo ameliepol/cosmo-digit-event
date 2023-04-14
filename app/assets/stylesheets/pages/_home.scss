@@ -817,3 +817,63 @@ input[type=checkbox]:checked:after {
     font-size: 20px;
   }
 }
+
+.partners-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 20px;
+  @media (max-width: 575.98px)  {
+    height: 30px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 40px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 50px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  @media (min-width: 1800px) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.partners-logos img {
+  display:flex;
+  @media (max-width: 575.98px)  {
+    height: 30px;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    height: 40px;
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    height: 50px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    height: 60px;
+  }
+  @media (min-width: 1200px) and (max-width: 1499.98px) {
+    height: 70px;
+  }
+  @media (min-width: 1500px) and (max-width: 1799.98px) {
+    height: 80px;
+  }
+  @media (min-width: 1800px) {
+    height: 90px;
+  }
+}
