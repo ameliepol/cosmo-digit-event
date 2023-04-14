@@ -95,7 +95,7 @@
 }
 
 .nav-item .active {
-  color: $erasmus_darkblue;
+  color: $europass_dark_blue;
   font-family: $my-font;
   font-weight: 600;
   position: relative;
@@ -193,17 +193,17 @@
 }
 
 .navbar-light .navbar-toggler {
-  color: $erasmus_darkblue;
-  border-color: $erasmus_darkblue;
+  color: $europass_dark_blue;
+  border-color: $europass_dark_blue;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  color: $erasmus_darkblue;
+  color: $europass_dark_blue;
   position: relative;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: $erasmus_darkblue;
+  color: $europass_dark_blue;
   @media (max-width: 575.98px)  {
     font-size: 16px;
   }
@@ -226,7 +226,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: none;
-  color: $erasmus_pink;
+  color: $europass_dark_blue;
 }
 
 .social-network {
@@ -252,7 +252,7 @@
 }
 
 .fa-facebook-square:hover {
-  color: $erasmus_pink;
+  color: $europass_green;
 }
 
 .fa-twitter-square {
@@ -266,7 +266,7 @@
 }
 
 .fa-twitter-square:hover {
-  color: $erasmus_pink;
+  color: $europass_green;
 }
 
 .fa-linkedin {
@@ -280,7 +280,7 @@
 }
 
 .fa-linkedin:hover {
-  color: $erasmus_pink;
+  color: $europass_green;
 }
 
 // .navbar {

@@ -7,49 +7,49 @@
   }
   @media (min-width: 576px) and (max-width: 767.98px) {
     margin-top: 60px;
-    height: 390px;
+    height: 290px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 768px) and (max-width: 991.98px) {
     margin-top: 80px;
-    height: 550px;
+    height: 450px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 992px) and (max-width: 1199.98px) {
     margin-top: 80px;
-    height: 690px;
+    height: 590px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 1200px) and (max-width: 1499.98px) {
     margin-top: 80px;
-    height: 790px;
+    height: 690px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 1500px) and (max-width: 1799.98px) {
     margin-top: 80px;
-    height: 850px;
+    height: 750px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 1800px) and (max-width: 2099.98px) {
     margin-top: 80px;
-    height: 930px;
+    height: 830px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 2100px) and (max-width: 2399.98px) {
     margin-top: 80px;
-    height: 1100px;
+    height: 1000px;
     background-position: left;
     background-size: cover;
   }
   @media (min-width: 2400px) {
     margin-top: 90px;
-    height: 1200px;
+    height: 1100px;
     background-position: left;
     background-size: cover;
   }
@@ -325,7 +325,7 @@ input[type=checkbox]:checked:after {
 }
 
 .conference-title h1 {
-  color: $erasmus_blue;
+  color: $europass_blue;
   font-family: $my-font;
   font-weight: 600;
   @media (max-width: 575.98px)  {
@@ -358,7 +358,7 @@ input[type=checkbox]:checked:after {
 .conference-details {
   display: flex;
   justify-content: space-between;
-  border: solid $erasmus_verylight_blue;
+  border: solid $europass_blue;
   @media (max-width: 575.98px) {
     padding: 10px;
     flex-wrap: wrap;
@@ -499,7 +499,7 @@ input[type=checkbox]:checked:after {
 
 .conference-text-presentation h2 {
   // display: flex;
-  color: $erasmus_blue;
+  color: $europass_dark_blue;
   text-align: center;
   padding: 10px;
   padding-top: 0px;
@@ -573,7 +573,7 @@ input[type=checkbox]:checked:after {
 
 .conference-text-presentation p {
   // display: flex;
-  color: $erasmus_darkblue;
+  color: $europass_dark_blue;
   font-weight: medium;
   text-align: center;
   padding: 10px;
@@ -598,9 +598,9 @@ input[type=checkbox]:checked:after {
 }
 
 .conference-text-presentation p span {
-  color: $erasmus-pink;
+  color: $europass_dark_blue;
   font-family: $my-font;
-  font-weight: 600;
+  // font-weight: 600;
   text-align: center;
   position: relative;
   z-index:0;

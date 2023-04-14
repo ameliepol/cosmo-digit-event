@@ -7,21 +7,31 @@
 <%#= render 'modal/modal_home' %>
 <div class="conference-presentation">
   <div class="conference-title">
-    <h1> LE WEBINAIRE </h1>
+    <h1> LA WEBCONFÉRENCE </h1>
   </div>
   <div class="conference-details">
     <div class="webinar-image mx-auto">
       <%= image_tag "new-picto-webinar.svg", alt: "Webinar", height: 100 %>
     </div>
     <div class="conference-text-presentation">
-    <p><b>La reconnaissance de la mobilité en formation professionnelle initiale constitue un enjeu majeur au niveau européen et national.</b><br>
-    Une meilleure valorisation des compétences acquises à l’étranger permet à l’apprenant de sécuriser son parcours professionnel et de favoriser son employabilité.</p>
-    <p>L’Agence Erasmus+ France / Education Formation, et le réseau des experts Erasmus+ de l’Enseignement et la Formation Professionnels, organisent une webconférence autour de trois dispositifs au service de cette reconnaissance : l’Europass Mobilité ; l’Unité Facultative de Mobilité et la reconnaissance à visée certificative des compétences professionnelles.</p>
-    <p>A travers des échanges riches et des témoignages d’acteurs du terrain, cet événement mettra en lumière les atouts de la mobilité européenne dans le cadre d’une formation professionnelle initiale. </p>
-    <p><span>De 14h00 à 15h30, il sera animé en direct par Vanessa Duval (consultante en gestion de projets européens).<span></p>
+    <p>Placée sous le signe de l’Année européenne des compétences par la Commission européenne, l’année 2023 ambitionne de donner un nouvel élan à l’apprentissage tout au long de la vie.<br>
+    <b>En cette période de transition écologique, numérique et d’évolution du marché du travail, comment accompagner les citoyens dans l'acquisition de compétences adaptées ? </b></p>
+    <p>A travers des échanges, des témoignages, des présentations de projets Erasmus+, la webconférence mettra en lumière les enjeux de l’orientation tout au long de la vie, du numérique et de l’adaptation des qualifications et certifications.</p>
+    <p><b>Elle sera animée le 6 juin 2023, de 14h00 à 15h30, en direct et avec du public par Emmanuelle Bastide</b><br>(Journaliste RFI - Radio France Internationale)</p>
+    <p><i>Webconférence organisée dans le cadre du programme Erasmus+ par les équipes en charge d’Europass, d’Euroguidance et du Cadre Européen des Certifications</i></p>
     </div>
   </div>
   <div class="button-valid">
     <%= link_to "JE M'INSCRIS".html_safe, new_event_participant_path(Event.last), data:{turbolinks:false}, class: "button-submit-registration" %>
   </div>
+  <!-- <div class="partners-logos">
+          <#%= image_tag "01_Erasmus_plus.png" %>
+          <#%= image_tag "02_CE.jpg" %>
+          <#%= image_tag "03_The_Shift_Project.png" %>
+          <#%= image_tag "04_Ministere_transition_ecologique.jpg" %>
+          <#%= image_tag "05_Carif_Oref.png" %>
+          <#%= image_tag "06_Fermes_Avenir.png" %>
+          <#%= image_tag "07_Etre.png" %>
+          <#%= image_tag "08_Halage.jpg" %>
+        </div> -->
 </div>
