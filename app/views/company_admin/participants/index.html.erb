@@ -25,7 +25,7 @@
             <th scope="col">Etablissement</th>
             <th scope="col">Service</th>
             <th scope="col">Ville</th>
-            <th scope="col">Question(s)</th>
+            <!-- <th scope="col">Question(s)</th> -->
             <th scope="col">X</th>
           </tr>
         </thead>
@@ -38,7 +38,7 @@
             <td><%= participant.organization %></td>
             <td><%= participant.service %></td>
             <td><%= participant.city %></td>
-            <td><%= participant.request %></td>
+            <!-- <td><%#= participant.request %></td> -->
             <!-- <td><%#= participant.newsletter_subscription.to_s %></td>
             <td><#%= participant.bookings.order_by_workshop_date.each do |booking| %>
               <div><strong><#%= time_with_day(booking.workshop.start_at)%> - <%#= booking.workshop.end_at.strftime("%Hh%M") %></strong> : <%#= booking.workshop.name %>

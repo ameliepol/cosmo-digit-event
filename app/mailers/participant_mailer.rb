@@ -4,8 +4,8 @@ class ParticipantMailer < ApplicationMailer
     @participant = participant
     # @bookings = @participant.bookings
     # @bookings_by_date = @bookings.group_by{|b| b.workshop.start_at.to_date}
-    attachments.inline['logo_agenceerasmusplus.png'] = File.read('app/assets/images/logo_agenceerasmusplus.png')
-    mail(to: @participant.email, subject: "Webcast Reconnaissance de la mobilité européenne en Formation professionnelle Initiale - Confirmation d'inscription") do |format|
+    attachments.inline['logo_europasseuroguidance.png'] = File.read('app/assets/images/logo_europasseuroguidance.png')
+    mail(to: @participant.email, subject: "Webconférence Orientation et compétences à l'ère des transitions - Confirmation d'inscription") do |format|
       format.html { render(layout: 'mailer') }
     end
   end
