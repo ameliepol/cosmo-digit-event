@@ -283,6 +283,20 @@
   color: $europass_green;
 }
 
+.fa-instagram {
+  margin-left: 8px;
+  color: $erasmus_blue;
+  font-size: 28px;
+  @media (max-width: 1199.98px) {
+    margin-left: 1px;
+    margin-right: 8px;
+  }
+}
+
+.fa-instagram:hover {
+  color: $europass_green;
+}
+
 // .navbar {
 //   z-index: 1;
 // }
