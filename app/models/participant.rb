@@ -18,7 +18,7 @@ class Participant < ApplicationRecord
   # validates :position, presence: { message: "Veuillez renseigner votre fonction" }
   validates :city, presence: { message: "Veuillez renseigner le nom de votre ville" }
   validates :region, presence: { message: "Veuillez renseigner le nom de votre région" }
-  validates :newsletter_subscription, inclusion: { in: [true, false] }
+  # validates :newsletter_subscription, inclusion: { in: [true, false] }
   validates :accepted_conditions, inclusion: { in: [true] }
   # validates :bookings, presence: { message: "Veuillez sélectionner au moins un atelier pour valider votre inscription" }
   # validates :company, presence: true
